@@ -1,4 +1,4 @@
-<?php //include 'header.php'?>
+<?php include 'header.php'?>
  <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" 
   rel="stylesheet">
   <!-- test -->
