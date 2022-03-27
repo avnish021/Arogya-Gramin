@@ -16,7 +16,7 @@
 				<div class="container">
 					<div class="carousel-caption" style="font-family: 'Mukta', sans-serif;">
 						<!--<h3>आरोग्य ग्रामीण हेल्थकेयर फाउंडेशन</h3>-->
-						<h3>आपके और आपके अपनों के आरोग्य जीवन के लिए</h3>
+						<h3>आपके और आपके अपनों के आरोग्य जीवन के लिए test</h3>
 					    <!-- <span>आपके और आपके अपनों के आरोग्य जीवन के लिए</span>
 						 
 						<!--<a class="hvr-outline-out button2" href="mens.html">Apply Now </a>-->
