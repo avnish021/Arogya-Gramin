@@ -3,7 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ https://arogyagramin.com/ [L]
+RewriteRule ^(.*)$ https://support.arogyagramin.com/ [L]
 
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]

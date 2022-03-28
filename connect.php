@@ -3,7 +3,7 @@
  $servername = "localhost";
  $username = "arogyagr_arogyagramin";
  $password = "arogyagramin123";
- $dbname = "arogyagr_arogyagramin";
+ $dbname = "arogyagr_arogyagramin_support";
  
  $conn = new mysqli($servername, $username, $password, $dbname);
  // Check connection
