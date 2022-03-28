@@ -19698,7 +19698,7 @@ code {
 }
 
 /* Footer */
-.footer {
+/* .footer {
   background: #F5F7FF;
   padding: 30px 2.45rem;
   transition: all 0.25s ease;
@@ -19709,7 +19709,7 @@ code {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
+} */
 
 .footer a {
   color: #4B49AC;
@@ -28434,7 +28434,7 @@ div.tagsinput span.tag a {
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
   width: calc(100% - 235px);
-  min-height: calc(100vh - 60px);
+  /* min-height: calc(100vh - 60px); */
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
