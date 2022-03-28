@@ -70,7 +70,7 @@
       <?php
 include 'connect.php';
 $id = $_GET['id'];
-$sql = "SELECT * FROM apply_card where id='$id' and status='Ture'";
+$sql = "SELECT * FROM apply_card where id='$id' and status='True'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
