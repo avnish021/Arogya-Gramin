@@ -1,12 +1,8 @@
 <?php 
 ob_start();
+include 'connect.php';
 include 'navbar.php';
-$servername = "localhost";
-$username = "arogyagr_arogyagramin";
-$password = "arogyagramin123";
-$dbname = "arogyagr_arogyagramin";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 //Enabling Status Update Query
 if (isset($_GET["processEU"])) {

@@ -1,10 +1,23 @@
 <?php
+$hostIp = array(
+    '127.0.0.1',
+    '::1'
+);
 //DATABASE DETAILS
-define("DB_HOST", "localhost");
-define("DB_USER", "arogyagr_arogyagramin");
-define("DB_PASS", "arogyagramin123");
-define("DB_NAME", "arogyagr_arogyagramin");
-//MYSQL CONNECTION
+if(in_array($_SERVER['REMOTE_ADDR'], $hostIp))
+{
+    define("DB_HOST", "localhost");
+    define("DB_USER", "root");
+    define("DB_PASS", "");
+    define("DB_NAME", "arogyagr_arogyagramin_support");
+    //MYSQL CONNECTION
+}else{
+    define("DB_HOST", "localhost");
+    define("DB_USER", "arogyagr_arogyagramin");
+    define("DB_PASS", "arogyagramin123");
+    define("DB_NAME", "arogyagr_arogyagramin_support");
+    //MYSQL CONNECTION
+}
 $con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if (mysqli_connect_errno()) {
     echo "connection faild" . " " . mysqli_connect_error();

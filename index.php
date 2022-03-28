@@ -19,7 +19,7 @@
 						<h3>आपके और आपके अपनों के आरोग्य जीवन के लिए</h3>
 					    <!-- <span>आपके और आपके अपनों के आरोग्य जीवन के लिए</span>
 						 
-						<!--<a class="hvr-outline-out button2" href="mens.html">Apply Now </a>-->
+						<a class="hvr-outline-out button2" href="mens.html">Apply Now </a>-->
 					</div>
 				</div>
 			</div>
@@ -28,7 +28,7 @@
 					<div class="carousel-caption">
 						<h2> <span>आरोग्य कार्ड</spa></h2>
 						<h4>आपके और आपके अपनों के आरोग्य जीवन के लिए</h4>
-						<!--<span>आपके और आपके अपनों के आरोग्य जीवन के लिए</span-->>
+						<!--<span>आपके और आपके अपनों के आरोग्य जीवन के लिए</span-->
 						
 					</div>
 				</div>
