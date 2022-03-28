@@ -1,7 +1,6 @@
 <?php include 'header.php'?>
  <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" 
   rel="stylesheet">
-  <!-- test -->
 <!-- banner -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
