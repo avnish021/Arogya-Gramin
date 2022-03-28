@@ -73,7 +73,7 @@
       <?php
 include 'connect.php';
 $email = $_GET['email'];
-$sql = "SELECT * FROM apply_card where email='$email' and status='Ture'";
+$sql = "SELECT * FROM apply_card where email='$email' and status='True'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

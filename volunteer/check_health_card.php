@@ -43,7 +43,7 @@ if(isset($_POST['save'])) // when click on Update button
 }
 if(isset($_POST['save1'])){
         $id = $_POST['id'];
-        $edit = mysqli_query($conn,"update apply_card set status='Ture' where id='$id'");
+        $edit = mysqli_query($conn,"update apply_card set status='True' where id='$id'");
 	
     if($edit)
     {
