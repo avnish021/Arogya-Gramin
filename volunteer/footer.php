@@ -1,6 +1,8 @@
-<!-- <footer class="footer">  </footer> -->
+
+
+<footer class="footer">  
         <div class="container footerpart">
-          <div class="row mt-8">
+          <div class="row">
             <div class="col-md-6"><a href="../index" target="_blank">Arogya Gramin</a></div>
             <div class="col-md-6">
             <span class="copyright">
@@ -10,10 +12,12 @@
               </span>
             </div>
         </div>
-    
+        </footer>
+        
      
-<!-- </div>
-  </div> -->
+</div>
+</div>
+
   <!--   Core JS Files   -->
  
   <script src="../assets/user/assets/js/core/popper.min.js"></script>

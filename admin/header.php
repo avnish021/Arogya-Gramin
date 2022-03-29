@@ -287,7 +287,7 @@ if (!isset($_SESSION['user_name'])) {
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'cpr.php') echo 'active'; ?>">
             <a class="nav-link" href="cpr.php">
               <i class="fa fa-bank menu-icon"></i>
-              <span class="menu-title">CBR Transection</span>
+              <span class="menu-title">CBR Transaction</span>
             </a>
           </li>
           <li class="nav-item">

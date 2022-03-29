@@ -1,6 +1,6 @@
 <?php include 'header.php'?>
 
-<div class="content" style="background:white;margin-top:100px;">
+<div class="content" id="cardbox">
         <div class="row">
            <div class="col-md-3" style="cursor:pointer;" onclick="window.location.href=''">
                <div id='s'>
