@@ -1,24 +1,23 @@
-<footer class="footer footer-black  footer-white ">
-        <div class="container-fluid">
+
+
+<footer class="footer">  
+        <div class="container footerpart">
           <div class="row">
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="../index" target="_blank">Arogya Gramin</a></li>
-                
-              </ul>
-            </nav>
-            <div class="credits ml-auto">
-              <span class="copyright">
+            <div class="col-md-6"><a href="../index" target="_blank">Arogya Gramin</a></div>
+            <div class="col-md-6">
+            <span class="copyright">
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>, made with <i class="fa fa-heart heart"></i> by arivsa it solutions
               </span>
             </div>
-          </div>
         </div>
-      </footer>
+        </footer>
+        
+     
 </div>
-  </div>
+</div>
+
   <!--   Core JS Files   -->
  
   <script src="../assets/user/assets/js/core/popper.min.js"></script>

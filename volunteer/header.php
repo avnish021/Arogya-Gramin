@@ -27,7 +27,8 @@ $v_id = $_SESSION['v_email'];
   <link href="../assets/user/assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/user/assets/css/custom.css?v=2.0.1" rel="stylesheet" />
      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href=".." href="../assets/user/assets/demo/demo.css" rel="stylesheet" />
+  <link href="../assets/user/assets/demo/demo.css" rel="stylesheet" />
+  <link href="../assets/css/volunteer.css" rel="stylesheet" />
   <!--Calender UI-->
           <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -46,7 +47,7 @@ $v_id = $_SESSION['v_email'];
     /*}*/
 </style>
 <body class="">
-  <div class="wrapper " >
+  <div class="wrapper" >
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <a href="/volunteer/" class="simple-text logo-mini">
@@ -169,4 +170,4 @@ $v_id = $_SESSION['v_email'];
      
  
       <!-- End Navbar -->
-      <div class="container">
+      <!-- <div class="container"> -->

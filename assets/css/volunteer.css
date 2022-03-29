@@ -1,0 +1,81 @@
+#s {
+  height: 120px;
+  width: 90%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 10px 0px;
+  background: white;
+  border-radius: 10px;
+}
+
+#cardbox {
+  background: white;
+  margin-top: 100px;
+  min-height: calc(100vh - 95px);
+  border-radius: 10px;
+}
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: -ms-inline-flexbox;
+  margin-left: 62%;
+  margin-bottom: 26px;
+}
+@media (max-width: 360px) {
+  .btn-group,
+  .btn-group-vertical {
+    position: relative;
+    right: 69%;
+    width: max-content;
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+    .btn-group,
+    .btn-group-vertical {
+        display: flex;
+        justify-content: center;
+      /* position: relative;
+      right: 484%; */
+      width: max-content;
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .btn-group,
+    .btn-group-vertical {
+      position: relative;
+      right: 69%;
+      width: max-content;
+      font-size: 12px;
+    }
+
+}
+@media (max-width: 767px) {
+    .btn-group,
+    .btn-group-vertical {
+      position: relative;
+      right: 67%;
+      width: max-content;
+      font-size: 12px;
+    }
+}
+@media (max-width: 991px) {
+    .btn-group,
+    .btn-group-vertical {
+      position: relative;
+      right: 67%;
+      width: max-content;
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .btn-group,
+    .btn-group-vertical {
+      position: relative;
+      right: 67%;
+      width: max-content;
+      font-size: 12px;
+    }
+}

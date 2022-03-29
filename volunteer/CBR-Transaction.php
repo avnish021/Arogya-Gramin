@@ -24,7 +24,12 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
 <div class="page-content" style='margin-top:130px;'>
   <div class="container">
       
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    
+    <div class="text-center padding">
+      <h2>CBR Transaction</h2>
+      
+    </div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
     <input type="radio" name="options" id="option2" autocomplete="off">  Personal Card Limit : <?php echo $plimit; ?>
   </label>
@@ -32,9 +37,7 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
     <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
   </label>
 </div>
-    <div class="text-center padding">
-      <h2>CBR Transaction</h2>
-    </div>
+    
     <form id="submit" enctype="multipart/form-data" name="submit" method="post">
       <input type="hidden" name="transid" id="TrnsID" class="form-control" value="<?php echo RandomCode(); ?>" readonly>
       <div class="form-row">
