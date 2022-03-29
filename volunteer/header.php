@@ -64,42 +64,36 @@ $v_id = $_SESSION['v_email'];
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
-            <a href="/volunteer/">
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'volunteer') echo 'active'; ?>">
+            <a href="volunteer">
               <i class="fa fa-home"></i>
               <p>Home</p>
             </a>
           </li>
-          <li>
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'CBR-Transaction.php') echo 'active'; ?>">
             <a href="CBR-Transaction">
               <i class="fa fa-bank"></i>
-              <p>CBR Transection</p>
+              <p>CBR Transaction</p>
             </a>
           </li>
-          <li>
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'Application-Form.php') echo 'active'; ?>">
             <a href="Application-Form">
               <i class="fa fa-id-card"></i>
               <p>Apply Health Card</p>
             </a>
           </li>
-          <li>
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'personal-healthcard.php') echo 'active'; ?>">
             <a href="personal-healthcard">
               <i class="fa fa-eye"></i>
               <p>Personal healthcard</p>
             </a>
           </li>
-          <li>
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'family-healthcard.php') echo 'active'; ?>">
             <a href="family-healthcard">
               <i class="fa fa-eye"></i>
               <p>Family healthcard</p>
             </a>
           </li>
-          <!--<li>-->
-          <!--  <a href="Show-Helth-Card">-->
-          <!--    <i class="fa fa-eye"></i>-->
-          <!--    <p>Show Helth Card</p>-->
-          <!--  </a>-->
-          <!--</li>-->
           <li>
             <a href="logout">
               <i class="fa fa-user"></i>

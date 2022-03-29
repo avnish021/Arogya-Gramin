@@ -1,14 +1,13 @@
 <?php 
 ob_start();
 include 'header.php';
-
-$servername = "localhost";
-$username = "arogyagr_arogyagramin";
-$password = "arogyagramin123";
-$dbname = "arogyagr_arogyagramin";
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'connect.php';
 session_start();
-$id=$_SESSION['ID'];
+$id='';
+if(isset($_SESSION['ID']))
+{
+    $id = $_SESSION['ID'];
+}
 //Fetching All Data
 $order_query = "SELECT * FROM `familyhealthcard` WHERE `author`='$id';";
 $dist_rs = $conn->query($order_query);

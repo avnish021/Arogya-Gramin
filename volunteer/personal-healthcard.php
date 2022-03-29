@@ -1,14 +1,13 @@
 <?php 
 ob_start();
 include 'header.php';
-
-$servername = "localhost";
-$username = "arogyagr_arogyagramin";
-$password = "arogyagramin123";
-$dbname = "arogyagr_arogyagramin";
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'connect.php';
 session_start();
-$id=$_SESSION['ID'];
+$id='';
+if(isset($_SESSION['ID']))
+{
+    $id = $_SESSION['ID'];
+}
 //Fetching All Data
 $order_query = "SELECT * FROM `personalhealthcard` WHERE `author`='$id';";
 $dist_rs = $conn->query($order_query);
@@ -19,9 +18,7 @@ if (isset($_POST["search"])) {
     header('Location: search-result.php?fdate=' . $fdate .'&ldate='. $ldate.'&type='. $personal);
 }
 ?>
-
 <!-- </head> -->
-
 <div class="page-content">
     <div class="main-wrapper" style="padding: none!important; margin-top: 8px!important;">
         <h3>Personal Healthcard Details echo <?php $id;?></h3>
