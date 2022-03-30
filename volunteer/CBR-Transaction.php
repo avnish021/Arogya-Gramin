@@ -26,7 +26,7 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
       
     
     <div class="text-center padding">
-      <h2 class="text-center cbrTransaction">CBR Transaction</h2>
+      <h2 class="text-center card-heading">CBR Transaction</h2>
       
     </div>
     <div class="btn-group btn-group-toggle responsive" data-toggle="buttons">

@@ -21,7 +21,9 @@
   margin-bottom: 26px;
 }
 
-
+.card-heading{
+  font-family: ui-sans-serif;
+}
 
 @media (max-width: 768px){
 .btn-group, .btn-group-vertical {
@@ -34,11 +36,21 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
   .btn-group, .btn-group-vertical {
     position: relative;
-    right: 11rem;
+    right: 16rem;
     width: max-content;
     font-size: 12px;
 }
   }
+
+  @media only screen and (min-device-width : 1024px) and (max-device-width : 1317px){
+    .btn-group, .btn-group-vertical {
+      position: relative;
+      right: 17rem;
+      width: max-content;
+      font-size: 12px;
+  }
+}
+
 /* @media (max-width: 991px) {
     .btn-group,
     .btn-group-vertical {
