@@ -88,6 +88,8 @@ if (isset($_POST["search"])) {
                                 <th>Email</th>
                                 <th>Aadhaar</th>
                                 <th>Mobile</th>
+                                <th>D.O.B</th>
+                                <th>Age</th>
                                 <th>Status</th>
                                 <th>Pay ID</th>
                                 <th>Payment</th>
@@ -107,6 +109,8 @@ if (isset($_POST["search"])) {
                                         <td><?php echo $row['email']; ?></td>
                                         <td><?php echo $row['aadhar']; ?></td>
                                         <td><?php echo $row['mobile']; ?></td>
+                                        <td><?php echo $row['dob']; ?></td>
+                                        <td><?php (date('Y') - date('Y',strtotime($dob))); ?></td>
                                         <td><?php echo $row['card_status']; ?></td>
                                         <td><?php echo $row['order_id']; ?></td>
                                         <td><?php echo $row['order_status']; ?></td>
@@ -132,6 +136,8 @@ if (isset($_POST["search"])) {
                                 <th>Email</th>
                                 <th>Aadhaar</th>
                                 <th>Mobile</th>
+                                <th>D.O.B</th>
+                                <th>Age</th>
                                 <th>Status</th>
                                 <th>Pay ID</th>
                                 <th>Payment</th>
@@ -159,7 +165,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'Excel',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
                                         }
                                     },
                                     {
@@ -168,7 +174,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'CSV',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
                                         }
                                     },
                                     {
@@ -178,7 +184,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'PDF',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
                                         }
                                     }
                                 ]
