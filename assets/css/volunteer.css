@@ -20,38 +20,26 @@
   margin-left: 62%;
   margin-bottom: 26px;
 }
-@media (max-width: 360px) {
-  .btn-group,
-  .btn-group-vertical {
+
+
+
+@media (max-width: 768px){
+.btn-group, .btn-group-vertical {
     position: relative;
-    right: 69%;
+    right: 14rem;
     width: max-content;
     font-size: 12px;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+  .btn-group, .btn-group-vertical {
+    position: relative;
+    right: 11rem;
+    width: max-content;
+    font-size: 12px;
+}
   }
-}
-@media (max-width: 480px) {
-    .btn-group,
-    .btn-group-vertical {
-        display: flex;
-        justify-content: center;
-      /* position: relative;
-      right: 484%; */
-      width: max-content;
-      font-size: 12px;
-    }
-}
-
-@media (max-width: 640px) {
-    .btn-group,
-    .btn-group-vertical {
-      position: relative;
-      right: 69%;
-      width: max-content;
-      font-size: 12px;
-    }
-
-}
-@media (max-width: 767px) {
+/* @media (max-width: 991px) {
     .btn-group,
     .btn-group-vertical {
       position: relative;
@@ -59,18 +47,9 @@
       width: max-content;
       font-size: 12px;
     }
-}
-@media (max-width: 991px) {
-    .btn-group,
-    .btn-group-vertical {
-      position: relative;
-      right: 67%;
-      width: max-content;
-      font-size: 12px;
-    }
-}
+} */
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .btn-group,
     .btn-group-vertical {
       position: relative;
@@ -78,4 +57,4 @@
       width: max-content;
       font-size: 12px;
     }
-}
+} */
