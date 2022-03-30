@@ -65,8 +65,8 @@ $v_id = $_SESSION['v_email'];
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'volunteer') echo 'active'; ?>">
-            <a href="volunteer">
+          <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>">
+            <a href="./">
               <i class="fa fa-home"></i>
               <p>Home</p>
             </a>
