@@ -2,6 +2,7 @@
 ob_start();
 include 'connect.php';
 include 'navbar.php';
+include '../common.php';
 
 //Enabling Status Update Query
 if (isset($_GET["processEU"])) {
@@ -90,6 +91,27 @@ if (isset($_POST["search"])) {
                                 <th>Mobile</th>
                                 <th>D.O.B</th>
                                 <th>Age</th>
+                                <th>Address</th>
+                                <th>Block</th>
+                                <th>District</th>
+                                <th>State</th>
+                                <th>Pin Code</th>
+                                <th>First Member Name</th>
+                                <th>First Member Age</th>
+                                <th>First Member Gender</th>
+                                <th>First Member Relation</th>
+                                <th>Second Member Name</th>
+                                <th>Second Member Age</th>
+                                <th>Second Member Gender</th>
+                                <th>Second Member Relation</th>
+                                <th>Third Member Name</th>
+                                <th>Third Member Age</th>
+                                <th>Third Member Gender</th>
+                                <th>Third Member Relation</th>
+                                <th>Fourth Member Name</th>
+                                <th>Fourth Member Age</th>
+                                <th>Fourth Member Gender</th>
+                                <th>Fourth Member Relation</th>
                                 <th>Status</th>
                                 <th>Pay ID</th>
                                 <th>Payment</th>
@@ -110,7 +132,28 @@ if (isset($_POST["search"])) {
                                         <td><?php echo $row['aadhar']; ?></td>
                                         <td><?php echo $row['mobile']; ?></td>
                                         <td><?php echo $row['dob']; ?></td>
-                                        <td><?php (date('Y') - date('Y',strtotime($dob))); ?></td>
+                                        <td><?php echo ageCalculator($row['dob']); ?></td>
+                                        <td><?php echo $row['address']; ?></td>
+                                        <td><?php echo $row['block']; ?></td>
+                                        <td><?php echo $row['district']; ?></td>
+                                        <td><?php echo $row['state']; ?></td>
+                                        <td><?php echo $row['pin']; ?></td>
+                                        <td><?php echo $row['first_member_name']; ?></td>
+                                        <td><?php echo $row['first_member_age']; ?></td>
+                                        <td><?php echo $row['first_member_gender']; ?></td>
+                                        <td><?php echo $row['first_member_relation']; ?></td>
+                                        <td><?php echo $row['second_member_name']; ?></td>
+                                        <td><?php echo $row['second_member_age']; ?></td>
+                                        <td><?php echo $row['second_member_gender']; ?></td>
+                                        <td><?php echo $row['second_member_relation']; ?></td>
+                                        <td><?php echo $row['third_member_name']; ?></td>
+                                        <td><?php echo $row['third_member_age']; ?></td>
+                                        <td><?php echo $row['third_member_gender']; ?></td>
+                                        <td><?php echo $row['third_member_relation']; ?></td>
+                                        <td><?php echo $row['fourth_member_name']; ?></td>
+                                        <td><?php echo $row['fourth_member_age']; ?></td>
+                                        <td><?php echo $row['fourth_member_gender']; ?></td>
+                                        <td><?php echo $row['fourth_member_relation']; ?></td>
                                         <td><?php echo $row['card_status']; ?></td>
                                         <td><?php echo $row['order_id']; ?></td>
                                         <td><?php echo $row['order_status']; ?></td>
@@ -138,6 +181,27 @@ if (isset($_POST["search"])) {
                                 <th>Mobile</th>
                                 <th>D.O.B</th>
                                 <th>Age</th>
+                                <th>Address</th>
+                                <th>Block</th>
+                                <th>District</th>
+                                <th>State</th>
+                                <th>Pin Code</th>
+                                <th>First Member Name</th>
+                                <th>First Member Age</th>
+                                <th>First Member Gender</th>
+                                <th>First Member Relation</th>
+                                <th>Second Member Name</th>
+                                <th>Second Member Age</th>
+                                <th>Second Member Gender</th>
+                                <th>Second Member Relation</th>
+                                <th>Third Member Name</th>
+                                <th>Third Member Age</th>
+                                <th>Third Member Gender</th>
+                                <th>Third Member Relation</th>
+                                <th>Fourth Member Name</th>
+                                <th>Fourth Member Age</th>
+                                <th>Fourth Member Gender</th>
+                                <th>Fourth Member Relation</th>
                                 <th>Status</th>
                                 <th>Pay ID</th>
                                 <th>Payment</th>
@@ -150,8 +214,8 @@ if (isset($_POST["search"])) {
                         $(document).ready(function() {
                             $('#example').DataTable({
                                 dom: 'Bfrtip',
-
                                 "scrollX": true,
+                                
                                 buttons: [{
                                         extend: 'copyHtml5',
                                         text: '<i class="fa fa-files-o"></i> Copy',
@@ -165,7 +229,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'Excel',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
                                         }
                                     },
                                     {
@@ -174,7 +238,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'CSV',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
                                         }
                                     },
                                     {
@@ -184,7 +248,7 @@ if (isset($_POST["search"])) {
                                         titleAttr: 'PDF',
                                         className: 'red',
                                         exportOptions: {
-                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                            columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
                                         }
                                     }
                                 ]
