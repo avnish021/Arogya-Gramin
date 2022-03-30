@@ -26,16 +26,16 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
       
     
     <div class="text-center padding">
-      <h2>CBR Transaction</h2>
+      <h2 class="text-center card-heading">CBR Transaction</h2>
       
     </div>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option2" autocomplete="off">  Personal Card Limit : <?php echo $plimit; ?>
-  </label>
-  <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
-  </label>
+    <div class="btn-group btn-group-toggle responsive" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option2" autocomplete="off">  Personal Card Limit : <?php echo $plimit; ?>
+            </label>
+            <label class="btn btn-secondary active">
+      <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
+     </label>
 </div>
     
     <form id="submit" enctype="multipart/form-data" name="submit" method="post">
