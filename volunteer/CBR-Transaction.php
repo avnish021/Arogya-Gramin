@@ -23,7 +23,7 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
 ?>
 
 <div class="content" id="cardbox">
-  <div class="container">
+  <div>
     <div class="text-center padding">
       <h2 class="card-heading">CBR Transaction</h2>
     </div>

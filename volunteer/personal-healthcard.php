@@ -1,9 +1,9 @@
 <?php
 ob_start();
+// session_start();
 include 'header.php';
 include 'connect.php';
-session_start();
-$id = '';
+$id = 'self';
 if (isset($_SESSION['ID'])) {
     $id = $_SESSION['ID'];
 }
@@ -18,16 +18,17 @@ if (isset($_POST["search"])) {
 }
 ?>
 <div class="content" id="cardbox">
-<div class="container">
+<div>
     <div class="text-center padding">
-        <h2>Personal Healthcard Details <?php echo $id; ?></h2>
+        <h2 class="card-heading">Personal Healthcard Details <?php echo $id; ?></h2>
     </div>
-        <div class="container-fluid" style="padding-right:0px!important; padding-left:0px!important;">
+        <div class="container-fluid threerow">
             <div id="result">
 
-                <div class="formcard" style="background-color: #FFFFFF!important;">
+                <div style="background-color: #FFFFFF!important;">
+              
                     <form id="search" enctype="multipart/form-data" name="search" action="" method="post">
-                        <div class="form-row">
+                        <div class="row inputrow">
                             <div class="form-group col-md-4">
                                 <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="fdate" required="true">
                             </div>
@@ -35,11 +36,12 @@ if (isset($_POST["search"])) {
                                 <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="ldate" required="true">
                             </div>
                             <div class="form-group col-md-4">
-                                <button class="dt-button buttons-html5 red" type="submit" name="search"><span><i class="fa fa-search"></i>Search</span></button>
+                                <button class="btn btn-outline-info search" type="submit" name="search"><span><i class="fa fa-search"></i>&nbsp;Search</span></button>
                             </div>
                         </div>
                     </form>
-                    <table id="example" class="table table-bordered" cellspacing="0" width="100%">
+
+                    <table id="example" class="table table-bordered table-responsive" cellspacing="0">
                         <thead>
                             <tr>
                                 <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>

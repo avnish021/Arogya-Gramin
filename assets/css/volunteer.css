@@ -12,25 +12,50 @@
   margin-top: 100px;
   min-height: calc(100vh - 95px);
   border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .btn-group,
 .btn-group-vertical {
   position: relative;
-  display: -ms-inline-flexbox;
   margin-left: 62%;
+  width: max-content;
   margin-bottom: 26px;
 }
 
 .card-heading{
   font-family: ui-sans-serif;
+  padding-top: 2.5rem;
 }
 
-@media (max-width: 768px){
-.btn-group, .btn-group-vertical {
+
+@media  (max-width : 420px) {
+  .btn-group, .btn-group-vertical {
     position: relative;
     right: 14rem;
     width: max-content;
     font-size: 12px;
+}
+
+}
+.table-responsive{
+  overflow-y:hidden;
+}
+.search{
+  margin-top: -1px;
+}
+.inputrow{
+  margin-left: 9rem!important;
+}
+@media (max-width: 768px){
+.btn-group, .btn-group-vertical {
+    position: relative;
+    right: 13rem;
+    width: max-content;
+    font-size: 12px;
+}
+.card-heading{
+  font-size: 30px;
 }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
@@ -45,7 +70,7 @@
   @media only screen and (min-device-width : 1024px) and (max-device-width : 1317px){
     .btn-group, .btn-group-vertical {
       position: relative;
-      right: 17rem;
+      right: 3.5rem;
       width: max-content;
       font-size: 12px;
   }

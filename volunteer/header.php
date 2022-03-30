@@ -86,13 +86,13 @@ $v_id = $_SESSION['v_email'];
           <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'personal-healthcard.php') echo 'active'; ?>">
             <a href="personal-healthcard">
               <i class="fa fa-eye"></i>
-              <p>Personal healthcard</p>
+              <p>Personal Health Card</p>
             </a>
           </li>
           <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'family-healthcard.php') echo 'active'; ?>">
             <a href="family-healthcard">
               <i class="fa fa-eye"></i>
-              <p>Family healthcard</p>
+              <p>Family Health Card</p>
             </a>
           </li>
           <li>
