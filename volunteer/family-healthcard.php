@@ -20,9 +20,9 @@ if (isset($_POST["search"])) {
 <div class="content" id="cardbox">
 <div class="container">
     <div class="text-center padding">
-        <h2>Family Healthcard Details </h2>
+        <h2 class="card-heading">Family Healthcard Details </h2>
     </div>
-        <div class="container-fluid">
+        <div>
             <div id="result">
                 <div class="formcard" style="background-color: #FFFFFF!important;">
                 <form id="search" enctype="multipart/form-data" name="search" 
@@ -82,7 +82,10 @@ if (isset($_POST["search"])) {
                                     </tr>
                             <?php
                                 }
-                            }
+                            }else{
+                                ?>
+                                <tr><td class="text-center" colspan="10">No Data Found</td></tr>
+                            <?php }
                             ?>
                         </tbody>
                         <tfoot>

@@ -14,7 +14,6 @@
     height: 100%;
   }
 </style>
-
 <div class="content" id="cardbox">
   <div>
     <div class="text-center padding">
@@ -60,20 +59,17 @@
           <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
           <input name="address" type="text" id="address" class="form-control" placeholder="Enter Full Address" required>
         </div>
-
         <div class="form-group col-md-6">
           <label for="Block">Block (प्रखंड)<span class="required">*</span>
           </label>
           <input name="block" type="text" id="block" class="form-control" placeholder="Enter Block Name" required>
         </div>
       </div>
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="District">District (जिला)<span class="required">*</span> </label>
           <input name="district" type="text" id="district" class="form-control" placeholder="Enter District Name" required>
         </div>
-
         <div class="form-group col-md-6">
           <label for="State">State (राज्य)<span class="required">*</span> </label>
           <select name="state" id="state" class="form-control" required>
@@ -117,38 +113,29 @@
           </select>
         </div>
       </div>
-
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
           <input name="pincode" type="number" id="pincode" class="form-control" placeholder="Enter Pin Code" min="6" required>
         </div>
-
         <div class="form-group col-md-6">
           <label for="imageFile">Upload Image (फोटो अपलोड करें)<span class="required">*</span> </label>
           <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this);" />
           <span class="required" id="spnmsg"></span>
         </div>
       </div>
-
       <div class="imgContainer" id="imgbox" style="display:none;"><img id="PassportImg" style="display: block;" src="#" alt="your image" required /></div>
       <div class="col-lg-12">
         <input type="checkbox" name="FamilyCard" id="FamilyCard" onclick="myFunction()" style="height:20px;width:20px" value="FamilyCard">&nbsp;Check if You are Applying for Family Card
       </div>
-
       <div id="familyDetails" class="mt-4" style="display:none;">
-
-
-      </div>
-
-      <button type="button" id="AddRow" style="display:none;" class="btn btn-secondary btn-sm">Add Row</button>
+    </div>
+    <button type="button" id="AddRow" style="display:none;" class="btn btn-secondary btn-sm">Add Row</button>
       <div class="form-row">
         <div class="form-group col-md-8 mt-4">
           <input type="reset" class="btn btn-danger mr-4 " name="Reset" value="Reset"> <input type="submit" class="btn btn-primary mr-4 " name="submit" value="Next">
         </div>
       </div>
-      </center>
   </div>
 </div>
 <script>
@@ -168,7 +155,6 @@
               <input name="MemberAge${rows}" type="number" class="form-control"
                 placeholder="Enter Age" required>
             </div>
-
             <div class="form-group col-md-3">
               <label for="gender">Member Gender<span class="required">*</span></label>
               <select name="MemberGender${rows}" class="form-control" required>
@@ -177,7 +163,6 @@
                 <option value="Female">Female</option>
               </select>
             </div>
-
             <div class="form-group col-md-3">
               <label for="relation">Relation<span class="required">*</span></label>
               <input name="MemberRelation${rows}" type="text" class="form-control"
@@ -185,11 +170,7 @@
             </div>
           </div>`;
       rows++;
-
-    }
-
-
-  })
+    }})
 
   function myFunction() {
     var checkBox = document.getElementById("FamilyCard");
@@ -201,15 +182,11 @@
       document.getElementById("AddRow").style.display = "none";
     }
   }
-
-
-
   // Image Validation
   $(function() {
     $("#imageFile").change(function() {
       // Get uploaded file extension
       var extension = $(this).val().split('.').pop().toLowerCase();
-
       // Create array with the files extensions that we wish to upload
       var validFileExtensions = ['jpeg', 'jpg', 'JPEG', 'JPG'];
       //Check file extension in the array.if -1 that means the file extension is not in the list.
@@ -218,7 +195,6 @@
         $('#PassportImg').hide();
         // Clear fileuload control selected file
         $(this).replaceWith($(this).val('').clone(true));
-
         //Disable Submit Button
         $('#btnSubmit').prop('disabled', true);
       } else {
@@ -226,10 +202,8 @@
         if ($(this).get(0).files[0].size > (50000)) {
           $('#spnmsg').text("Failed!! Max allowed file size is 50kb").show();
           $('#PassportImg').hide();
-
           // Clear fileuload control selected file
           $(this).replaceWith($(this).val('').clone(true));
-
           //Disable Submit Button
           $('#btnSubmit').prop('disabled', true);
         } else {
@@ -247,14 +221,12 @@
     if (input.files && input.files[0]) {
       document.getElementById("imgbox").removeAttribute("style");
       var reader = new FileReader();
-
       reader.onload = function(e) {
         $('#PassportImg')
           .attr('src', e.target.result)
           .width(150)
           .height(200);
       };
-
       reader.readAsDataURL(input.files[0]);
     }
   }

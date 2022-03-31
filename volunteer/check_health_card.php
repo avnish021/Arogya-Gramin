@@ -28,10 +28,7 @@ if(isset($_POST['save'])) // when click on Update button
     $full_address = $_POST['full_address'];
     $payment_screen = $_POST['payment_screen'];
     $status = $_POST['status'];
-    
-	
-    $edit = mysqli_query($conn,"update apply_card set application_no='$application_no', name='$name', fname='$fname', gander='$gander', dob='$dob', block='$block', distric='$distric', adhar='$adhar', type='$type', adhar_photo='$adhar_photo', phone='$phone', email='$email', full_address='$full_address', payment_screen='$payment_screen', status='$status' where id='$id'");
-	
+	$edit = mysqli_query($conn,"update apply_card set application_no='$application_no', name='$name', fname='$fname', gander='$gander', dob='$dob', block='$block', distric='$distric', adhar='$adhar', type='$type', adhar_photo='$adhar_photo', phone='$phone', email='$email', full_address='$full_address', payment_screen='$payment_screen', status='$status' where id='$id'");	
     if($edit)
     {
         echo "<script>alert('Update Successfully....!');window.location.hraf='check_health_card.php'</script>";
@@ -95,8 +92,7 @@ if(isset($_POST['save1'])){
                     
                 </table>
                 <center><br><input type="submit" Value="Update" name="save" class="btn btn-info">&nbsp;&nbsp;</center>
-              </form>
-               
+              </form>               
             </div>
         </div>
     </div>

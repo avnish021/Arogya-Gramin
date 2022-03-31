@@ -38,23 +38,18 @@ $memberN .= $_POST["MemberName$i"].",";
 $uploads_dir = 'Images';
  $tmp_name = $_FILES["imageFile"]["tmp_name"]; 
  $image = basename($_FILES["imageFile"]["name"]);
-if(file_exists('Images/' . $_FILES['imageFile']['name'])){
-  	
-  	$ext1 = end (explode('.', $_FILES["imageFile"]["name"]));
-  	
-  	$image = md5 (rand()).'.'. $ext1; 
-  	
+if(file_exists('Images/' . $_FILES['imageFile']['name'])){  	
+  	$ext1 = end (explode('.', $_FILES["imageFile"]["name"]));  	
+  	$image = md5 (rand()).'.'. $ext1;   	
 }
 move_uploaded_file($tmp_name, "$uploads_dir/$image");
 $values=array("V_ID"=>$vemail,"REGISTRATION"=>$registration,"NAME"=>$name,"GENDER"=>$gender,"DOB"=>$dob,"AADHAAR"=>$aadharno,"ADDRESS"=>$address,"BLOCK"=>$block,"DISTRICT"=>$district,"STATE"=>$state,"PINCODE"=>$pincode,"IMAGE"=>$image,"MEMBER_NAME"=>$memberN,"MEMBER_AGE"=>$memberA,
 "MEMBER_GENDER"=>$memberG,"MEMBER_RELATION"=>$memberR,"STATUS"=>"Initiated","TYPE"=>$type);
 if($obj->Update("crad_details", $values,"REGISTRATION='$registration' AND STATUS!='Approved'")){
-    
-    echo '<script>alert("Detais Updated Successfully")</script>';   
- echo'<script>window.location.href = "/volunteer/"</script>';
-    
+echo '<script>alert("Detais Updated Successfully")</script>';   
+ echo'<script>window.location.href = "/volunteer/"</script>';    
 }else{
-        echo '<script>alert("Some error! Please Try After Some Time")</script>';   
+echo '<script>alert("Some error! Please Try After Some Time")</script>';   
  echo'<script>window.location.href = "/volunteer/"</script>';
 }
 
@@ -66,8 +61,6 @@ if($obj->Update("crad_details", $values,"REGISTRATION='$registration' AND STATUS
         margin-top: 100px;
     }
 </style>
-
-
 <div class="content">
     <div class="container">
         <div class="text-center padding">
@@ -100,7 +93,7 @@ if($obj->Update("crad_details", $values,"REGISTRATION='$registration' AND STATUS
       changeMonth: true
     });
   });</script>
-                </div>
+  </div>
                 <div class="form-group col-md-6">
                     <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
                     <input name="aadharno" type="number" value="<?php echo $aadharno; ?>" id="aadharno" min="12" class="form-control" placeholder="Enter Correct Aadhaar No." required>
@@ -111,20 +104,17 @@ if($obj->Update("crad_details", $values,"REGISTRATION='$registration' AND STATUS
                     <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
                     <input name="address" type="text" value="<?php echo $address; ?>" id="address" class="form-control" placeholder="Enter Full Address" required>
                 </div>
-
                 <div class="form-group col-md-6">
                     <label for="Block">Block (प्रखंड)<span class="required">*</span>
                     </label>
                     <input name="block" type="text" value="<?php echo $block; ?>" id="block" class="form-control" placeholder="Enter Block Name" required>
                 </div>
             </div>
-
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="District">District (जिला)<span class="required">*</span> </label>
                     <input name="district" type="text" value="<?php echo $district; ?>" id="district" class="form-control" placeholder="Enter District Name" required>
                 </div>
-
                 <div class="form-group col-md-6">
                     <label for="State">State (राज्य)<span class="required">*</span> </label>
                     <select name="state" id="state" class="form-control" required>
@@ -175,40 +165,31 @@ if($obj->Update("crad_details", $values,"REGISTRATION='$registration' AND STATUS
                     <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
                     <input name="pincode" type="number" value="<?php echo $pincode; ?>" id="pincode" class="form-control" placeholder="Enter Pin Code" min="6" required>
                 </div>
-
                 <div class="form-group col-md-6">
                     <label for="imageFile">Upload Image (फोटो अपलोड करें)<span class="required">*</span> </label>
                     <input type="file" name="imageFile" value="" id="imageFile" class="form-control" onclick"imgFunction();" onchange="readURL(this);" required />
                     <span class="required" id="spnmsg"></span>
                 </div>
             </div>
-
             <div class="imgContainer" id="imgbox" style="display:block;"><img id="PassportImg" style="display: block;" src="Images/<?php echo $imageFile; ?>" alt="your image"/></div>
             <div class="col-lg-12">
                 <input type="checkbox" name="FamilyCard" id="FamilyCard" onclick="myFunction()" style="height:20px;width:20px" value="FamilyCard" <?php
                   if(!empty($MemberName['0'])&&!empty($MemberAge['0'])&&!empty($MemberGender['0'])&&!empty($MemberRelation['0'])){echo "checked"; } ?> >&nbsp;Check if You are Applying for Family Card
-            </div>
-            
-            
+            </div>            
             <?php
        if(empty($MemberName)){
            $MemberName = array("1","2");
            echo count($MemberName);
        }
-       echo "<script> var rows = ".(count($MemberName)-1)."</script>"; 
-       
+       echo "<script> var rows = ".(count($MemberName)-1)."</script>";        
       ?>
         <div id="button"> 
         <div id="familyDetails" class="mt-4 mb-4" style="<?php if(!empty($MemberName['0'])&&!empty($MemberAge['0'])&&!empty($MemberGender['0'])&&!empty($MemberRelation['0'])){ echo "display:block;"; }else{ echo "display:none;";} ?>">  
   <?php 
-for($i=0; $i<4; $i++){
-    
+for($i=0; $i<4; $i++){    
      if(!empty($MemberName[$i])&&!empty($MemberAge[$i])&&!empty($MemberGender[$i])&&!empty($MemberRelation[$i])){
 ?>        
-
-    
-   <div class="form-row ">
-    
+<div class="form-row ">    
                     <div class="form-group col-md-3">
                         <label for="Name">Member Name<span class="required">*</span></label>
                         <input name="MemberName<?php echo $i; ?>" type="text" value="<?php echo $MemberName[$i]; ?>" class="form-control" placeholder="Enter Full Name" required>
@@ -217,7 +198,6 @@ for($i=0; $i<4; $i++){
                         <label for="age">Member Age<span class="required">*</span></label>
                         <input name="MemberAge<?php echo $i; ?>" type="number" value="<?php echo $MemberAge[$i]; ?>" class="form-control" placeholder="Enter Age" required>
                     </div>
-
                     <div class="form-group col-md-3">
                         <label for="gender">Member Gender<span class="required">*</span></label>
                         <select name="MemberGender<?php echo $i; ?>" class="form-control" required>
@@ -226,35 +206,26 @@ for($i=0; $i<4; $i++){
                             <option value="Female">Female</option>
                         </select>
                     </div>
-
                     <div class="form-group col-md-3">
                         <label for="relation">Relation<span class="required">*</span></label>
                         <input name="MemberRelation<?php echo $i; ?>" value="<?php echo $MemberRelation[$i]; ?>" type="text" class="form-control" placeholder="Relation With Member" required>
                     </div>
-                </div>   
-                
-             
-
-<?php        
+                </div> 
+                <?php        
         
     }else{
         break;
     }
 }
-          ?>    
-
-        </div>
-        
-    <button type="button" id="AddRow" style="display:block;" class="btn btn-secondary btn-sm">Add Row</button>    
-        
-  </div>      
+?> 
+           </div> 
+    <button type="button" id="AddRow" style="display:block;" class="btn btn-secondary btn-sm">Add Row</button></div>      
 <script>
     function imgFunction(){
         return false;
     }
 </script>
-            
-            <div class="form-row">
+<div class="form-row">
                 <div class="form-group col-md-8 mt-4">
               <input type="submit" class="btn btn-primary mr-4 " name="UpdateRecord" value="Update">
                 </div>
@@ -265,24 +236,19 @@ for($i=0; $i<4; $i++){
 </div>
 </body>
 <script>
-
-
   var content = document.getElementById("familyDetails");
 function myFunction() {
     var checkBox = document.getElementById("FamilyCard");
     if (checkBox.checked == true) {
       content.style.display = "block";
       document.getElementById("AddRow").style.display = "block";
-    } else {
-    
+    } else {    
     content.innerHTML = ` `;
-        rows = 0;
- 
+        rows = 0; 
       content.style.display = "none";
       document.getElementById("AddRow").style.display = "none";
     }
   }
-
   document.getElementById("AddRow").addEventListener("click", function () {
     var HTMLcontent = document.getElementById("familyDetails");
     if (rows !== 4) {
@@ -297,7 +263,6 @@ function myFunction() {
               <input name="MemberAge${rows}" type="number" class="form-control"
                 placeholder="Enter Age" required>
             </div>
-
             <div class="form-group col-md-3">
               <label for="gender">Member Gender<span class="required">*</span></label>
               <select name="MemberGender${rows}" class="form-control" required>
@@ -306,7 +271,6 @@ function myFunction() {
                 <option value="Female">Female</option>
               </select>
             </div>
-
             <div class="form-group col-md-3">
               <label for="relation">Relation<span class="required">*</span></label>
               <input name="MemberRelation${rows}" type="text" class="form-control"
@@ -314,21 +278,13 @@ function myFunction() {
             </div>
           </div>`;
       rows++;
-
     }
-
-
   })
-
-  
- 
-
   // Image Validation
   $(function () {
     $("#imageFile").change(function () {
       // Get uploaded file extension
       var extension = $(this).val().split('.').pop().toLowerCase();
-
       // Create array with the files extensions that we wish to upload
       var validFileExtensions = ['jpeg', 'jpg', 'JPEG', 'JPG'];
       //Check file extension in the array.if -1 that means the file extension is not in the list.
@@ -337,7 +293,6 @@ function myFunction() {
         $('#PassportImg').hide();
         // Clear fileuload control selected file
         $(this).replaceWith($(this).val('').clone(true));
-
         //Disable Submit Button
         $('#btnSubmit').prop('disabled', true);
       } else {
@@ -345,10 +300,8 @@ function myFunction() {
         if ($(this).get(0).files[0].size > (50000)) {
           $('#spnmsg').text("Failed!! Max allowed file size is 50kb").show();
           $('#PassportImg').hide();
-
           // Clear fileuload control selected file
           $(this).replaceWith($(this).val('').clone(true));
-
           //Disable Submit Button
           $('#btnSubmit').prop('disabled', true);
         } else {
@@ -361,19 +314,16 @@ function myFunction() {
       }
     });
   });
-
   function readURL(input) {
     if (input.files && input.files[0]) {
       document.getElementById("imgbox").removeAttribute("style");
       var reader = new FileReader();
-
       reader.onload = function (e) {
         $('#PassportImg')
           .attr('src', e.target.result)
           .width(150)
           .height(200);
       };
-
       reader.readAsDataURL(input.files[0]);
     }
   }

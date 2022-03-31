@@ -3,7 +3,7 @@ ob_start();
 // session_start();
 include 'header.php';
 include 'connect.php';
-$id = 'self';
+$id = '';
 if (isset($_SESSION['ID'])) {
     $id = $_SESSION['ID'];
 }
@@ -83,7 +83,10 @@ if (isset($_POST["search"])) {
                                     </tr>
                             <?php
                                 }
-                            }
+                            }else{
+                                ?>
+                                <tr><td class="text-center" colspan="10">No Data Found</td></tr>
+                            <?php }
                             ?>
                         </tbody>
                         <tfoot>

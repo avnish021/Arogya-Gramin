@@ -8,6 +8,16 @@ include "header.php";
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<style>
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+</style>
 <?php
 include 'connect.php';
 include "../Classes/Database.php";
@@ -21,10 +31,8 @@ foreach ($obj->getResult() as list(
 $obj->Select("volunteer", "phone,personal_card,family_card,name", null, "v_email='$v_id'", null, null);
 foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit, "family_card" => $flimit, "name" => $vname));
 ?>
-
 <div class="content" id="cardbox">
-  <div>
-    <div class="text-center padding">
+ <div class="text-center">
       <h2 class="card-heading">CBR Transaction</h2>
     </div>
     <div class="btn-group btn-group-toggle responsive" data-toggle="buttons">
@@ -35,7 +43,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
       </label>
     </div>
-
     <form id="submit" enctype="multipart/form-data" name="submit" method="post">
       <input type="hidden" name="transid" id="TrnsID" class="form-control" value="<?php echo RandomCode(); ?>" readonly>
       <div class="form-row">
@@ -47,7 +54,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
             <option value="Offline">Offline</option>
           </select>
         </div>
-
         <div class="form-group col-md-6">
           <label for="type">Payment Mode<span class="required">*</span></label>
           <select name="type" id="type" class="form-control" required>
@@ -57,8 +63,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
           </select>
         </div>
       </div>
-
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="Name">Volunteer Name<span class="required">*</span></label>
@@ -69,8 +73,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
           <input type="text" name="email" id="userEmail" class="form-control" value="<?php echo $v_id; ?>" readonly>
         </div>
       </div>
-
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="Name">Family Card/Unit<span class="required">*</span></label>
@@ -81,8 +83,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
           <input type="text" name="fdiscount" id="fdiscount" class="form-control" value="<?php echo $familyCrdDis; ?>" readonly>
         </div>
       </div>
-
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="Name">Quantity<span class="required">*</span></label>
@@ -103,7 +103,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
           <input name="amount" type="text" id="amount" class="form-control" readonly>
         </div>
       </div>
-
       <div class="form-row">
         <div class="form-group col-md-12">
           <label for="Gender">Mobile No.<span class="required">*</span></label>
@@ -117,8 +116,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         </div>
       </div>
       </center>
-  </div>
-
 <script>
   document.getElementById("quantity").addEventListener("keyup", function() {
     let quantity = document.getElementById("quantity").value;
@@ -340,7 +337,7 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
     font-size: 12px;
   }
 </style>
-<h3> Last Transaction Detais</h3>
+<h4 class="text-center"> Last Transaction Details</h4>
 <div>
 <div class="table-responsive">
   <table id="example" class="table table-bordered" cellspacing="0">
@@ -349,29 +346,23 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         <th>ID</th>
         <th>Name</th>
         <th>Total Amount</th>
-
         <th>Payment Status</th>
         <th>Payment ID</th>
         <th>Date</th>
-
         <th>Edit</th>
       </tr>
     </thead>
     <tbody>
-
       <?php
       $obj->Select("v_transaction", "*", null, "V_EMAIL = '$v_id'");
-
       foreach ($obj->getResult() as list(
         "ID" => $id, "V_NAME" => $name, "AMOUNT_EVERY_CARD" => $rate, "DISCOUNT" => $discount, "PAYMENT_STATUS" => $status, "RAZORPAY_PAYMENT_ID" => $paymentId, "DATE" => $date, "TOTAL_AMOUNT" => $TOTAL_AMOUNT
       )) {
       ?>
-        <tr>
-
+              <tr>
           <td><?php echo $id; ?></td>
           <td><?php echo $name; ?></td>
           <td><?php echo $TOTAL_AMOUNT; ?></td>
-
           <td><?php echo $status; ?></td>
           <td><?php echo $paymentId; ?></td>
           <td><?php echo $date; ?></td>
@@ -385,21 +376,15 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
       <th>ID</th>
       <th>Name</th>
       <th>Total Amount</th>
-
-
       <th>Payment Status</th>
       <th>Payment ID</th>
       <th>Date</th>
-
       <th>Edit</th>
-
       </tr>
     </tfoot>
   </table>
     </div>
 </div>
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
   $(document).ready(function() {
@@ -411,7 +396,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
     });
   });
 </script>
-
 <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
