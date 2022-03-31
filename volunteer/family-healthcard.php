@@ -20,7 +20,7 @@ if (isset($_POST["search"])) {
 <div class="content" id="cardbox">
 <div class="container">
     <div class="text-center">
-        <h2 class="card-heading1">Family Health Card Details </h2>
+        <h2 class="card-heading">Family Health Card Details </h2>
     </div>
         <div>
             <div id="result">
