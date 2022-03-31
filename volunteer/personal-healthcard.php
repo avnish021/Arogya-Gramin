@@ -75,7 +75,7 @@ if (isset($_POST["search"])) {
                                         <td>
                                             <a href="<?php echo $idlink; ?>">
                                                 <button type="button" class="btn btn-info">
-                                                    <i class="fa -eye"></i>
+                                                    <i class="fa fa-eye"></i>
                                                 </button>
                                             </a>
                                         </td>
