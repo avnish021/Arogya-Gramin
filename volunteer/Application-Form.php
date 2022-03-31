@@ -18,7 +18,7 @@
 <div class="content" id="cardbox">
   <div>
     <div class="text-center padding">
-      <h2 class="card-heading">Apply For Health Card</h2>
+      <h2 class="card-heading1">Apply For Health Card</h2>
     </div>
     <form id="submit" enctype="multipart/form-data" name="submit" action="Preview-Application" method="post">
       <div class="form-row">
