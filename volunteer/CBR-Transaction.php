@@ -118,7 +118,7 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
       </div>
       </center>
   </div>
-</div>
+
 <script>
   document.getElementById("quantity").addEventListener("keyup", function() {
     let quantity = document.getElementById("quantity").value;
@@ -312,8 +312,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
     }
   });
 </script>
-</body>
-</div>
 <style>
   h3 {
     letter-spacing: 0.1px;
@@ -343,8 +341,9 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
   }
 </style>
 <h3> Last Transaction Detais</h3>
-<div style=" overflow: scroll; width:100%; padding:10px 30px; border:1px solid grey; margin-bottom:30px;">
-  <table id="example">
+<div>
+<div class="table-responsive">
+  <table id="example" class="table table-bordered" cellspacing="0">
     <thead>
       <tr>
         <th>ID</th>
@@ -364,7 +363,7 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
       $obj->Select("v_transaction", "*", null, "V_EMAIL = '$v_id'");
 
       foreach ($obj->getResult() as list(
-        "ID" => $id, "V_NAME" => $name, "AMOUNT_EVERY_CARD" => $rate, "DISCOUNT" => $discount, "WALLET_AMOUNT" => $walletA, "PAYMENT_STATUS" => $status, "RAZORPAY_PAYMENT_ID" => $paymentId, "DATE" => $date, "TOTAL_AMOUNT" => $TOTAL_AMOUNT
+        "ID" => $id, "V_NAME" => $name, "AMOUNT_EVERY_CARD" => $rate, "DISCOUNT" => $discount, "PAYMENT_STATUS" => $status, "RAZORPAY_PAYMENT_ID" => $paymentId, "DATE" => $date, "TOTAL_AMOUNT" => $TOTAL_AMOUNT
       )) {
       ?>
         <tr>
@@ -397,7 +396,7 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
       </tr>
     </tfoot>
   </table>
-
+    </div>
 </div>
 
 
@@ -421,3 +420,4 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
 <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
 <script src="../assets/user/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+</div>

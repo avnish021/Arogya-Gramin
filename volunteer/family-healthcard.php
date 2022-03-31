@@ -25,8 +25,9 @@ if (isset($_POST["search"])) {
         <div class="container-fluid">
             <div id="result">
                 <div class="formcard" style="background-color: #FFFFFF!important;">
-                    <form id="search" enctype="multipart/form-data" name="search" action="" method="post">
-                        <div class="form-row">
+                <form id="search" enctype="multipart/form-data" name="search" 
+                      action=""     method="post">
+                        <div class="form-row inputrow">
                             <div class="form-group col-md-4">
                                 <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="fdate" required="true">
                             </div>
@@ -34,11 +35,12 @@ if (isset($_POST["search"])) {
                                 <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="ldate" required="true">
                             </div>
                             <div class="form-group col-md-4">
-                                <button class="dt-button buttons-html5 red" type="submit" name="search"><span><i class="fa fa-search"></i>Search</span></button>
+                                <button class="btn btn-outline-info search" type="submit" name="search"><span><i class="fa fa-search"></i>&nbsp;Search</span></button>
                             </div>
                         </div>
                     </form>
-                    <table id="example" class="table table-bordered" cellspacing="0" width="100%">
+                    <div class="table-responsive">
+                    <table id="example" class="table table-bordered" cellspacing="0">
                         <thead>
                             <tr>
                                 <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>
@@ -72,7 +74,7 @@ if (isset($_POST["search"])) {
                                         <td>
                                             <a href="<?php echo $idlink; ?>">
                                                 <button type="button" class="btn btn-info">
-                                                    <i class="bi bi-eye"></i>
+                                                    <i class="fa fa-eye"></i>
                                                 </button>
                                             </a>
                                         </td>
@@ -98,6 +100,7 @@ if (isset($_POST["search"])) {
                             </tr>
                         </tfoot>
                     </table>
+                        </div>
 
                     <script>
                         $(document).ready(function() {

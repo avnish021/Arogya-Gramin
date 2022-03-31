@@ -22,7 +22,7 @@ if (isset($_POST["search"])) {
     <div class="text-center padding">
         <h2 class="card-heading">Personal Healthcard Details <?php echo $id; ?></h2>
     </div>
-        <div class="container-fluid threerow">
+        <div class="threerow">
             <div id="result">
 
                 <div style="background-color: #FFFFFF!important;">
@@ -40,8 +40,8 @@ if (isset($_POST["search"])) {
                             </div>
                         </div>
                     </form>
-
-                    <table id="example" class="table table-bordered table-responsive" cellspacing="0">
+                    <div class="table-responsive">
+                    <table id="example" class="table table-bordered" cellspacing="0">
                         <thead>
                             <tr>
                                 <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>
@@ -75,7 +75,7 @@ if (isset($_POST["search"])) {
                                         <td>
                                             <a href="<?php echo $idlink; ?>">
                                                 <button type="button" class="btn btn-info">
-                                                    <i class="bi bi-eye"></i>
+                                                    <i class="fa -eye"></i>
                                                 </button>
                                             </a>
                                         </td>
@@ -101,6 +101,7 @@ if (isset($_POST["search"])) {
                             </tr>
                         </tfoot>
                     </table>
+                    </div>
 
                     <script>
                         $(document).ready(function() {
