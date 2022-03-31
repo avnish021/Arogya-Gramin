@@ -19,8 +19,8 @@ if (isset($_POST["search"])) {
 ?>
 <div class="content" id="cardbox">
 <div class="container">
-    <div class="text-center padding">
-        <h2 class="card-heading">Family Healthcard Details </h2>
+    <div class="text-center">
+        <h2 class="card-heading">Family Health Card Details </h2>
     </div>
         <div>
             <div id="result">
