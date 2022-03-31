@@ -4,14 +4,13 @@ $hostIp = array(
     '::1'
 );
 //DATABASE DETAILS
-if(in_array($_SERVER['REMOTE_ADDR'], $hostIp))
-{
+if (in_array($_SERVER['REMOTE_ADDR'], $hostIp)) {
     define("DB_HOST", "localhost");
     define("DB_USER", "root");
     define("DB_PASS", "");
     define("DB_NAME", "arogyagr_arogyagramin_support");
     //MYSQL CONNECTION
-}else{
+} else {
     define("DB_HOST", "localhost");
     define("DB_USER", "arogyagr_arogyagramin");
     define("DB_PASS", "arogyagramin123");
@@ -24,14 +23,14 @@ if (mysqli_connect_errno()) {
     exit();
 }
 $object = new Database();
-if($object->Select("web_info","*",null,null,null,"1")){
- foreach($object->getResult() as list('WEB_NAME'=>$WEB_NAME,'AUTHOR'=>$AUTHOR,'URL'=>$URL,"WEB_MAIL"=>$WEBMAIL,"CONTACT_NO"=>$CONTACT_NO
- ,"ADDRESS"=>$ADDRESS,"FB_URL"=>$FB_URL,"INSTA_URL"=>$INSTA_URL,"TWITTER_URL"=>$TWITTER_URL,"GITHUB_URL"=>$GITHUB_URL,"YT_URL"=>$YT_URL,"LINKEDIN"=>
- $LINKEDIN,"LOGO_URL"=>$LOGO_URL,"TITLE"=>$TITLE,"FAVICON_ICON"=>$FAVICON_ICON)){
-  
- }
-}else{
-print_r($object->getResult()) ;
+if ($object->Select("web_info", "*", null, null, null, "1")) {
+    foreach ($object->getResult() as list(
+        'WEB_NAME' => $WEB_NAME, 'AUTHOR' => $AUTHOR, 'URL' => $URL, "WEB_MAIL" => $WEBMAIL, "CONTACT_NO" => $CONTACT_NO, "ADDRESS" => $ADDRESS, "FB_URL" => $FB_URL, "INSTA_URL" => $INSTA_URL, "TWITTER_URL" => $TWITTER_URL, "GITHUB_URL" => $GITHUB_URL, "YT_URL" => $YT_URL, "LINKEDIN" =>
+        $LINKEDIN, "LOGO_URL" => $LOGO_URL, "TITLE" => $TITLE, "FAVICON_ICON" => $FAVICON_ICON
+    )) {
+    }
+} else {
+    print_r($object->getResult());
 }
 //TIMEZONE
 date_default_timezone_set("Asia/Calcutta");
@@ -61,7 +60,7 @@ define("TIME", date('H:i:s'));
 #PLEASE DON'T EDIT IT
 class Database
 {
-//DATABASE DETAILS, CONNECTION & RESULT PROPERTIES
+    //DATABASE DETAILS, CONNECTION & RESULT PROPERTIES
     private $db_host = DB_HOST;
     private $db_user = DB_USER;
     private $db_pass = DB_PASS;
@@ -69,7 +68,7 @@ class Database
     private $mysqli = "";
     private $con = false;
     public $result = array();
-//DATABASE CONNECTION USING CONSTRUCT MAGIC METHOD
+    //DATABASE CONNECTION USING CONSTRUCT MAGIC METHOD
     public function __construct()
     {
         if (!$this->con) {
@@ -82,27 +81,23 @@ class Database
             return true;
         }
     }
-//MYSQL INSERT METHOD
+    //MYSQL INSERT METHOD
     public function Insert($table, $parameter = array())
     {
         if ($this->CheckTable($table)) {
-
             $table_column = implode(',', array_keys($parameter));
             $table_value = implode("','", $parameter);
             $sql = "INSERT INTO $table ($table_column) VALUES ('$table_value')";
-
             if ($this->mysqli->query($sql)) {
-
                 array_push($this->result, $this->mysqli->insert_id);
                 return true;
             } else {
-
                 array_push($this->result, $this->mysqli->error);
                 return false;
             }
         }
     }
-//MYSQL UPDATE METHOD
+    //MYSQL UPDATE METHOD
     public function Update($table, $parameter = array(), $where = null)
     {
         if ($this->CheckTable($table)) {
@@ -111,7 +106,6 @@ class Database
                 $argument[] = "$key ='$value'";
             }
             $sql = "UPDATE $table SET " . implode(', ', $argument);
-
             if ($where != null) {
                 $sql .= " WHERE $where";
             }
@@ -119,13 +113,12 @@ class Database
                 array_push($this->result, $this->mysqli->affected_rows);
                 return true;
             } else {
-
                 array_push($this->result, $this->mysqli->error);
                 return false;
             }
         }
     }
-//MYSQL DELETE METHOD
+    //MYSQL DELETE METHOD
     public function Delete($table, $where = null)
     {
         if ($this->CheckTable($table)) {
@@ -137,13 +130,12 @@ class Database
                 array_push($this->result, $this->mysqli->deleted_rows);
                 return true;
             } else {
-
                 array_push($this->result, $this->mysqli->error);
                 return false;
             }
         }
     }
-//MYSQL SELECT METHOD
+    //MYSQL SELECT METHOD
     public function Select($table, $rows = "*", $join = null, $where = null, $order = null, $limit = null)
     {
         global $numrows;
@@ -167,7 +159,6 @@ class Database
                 $start = ($page - 1) * $limit;
                 $sql .= " LIMIT $start,$limit";
             }
-
             $query = $this->mysqli->query($sql);
             if ($query) {
 
@@ -181,37 +172,29 @@ class Database
             return false;
         }
     }
-//MYSQL PAGINATION METHOD
+    //MYSQL PAGINATION METHOD
     public function Pagination($table, $join = null, $where = null, $limit = null)
     {
         if ($this->CheckTable($table)) {
             if ($limit != null) {
-
                 $sql = "SELECT COUNT(*) FROM $table";
-
                 if ($join != null) {
                     $sql .= " JOIN $join";
                 }
                 if ($where != null) {
                     $sql .= " WHERE $where";
                 }
-
                 $query = $this->mysqli->query($sql);
-
                 $total_record = $query->fetch_array();
                 print_r($query->fetch_array());
                 $total_record = $total_record[0];
                 $total_page = ceil($total_record / $limit);
-
                 $url = basename($_SERVER['PHP_SELF']);
-
-
                 if (isset($_GET['page'])) {
                     $page = $_GET['page'];
                 } else {
                     $page = 1;
                 }
-
                 $output = "<ul class='pagination'>";
                 if ($page > 1) {
                     $output .= "<li><a href='$url?page=" . ($page - 1) . "'>Prev</a></li>";
@@ -236,7 +219,8 @@ class Database
             }
         }
     }
-//MYSQL MANNUAL SQL METHOD
+
+    //MYSQL MANNUAL SQL METHOD
     public function sql($sql)
     {
         $query = $this->mysqli->query($sql);
@@ -247,14 +231,16 @@ class Database
             array_push($this->result, $this->mysqli->error);
         }
     }
+
     public function getResult()
     {
         $val = $this->result;
         $this->result = array();
         return $val;
     }
+
     //MYSQL CHECKING FOR EXISTION TABLE IN DATABASE
-     function CheckTable($table)
+    function CheckTable($table)
     {
         $sql = "SHOW TABLES FROM $this->db_name LIKE '$table'";
         $tableInDb = $this->mysqli->query($sql);
@@ -267,19 +253,20 @@ class Database
             }
         }
     }
-// GET MAGIC METHOD USED FOR CHECKING IF USER ACCESS PRIVATE PROPERTIES
+
+    // GET MAGIC METHOD USED FOR CHECKING IF USER ACCESS PRIVATE PROPERTIES
     public function __get($property)
     {
-
         echo "<div class='alert alert-danger'><strong><center>You are trying to access non exist or private property $property</center></strong></div>";
     }
-// SET MAGIC METHOD USED FOR CHECKING IF USER WANT TO SET VALUE OF PRIVATE PROPERTIES
+
+    // SET MAGIC METHOD USED FOR CHECKING IF USER WANT TO SET VALUE OF PRIVATE PROPERTIES
     public function __set($property, $value)
     {
-
         echo "<div class='alert alert-danger'><strong><center>You are trying to set value of non exist or private variable </center></strong></div>";
     }
-// SEND MAIL TO USER USING PHPMAILER 
+
+    // SEND MAIL TO USER USING PHPMAILER 
     public function SendMail($eml, $mailsubject, $msg, $url)
     {
         $to = $eml;
@@ -287,8 +274,6 @@ class Database
         $message = $msg
 
             . $url;
-
-
         $headers = 'From: Service@arogyagramin.com' . "\r\n" .
             'Reply-To: info@arogyagramin.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
@@ -296,7 +281,8 @@ class Database
         mail($to, $subject, $message, $headers);
         return true;
     }
-//MYSQL CONNECTION CLOSE USING DESTRUCT MAGIC METHOD
+
+    //MYSQL CONNECTION CLOSE USING DESTRUCT MAGIC METHOD
     public function __destruct()
     {
         if ($this->con) {
@@ -310,38 +296,55 @@ class Database
     }
 }
 
-
 function RandomCode()
 {
-  $con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin");
-  $mysqliquery = mysqli_query($con, "SELECT * FROM v_transaction ORDER BY ID DESC LIMIT 1");
-  if (mysqli_num_rows($mysqliquery) > 0) {
-    $row = mysqli_fetch_assoc($mysqliquery);
-    $maxid = $row['ID'];
-    $int = (int) filter_var($maxid, FILTER_SANITIZE_NUMBER_INT);
-    $int = $int + 1;
-    $stid = 'ARG00000'.$int;
+    $hostIp = array(
+        '127.0.0.1',
+        '::1'
+    );
+    //DATABASE DETAILS
+    if (in_array($_SERVER['REMOTE_ADDR'], $hostIp)) {
+        $con = mysqli_connect("localhost", "root", "", "arogyagr_arogyagramin_support");
+    } else {
+        $con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin_support");
+    }
+    //$con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin");
+    $mysqliquery = mysqli_query($con, "SELECT * FROM v_transaction ORDER BY ID DESC LIMIT 1");
+    if (mysqli_num_rows($mysqliquery) > 0) {
+        $row = mysqli_fetch_assoc($mysqliquery);
+        $maxid = $row['ID'];
+        $int = (int) filter_var($maxid, FILTER_SANITIZE_NUMBER_INT);
+        $int = $int + 1;
+        $stid = 'ARG00000' . $int;
 
-    return $stid;
-  }else{
-   return 'ARG00000';   
-  }
+        return $stid;
+    } else {
+        return 'ARG00000';
+    }
 }
 
 function RandomAppNo()
 {
-  $con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin");
-  $mysqliquery = mysqli_query($con, "SELECT * FROM crad_details ORDER BY ID DESC LIMIT 1");
-  if (mysqli_num_rows($mysqliquery) > 0) {
-    $row = mysqli_fetch_assoc($mysqliquery);
-    $maxid = $row['ID'];
-    $int = (int) filter_var($maxid, FILTER_SANITIZE_NUMBER_INT);
-    $int = $int + 1;
-    $stid = 'ARG00000'.$int;
+    $hostIp = array(
+        '127.0.0.1',
+        '::1'
+    );
+    if (in_array($_SERVER['REMOTE_ADDR'], $hostIp)) {
+        $con = mysqli_connect("localhost", "root", "", "arogyagr_arogyagramin_support");
+    } else {
+        $con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin_support");
+    }
+    //$con = mysqli_connect("localhost", "arogyagr_arogyagramin", "arogyagramin123", "arogyagr_arogyagramin");
+    $mysqliquery = mysqli_query($con, "SELECT * FROM crad_details ORDER BY ID DESC LIMIT 1");
+    if (mysqli_num_rows($mysqliquery) > 0) {
+        $row = mysqli_fetch_assoc($mysqliquery);
+        $maxid = $row['ID'];
+        $int = (int) filter_var($maxid, FILTER_SANITIZE_NUMBER_INT);
+        $int = $int + 1;
+        $stid = 'ARG00000' . $int;
 
-    return $stid;
-  }else{
-   return 'ARG00000';   
-  }
+        return $stid;
+    } else {
+        return 'ARG00000';
+    }
 }
-?>
