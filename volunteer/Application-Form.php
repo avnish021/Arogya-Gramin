@@ -3,6 +3,7 @@
   th {
     padding: 2px;
   }
+
   .preview {
     position: absolute;
     top: 0;
@@ -129,8 +130,8 @@
         <input type="checkbox" name="FamilyCard" id="FamilyCard" onclick="myFunction()" style="height:20px;width:20px" value="FamilyCard">&nbsp;Check if You are Applying for Family Card
       </div>
       <div id="familyDetails" class="mt-4" style="display:none;">
-    </div>
-    <button type="button" id="AddRow" style="display:none;" class="btn btn-secondary btn-sm">Add Row</button>
+      </div>
+      <button type="button" id="AddRow" style="display:none;" class="btn btn-secondary btn-sm">Add Row</button>
       <div class="form-row">
         <div class="form-group col-md-8 mt-4">
           <input type="reset" class="btn btn-danger mr-4 " name="Reset" value="Reset"> <input type="submit" class="btn btn-primary mr-4 " name="submit" value="Next">
@@ -170,7 +171,8 @@
             </div>
           </div>`;
       rows++;
-    }})
+    }
+  })
 
   function myFunction() {
     var checkBox = document.getElementById("FamilyCard");
