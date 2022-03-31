@@ -57,6 +57,10 @@
 .card-heading{
   font-size: 30px;
 }
+.inputrow {
+  margin-left: 0rem !important;
+
+}
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
   .btn-group, .btn-group-vertical {
