@@ -1,8 +1,8 @@
 <?php
     session_start();
     $message="";
-    echo "kk";die;
     if(count($_POST)>0) {
+      echo "kk";die;
         include 'connect.php';
         $v_email = $_POST["v_email"];
         $v_email = filter_var($v_email, FILTER_SANITIZE_STRING);
