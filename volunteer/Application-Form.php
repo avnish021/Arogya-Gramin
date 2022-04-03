@@ -3,7 +3,6 @@
   th {
     padding: 2px;
   }
-
   .preview {
     position: absolute;
     top: 0;

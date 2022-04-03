@@ -61,10 +61,10 @@ echo '<script>alert("Some error! Please Try After Some Time")</script>';
         margin-top: 100px;
     }
 </style>
-<div class="content">
-    <div class="container">
+<div class="content" id="cardbox">
+    <div>
         <div class="text-center padding">
-            <h2>Update Details</h2>
+            <h2 class="card-heading">Update Details</h2>
         </div>
         <form id="submit" enctype="multipart/form-data" name="submit" action="" method="post">
             <div class="form-row">

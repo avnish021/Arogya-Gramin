@@ -1,5 +1,5 @@
 <?php
-/* Calaculate age */
+/* Calculate age */
 function ageCalculator($dob){
     if(!empty($dob)){
         $birthdate = new DateTime($dob);

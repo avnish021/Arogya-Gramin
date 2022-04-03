@@ -24,12 +24,10 @@ include "../Classes/Database.php";
 $v_email = $_SESSION['v_email'];
 $obj = new Database();
 $obj->Select("card_discount", "*", null, "V_EMAIL='$v_id'", null, null);
-foreach ($obj->getResult() as list(
-  "PERSONAL_CARD_RATE" => $cardrate, "PERSONAL_DISCOUNT" => $discount,
-  "FAMILY_CARD_RATE" => $familycrdrate, "FAMILY_CARD_DISCOUNT" => $familyCrdDis
-));
+foreach ($obj->getResult() as list("PERSONAL_CARD_RATE" => $cardrate, "PERSONAL_DISCOUNT" => $discount,
+"FAMILY_CARD_RATE"=>$familycrdrate,"FAMILY_CARD_DISCOUNT"=>$familyCrdDis));
 $obj->Select("volunteer", "phone,personal_card,family_card,name", null, "v_email='$v_id'", null, null);
-foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit, "family_card" => $flimit, "name" => $vname));
+foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"family_card"=>$flimit,"name"=>$vname));
 ?>
 <div class="content" id="cardbox">
   <div class="text-center">
@@ -115,7 +113,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         <input type="button" class="btn btn-primary mr-4 " name="submit" id="rzp-button1" value="Make Payment">
       </div>
     </div>
-    </center>
     <script>
       document.getElementById("quantity").addEventListener("keyup", function() {
         let quantity = document.getElementById("quantity").value;
@@ -250,8 +247,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
               "theme": {
                 "color": "green"
               }
-
-
             };
             var rzp1 = new Razorpay(options);
             rzp1.on('payment.failed', function(response) {
@@ -320,9 +315,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         color: orange;
         background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
       }
-
-
-
       th {
         background-color: #ff6100;
         color: #fff;
@@ -330,7 +322,6 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
         font-size: 12px;
         text-transform: uppercase;
       }
-
       td {
         background-color: #f7efd2;
         padding: 0;
@@ -405,3 +396,4 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
     <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
     <script src="../assets/user/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 </div>
+<?php include 'footer.php' ?>

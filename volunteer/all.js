@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 
   $(".checkSelect").on("change", function () {
-    handleEUStatus($(this));
+      handleEUStatus($(this));
   });
 });
 
@@ -31,13 +31,13 @@ function handleEUStatus(handler) {
         "<a class='btn-false-link' href='?processEU=" +
         dataId +
         "'>" +
-        "<button class='btn btn-primary btn-false ml-1 mr-1'>Approve</button>" +
+        "<button class='btn btn-primary btn-false ml-1 mr-1'>Initiate</button>" +
         "</a>";
       var disableButton =
         "<a class='btn-false-link' href='?processDU=" +
         dataId +
         "'>" +
-        "<button class='btn btn-danger btn-false ml-1 mr-1'>Disapprove</button>" +
+        "<button class='btn btn-danger btn-false ml-1 mr-1'>Reject</button>" +
         "</a>";
       $(".dt-buttons").append(enableButton + disableButton);
     } else {
