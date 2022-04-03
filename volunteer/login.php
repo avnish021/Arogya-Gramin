@@ -2,15 +2,15 @@
     session_start();
     $message="";
     if(count($_POST)>0) {
-      echo "kk";die;
-        include 'connect.php';
-        $v_email = $_POST["v_email"];
-        $v_email = filter_var($v_email, FILTER_SANITIZE_STRING);
+      include 'connect.php';
+      $v_email = $_POST["v_email"];
+      $v_email = filter_var($v_email, FILTER_SANITIZE_STRING);
         $password = $_POST["password"];
         $password = filter_var($password, FILTER_SANITIZE_STRING);
         $result = mysqli_query($conn,"SELECT * FROM volunteer WHERE v_email='$v_email' and password = '$password'");
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
+          echo "kk";die;
         $_SESSION["v_email"] = $row['v_email'];
         $_SESSION["name"] = $row['name'];
         } else {
