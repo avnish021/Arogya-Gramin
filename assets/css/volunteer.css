@@ -122,11 +122,29 @@
     overflow-y: scroll;
   }
 }
+<<<<<<< HEAD
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
   .btn-group,
   .btn-group-vertical {
+=======
+.card-heading{
+  font-size: 30px;
+}
+/* .card-heading1{
+  font-size: 26px;
+} */
+.inputrow {
+  margin-left: -1rem !important;
+}
+.table-mobile{
+overflow-y: scroll;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+  .btn-group, .btn-group-vertical {
+>>>>>>> b48d9078c7ae8f2fa59eecbd17f0ec8e6756bdde
     position: relative;
     right: 16rem;
     width: max-content;
