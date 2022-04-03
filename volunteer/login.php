@@ -96,6 +96,7 @@ body
   width: 40%;
  
 }
+}
 
 
 </style>
