@@ -10,7 +10,6 @@
         $result = mysqli_query($conn,"SELECT * FROM volunteer WHERE v_email='$v_email' and password = '$password'");
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
-          echo "kk";die;
         $_SESSION["v_email"] = $row['v_email'];
         $_SESSION["name"] = $row['name'];
         } else {
