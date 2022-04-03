@@ -38,17 +38,10 @@ if (isset($_POST["search"])) {
 }
 ?>
 <div class="content" id="cardbox">
-<<<<<<< HEAD
     <div>
         <div class="text-center padding">
             <h2 class="card-heading">Personal Healthcard Details <?php echo $id; ?></h2>
         </div>
-=======
-<div>
-    <div class="text-center padding">
-        <h2 class="card-heading">Personal Health Card Details <?php echo $id; ?></h2>
-    </div>
->>>>>>> b48d9078c7ae8f2fa59eecbd17f0ec8e6756bdde
         <div class="threerow">
             <div id="result">
                 <div style="background-color: #FFFFFF!important;">

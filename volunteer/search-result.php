@@ -48,7 +48,7 @@ $dist_rs = $conn->query($order_query);
                 <div class="formcard" style="background-color: #FFFFFF!important;">
                     <h6>Showing results: From <?php echo $fdate; ?> to <?php echo $ldate; ?>.</h6>
                     <div class="table-responsive">
-                        <table id="example" class="table table-bordered" cellspacing="0" width="100%">
+                        <table id="example" class="table table-bordered" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>
