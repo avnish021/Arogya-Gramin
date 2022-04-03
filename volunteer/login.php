@@ -1,6 +1,7 @@
 <?php
     session_start();
     $message="";
+    echo "kk";die;
     if(count($_POST)>0) {
         include 'connect.php';
         $v_email = $_POST["v_email"];
