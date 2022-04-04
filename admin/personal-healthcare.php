@@ -3,8 +3,6 @@ ob_start();
 include 'connect.php';
 include 'navbar.php';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
 //Enabling Status Update Query
 if (isset($_GET["processEU"])) {
     $param = $_GET["processEU"];
@@ -99,11 +97,8 @@ if (isset($_POST["search"])) {
                                 <th>Pay ID</th>
                                 <th>Payment</th>
                                 <th>Action</th>
-
                             </tr>
                         </thead>
-
-
                         <tbody>
                             <?php
                             if ($dist_rs !== false && $dist_rs->num_rows > 0) {
