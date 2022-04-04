@@ -60,7 +60,7 @@ if (isset($_POST["search"])) {
                     <div class="table-responsive">
                         <table id="example" class="table table-bordered" cellspacing="0">
                             <thead>
-                                <div class="d-flex justify-content-end dt-buttons"></div>
+                                <!-- <div class="d-flex justify-content-end dt-buttons"></div> -->
                                 <tr>
                                     <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>
                                     <th>ID</th>

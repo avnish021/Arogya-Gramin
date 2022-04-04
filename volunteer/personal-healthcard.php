@@ -61,7 +61,7 @@ if (isset($_POST["search"])) {
                     <div class="table-responsive">
                         <table id="example" class="table table-bordered" cellspacing="0">
                             <thead>
-                                <div class="d-flex justify-content-end dt-buttons"></div>
+                                <!-- <div class="d-flex justify-content-end dt-buttons"></div> -->
                                 <tr>
                                     <th id="disableSort"><input type="checkbox" id="selectAllCheck"></th>
                                     <th>ID</th>
@@ -70,8 +70,6 @@ if (isset($_POST["search"])) {
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
                                     <th>Status</th>
-                                    <th>Pay ID</th>
-                                    <th>Payment</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -89,8 +87,6 @@ if (isset($_POST["search"])) {
                                             <td><?php echo $row['aadhar']; ?></td>
                                             <td><?php echo $row['mobile']; ?></td>
                                             <td><?php echo $row['card_status']; ?></td>
-                                            <td><?php echo $row['order_id']; ?></td>
-                                            <td><?php echo $row['order_status']; ?></td>
                                             <td>
                                                 <a href="<?php echo $idlink; ?>">
                                                     <button type="button" class="btn btn-info">
@@ -118,8 +114,6 @@ if (isset($_POST["search"])) {
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
                                     <th>Status</th>
-                                    <th>Pay ID</th>
-                                    <th>Payment</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>

@@ -97,7 +97,7 @@ $v_id = $_SESSION['v_email'];
     </div>
     <div class="main-panel">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top" style="background:#0459A3">
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top" style="background:#FF9A00">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -123,42 +123,13 @@ $v_id = $_SESSION['v_email'];
             <span class="navbar-toggler-bar navbar-kebab" style="background:white"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <form>
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" style="background:white" placeholder="Search...">
-                <div class="input-group-append" style="background:white">
-                  <div class="input-group-text">
-                    <i class="nc-icon nc-zoom-split"></i>
-                  </div>
-                </div>
-              </div>
-            </form>
             <ul class="navbar-nav">
-
-              <li class="nav-item btn-rotate dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="nc-icon nc-bell-55"></i>
-                  <p>
-
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-
-                </div>
-              </li>
               <li class="nav-item">
                 <a class="nav-link btn-rotate" href="javascript:;">
                   <h6><i class="fa fa-user"></i><?php echo $_SESSION['v_email'] ?></h6>
-                  <p>
-
-                  </p>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-
-      <!-- End Navbar -->
-      <!-- <div class="container"> -->

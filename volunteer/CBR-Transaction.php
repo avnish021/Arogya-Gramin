@@ -5,16 +5,6 @@ include "header.php";
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<style>
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-  }
-</style>
 <?php
 include 'connect.php';
 include "../Classes/Database.php";
@@ -31,10 +21,10 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
     <h2 class="card-heading">CBR Transaction</h2>
   </div>
   <div class="btn-group btn-group-toggle responsive" data-toggle="buttons">
-    <label class="btn btn-secondary active">
+    <label class="btn btn-danger active">
       <input type="radio" name="options" id="option2" autocomplete="off"> Personal Card Limit : <?php echo $plimit; ?>
     </label>
-    <label class="btn btn-secondary active">
+    <label class="btn btn-danger active">
       <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
     </label>
   </div>
@@ -54,7 +44,7 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
         <select name="type" id="type" class="form-control" required>
           <option value="">Select Card Type</option>
           <option value="family_card">Family Card</option>
-          <option value="personal_card">Personal Card</option>
+          <option value="personal_card">Single Card</option>
         </select>
       </div>
     </div>
@@ -313,8 +303,6 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
         background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
       }
       th {
-        background-color: #ff6100;
-        color: #fff;
         padding: 0;
         font-size: 12px;
         text-transform: uppercase;

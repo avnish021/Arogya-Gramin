@@ -161,6 +161,7 @@ if (isset($_POST["familyApply"])) {
   <div id="myTabContent" class="tab-content">
     <div id="single" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-1 py-4 show active">
       <div>
+      <h6 class="text-center m-3">Application for Single Health Card</h6>
         <form id="personal" enctype="multipart/form-data" name="personal" action="" method="post" style="margin-top: 22px;">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -278,6 +279,7 @@ if (isset($_POST["familyApply"])) {
     </div>
     <div id="family" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-1 py-4">
       <div>
+      <h6 class="text-center m-3">Application for Family Health Card</h6>
         <form id="family" enctype="multipart/form-data" name="family" action="" method="post" style="margin-top: 22px;">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -407,10 +409,10 @@ if (isset($_POST["familyApply"])) {
 
   <div class="col-rt-12" style="margin-top:0px;">
          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-secondary active">
+          <label class="btn btn-danger active">
             <input type="radio" name="options" id="option2" autocomplete="off"> Single Card Limit : <?php echo $plimit; ?>
           </label>
-          <label class="btn btn-secondary active">
+          <label class="btn btn-danger active">
             <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
           </label>
          </div>

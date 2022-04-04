@@ -1,3 +1,12 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 #s {
   height: 120px;
   width: 90%;
@@ -29,48 +38,13 @@
   padding-top: 2.5rem;
 }
 
-/* With arrow tabs */
-
-.with-arrow .nav-link.active {
-  position: relative;
-}
-
-.with-arrow .nav-link.active::after {
-  content: '';
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #2b90d9;
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-}
-
-/* lined tabs */
-
-.lined .nav-link {
-  border: none;
-  border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link:hover {
-  border: none;
-  border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link.active {
-  background: none;
-  color: #555;
-  border-color: #2b90d9;
-}
-
 /* Rounded tabs */
 
 @media (min-width: 576px) {
   .rounded-nav {
     border-radius: 50rem !important;
   }
+
   .rounded-nav .nav-link {
     border-radius: 50rem !important;
   }
@@ -122,33 +96,30 @@
     overflow-y: scroll;
   }
 }
-<<<<<<< HEAD
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
   .btn-group,
   .btn-group-vertical {
-=======
-.card-heading{
-  font-size: 30px;
-}
-/* .card-heading1{
-  font-size: 26px;
-} */
-.inputrow {
-  margin-left: -1rem !important;
-}
-.table-mobile{
-overflow-y: scroll;
-}
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-  .btn-group, .btn-group-vertical {
->>>>>>> b48d9078c7ae8f2fa59eecbd17f0ec8e6756bdde
     position: relative;
     right: 16rem;
     width: max-content;
     font-size: 12px;
+  }
+
+  .card-heading {
+    font-size: 30px;
+  }
+
+  /* .card-heading1{
+  font-size: 26px;
+} */
+  .inputrow {
+    margin-left: -1rem !important;
+  }
+
+  .table-mobile {
+    overflow-y: scroll;
   }
 }
 

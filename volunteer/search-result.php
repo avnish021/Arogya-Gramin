@@ -58,8 +58,6 @@ $dist_rs = $conn->query($order_query);
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
                                     <th>Card Status</th>
-                                    <th>Pay ID</th>
-                                    <th>Pay Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -77,8 +75,6 @@ $dist_rs = $conn->query($order_query);
                                             <td><?php echo $row['aadhar']; ?></td>
                                             <td><?php echo $row['mobile']; ?></td>
                                             <td><?php echo $row['card_status']; ?></td>
-                                            <td><?php echo $row['order_id']; ?></td>
-                                            <td><?php echo $row['order_status']; ?></td>
                                             <td>
                                                 <a href="<?php echo $idlink; ?>">
                                                     <button type="button" class="btn btn-info">
@@ -106,8 +102,6 @@ $dist_rs = $conn->query($order_query);
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
                                     <th>Card Status</th>
-                                    <th>Pay ID</th>
-                                    <th>Pay Status</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
