@@ -48,6 +48,26 @@ body {
   .rounded-nav .nav-link {
     border-radius: 50rem !important;
   }
+  .tab-pillsbar li{
+   /* font-size: 220px; */
+  }
+}
+@media (max-width: 576px) {
+.tab-pillsbar{
+  font-size: 12px;
+  width: fit-content;
+
+}
+.tab-pillsbar-one{
+  position: relative;
+  left: 133%;
+  font-size: 9px;
+}
+.tab-pillsbar-two{
+  position: absolute;
+  font-size: 9px;
+}
+ 
 }
 
 @media (max-width : 420px) {
@@ -96,6 +116,33 @@ body {
     overflow-y: scroll;
   }
 }
+@media only screen and (min-device-width : 348px) and (max-device-width : 576px) {
+  .tab-pillsbar-one{
+    position: relative;
+    left: 0rem;
+    font-size: 9px;
+  }
+  .tab-pillsbar-two{
+    position: absolute;
+    right: 1rem;
+    font-size: 9px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 

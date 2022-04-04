@@ -150,11 +150,11 @@ if (isset($_POST["familyApply"])) {
   <br>
   <h5 class="text-center mb-5 mt-2">Welcome! Apply Arogya Gramin Card Now.</h5>
   <!-- Rounded tabs -->
-  <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
-    <li class="nav-item flex-sm-fill">
+  <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav tab-pillsbar">
+    <li class="nav-item flex-sm-fill tab-pillsbar-one">
       <a id="home-tab" data-toggle="tab" href="#single" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Single Healthcard</a>
     </li>
-    <li class="nav-item flex-sm-fill">
+    <li class="nav-item flex-sm-fill tab-pillsbar-two">
       <a id="profile-tab" data-toggle="tab" href="#family" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Family Healthcard</a>
     </li>
   </ul>
