@@ -120,12 +120,12 @@ body {
   .tab-pillsbar-one{
     position: relative;
     left: 0rem;
-    font-size: 10px;
+    font-size: 11px;
   }
   .tab-pillsbar-two{
     position: absolute;
     right: 1rem;
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
