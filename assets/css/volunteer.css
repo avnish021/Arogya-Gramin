@@ -38,11 +38,28 @@ body {
   padding-top: 2.5rem;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #FF6100;
+}
+.tab-pillsbar a{
+  color: #FF6100;
+}
+
+.rounded-nav .nav-link{
+  background: #fbeee6;
+}
+input#in_dob {
+  color: #6a6767;
+}
+
+
 /* Rounded tabs */
 
 @media (min-width: 576px) {
   .rounded-nav {
     border-radius: 50rem !important;
+    
   }
 
   .rounded-nav .nav-link {
@@ -122,6 +139,7 @@ body {
     left: 0rem;
     font-size: 11px;
   }
+ 
   .tab-pillsbar-two{
     position: absolute;
     right: 1rem;
