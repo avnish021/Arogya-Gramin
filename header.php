@@ -461,7 +461,7 @@ session_start();
 
 			<!-- Modal content-->
 
-			<div class="modal-content">
+			<div class="modal-content support-modal">
 
 				<div class="modal-header">
 
@@ -469,10 +469,10 @@ session_start();
 
 				</div>
 
-				<div class="modal-body modal-body-sub_agile">
+				<div class="modal-body modal-body-sub_agile" style="border-top:2px solid white; border-bottom:2px solid white;">
 
 					<div class="col-md-12 modal_body_left modal_body_left1">
-					<center><img src="./assets/images/logo1.png" style="width:150px;height:87px;" alt="">
+					<center><img src="./assets/images/logo1.png" class="mt-4" style="width:150px;height:87px;" alt="">
 						</center>
 						<h3 class="agileinfo_sign mt-5 text-center">Sign In <span>Now</span></h3>
 

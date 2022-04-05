@@ -110,3 +110,7 @@ body {
     margin-top: 1em;
     margin-bottom: 50px;
 }
+.modal-content.support-modal {
+    background-color: #ECECEA;
+    /* border: 2px solid white; */
+}
