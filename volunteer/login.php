@@ -12,6 +12,7 @@
         if(is_array($row)) {
         $_SESSION["v_email"] = $row['v_email'];
         $_SESSION["name"] = $row['name'];
+        $_SESSION['ID'] = $row["id"];
         } else {
          $message = "Website Under Maintenence! ";
         //  Invalid Username or Password!
