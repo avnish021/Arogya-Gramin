@@ -62,6 +62,7 @@ session_start();
 	<link href="css/font-awesome.css" rel="stylesheet">
 
 	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link href="css/main.css" rel='stylesheet' type='text/css' />
 
 	<!-- //for bootstrap working -->
 
@@ -114,7 +115,7 @@ session_start();
 	<div class="container-fluid" style="background:#00B050;font-weight:600;color:black">
 		<div class="container">
 			<ul style="list-style-type:none;padding:16px;color:white;margin-bottom:10px">
-				<li style="float:left">
+				<li style="float:left" class="google-translate">
 					<div id="google_translate_element"></div>
 					<script>
 						function googleTranslateElementInit() {
@@ -126,10 +127,17 @@ session_start();
 					</script>
 					<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				</li>
+<<<<<<< HEAD
 				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Toll Free : 1800 890 6600</li>
 				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Healthcard : 1800 889 8286</li>
 				<li style="float:left;margin-left:13px;"><i class="fa fa-envelope-o" aria-hidden="true" style="color:green"></i> support@arogyagramin.com</li>
 				<li style="float:left;margin-left:13px;"><i class="fa fa-bell" aria-hidden="true" style="color:green"></i> 12A & 80G </li>
+=======
+				<li style="float:left;margin-left:13px;" class="Toll-free"><i class="fa fa-phone" aria-hidden="true" style="color:white"></i> Toll Free : 1800 8906600</li>
+				<li style="float:left;margin-left:13px;" class="support"><i class="fa fa-phone" aria-hidden="true" style="color:white"></i> 24x7 <span class="support2">Support </span>: +91 9334467080</li>
+				<li style="float:left;margin-left:13px;" class="arogya-suppot"><i class="fa fa-envelope-o" aria-hidden="true" style="color:white"></i> support@arogyagramin.com</li>
+				<li style="float:left;margin-left:13px;" class="twelve"><i class="fa fa-bell" aria-hidden="true" style="color:white"></i> 12A & 80G </li>
+>>>>>>> abab983f5ca52311fab6a5f469dada725737ea9c
 			</ul>
 		</div>
 	</div>
@@ -460,7 +468,7 @@ session_start();
 
 			<!-- Modal content-->
 
-			<div class="modal-content">
+			<div class="modal-content support-modal">
 
 				<div class="modal-header">
 
@@ -468,17 +476,27 @@ session_start();
 
 				</div>
 
-				<div class="modal-body modal-body-sub_agile">
+				<div class="modal-body modal-body-sub_agile" style="border-top:2px solid white; border-bottom:2px solid white;">
 
 					<div class="col-md-12 modal_body_left modal_body_left1">
-
-						<h3 class="agileinfo_sign">Sign In <span>Now</span></h3>
+					<center><img src="./assets/images/logo1.png" class="mt-4" style="width:150px;height:87px;" alt="">
+						</center>
+						<h3 class="agileinfo_sign mt-5 text-center">Sign In <span>Now</span></h3>
 
 						<center>
 
-							<button class='btn btn-info' style="margin-top:7px;"><a target=”_blank” href="admin/login.php" style="color:white">Admin Login</a></button> &nbsp;&nbsp;
+							<button class='button-6 first-button' style="margin-top:7px;">
+							<a target=”_blank” href="admin/login.php">
+							<p>
+								<img src="./assets/images/admin.png" class="admin-image" />
+							</p>
+							Admin Login</a></button> &nbsp;&nbsp;
 
-							<button class='btn btn-info' style="margin-top:7px;"><a target=”_blank” href="volunteer/login.php" style="color:white">Partner Login</a></button> &nbsp;&nbsp;
+							<button class='button-6 two-button' style="margin-top:7px; margin-left:2rem"><a target=”_blank” href="volunteer/login.php">
+							<p>
+								<img src="./assets/images/team.png" class="admin-image" />
+							</p>	
+							Partner Login</a></button> &nbsp;&nbsp;
 
 							<!-- <button class='btn btn-info' style="margin-top:7px;"><a href="login.php" style="color:white">User Login</a></button> &nbsp;&nbsp;-->
 
