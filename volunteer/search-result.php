@@ -57,6 +57,7 @@ $dist_rs = $conn->query($order_query);
                                     <th>Email</th>
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
+                                    <th>Date</th>
                                     <th>Card Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -74,6 +75,7 @@ $dist_rs = $conn->query($order_query);
                                             <td><?php echo $row['email']; ?></td>
                                             <td><?php echo $row['aadhar']; ?></td>
                                             <td><?php echo $row['mobile']; ?></td>
+                                             <td><?php echo $row['date']; ?></td>
                                             <td><?php echo $row['card_status']; ?></td>
                                             <td>
                                                 <a href="<?php echo $idlink; ?>">
@@ -101,6 +103,7 @@ $dist_rs = $conn->query($order_query);
                                     <th>Email</th>
                                     <th>Aadhaar</th>
                                     <th>Mobile</th>
+                                    <th>Date</th>
                                     <th>Card Status</th>
                                     <th>Action</th>
                                 </tr>

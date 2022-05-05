@@ -6,7 +6,7 @@
         <span class="copyright">
           © <script>
             document.write(new Date().getFullYear())
-          </script>, Made with <i class="fa fa-heart heart"></i> by arivsa it solutions
+          </script>, Made with <i class="fa fa-heart heart"></i> by Arogya Gramin Healthcare Foundation
         </span>
       </div>
     </div>

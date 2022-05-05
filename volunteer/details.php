@@ -1,6 +1,125 @@
 <?php
+session_start();
+if (!isset($_SESSION['v_email'])) {
+  // not logged in
+  header('Location:login');
+  exit();
+}
+$v_id = $_SESSION['v_email'];
+?>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/user/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Arogya Gramin Partner
+  </title>
+  
+ 
+
+  
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/user/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/user/assets/css/custom.css?v=2.0.1" rel="stylesheet" />
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="../assets/user/assets/demo/demo.css" rel="stylesheet" />
+  <link href="../assets/css/volunteer.css" rel="stylesheet" />
+  <!--Calender UI-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://kit.fontawesome.com/9c4a1edced.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+  <script src="all.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo">
+        <a class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/images/logo1.png" style="width:170px;">
+          </div>
+          <!-- <p>CT</p> -->
+        </a>
+        <a class="simple-text logo-normal">
+          Arogya Gramin
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="<button <a herf="#" onclick="window.close()" class="btn btn-primary"></a></button>
+            <a href="./">
+              <i class="fa fa-home"></i>
+              <p>Go Back</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="logout">
+              <i class="fa fa-user"></i>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top" style="background:#FF9A00">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <style>
+                .fa-bars {
+                  color: #fff;
+                  padding: 10px;
+                  font-size: 30px;
+                  margin-right: 10px;
+                }
+
+                .fa-bars:hover {
+                  background: deeppink;
+                }
+              </style>
+              <i class="fa fa-bars"></i>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Arogya Gramin Partner</a>
+          </div>
+    
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab" style="background:white"></span>
+            <span class="navbar-toggler-bar navbar-kebab" style="background:white"></span>
+            <span class="navbar-toggler-bar navbar-kebab" style="background:white"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link btn-rotate" href="javascript:;">
+                  <h6><i class="fa fa-user"></i><?php echo $_SESSION['v_email'] ?></h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<?php
 ob_start();
-include 'header.php';
+
 include 'connect.php';
 
 ob_start();
@@ -110,12 +229,14 @@ if (isset($_POST["familyApply"])) {
 }
 ?>
 <div class="content" id="cardbox">
+   
     <div>
         <div class="text-center padding">
             <h2 class="card-heading">Personal information</h2>
         </div>
         <form id="family" enctype="multipart/form-data" name="family" action="" method="post" style="margin-top: 22px;">
-            <div class="form-row">
+        <fieldset <?php if(strtolower($row['card_status']) == "approve") echo "disabled"; ?>>    
+        <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="Name">Name (नाम)<span class="required">*</span></label>
                     <input type="text" name="name" max="50" id="name" value="<?php echo $row['name']; ?>" class="form-control" placeholder="Enter Your Full Name" required>
@@ -134,6 +255,7 @@ if (isset($_POST["familyApply"])) {
                         <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?> </option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
+                         <option value="Other">Other</option>
                     </select>
                 </div>
             </div>
@@ -219,15 +341,18 @@ if (isset($_POST["familyApply"])) {
                     <label for="card">Card Status</label>
                     <select name="card_status" id="card_status" class="form-control" required>
                         <option value="<?php echo $row['card_status']; ?>"><?php echo $row['card_status']; ?> </option>
-                        <option value="Approve">Approve</option>
-                        <option value="Disapprove">Disapprove</option>
+                       <!-- <option value="Approve">Approve</option>
+                        <option value="Disapprove">Disapprove</option>-->
                     </select>
                 </div>
             </div>
             <?php if ($type == "personal") { ?>
                 <div class="form-row">
                     <div class="form-group col-md-6">
+                        <?php if(strtolower($row['card_status']) != "approve"){ ?>
                         <button type="submit" name="personalApply" value="personalApply" class="btn btn-primary">Update</button>
+                        <button <a herf="#" onclick="window.close()" class="btn btn-danger">close</a></button>
+                        <?php } ?>
                     </div>
                 </div>
             <?php } ?>
@@ -252,6 +377,7 @@ if (isset($_POST["familyApply"])) {
                             <option value="<?php echo $row['first_member_gender']; ?>"><?php echo $row['first_member_gender']; ?> </option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3">
@@ -274,6 +400,7 @@ if (isset($_POST["familyApply"])) {
                             <option value="<?php echo $row['second_member_gender']; ?>"><?php echo $row['second_member_gender']; ?> </option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3">
@@ -296,6 +423,7 @@ if (isset($_POST["familyApply"])) {
                             <option value="<?php echo $row['third_member_gender']; ?>"><?php echo $row['third_member_gender']; ?> </option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
+                             <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3">
@@ -318,6 +446,7 @@ if (isset($_POST["familyApply"])) {
                             <option value="<?php echo $row['fourth_member_gender']; ?>"><?php echo $row['fourth_member_gender']; ?> </option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3">
@@ -328,15 +457,24 @@ if (isset($_POST["familyApply"])) {
                 <div class="form-row">
 
                     <div class="form-group col-md-6">
+                        <?php if(strtolower($row['card_status']) != "approve") { ?>
                         <button type="submit" name="familyApply" value="familyApply" class="btn btn-primary">Update</button>
+                        <button <a herf="#" onclick="window.close()" class="btn btn-danger">close</a></button>
+                        <?php } ?>
                     </div>
 
                 </div>
 
             <?php } ?>
-        </form>
+        
+        
+        
+        
+        </fieldset>
+    </form>
     </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
 <?php include 'footer.php';
 ob_end_flush(); ?>

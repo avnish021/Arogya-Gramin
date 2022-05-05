@@ -126,8 +126,8 @@ session_start();
 					</script>
 					<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				</li>
-				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Toll Free : 1800 8906600</li>
-				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> 24x7 Support : +91 9334467080</li>
+				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Toll Free : 1800 890 6600</li>
+				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Healthcard : 1800 889 8286</li>
 				<li style="float:left;margin-left:13px;"><i class="fa fa-envelope-o" aria-hidden="true" style="color:green"></i> support@arogyagramin.com</li>
 				<li style="float:left;margin-left:13px;"><i class="fa fa-bell" aria-hidden="true" style="color:green"></i> 12A & 80G </li>
 			</ul>

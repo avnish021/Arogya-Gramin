@@ -1,5 +1,8 @@
 <?php include 'header.php' ?>
 <div class="content" id="cardbox">
+    
+     
+                         
     <div class="row">
         <div class="col-md-3" style="cursor:pointer;" onclick="window.location.href=''">
             <div id='s'>
@@ -29,7 +32,7 @@
             <div id='s'>
                 <center>
                     <h4><i class="fa fa-hospital-user" style="margin-top:30px;"></i></h4>
-                    <h6>Personal Health Card</h6>
+                    <h6>Single Health Card</h6>
                 </center>
             </div>
         </div>

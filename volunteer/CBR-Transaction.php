@@ -193,7 +193,7 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
 
 
             var options = {
-              "key": "rzp_live_sdxpIOm9fQ7OD9",
+              "key": "rzp_live_KHhJGZnUXeC3f7",
               "amount": amounttoPay * 100,
               "currency": "INR",
               "name": "Arogya Gramin",
@@ -321,7 +321,10 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>Quantity</th>
+              <th>Card Type</th>
               <th>Total Amount</th>
+              <th>Payment Mode</th>
               <th>Payment Status</th>
               <th>Payment ID</th>
               <th>Date</th>
@@ -332,15 +335,18 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
             <?php
             $obj->Select("v_transaction", "*", null, "V_EMAIL = '$v_id'");
             foreach ($obj->getResult() as list(
-              "ID" => $id, "V_NAME" => $name, "AMOUNT_EVERY_CARD" => $rate, "DISCOUNT" => $discount, "PAYMENT_STATUS" => $status, "RAZORPAY_PAYMENT_ID" => $paymentId, "DATE" => $date, "TOTAL_AMOUNT" => $TOTAL_AMOUNT
+              "ID" => $id, "V_NAME" => $name, "QUANTITY" => $quantity, "TYPE" => $type, "AMOUNT_EVERY_CARD" => $rate, "MODE" => $mode, "DISCOUNT" => $discount, "PAYMENT_STATUS" => $status, "PAYMENT_ID" => $payment_id, "DATE" => $date, "TOTAL_AMOUNT" => $TOTAL_AMOUNT
             )) {
             ?>
               <tr>
                 <td><?php echo $id; ?></td>
                 <td><?php echo $name; ?></td>
+                 <td><?php echo $quantity; ?></td>
+                  <td><?php echo $type; ?></td>
                 <td><?php echo $TOTAL_AMOUNT; ?></td>
+                 <td><?php echo $mode; ?></td>
                 <td><?php echo $status; ?></td>
-                <td><?php echo $paymentId; ?></td>
+                <td><?php echo $payment_id; ?></td>
                 <td><?php echo $date; ?></td>
                 <td><?php echo "Edit"; ?></td>
               </tr>
@@ -351,7 +357,10 @@ foreach ($obj->getResult() as list("phone" => $phone,"personal_card"=>$plimit,"f
           <tfoot>
             <th>ID</th>
             <th>Name</th>
+            <th>Quantity</th>
+             <th>Card Type</th>
             <th>Total Amount</th>
+             <th>Payment Mode</th>
             <th>Payment Status</th>
             <th>Payment ID</th>
             <th>Date</th>

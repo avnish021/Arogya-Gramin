@@ -215,6 +215,12 @@ if (!isset($_SESSION['user_name'])) {
               <span class="menu-title">Transaction</span>
             </a>
           </li>
+            <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Discount.php') echo 'active'; ?>">
+            <a class="nav-link" href="Discount">
+              <i class="fa fa-hospital-o menu-icon"></i>
+              <span class="menu-title">Add Discount</span>
+            </a>
+          </li>
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'personal-healthcare.php') echo 'active'; ?>">
             <a class="nav-link" href="personal-healthcare">
               <i class="fa fa-hospital-o menu-icon"></i>
@@ -227,18 +233,19 @@ if (!isset($_SESSION['user_name'])) {
               <span class="menu-title">Family healthcard</span>
             </a>
           </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Card-Details.php') echo 'active'; ?>">
+           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'appointment.php') echo 'active'; ?>">
+            <a class="nav-link" href="appointment.php">
+              <i class="fa fa-hospital-o menu-icon"></i>
+              <span class="menu-title">Appointment</span>
+            </a>
+          </li>
+         <!-- <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Card-Details.php') echo 'active'; ?>">
             <a class="nav-link" href="Card-Details">
               <i class="fa fa-hospital-o menu-icon"></i>
               <span class="menu-title">Card Details</span>
             </a>
-          </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Discount.php') echo 'active'; ?>">
-            <a class="nav-link" href="Discount">
-              <i class="fa fa-hospital-o menu-icon"></i>
-              <span class="menu-title">Add Discount</span>
-            </a>
-          </li>
+          </li>-->
+        
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'tie_up_form.php') echo 'active'; ?>">
             <a class="nav-link" href="tie_up_form.php">
               <i class="fa fa-hospital-o menu-icon"></i>
@@ -258,12 +265,12 @@ if (!isset($_SESSION['user_name'])) {
               <span class="menu-title">Lab Tie-Up</span>
             </a>
           </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'show_helth_card.php') echo 'active'; ?>">
+         <!-- <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'show_helth_card.php') echo 'active'; ?>">
             <a class="nav-link" href="show_helth_card.php">
               <i class="fa fa-id-card menu-icon"></i>
               <span class="menu-title">Helth Card Show</span>
             </a>
-          </li>
+          </li>-->
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'show_arogya_mitra.php') echo 'active'; ?>">
             <a class="nav-link" href="show_arogya_mitra.php">
               <i class="fa fa-id-card menu-icon"></i>
@@ -283,12 +290,12 @@ if (!isset($_SESSION['user_name'])) {
               <span class="menu-title">Volunteer Control</span>
             </a>
           </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'cpr.php') echo 'active'; ?>">
+          <!--<li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'cpr.php') echo 'active'; ?>">
             <a class="nav-link" href="cpr.php">
               <i class="fa fa-bank menu-icon"></i>
               <span class="menu-title">CBR Transaction</span>
             </a>
-          </li>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="fa fa-cog menu-icon"></i>
@@ -314,18 +321,18 @@ if (!isset($_SESSION['user_name'])) {
             </a>
           </li>
 
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'product_add.php') echo 'active'; ?>">
+         <!-- <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'product_add.php') echo 'active'; ?>">
             <a class="nav-link" href="product_add.php">
               <i class="fa fa-shopping-cart menu-icon"></i>
               <span class="menu-title">Add Product</span>
             </a>
-          </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'check_order.php') echo 'active'; ?>">
+          </li>-->
+         <!-- <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'check_order.php') echo 'active'; ?>">
             <a class="nav-link" href="check_order.php">
               <i class="fa fa-eye menu-icon"></i>
               <span class="menu-title">Check Order</span>
             </a>
-          </li>
+          </li>-->
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'subscriber.php') echo 'active'; ?>">
             <a class="nav-link" href="subscriber.php">
               <i class="fa fa-rocket menu-icon"></i>

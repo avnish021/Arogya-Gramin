@@ -1,6 +1,7 @@
 <?php
 ob_start();
 include 'connect.php';
+
 include 'navbar.php';
 include '../common.php';
 
@@ -24,55 +25,79 @@ if (isset($_GET["processDU"])) {
         $rs = $conn->query($query);
     }
 }
-//Fetching All Data
-$order_query = "SELECT * FROM familyhealthcard";
-$dist_rs = $conn->query($order_query);
-if (isset($_POST["search"])) {
-    $fdate = $_POST["fdate"];
-    $ldate = $_POST["ldate"];
-    $status = $_POST["status"];
-    $vol = $_POST["volunteer"];
-    $type = "family";
-    header('Location: search-result.php?fdate=' . $fdate . '&ldate=' . $ldate . '&status=' . $status . '&vol=' . $vol . '&type=' . $type);
+//Fetching and Search Data
+$order_query = "SELECT * FROM familyhealthcard ";
+$fdate ='';
+$ldate ='';
+if(isset($_GET['fdate']) && !empty($_GET['fdate']))
+{
+    $fdate = $_GET['fdate'];
 }
+if(isset($_GET['ldate']) && !empty($_GET['ldate']))
+{
+    $ldate = $_GET['ldate'];
+}
+$searchFieldsData = [];
+if (isset($_GET["search"])) {
+    $fields = ['author', 'card_status', 'fdate'];
+    $conditions = [];
+    foreach ($fields as $field) {
+        if (isset($_GET[$field]) && $_GET[$field] != '') {
+            $searchFieldsData[] = $_GET[$field];
+            if ($field == 'fdate') {
+                $conditions[] = "`date` BETWEEN '" . $_GET['fdate'] . "' AND '" . $_GET['ldate'] . "'";
+            } else {
+                $conditions[] = "`$field` = '" . $_GET[$field] . "'";
+            }
+        }
+    }
+    if (count($conditions) > 0) {
+        $order_query .= "WHERE " . implode(' AND ', $conditions);
+    }
+}
+$dist_rs = $conn->query($order_query);
 ?>
 <!-- </head> -->
 <div class="page-content">
     <div class="main-wrapper" style="padding: none!important;">
-        <h3>Family Healthcard Details</h3>
+        <br><h3>Family Healthcard Details</h3>
         <div class="container-fluid" style="padding-right:0px!important; padding-left:0px!important;">
             <div id="result">
                 <div class="formcard" style="background-color: #FFFFFF!important;">
-                    <form id="search" enctype="multipart/form-data" name="search" action="" method="post">
+                    <form id="search" enctype="multipart/form-data" name="search" action="" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-3">
-                                <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="fdate" required="true">
+                                <input type="date" id="fdate" placeholder="Date Of Birth" class="form-control" name="fdate" <?php if($fdate) echo "value=".$fdate; ?>>
                             </div>
                             <div class="form-group col-md-3">
-                                <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="ldate" required="true">
+                                <input type="date" id="ldate" placeholder="Date Of Birth" class="form-control" name="ldate" <?php if($ldate) echo "value=".$ldate; ?>>
                             </div>
                             <div class="form-group col-md-3">
-                                <select name="volunteer" class="form-control">
-                                    <option>Volunteer</option>
-                                    <option value="self">Self / Online</option>
+                                <select name="author" class="form-control">
+                                    <option disabled selected>Volunteer</option>
+                                    <option value="self" <?php if (in_array('self', $searchFieldsData)) echo "selected"; ?>>Self / Online</option>
                                     <?php
                                     $query = "SELECT * FROM `volunteer`";
                                     $volunteer_rs = $conn->query($query);
                                     if ($volunteer_rs !== false && $volunteer_rs->num_rows > 0) {
                                         while ($row = $volunteer_rs->fetch_assoc()) {
-                                            echo "<option value='$row[id];'>$row[name]</option>";
+                                            if (in_array($row['id'], $searchFieldsData)) {
+                                                echo "<option value='$row[id]' selected>$row[name]</option>";
+                                            } else {
+                                                echo "<option value='$row[id]'>$row[name]</option>";
+                                            }
                                         }
                                     }
                                     ?>
                                 </select>
                             </div>
                             <div class="form-group col-md-2">
-                                <select name="status" class="form-control">
-                                    <option value="">Select status</option>
-                                    <option value="applied">Applied</option>
-                                    <option value="initiated">Initiated</option>
-                                    <option value="approve">Approve</option>
-                                    <option value="disapprove">Disapprove</option>
+                            <select name="card_status" class="form-control">
+                                    <option value="" disabled selected>Select status</option>
+                                    <option value="applied" <?php if (in_array('applied', $searchFieldsData)) echo "selected"; ?>>Applied</option>
+                                    <option value="initiated" <?php if (in_array('initiated', $searchFieldsData)) echo "selected"; ?>>Initiated</option>
+                                    <option value="approve" <?php if (in_array('approve', $searchFieldsData)) echo "selected"; ?>>Approve</option>
+                                    <option value="disapprove" <?php if (in_array('disapprove', $searchFieldsData)) echo "selected"; ?>>Disapprove</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-1">
@@ -90,12 +115,16 @@ if (isset($_POST["search"])) {
                                 <th>Aadhaar</th>
                                 <th>Mobile</th>
                                 <th>D.O.B</th>
+                               
                                 <th>Age</th>
+                                  <th>Gender</th>
                                 <th>Address</th>
+                                
                                 <th>Block</th>
                                 <th>District</th>
                                 <th>State</th>
                                 <th>Pin Code</th>
+                                <th>Date</th>
                                 <th>First Member Name</th>
                                 <th>First Member Age</th>
                                 <th>First Member Gender</th>
@@ -115,6 +144,7 @@ if (isset($_POST["search"])) {
                                 <th>Status</th>
                                 <th>Pay ID</th>
                                 <th>Payment</th>
+                                     <th>Name</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -133,11 +163,13 @@ if (isset($_POST["search"])) {
                                         <td><?php echo $row['mobile']; ?></td>
                                         <td><?php echo $row['dob']; ?></td>
                                         <td><?php echo ageCalculator($row['dob']); ?></td>
+                                         <td><?php echo $row['gender']; ?></td>
                                         <td><?php echo $row['address']; ?></td>
                                         <td><?php echo $row['block']; ?></td>
                                         <td><?php echo $row['district']; ?></td>
                                         <td><?php echo $row['state']; ?></td>
                                         <td><?php echo $row['pin']; ?></td>
+                                        <td><?php echo $row['date']; ?></td>
                                         <td><?php echo $row['first_member_name']; ?></td>
                                         <td><?php echo $row['first_member_age']; ?></td>
                                         <td><?php echo $row['first_member_gender']; ?></td>
@@ -157,8 +189,9 @@ if (isset($_POST["search"])) {
                                         <td><?php echo $row['card_status']; ?></td>
                                         <td><?php echo $row['order_id']; ?></td>
                                         <td><?php echo $row['order_status']; ?></td>
+                                         <td><?php echo $row['name']; ?></td>
                                         <td>
-                                            <a href="<?php echo $idlink; ?>">
+                                            <a target="_blank" href="<?php echo $idlink; ?>">
                                                 <button type="button" class="btn btn-info">
                                                     <i class="bi bi-eye"></i>
                                                 </button>
@@ -181,11 +214,13 @@ if (isset($_POST["search"])) {
                                 <th>Mobile</th>
                                 <th>D.O.B</th>
                                 <th>Age</th>
+                                <th>Gender</th>
                                 <th>Address</th>
                                 <th>Block</th>
                                 <th>District</th>
                                 <th>State</th>
                                 <th>Pin Code</th>
+                                <th>Date</th>
                                 <th>First Member Name</th>
                                 <th>First Member Age</th>
                                 <th>First Member Gender</th>
@@ -271,6 +306,14 @@ if (isset($_POST["search"])) {
 </div>
 <!-- main-panel ends -->
 </div>
+<script>
+    $('#fdate').on('input', function(e) {
+        $("#ldate").prop('required', true);
+    });
+    $('#ldate').on('input', function(e) {
+        $("#fdate").prop('required', true);
+    });
+</script>
 <!-- page-body-wrapper ends -->
 </div>
 <?php

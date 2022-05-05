@@ -17,6 +17,19 @@ $v_id = $_SESSION['v_email'];
   <title>
     Arogya Gramin Partner
   </title>
+  
+ 
+		 <!--  <html> 
+                        <title>HTML with PHP</title>
+                        <body>
+                            <marquee 
+                        <br><br><center> <p style="color:red;font-weight:bold;font-size:15px;"> Dear Partner! currently, our developer team is working on website. You may face some issues while working. please be patient will all matter resolved after a short breakpoint.  verification. प्रिय साथी! वर्तमान में, हमारी डेवलपर टीम वेबसाइट पर काम कर रही है। काम के दौरान आपको कुछ दिक्कतों का सामना करना पड़ सकता है। कृपया धैर्य रखें, सभी मामले एक छोटे ब्रेकपॉइंट के बाद हल हो जाएंगें। </p></center>
+                        </marquee>
+                            </body>
+                         </html>-->
+
+
+  
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -77,7 +90,7 @@ $v_id = $_SESSION['v_email'];
           <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'personal-healthcard.php') echo 'active'; ?>">
             <a href="personal-healthcard">
               <i class="fa fa-hospital-user"></i>
-              <p>Personal Health Card</p>
+              <p>Single Health Card</p>
             </a>
           </li>
           <li class="<?php if (basename($_SERVER['PHP_SELF']) == 'family-healthcard.php') echo 'active'; ?>">

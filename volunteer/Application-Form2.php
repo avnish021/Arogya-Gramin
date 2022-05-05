@@ -16,11 +16,13 @@ foreach ($obj->getResult() as list("phone" => $phone, "personal_card" => $plimit
 $date = date('Y-m-d');
 $time = date('H:i:s');
 $author = '';
+$formType = 'single';
 if (isset($_SESSION['ID'])) {
   $author = $_SESSION['ID'];
 }
 
 if (isset($_POST["personalApply"])) {
+  $formType = 'single';
   if ($plimit > 0) {
     $id = time();
     $name = ucwords($_POST["name"]);
@@ -44,7 +46,7 @@ if (isset($_POST["personalApply"])) {
     move_uploaded_file($tempname, $folder);
 
     $query = "INSERT INTO `personalhealthcard` (`id`, `date`, `time`, `author`, `email`, `name`, `gender`, `dob`, `aadhar`, `mobile`, `address`, `block`, `district`, `state`, `pin`, `password`, `card_status`, `image`, `order_id`, `order_amount`, `order_status`, `order_time`)
-                             VALUES ('$id', '$date', '$time', '$author', '$email', '$name', '$gender', '$dob', '$aadhar', '$mobile', '$address', '$block', '$district', '$state', '$pin', '$password', 'applied', '$filename', 0000, 00, 'By Volunteer', '$time');";
+                             VALUES ('$id', '$date', '$time', '$author', '$email', '$name', '$gender', '$dob', '$aadhar', '$mobile', '$address', '$block', '$district', '$state', '$pin', '$password', 'Initiated', '$filename', 0000, 00, 'By Volunteer', '$time');";
     $rs = mysqli_query($conn, "$query") or die(mysqli_error($conn));
     if (!$rs) {
       echo "<script>alert('Invalid Registration')</script>";
@@ -58,6 +60,7 @@ if (isset($_POST["personalApply"])) {
   }
 }
 if (isset($_POST["familyApply"])) {
+  $formType = 'family';
   if ($flimit > 0) {
     $id = time();
     $name = ucwords($_POST["name"]);
@@ -123,7 +126,7 @@ if (isset($_POST["familyApply"])) {
       $fourth_member_relation = NULL;
     }
     $query = "INSERT INTO `familyhealthcard` (`id`, `date`, `time`, `author`, `email`, `name`, `gender`, `dob`, `aadhar`, `mobile`, `address`, `block`, `district`, `state`, `pin`, `password`, `card_status`, `image`, `order_id`, `order_amount`, `order_status`, `order_time`, `first_member_name`, `first_member_age`, `first_member_gender`, `first_member_relation`, `second_member_name`, `second_member_age`, `second_member_gender`, `second_member_relation`, `third_member_name`, `third_member_age`, `third_member_gender`, `third_member_relation`, `fourth_member_name`, `fourth_member_age`, `fourth_member_gender`, `fourth_member_relation`) 
-                                        VALUES ('$id', '$date', '$time', '$author', '$email', '$name', '$gender', '$dob', '$aadhar', '$mobile', '$address', '$block', '$district', '$state', '$pin', '123456', 'Applied', '$filename', 'NULL', 'NULL', 'Unpaid', 'NULL', '$first_member_name', '$first_member_age', '$first_member_gender', '$first_member_relation', '$second_member_name', '$second_member_age', '$second_member_gender', '$second_member_relation', '$third_member_name', '$third_member_age', '$third_member_gender', '$third_member_relation', '$fourth_member_name', '$fourth_member_age', '$fourth_member_gender', '$fourth_member_relation');";
+                                        VALUES ('$id', '$date', '$time', '$author', '$email', '$name', '$gender', '$dob', '$aadhar', '$mobile', '$address', '$block', '$district', '$state', '$pin', '123456', 'Initiated', '$filename', 'NULL', 'NULL', 'Unpaid', 'NULL', '$first_member_name', '$first_member_age', '$first_member_gender', '$first_member_relation', '$second_member_name', '$second_member_age', '$second_member_gender', '$second_member_relation', '$third_member_name', '$third_member_age', '$third_member_gender', '$third_member_relation', '$fourth_member_name', '$fourth_member_age', '$fourth_member_gender', '$fourth_member_relation');";
     $rs = mysqli_query($conn, "$query") or die(mysqli_error($conn));
     if (!$rs) {
       echo "<script>alert('Invalid Registration')</script>";
@@ -141,10 +144,12 @@ if (isset($_POST["familyApply"])) {
 <div class="content" id="cardbox">
   <!-- <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
     <label class="btn btn-secondary active">
-      <input type="radio" name="options" id="option2" autocomplete="off"> Single Card Limit : <?php //echo $plimit; ?>
+      <input type="radio" name="options" id="option2" autocomplete="off"> Single Card Limit : <?php //echo $plimit; 
+                                                                                              ?>
     </label>
     <label class="btn btn-secondary active">
-      <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php //echo $flimit; ?>
+      <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php //echo $flimit; 
+                                                                                              ?>
     </label>
   </div> -->
   <br>
@@ -152,16 +157,16 @@ if (isset($_POST["familyApply"])) {
   <!-- Rounded tabs -->
   <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav tab-pillsbar">
     <li class="nav-item flex-sm-fill tab-pillsbar-one">
-      <a id="home-tab" data-toggle="tab" href="#single" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Single Healthcard</a>
+      <a id="home-tab" data-toggle="tab" href="#single" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold <?php if ($formType == "single") echo "active" ?>">Single Healthcard</a>
     </li>
     <li class="nav-item flex-sm-fill tab-pillsbar-two">
-      <a id="profile-tab" data-toggle="tab" href="#family" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Family Healthcard</a>
+      <a id="profile-tab" data-toggle="tab" href="#family" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold <?php if ($formType == "family") echo "active" ?>">Family Healthcard</a>
     </li>
   </ul>
   <div id="myTabContent" class="tab-content">
-    <div id="single" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-1 py-4 show active">
+    <div id="single" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-1 py-4 <?php if ($formType == "single") echo "show active" ?>">
       <div>
-      <h6 class="text-center m-3">Application for Single Health Card</h6>
+        <h6 class="text-center m-3">Single Health Card</h6>
         <form id="personal" enctype="multipart/form-data" name="personal" action="" method="post" style="margin-top: 22px;">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -182,6 +187,7 @@ if (isset($_POST["familyApply"])) {
                 <option value="">Select Your Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
+                <option value="Female">Other</option>
               </select>
             </div>
           </div>
@@ -277,9 +283,9 @@ if (isset($_POST["familyApply"])) {
         </form>
       </div>
     </div>
-    <div id="family" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-1 py-4">
+    <div id="family" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-1 py-4 <?php if ($formType == "family") echo "show active" ?>">
       <div>
-      <h6 class="text-center m-3">Application for Family Health Card</h6>
+        <h6 class="text-center m-3">Family Health Card</h6>
         <form id="family" enctype="multipart/form-data" name="family" action="" method="post" style="margin-top: 22px;">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -300,6 +306,7 @@ if (isset($_POST["familyApply"])) {
                 <option value="">Select Your Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
+                <option value="Female">Other</option>
               </select>
             </div>
           </div>
@@ -408,15 +415,15 @@ if (isset($_POST["familyApply"])) {
   <!-- End rounded tabs -->
 
   <div class="col-rt-12" style="margin-top:0px;">
-         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-danger active">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Single Card Limit : <?php echo $plimit; ?>
-          </label>
-          <label class="btn btn-danger active">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
-          </label>
-         </div>
-        </div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-danger active">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Single Card Limit : <?php echo $plimit; ?>
+      </label>
+      <label class="btn btn-danger active">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Family Card Limit : <?php echo $flimit; ?>
+      </label>
+    </div>
+  </div>
 </div>
 <!--</div>-->
 <!--</section>-->
@@ -427,7 +434,8 @@ if (isset($_POST["familyApply"])) {
   document.getElementById("AddRow").addEventListener("click", function() {
     var HTMLcontent = document.getElementById("familyDetails");
     if (rows !== 4) {
-      content.innerHTML += `<div class="form-row" >
+      var html = `<div id="inputFormRow">
+      <div class="form-row">
             <div class="form-group col-md-6">
               <label for="Name">Member Name<span class="required">*</span></label>
               <input name="MemberName${rows}" type="text" class="form-control"
@@ -446,6 +454,7 @@ if (isset($_POST["familyApply"])) {
                 <option value="">Select Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
+                <option value="Female">Other</option>
               </select>
             </div>
 
@@ -454,11 +463,24 @@ if (isset($_POST["familyApply"])) {
               <input name="MemberRelation${rows}" type="text" class="form-control"
                 placeholder="Relation With Member" required>
             </div>
+            <div class="col-2">
+              <button type="button" id="removeRow" class=" btn ms-btn-icon-outline btn-danger"><i class="fa fa-trash"></i></button>
+            </div>
+          </div>
+          <br>
           </div>`;
+
+          $('#familyDetails').append(html);
       rows++;
     }
-  })
 
+  })
+  
+  // remove row
+  $(document).on('click', '#removeRow', function () {
+      $(this).closest('#inputFormRow').remove();
+      rows--;
+  });
   // Image Validation
   $(function() {
     $("#imageFile").change(function() {

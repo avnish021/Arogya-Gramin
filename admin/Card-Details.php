@@ -171,7 +171,7 @@
 			<?php
 			include "../Classes/Database.php";
 			$obj = new Database();
-			$values = array("V_ID" => "", "REGISTRATION" => "", "NAME" => "", "GENDER" => "", "DOB" => "", "AADHAAR" => "", "ADDRESS" => "", "BLOCK" => "", "DISTRICT" => "", "STATE" => "", "PINCODE" => "", "STATUS" => "Initiated", "TYPE" => "");
+			$values = array("V_ID" => "", "REGISTRATION" => "", "Email" => "", "NAME" => "", "GENDER" => "", "DOB" => "", "AADHAAR" => "", "ADDRESS" => "", "BLOCK" => "", "DISTRICT" => "", "STATE" => "", "PINCODE" => "", "STATUS" => "Initiated", "TYPE" => "");
 			?>
 
 			<body>
@@ -209,6 +209,7 @@
 
 							<th>Registration Number</th>
 							<th>V ID</th>
+							<th>Email</th>
 							<th>Name</th>
 							<th>Date Of Birth</th>
 							<th>Gender</th>
@@ -265,6 +266,9 @@
 								</td>
 								<td>
 									<?php echo $vid; ?>
+								</td>
+									<td>
+									<?php echo $Email; ?>
 								</td>
 								<td>
 									<?php echo $name; ?>

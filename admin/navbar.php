@@ -324,6 +324,12 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+            <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Discount.php') echo 'active'; ?>">
+            <a class="nav-link" href="Discount">
+              <i class="fa fa-hospital-o menu-icon"></i>
+              <span class="menu-title">Add Discount</span>
+            </a>
+          </li>
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Transaction-Details.php') echo 'active'; ?>">
             <a class="nav-link" href="Transaction-Details">
               <i class="fa fa-hospital-o menu-icon"></i>
@@ -342,18 +348,19 @@
               <span class="menu-title">Family healthcard</span>
             </a>
           </li>
-           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Card-Details.php') echo 'active'; ?>">
+           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'appointment.php') echo 'active'; ?>">
+            <a class="nav-link" href="appointment.php">
+              <i class="fa fa-hospital-o menu-icon"></i>
+              <span class="menu-title">Appointment</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Card-Details.php') echo 'active'; ?>">
             <a class="nav-link" href="Card-Details">
               <i class="fa fa-hospital-o menu-icon"></i>
               <span class="menu-title">Card Details</span>
             </a>
-          </li>
-           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'Discount.php') echo 'active'; ?>">
-            <a class="nav-link" href="Discount">
-              <i class="fa fa-hospital-o menu-icon"></i>
-              <span class="menu-title">Add Discount</span>
-            </a>
-          </li>
+          </li>-->
+         
           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'tie_up_form.php') echo 'active'; ?>">
             <a class="nav-link" href="tie_up_form.php">
               <i class="fa fa-hospital-o menu-icon"></i>
@@ -398,12 +405,12 @@
               <span class="menu-title">Volunteer Control</span>
             </a>
           </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'cpr.php') echo 'active'; ?>">
+        <!--  <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'cpr.php') echo 'active'; ?>">
             <a class="nav-link" href="cpr.php">
               <i class="fa fa-bank menu-icon"></i>
               <span class="menu-title">CBR Transection</span>
             </a>
-          </li>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="fa fa-cog menu-icon"></i>
@@ -435,13 +442,13 @@
               <span class="menu-title">Add Product</span>
             </a>
           </li>
-          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'check_order.php') echo 'active'; ?>">
+          <!--<li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'check_order.php') echo 'active'; ?>">
             <a class="nav-link" href="check_order.php">
               <i class="fa fa-eye menu-icon"></i>
               <span class="menu-title">Check Order</span>
             </a>
-          </li>
-           <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'subscriber.php') echo 'active'; ?>">
+          </li>-->
+          <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'subscriber.php') echo 'active'; ?>">
             <a class="nav-link" href="subscriber.php">
               <i class="fa fa-rocket menu-icon"></i>
               <span class="menu-title">Subscriber</span>
