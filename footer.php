@@ -205,24 +205,24 @@ AROGYA GRAMIN AROGYA BHARAT EK MISSION</p>
 </script>
 <!-- //script for responsive tabs -->		
 <!-- stats -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- <script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.countup.js"></script>
 	<script>
 		$('.counter').countUp();
-	</script>
+	</script> -->
 <!-- //stats -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
+<!-- <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="load.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="load.js"></script> -->
+<!-- <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script>
+</script> -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -243,6 +243,24 @@ AROGYA GRAMIN AROGYA BHARAT EK MISSION</p>
 
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+
+<!-- jQuery Lib -->
+<script src="assets/new/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/new/js/vendor/popper.min.js"></script>
+    <script src="assets/new/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/new/js/vendor/waypoints.min.js"></script>
+    <script src="assets/new/js/vendor/slick.min.js"></script>
+    <script src="assets/new/js/vendor/jquery.smoothscroll.min.js"></script>
+    <script src="assets/new/js/vendor/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/new/js/vendor/venobox.min.js"></script>
+    <script src="assets/new/js/vendor/odometer.min.js"></script>
+    <script src="assets/new/js/vendor/jquery.isotope.v3.0.2.js"></script>
+    <script src="assets/new/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/new/js/vendor/wow.min.js"></script>
+    <script src="assets/new/js/volunteer.js"></script>
+    <script src="assets/new/js/main.js"></script>
+    <script src="assets/new/js/custom.js"></script>
+
 </body>
 </html>

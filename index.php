@@ -2,6 +2,163 @@
  <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" 
   rel="stylesheet">
 <!-- banner -->
+<div id="main-slider" class="dl-slider">
+        <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/banner1.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1.5s">आपके और आपके अपनों के <br/> आरोग्य जीवन  के लिए</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption small">
+                            <div class="inner-layer">
+                                <!-- <div data-animation="fade-in-bottom" data-delay="2s">Making a diffrense in our
+                                    community.</div> -->
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="cause-single.html" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Make a Donation<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slide-1-->
+        <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/helth.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s">Help the people in need!</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1.5s">Help The Children <br>When They
+                                    Need</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption small">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="cause-single.html" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Make a Donation<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slide-2-->
+        <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/helth.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1.5s">आरोग्य कार्ड
+                                    </dv>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s">.</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption small">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन के लिए</div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="cause-single.html" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Make a donation<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slide-3-->
+		<div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/sw2.jpeg);"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s"></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1.5s">आरोग्य कार्ड
+                                    </dv>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s">.</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption small">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन के लिए</div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="cause-single.html" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Make a donation<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- slider-section -->
+
+
+
+
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">

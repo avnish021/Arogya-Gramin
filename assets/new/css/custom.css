@@ -1,0 +1,30 @@
+  .goog-te-menu-value {
+    color: black !important;
+    /* font-size: 0px; */
+  }
+
+
+  #arogyaone {
+    font-size: 18px;
+    font-weight: 800;
+    color: #FF8C00
+  }
+
+  #arogyatwo {
+    font-size: 15px;
+    font-weight: 800 !important;
+    color: green;
+  }
+
+  #arogyathree {
+    font-size: 12px;
+    color: gray;
+  }
+
+  .containerone {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }

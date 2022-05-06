@@ -43,7 +43,23 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
-	<script type="application/x-javascript">
+	
+	<link rel="stylesheet" href="assets/new/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/new/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/new/css/elegant-line-icons.css">
+    <link rel="stylesheet" href="assets/new/css/animate.min.css">
+    <link rel="stylesheet" href="assets/new/css/charitian-icons.min.css">
+    <link rel="stylesheet" href="assets/new/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/new/css/slick.min.css">
+    <link rel="stylesheet" href="assets/new/css/slider.css">
+    <link rel="stylesheet" href="assets/new/css/venobox/venobox.css">
+    <link rel="stylesheet" href="assets/new/css/main.css">
+	<link rel="stylesheet" href="assets/new/css/custom.css">
+
+    <script src="assets/new/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="https://kit.fontawesome.com/9c4a1edced.js"></script>
+
+	<!-- <script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
 		}, false);
@@ -51,22 +67,22 @@ session_start();
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
-	</script>
+	</script> -->
 
 	<!--//tags -->
 
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
 	<link href="css/font-awesome.css" rel="stylesheet">
 
 	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
-	<link href="css/main.css" rel='stylesheet' type='text/css' />
+	<link href="css/main.css" rel='stylesheet' type='text/css' /> -->
 
 	<!-- //for bootstrap working -->
 
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 
 	<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
 
@@ -81,7 +97,7 @@ session_start();
 				display: block;
 			}
 		}
-	</style>
+	</style> -->
 	<!-- Google Tag Manager -->
 	<script>
 		(function(w, d, s, l, i) {
@@ -107,46 +123,135 @@ session_start();
 	<!-- End Google Tag Manager -->
 </head>
 
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDFVDPC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<!-- header -->
-	<div class="container-fluid" style="background:#00B050;font-weight:600;color:black">
-		<div class="container">
-			<ul style="list-style-type:none;padding:16px;color:white;margin-bottom:10px">
-				<li style="float:left" class="google-translate">
-					<div id="google_translate_element"></div>
+<body class="header-1">
+<div class="site-preloader-wrap">
+        <div class="spinner"></div>
+    </div>
+	<header class="header header-one">
+        <div class="top-header-one top-bar">
+            <div class="containerone">
+                <div class="top-bar-inner">
+                    <div class="top-left">
+                        <ul>
+							<li>
+							<div id="google_translate_element"></div>
 					<script>
 						function googleTranslateElementInit() {
 							new google.translate.TranslateElement({
 								pageLanguage: 'en',
-								includedLanguages: 'hi,en'
-							}, 'google_translate_element');
+								includedLanguages: 'hi,en',
+								layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 						}
 					</script>
 					<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-				</li>
-<<<<<<< HEAD
-				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Toll Free : 1800 890 6600</li>
-				<li style="float:left;margin-left:13px;"><i class="fa fa-phone" aria-hidden="true" style="color:green"></i> Healthcard : 1800 889 8286</li>
-				<li style="float:left;margin-left:13px;"><i class="fa fa-envelope-o" aria-hidden="true" style="color:green"></i> support@arogyagramin.com</li>
-				<li style="float:left;margin-left:13px;"><i class="fa fa-bell" aria-hidden="true" style="color:green"></i> 12A & 80G </li>
-=======
-				<li style="float:left;margin-left:13px;" class="Toll-free"><i class="fa fa-phone" aria-hidden="true" style="color:white"></i> Toll Free : 1800 8906600</li>
-				<li style="float:left;margin-left:13px;" class="support"><i class="fa fa-phone" aria-hidden="true" style="color:white"></i> 24x7 <span class="support2">Support </span>: +91 9334467080</li>
-				<li style="float:left;margin-left:13px;" class="arogya-suppot"><i class="fa fa-envelope-o" aria-hidden="true" style="color:white"></i> support@arogyagramin.com</li>
-				<li style="float:left;margin-left:13px;" class="twelve"><i class="fa fa-bell" aria-hidden="true" style="color:white"></i> 12A & 80G </li>
->>>>>>> abab983f5ca52311fab6a5f469dada725737ea9c
-			</ul>
-		</div>
-	</div>
+							</li>
+                            <li>Toll Free :<a href="tel:18008906600">1800 890 6600</a></li>
+							<li>Healthcard :<a href="tel:18008898286">1800 889 8286</a></li>
+                            <li>Email: <a href="mailto:support@arogyagramin.com"> support@arogyagramin.com</a></li>
+                            <li>12A & 80G</li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <ul class="top-social">
+                            <li><a href="https://www.facebook.com/arogyagraminhealthcarefoundation" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCWuHT2-20eeI39or16hqiDg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/arogyagramin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/GraminCare" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/arogyagraminhealthcare/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://g.page/r/Cai6mR-r-KAoEBA" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.top-bar -->
+        <div class="primary-header-one primary-header">
+            <div class="containerone">
+                <div class="primary-header-inner pt-3">
+                    <div class="header-logo">
+                        <a href="index.php" class="d-flex">
+                            <img src="images/logo1.png" alt="Logo" style="width:140px;height:87px;"/>
+							<!-- <span id="arogyaone">AROGYA GRAMIN</span> -->
+							<!-- <span id="arogyatwo">HEALTHCARE FOUNDATION</span> -->
+							<!-- <h3>HEALTHCARE FOUNDATION</h3>							 -->
+							<div>
+							<h4 id="arogyaone">AROGYA&nbsp;GRAMIN</h4>
+							<h4 id="arogyatwo">HEALTHCARE&nbsp;FOUNDATION</h4>
+							<h4 id="arogyathree">Arogya Gramin Arogya Bharat Ek Mission</h4>
+							</div>
+                        </a>
+						
+
+					
+                    </div><!-- /.header-logo -->
+                    <div class="header-menu-wrap">
+                        <ul class="dl-menu">
+                            <li><a href="index.php">Home</a>
+                               
+                            </li>
+							<li><a href="javascript:void(0)">Tie-Up</a>
+                                <ul>
+                                    <li><a href="hospital.php">Hospital</a></li>
+                                    <li><a href="medical.php">Medical Store</a></li>
+                                    <li><a href="lab.php">Patho Lab</a></li>
+                                </ul>
+                            </li>
+							<li><a href="javascript:void(0)">Department</a>
+                                <ul>
+                                    <li><a href="management.php">Management Team</a></li>
+                                    <li><a href="dpo.php">Dpo</a></li>
+                                    <li><a href="bpo.php">Bpo</a></li>
+                                    <li><a href="arogyamitra.php">Arogya Mitra</a></li>
+                                    <li><a href="arogyamin.php">Arogya Center</a></li>
+                                </ul>
+                            </li>
+							
+                            <li><a href="services.php">Services</a>
+                             
+                            </li>
+                            <li><a href="carrer.php">Carrer</a>                             
+                            </li>
+							<li><a href="https://www.arogyagramin.in/">Blog</a>
+                               
+							   </li>
+
+                            <li><a href="apply_healthcard2">Apply</a>					
+                                
+                            </li>
+							<li><a href="carrer.php">LogIn</a>                             
+                            </li>
+                            
+                           
+							<li><a href="about_us.php">About</a>
+                               
+							   </li>
+                            <li><a href="contact_us.php">Contact Us</a></li>
+                        </ul>
+                    </div><!-- /.header-menu-wrap -->
+                    <div class="header-right">
+						<a class="header-btn" href="https://rzp.io/l/vifXuc31">Donate Now<span></span></a>
+                        <!-- Burger menu -->
+                        <div class="mobile-menu-icon">
+                            <div class="burger-menu">
+                                <div class="line-menu line-half first-line"></div>
+                                <div class="line-menu"></div>
+                                <div class="line-menu line-half last-line"></div>
+                            </div>
+                        </div>
+                    </div><!-- /.header-right -->
+                </div><!-- /.primary-header-one-inner -->
+            </div>
+        </div><!-- /.primary-header-one -->
+    </header><!-- /.header-one -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDFVDPC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- header -->
 	<!-- //header -->
 	<!-- header-bot -->
 	<div class="header-bot">
 		<div class="header-bot_inner_wthreeinfo_header_mid">
 			<!-- header-bot -->
-			<div class="col-md-2 logo_agile">
+			<!-- <div class="col-md-2 logo_agile">
 				<center>
 					<h1><a href="index.php"><img src="images/logo1.png" style="width:150px;height:87px;" alt=""></a></h1>
 				</center>
@@ -156,7 +261,7 @@ session_start();
 				<span style="font-size:12px;">Arogya Gramin Arogya Bharat Ek Mission
 				</span>
 
-			</div>
+			</div> -->
 
 			<div class="col-md-3 header-middle" style="margin-top:10px;">
 
@@ -174,42 +279,6 @@ session_start();
 
 			<!-- header-bot -->
 
-			<div class="col-md-4 agileits-social top_content" style="margin-top:20px;">
-
-				<center>
-
-					<a href="apply_healthcard2" class="btn btn-danger" style="margin-top:7px;">Apply For Health Card</a>
-
-					<!--<a href="Health Card Application" class="btn btn-danger" style="margin-top:7px;">Apply For Health Card</a>-->
-
-					<a target=”_blank” href="https://rzp.io/l/vifXuc31" class="btn btn-success" style="margin-top:7px;">Donation</a>
-
-					<?php
-
-					if (isset($_SESSION['email'])) {
-					?>
-						<a href="logout.php" class="btn btn-info" style="margin-top:7px;">Logout</a>
-
-					<?php
-
-					} else {
-
-					?>
-
-						<a href="" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin-top:7px;">login</a>
-
-					<?php
-
-					}
-
-					?>
-
-				</center>
-
-
-
-			</div>
-
 			<div class="clearfix"></div>
 
 		</div>
@@ -222,239 +291,7 @@ session_start();
 
 	<div class="ban-top" style="background:orange;font-weight:600;color:black">
 
-		<div class="container-fluid">
-
-			<div class="top_nav_left">
-
-				<nav class="navbar navbar-default">
-
-					<div class="container-fluid">
-
-						<!-- Brand and toggle get grouped for better mobile display -->
-
-						<div class="navbar-header">
-
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-								<span class="sr-only">Toggle navigation</span>
-
-								<span class="icon-bar"></span>
-
-								<span class="icon-bar"></span>
-
-								<span class="icon-bar"></span>
-
-							</button>
-
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-
-						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
-
-							<ul class="nav navbar-nav menu__list">
-
-								<li class="active menu__item menu__item--current"><a class="menu__link" href="index.php">Home <span class="sr-only">(current)</span></a></li>
-
-								<li class=" menu__item"><a class="menu__link" href="about_us.php">About</a></li>
-
-								<!--<li class=" menu__item"><a class="menu__link" href="products.php">Products</a></li>-->
-
-								<li class="menu__item dropdown">
-
-									<a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Tie-Up<b class="caret"></b></a>
-
-									<ul class="dropdown-menu agile_short_dropdown">
-
-										<li><a href="hospital.php">Hospital</a></li>
-
-										<li><a href="medical.php">Medical Store</a></li>
-
-										<li><a href="lab.php">Patho Lab</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu__item dropdown">
-
-									<a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Department<b class="caret"></b></a>
-
-									<ul class="dropdown-menu agile_short_dropdown">
-
-										<li><a href="management.php">Management Team</a></li>
-
-										<li><a href="dpo.php">DPO</a></li>
-
-										<li><a href="bpo.php">BPO</a></li>
-
-										<li><a href="arogyamitra.php">Arogya Mitra</a></li>
-
-										<li><a href="arogyagramin.php">Arogya Centre</a></li>
-
-									</ul>
-
-								</li>
-
-
-
-								<li class=" menu__item"><a class="menu__link" href="services.php">Services</a></li>
-
-								<li class=" menu__item"><a class="menu__link" href="career.php">Career</a></li>
-
-								<li class=" menu__item"><a class="menu__link" href="contact_us.php">Contact us</a></li>
-
-
-
-								<li class="menu__item dropdown">
-
-									<a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Other<b class="caret"></b></a>
-
-									<ul class="dropdown-menu agile_short_dropdown">
-
-										<li><a href="https://www.facebook.com/arogyagraminhealthcarefoundation" target=”_blank”>Facebook</a></li>
-
-										<li><a href="https://www.youtube.com/channel/UCWuHT2-20eeI39or16hqiDg" target=”_blank”>You Tube</a></li>
-
-										<li><a href="https://www.linkedin.com/company/arogyagramin" target=”_blank”>Linkdin</a></li>
-
-										<li><a href="https://twitter.com/GraminCare" target=”_blank”>Twitter</a></li>
-
-										<li><a href="https://www.instagram.com/arogyagraminhealthcare/?hl=en" target=”_blank”>Instagram</a></li>
-
-										<li><a href="https://g.page/r/Cai6mR-r-KAoEBA" target=”_blank”>Google</a></li>
-
-										<li><a href="payment-redirect2.php" target=”_blank”>Test Form</a></li>
-
-									</ul>
-
-								</li>
-
-								<!--<li class="menu__item dropdown">
-
-					   <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<b class="caret"></b></a>
-
-								<ul class="dropdown-menu agile_short_dropdown">
-
-                                            <li><a href="https://www.facebook.com/arogyagraminhealthcarefoundation/"><i class="fa fa-facebook"></i>&nbsp;Facebook</a></li>
-
-              <li><a href="https://twitter.com/GraminCare"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
-
-              <li><a href="https://www.linkedin.com/company/arogyagramin"><i class="fa fa-linkedin"></i>&nbsp;Linkedin</a></li>
-
-                <li><a href="https://www.youtube.com/channel/UCWuHT2-20eeI39or16hqiDg"><i class="fa fa-youtube"></i>&nbsp;youtube</a></li>
-
-                    <li><a href="https://wa.me/message/QVWBOLAHFLZIA1"><i class="fa fa-whatsapp"></i>&nbsp;Whatsapp</a></li>
-
-                    <li><a href="https://www.tumblr.com/blog/arogyagramin"><i class="fa fa-tumblr"></i>&nbsp;Tumblr</a></li>
-
-                    <li><a href="https://www.instagram.com/arogyagraminhealthcare/?hl=en"><i class="fa fa-instagram"></i>&nbsp;Instagram</a></li>
-
-								</ul>
-
-							
-
-					</li>-->
-
-								<li class=" menu__item"><a class="menu__link" href="https://www.arogyagramin.in/" target=”_blank”>Blog</a></li>
-
-
-
-							</ul>
-
-						</div>
-
-					</div>
-
-				</nav>
-
-			</div>
-
-			<div class="top_nav_right">
-
-				<div class="wthreecartaits wthreecartaits2 cart cart box_1" style="background:none">
-
-
-
-					<!--	<?php
-
-							if (isset($_SESSION['email'])) {
-
-							?>
-
-                 		<button class="" value="">
-
-						<a href="cart.php">
-
-							<i class="fa fa-cart-arrow-down" aria-hidden="true" style="color:black">
-
-							<span style="float:right;color:black;text-shadow:1px 2px 3px;">
-
-							<?php
-
-								$user_id = $_SESSION['email'];
-
-								include 'connect.php';
-
-								$sql = "select count('1') from `e-card` where user_id='$user_id' and status='Pandding'";
-
-								$result = mysqli_query($conn, $sql);
-
-								$row = mysqli_fetch_array($result);
-
-								echo "$row[0]";
-
-								mysqli_close($conn);
-
-							?>-->
-
-					</span>
-
-				<?php
-
-							} else {
-
-				?>
-
-					<button class="" value="">
-
-						<a href="cart.php">
-
-							<i class="fa fa-cart-arrow-down" aria-hidden="true" style="color:black">-->
-
-							<?php
-
-							}
-
-							?>
-
-
-
-
-
-
-
-							</i>
-
-
-
-						</a>
-
-					</button>
-
-
-
-					<button class="" value="" style="font-size:17px;" onclick="window.location.href='allnotification.php'"><i class="fa fa-bell" aria-hidden="true"></i></button>
-
-
-
-				</div>
-
-			</div>
-
-			<div class="clearfix"></div>
-
-		</div>
+	
 
 	</div>
 
