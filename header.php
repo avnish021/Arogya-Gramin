@@ -49,6 +49,7 @@ session_start();
 	<link rel="stylesheet" href="assets/new/css/elegant-line-icons.css">
 	<link rel="stylesheet" href="assets/new/css/animate.min.css">
 	<link rel="stylesheet" href="assets/new/css/charitian-icons.min.css">
+	<link rel="stylesheet" href="assets/new/css/odometer.min.css">
 	<link rel="stylesheet" href="assets/new/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/new/css/slick.min.css">
 	<link rel="stylesheet" href="assets/new/css/slider.css">
@@ -208,7 +209,7 @@ session_start();
 							<li><a href="services.php">Services</a>
 
 							</li>
-							<li><a href="carrer.php">Carrer</a>
+							<li><a href="career.php">Carrer</a>
 							</li>
 							<li><a href="https://www.arogyagramin.in/">Blog</a></li>
 							<li><a href="apply_healthcard2">Apply</a></li>

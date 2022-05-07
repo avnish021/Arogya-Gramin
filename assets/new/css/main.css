@@ -2010,6 +2010,11 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     font-weight: 600;
     margin-bottom: 0;
 }
+.team-content h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
 .team-content span{
     font-family: "Work Sans", sans-serif;
     font-size: 12px;
@@ -3532,7 +3537,7 @@ blockquote span{
 }
 .contact-content{
     background-color: #fff;
-    padding: 70px 50px;
+    padding: 70px 25px;
 }
 .contact-item{}
 .contact-item h3{

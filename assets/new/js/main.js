@@ -253,14 +253,14 @@
 
         /* ======= Sponsor ======= */
         $('.sponsor-carousel').slick({
+            autoplay: true,
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 700,
             slidesToShow: 5,
             slidesToScroll: 1,
             prevArrow: '<i class="ti-arrow-left left"></i>',
             nextArrow: '<i class="ti-arrow-right right"></i>',
-            infinite: true,
             dots: false,
             pauseOnFocus: false,
             pauseOnHover: true,
