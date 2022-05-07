@@ -261,6 +261,17 @@ AROGYA GRAMIN AROGYA BHARAT EK MISSION</p>
     <script src="assets/new/js/volunteer.js"></script>
     <script src="assets/new/js/main.js"></script>
     <script src="assets/new/js/custom.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+<script>
+  $('.marquee_text').marquee({
+    direction: 'up',
+    duration: 10000,
+    gap: 0,
+    delayBeforeStart: 0,
+});
+
+  </script>
 
 </body>
 </html>
