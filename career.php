@@ -1,163 +1,102 @@
-<?php include 'header.php'?>
-<div class="container-fulid">
-<div class="page-head_agile_info_w3l">
-		<div class="container">
-			<h3>Career</h3>
-			<!--/w3_short-->
-				 <div class="services-breadcrumb">
-						<div class="agile_inner_breadcrumb">
-
-						   <ul class="w3_short">
-								<li><a href="index.html">Home</a><i style="color:black">|</i></li>
-								<li style='color:black'>Career</li>
-							</ul>
-						 </div>
-				</div>
-	   <!--//w3_short-->
-	</div>
-</div>
-<div class="container">
-    
-     <br> <center> <a href="Tie-up Application" target=”_blank” class="btn btn-danger" style="margin-top:7px;">Tie-up Registration</a>
-         <a target=”_blank” href="Affiliate Registration Form" class="btn btn-info" style="margin-top:7px;">Affilate Registration</a>
-         	<!--	<br><center>All tie-up procedures will be carried out as per our terms of work and will be completed after fulfillment of necessary conditions. Don't be panic we will always there for you to provide best of us. We are happy to provide best healthcare support to our card holder at least cost. </center></br>-->
-      
-	<div class="row" style="margin-top:50px">
-		<center><h3><u><b>Join Our Team</b></u></h3></center>
-		<br>
-		<center>BUSINESS OPPORTUNITY - FRANCHISE SELL AVAILABE CONTACT US NOW (LIMITED PERIOD FESTIVAL OFFER RUNNING) </center><br>
-		<form action="join_team.php" method="post">
-  <div class="row">
-    <div class="col-sm-12">
-      <h4 class="">Leave a Message</h4><hr>
-      <div class="">
-        <div class="row">
-          <div class="col-sm-6">
-            <label>Full Name</label>
-            <div class="input-group"> <span class="input-group-btn">
-              <button class="btn btn-success" type="button"><i class="fa fa-user"></i></button>
-              </span>
-              <input id="uname" name="name" type="text" class="form-control" placeholder="Full Name">
-            </div>
-            <!-- /input-group --> 
+<?php include 'header.php' ?>
+<section class="page-header padding">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="page-content text-center">
+      <h2>Join Our Team</h2>
+      <div class="page-item">
+        <a href="/"><i class="ti-home"></i>Home </a>
+        <p>Career</p>
+      </div>
+    </div>
+  </div>
+</section><!-- /.page-header -->
+<section class="contact-section bg-grey padding">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col d-flex justify-content-center text-center">
+        <a href="Tie-up Application" target=”_blank” class="default-btn mr-2" style="margin-top:7px;">Tie-up Registration</a>
+        <a target=”_blank” href="Affiliate Registration Form" class="default-btn-info ml-2" style="margin-top:7px;">Affilate Registration</a>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-12 sm-padding">
+        <div class="contact-form">
+          <div class="form-heading">
+            <h3>Join Our Team</h3>
+            <p>Business Opportunity - Franchise sell available contact us now (Limited Period Festival Offer Running)</p>
           </div>
-          <!-- /.col-lg-6 -->
-          <div class="col-sm-6">
-            <label>Email</label>
-            <div class="input-group"> <span class="input-group-btn">
-              <button class="btn btn-success" type="button"><i class="fa fa-envelope"></i></button>
-              </span>
-              <input id="uemail" name="email" type="text" class="form-control" placeholder="Email">
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <div class="col-sm-6">
-            <label>Mobile No.</label>
-            <div class="input-group"> <span class="input-group-btn">
-              <button class="btn btn-success" type="button"><i class="fa fa-phone"></i></button>
-              </span>
-              <input id="mnumber" type="text" name="phone" class="form-control" onKeyPress="if(this.value.length==10) return false;" min="10" placeholder="Mobile Number">
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <!-- /.col-lg-6 -->
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <label>Alternate Mobile No.</label>
-            <div class="input-group"> <span class="input-group-btn">
-              <button class="btn btn-success" type="button"><i class="fa fa-phone"></i></button>
-              </span>
-              <input id="amnumber" type="text" name="alt_mobile" class="form-control" onKeyPress="if(this.value.length==10) return false;" min="10" placeholder="Alternate Mobile Number">
-            </div>
-            <!-- /input-group --> 
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form-group">
-              <label for="sel1">ExperienceYears</label>
-              <select class="form-control" id="sel1" name="exp_year">
-                <option>--Select Year--</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form-group">
-              <label for="sel1">ExperienceMonths</label>
-              <select class="form-control" id="sel1" name="exp_month">
-                <option>--Select Month--</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <div class="col-lg-12">
-            <div class="form-group">
-              <label for="sel1">Application For</label>
-              <select class="form-control" id="sel1" name="type">
-                <option value="">--Select Application For--</option>
-                <option value="Franchise">Franchise</option>
-                <option value="Arogya Mitra">Arogya Mitra</option>
-                <option value="Hospital Tie-up">Hospital Tie-up</option>
-                <option value="Medical Store Tie-up">Medical Store Tie-up</option>
-              </select>
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <div class="col-lg-12">
-            <label>Subject</label>
-            <div class="input-group"> <span class="input-group-btn">
-              <button class="btn btn-success" type="button"><i class="fa fa-book"></i></button>
-              </span>
-              <input id="subject" type="text" name="subject" class="form-control" placeholder="Subject">
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <!-- /.col-lg-6 -->
-          <div class="col-lg-12">
-            <label>Message Text</label>
-            <div class="form-group">
-              <textarea id="message" name="message" class="form-control" rows="8"></textarea>
-            </div>
-            <!-- /input-group --> 
-          </div>
-          <p id="err"></p>
-          <div class="form-group">
-            <div class="col-lg-8 col-md-8 col-sm-12">
-              <div class="checkbox">
-                <label>
-                <input type="checkbox" id="hs_checkbox" class="css-checkbox lrg" checked="checked"/>
-                <label for="hs_checkbox" name="checkbox69_lbl" class="css-label lrg hs_checkbox">Receive Your Comments By Email</label>
-                </label>
+          <form action="join_team.php" method="post" id="ajax_contact" class="form-horizontal">
+            <div class="form-group colum-row row">
+              <div class="col-sm-6">
+                <input type="text" id="contact-firstname" name="name" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" id="contact-email" name="email_1" class="form-control" placeholder="Email" required>
               </div>
             </div>
-            <input type="hidden" name="rdt" value="Saturday 3  July 2021">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <button id="em_sub" class="btn btn-success pull-right" name="save" type="submit">Send</button>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <input type="text" id="contact-phone" name="phone" class="form-control" placeholder="Phone Number" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" id="contact-firstname" name="alt_mobile" class="form-control" onKeyPress="if(this.value.length==10) return false;" min="10" placeholder="Alternate Phone Number" required>
+              </div>
             </div>
-          </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <select class="form-control" name="exp_year">
+                  <option selected disabled>--Select Experience Year--</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <select class="form-control" name="exp_month">
+                  <option selected disabled>--Select Experience Month--</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <select class="form-control" name="type">
+                  <option value="" selected disabled>--Select Application For--</option>
+                  <option value="Franchise">Franchise</option>
+                  <option value="Arogya Mitra">Arogya Mitra</option>
+                  <option value="Hospital Tie-up">Hospital Tie-up</option>
+                  <option value="Medical Store Tie-up">Medical Store Tie-up</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" id="contact-email" name="subject" class="form-control" placeholder="Subject" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea id="contact-message" name="message" cols="30" rows="5" class="form-control address" placeholder="Message" required></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="checkbox" id="hs_checkbox" class="css-checkbox lrg" checked="checked" />
+                Receive Your Comments By Email
+              </div>
+            </div>
+            <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y") ?>">
+            <button id="submit" class="default-btn" type="submit" name="save">Send<span></span></button>
+            <div id="form-messages" class="alert" role="alert"></div>
+          </form>
         </div>
       </div>
     </div>
-
-
-
-    
   </div>
-  
-  </form>
-		
-		
-		</div> 	<br></br>
-	</div>
-</div>
-<?php include 'footer.php'?>
-  
+</section>
+<?php include 'footer.php' ?>

@@ -152,7 +152,21 @@ session_start();
 							<li>Healthcard :<a href="tel:18008898286">1800 889 8286</a></li>
 							<li>Email: <a href="mailto:support@arogyagramin.com"> support@arogyagramin.com</a></li>
 							<li>12A & 80G</li>
-							<li>Login</li>
+							<li>
+								<?php
+								if (isset($_SESSION['email'])) {
+								?>
+									<a href="logout.php">Logout</a>
+								<?php
+								} else {
+								?>
+									<a href="" data-toggle="modal" data-target="#myModal">login</a>
+								<?php
+
+								}
+
+								?>
+							</li>
 						</ul>
 					</div>
 					<div class="top-right">

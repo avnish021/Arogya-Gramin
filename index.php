@@ -650,5 +650,35 @@ include 'connect.php';
         </div>
     </div>
 </div>-->
-
+<section class="subscribe-section bd-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1">
+				<div class="subscribe-wrap">
+					<div class="sub-bg"></div>
+					<div class="child"></div>
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<div class="section-heading">
+								<h2>Newsletter Subscription</h2>
+								<p>Subscribe our foundation.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="subscribe-form-wrap">
+								<form action="#" class="subscribe-form" method="post">
+									<input type="email" name="email" class="form-input" placeholder="Enter Your Email Address..." required="">
+									<input type="hidden" name="rdt" value="<?php echo date("l j \ F Y")?>">
+									<input type="hidden" name="sub">
+									<button type="submit" class="submit-btn" value="Subscribe">Subscription</button>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- ./ subscribe-section -->
 <?php include 'footer.php' ?>

@@ -6,7 +6,6 @@ if (isset($_POST['sub'])) {
 	$email = $_POST['email'];
 	$rdt = $_POST['rdt'];
 	$sql = "INSERT INTO `sub` (`email`, `status`, `rdt`) VALUES ('$email', 'True', '$rdt')";
-
 	if ($conn->query($sql) === TRUE) {
 		echo "<script>alert('Thank You for Subscribed Arogya Gramin');</script>";
 	} else {
@@ -15,10 +14,6 @@ if (isset($_POST['sub'])) {
 }
 $conn->close();
 ?>
-<div style="clear:both; margin-top:2px;">
-	<br /><br /><br />
-</div>
-
 <section class="widget-section padding">
 	<div class="widget-bg"></div>
 	<div class="container">
