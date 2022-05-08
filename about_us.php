@@ -216,6 +216,7 @@
 			</div>
 		</div>
 	</div>
-</div><!-- ./ sponsor-section -->
+</div>
+<!-- ./ sponsor-section -->
 
 <?php include 'footer.php' ?>
