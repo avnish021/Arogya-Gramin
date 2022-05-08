@@ -183,7 +183,6 @@ include 'connect.php';
 							$result = $conn->query($sql);
 
 							if ($result->num_rows > 0) {
-								// output data of each row
 								while ($row = $result->fetch_assoc()) {
 							?>
 									<div class="card boxshadow item mt-3 p-2">

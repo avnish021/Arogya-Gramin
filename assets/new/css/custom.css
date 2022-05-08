@@ -43,4 +43,18 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     background-color: #F7FAFE;
   }
+
+  .chat_for_bussiness{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    background: #25d366;
+  }
+
+  .chat_for_bussiness a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
   

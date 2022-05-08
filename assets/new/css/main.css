@@ -2979,6 +2979,28 @@ blockquote span{
     line-height: 35px;
     border-radius: 2px;
 }
+.widget-social .youtube i{
+    background-color: #FF0000;
+    color: #fff;
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+}
+.widget-social .linkedin i{
+    background-color: #0077b5;
+    color: #fff;
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+}
 .widget-title{
     display: block;
     margin-bottom: 25px;
