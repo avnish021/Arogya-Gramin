@@ -1,112 +1,162 @@
-<?php include 'header.php'?>
-<div class="container-fulid">
-<div class="page-head_agile_info_w3l">
-		<div class="container">
-			<h3>Services</h3>
-			<!--/w3_short-->
-				 <div class="services-breadcrumb">
-						<div class="agile_inner_breadcrumb">
+<?php include 'header.php' ?>
+<section class="page-header padding">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="page-content text-center">
+			<h2>Services</h2>
+			<div class="page-item">
+				<a href="/"><i class="ti-home"></i>Home </a>
+				<p>Services</p>
+			</div>
+		</div>
+	</div>
+</section><!-- /.page-header -->
+<section class="service-section bd-bottom bg-grey padding">
+	<div class="container">
+		<div class="section-heading mb-40 text-center">
+			<span class="sub-heading">What we do?</span>
+			<h2>Our Services</h2>
+			<p>We Believe That We Can Save More Lifes With You!</p>
+		</div><!-- /.section-heading -->
+		<div class="service-wrap row">
+			<div class="col-lg-3 col-md-6 sm-padding">
+				<div class="service-box item-1 text-center">
+					<span></span>
+					<div class="service-content">
+						<i class="fa-thin fa-hospital"></i>
+						<h3>Hospital</h3>
+						<p>We are tieing up with hospitals to make it easy to take an appointment booking with directly through our health centres.</p>
+						<a href="hospital.php" class="read-more">Read More</a>
+					</div>
+					<div class="service-icon">
+						<i class="fa-thin fa-hospital"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 sm-padding">
+				<div class="service-box item-2 text-center">
+					<span></span>
+					<div class="service-content icon-2">
+						<i class="fa-thin fa-flask-vial"></i>
+						<h3>Lab</h3>
+						<p>We connect all types of labs with the organization and provide tests at discount rates to the people.</p>
+						<a href="lab.php" class="read-more">Read More</a>
+					</div>
+					<div class="service-icon icon-2">
+						<i class="fa-thin fa-flask-vial"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 sm-padding">
+				<div class="service-box item-3 text-center">
+					<span></span>
+					<div class="service-content icon-3">
+						<i class="fa-light fa-shop"></i>
+						<h3>Medical Store</h3>
+						<p>We are tieing up with Medical Store provide all type of medicine at maximum discount rate.</p>
+						<a href="medical.php" class="read-more">Read More</a>
+					</div>
+					<div class="service-icon icon-3">
+						<i class="fa-light fa-shop"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 sm-padding">
+				<div class="service-box item-4 text-center">
+					<span></span>
+					<div class="service-content icon-4">
+						<i class="fa-thin fa-address-card"></i>
+						<h3>Health Card</h3>
+						<p>Through Arogya Gramin Health Card, you can avail all the affordable health services by connecting with the organization.</p>
+						<a href="apply_healthcard2.php" class="read-more">Read More</a>
+					</div>
+					<div class="service-icon icon-4">
+						<i class="fa-thin fa-address-card"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 sm-padding mt-3">
+				<div class="service-box item-2 text-center">
+					<span></span>
+					<div class="service-content icon-2">
+						<i class="fa-light fa-building-circle-arrow-right"></i>
+						<h3>Yoga Kendra</h3>
+						<p>To build a healthy society we are also establishing yoga Kendra with the help of BPO's of the related location.</p>
+						<a href="#" class="read-more">Read More</a>
+					</div>
+					<div class="service-icon icon-2">
+						<i class="fa-light fa-building-circle-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- ./ service-section -->
+<section class="about-section-4 padding bg-grey">
+	<div class="container">
+		<div class="about-wrap row d-flex align-items-center">
+			<div class="col-md-7 sm-padding">
+				<div class="section-heading mb-20">
+					<span class="sub-heading">Benefits</span>
+					<h2>Benefits provided to card holder</h2>
+					<p class="text-justify">We have brought the best health card scheme ever. Under this, every village dweller and poor will be provided with the best health care along with special discounts.</p>
+				</div><!-- /.section-heading -->
+				<ul class="about-list mb-20">
+					<li><i class="fas fa-thumbs-up"></i>Affordable medical care.</li>
+					<li><i class="fas fa-thumbs-up"></i>Providing discount of 10 to 40 percent in the fees of hospitals and medicines.</li>
+					<li><i class="fas fa-thumbs-up"></i>Ambulance booking services on discount rate.</li>
+					<li><i class="fas fa-thumbs-up"></i>Appointment booking with hospitals and doctors direct through our health center.</li>
+					<li><i class="fas fa-thumbs-up"></i>Organize awareness program and for women and provide sanitary napkin in the minimum amount.</li>
+					<li><i class="fas fa-thumbs-up"></i>You can avail all these facilities immediately after getting membership of our “Arogya Gramin Swasthya Card” at a membership fee of only Rs. 99 / -.for single card and Rs. 149/- for family card.</li>
+				</ul>
+				<a href="apply_healthcard2" class="default-btn">Apply for Health Card <span></span></a>
+			</div>
+			<div class="col-md-5 sm-padding">
+				<div class="about-thumb">
+					<img src="images/slider/helth.jpg" alt="arogya gramin">
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- ./ benifits-section-4 -->
+<section class="cta-section-3 bd-bottom padding">
+	<div class="container">
+		<div class="cta-wrap text-center">
+			<div class="section-heading mb-40 text-center">
+				<span class="sub-heading">How We Help</span>
+				<h2>We Help Nonprofits Become <br>More Effective!</h2>
+				<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+			</div><!-- /.section-heading -->
+			<a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
+		</div>
+	</div>
+</section><!-- ./ cta-section-3 -->
 
-						   <ul class="w3_short">
-								<li><a href="index.html">Home</a><i style="color:black">|</i></li>
-								<li style='color:black'>Services</li>
-							</ul>
-						 </div>
-				</div>
-	   <!--//w3_short-->
-	</div>
-</div>
-<div class="container">
-	<div class="row" style="margin-top:50px">
-		<center><h3><u><b>Our Services</b></u></h3></center>
-		<br>
-		<div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='hospital.php'">
-			<div style="box-shadow:0px 10px 10px 0px;width:96%">
-				<div style="width:98%;margin-top:20px;margin-bottom:20px;">
-				<center><h4><b>Hospital</b></h4>
-				<br>
-				<span >
-				We are tieing up with hospitals to make it easy to take an appointment booking with directly through our health centres.
-				</span>
-				<hr>
-				</center>
-				</div>
+<div class="sponsor-section">
+	<div class="container">
+		<div class="slider sponsor-carousel nav-style">
+			<div class="sponsor-item">
+				<img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
 			</div>
-		</div>
-		<div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='lab.php'">
-			<div style="box-shadow:0px 10px 10px 0px;width:96%">
-				<div style="width:98%;margin-top:20px;margin-bottom:20px;">
-				<center><h4><b>Lab</b></h4>
-				<br>
-				<span >
-				We connect all types of labs with the organization and provide tests at discount rates to the people.
-				</span>
-				<hr>
-				</center>
-				</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
 			</div>
-		</div>
-		<div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='medical.php'">
-			<div style="box-shadow:0px 10px 10px 0px;width:96%">
-				<div style="width:98%;margin-top:20px;margin-bottom:20px;">
-				<center><h4><b>Medical Store</b></h4>
-				<br>
-				<span >
-				We are tieing up with Medical Store provide all type of medicine at maximum discount rate. 
-				</span>
-				<hr>
-				</center>
-				</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
 			</div>
-		</div>
-		<div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='apply_healthcard2.php'">
-			<div style="box-shadow:0px 10px 10px 0px;width:96%">
-				<div style="width:98%;margin-top:20px;margin-bottom:20px;">
-				<center><h4><b>Health Card</b></h4>
-				<br>
-				<span >
-				Through Arogya Gramin Health Card, you can avail all the affordable health services by connecting with the organization.
-				</span>
-				<hr>
-				</center>
-				</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
 			</div>
-		</div>
-		
-			<div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href=''">
-			<div style="box-shadow:0px 10px 10px 0px;width:96%">
-				<div style="width:98%;margin-top:20px;margin-bottom:20px;">
-				<center><h4><b>Yoga Kendra</b></h4>
-				<br>
-				<span >
-				To build a healthy society we are also establishing yoga Kendra with the help of BPO's of the related location. 
-				</span>
-				<hr>
-				</center>
-				</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
 			</div>
-		</div>
-		
+			<div class="sponsor-item">
+				<img src="assets/images/partner/6.png" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
+			</div>
 		</div>
 	</div>
-</div>
-<div class="container">
-<div class="row" style="margin-top:30px;margin-bottom:20px;">
-    <div class="col-sm-12">
-  
-   <h5><b>We have brought the best health card scheme ever. Under this, every village dweller and poor will be provided with the best health care along with special discounts</b></h5><br>
-   <h3><b><u>Benefits provided to card holder</u></b></h3><br>
-   <p>1.	Affordable medical care. <hr>
-2.	Providing discount of 10 to 40 percent in the fees of hospitals and medicines. <hr>
-3.	Ambulance booking services on discount rate <hr>
-4.	Appointment booking with hospitals and doctors direct through our health center. <hr>
-5.	Organize awareness program and for women and provide sanitary napkin in the minimum amount. <hr>
-6.	You can avail all these facilities immediately after getting membership of our “Arogya Gramin Swasthya Card” at a membership fee of only Rs. 99 / -.for single card and Rs. 149/- for family card <hr>
-</p>
-<center><a href=""> <img src="images/slider/helth.JPG" style="width:70%" alt="" /></a></center> <br>
-<center><a href="apply_healthcard2" class="btn btn-info">Apply for Health Card</a></center>
-      </div>
-</div>
-</div>
-<?php include 'footer.php'?>
-  
+</div><!-- ./ sponsor-section -->
+<?php include 'footer.php' ?>
