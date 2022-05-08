@@ -121,82 +121,80 @@ include 'connect.php';
             प्रकार की धोखाधड़ी गतिविधि का संगठन कड़ा विरोध करता है कृपया सत्यापन के बाद हीं कोई कार्य करें। के बाद ही
             कोई कार्य करें।
         </marquee>
-        <!-- <h4>
-			<br>
-		</h4> -->
         <hr>
     </div>
+</div>
 
-    <section class="about-section-4 bd-bottom padding">
-        <div class="container">
-            <div class="about-wrap row d-flex align-items-center">
-                <div class="col-md-6 sm-padding">
-                    <div class="section-heading text-left mb-20">
-                        <span class="sub-heading">About</span>
-                        <h2>Arogya Gramin Healthcare Foundation</h2>
-                        <p class="text-justify">Arogya Gramin Healthcare Foundation is ISO 9001: 2015 certified and
-                            registered under the Government of Indian Act 2013. This organization is working within the
-                            Government of India to make healthcare facilities reach more and more people at a lower
-                            cost. Our organization is fully operational in rural and urban areas and we are trying to
-                            establish our branch in different areas of the country.</p>
-                        <ul class="about-list mb-20">
-                            <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in
-                                everything we do.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>We care about the community.</li>
-                            <li><i class="fas fa-thumbs-up"></i>We care about the environment.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>Our people are our strength.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
-                            <li><i class="fas fa-thumbs-up"></i>Building a healthy society and ensuring their access to
-                                health sectors.</li>
-                        </ul>
-                    </div><!-- /.section-heading -->
-                    <a href="about_us.php" class="default-btn">Learn More<span></span></a>
-                </div>
-                <div class="col-md-6 sm-padding">
-                    <div class="about-img">
-                        <img src="assets/new/img/about-bg-1.png" alt="">
-                    </div>
+<section class="about-section-4 bd-bottom padding">
+    <div class="container">
+        <div class="about-wrap row d-flex align-items-center">
+            <div class="col-md-6 sm-padding">
+                <div class="section-heading text-left mb-20">
+                    <span class="sub-heading">About</span>
+                    <h2>Arogya Gramin Healthcare Foundation</h2>
+                    <p class="text-justify">Arogya Gramin Healthcare Foundation is ISO 9001: 2015 certified and
+                        registered under the Government of Indian Act 2013. This organization is working within the
+                        Government of India to make healthcare facilities reach more and more people at a lower
+                        cost. Our organization is fully operational in rural and urban areas and we are trying to
+                        establish our branch in different areas of the country.</p>
+                    <ul class="about-list mb-20">
+                        <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in
+                            everything we do.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the community.</li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the environment.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>Our people are our strength.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
+                        <li><i class="fas fa-thumbs-up"></i>Building a healthy society and ensuring their access to
+                            health sectors.</li>
+                    </ul>
+                </div><!-- /.section-heading -->
+                <a href="about_us.php" class="default-btn">Learn More<span></span></a>
+            </div>
+            <div class="col-md-6 sm-padding">
+                <div class="about-img">
+                    <img src="assets/new/img/about-bg-1.png" alt="">
                 </div>
             </div>
         </div>
-    </section><!-- ./ about-section -->
+    </div>
+</section><!-- ./ about-section -->
 
-    <section class="feature-section padding">
-        <div class="container">
-            <div class="feature-wrap row d-flex align-items-center">
-                <div class="col-lg-7 sm-padding">
-                    <div class="row">
-                        <form action="" id="volunteer-form" class="form-horizontal appointment-form2" style="width:77%">
-                            <div class="section-heading mb-4">
-                                <span>Notification</span>
-                            </div>
-                            <div class="section-heading d-flex justify-content-between align-items-center">
-                                <h3 class="font-weight-bold" id="notification-font">Latest News</h3>
+<section class="feature-section padding">
+    <div class="container">
+        <div class="feature-wrap row d-flex align-items-center">
+            <div class="col-lg-7 sm-padding">
+                <div class="row">
+                    <form action="" id="volunteer-form" class="form-horizontal appointment-form2" style="width:88%">
+                        <div class="section-heading mb-4">
+                            <span>Notification</span>
+                        </div>
+                        <div class="section-heading d-flex justify-content-between align-items-center">
+                            <h3 class="font-weight-bold" id="notification-font">Latest News</h3>
 
-                                <a href="allnotification.php" type="button" class="btn btn-outline-danger">More</a>
-                            </div>
-                            <div class="form-group row notificationslider">
-                                <?php
+                            <a href="allnotification.php" type="button" class="btn btn-outline-danger">More</a>
+                        </div>
+                        <div class="form-group row notificationslider">
+                            <?php
 							$sql = "SELECT * FROM notification LIMIT 3";
 							$result = $conn->query($sql);
 
 							if ($result->num_rows > 0) {
 								while ($row = $result->fetch_assoc()) {
 							?>
-                                <div class="card boxshadow item mt-3 p-2">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
-                                        <a href="<?php echo $row['link']; ?>" type="button"
-                                            class="btn btn-sm btn-outline-danger">Open</a>
-                                        <p class="card-text"></p>
+                            <div class="card boxshadow item mt-3 p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
+                                    <a href="<?php echo $row['link']; ?>" type="button"
+                                        class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <p class="card-text"></p>
 
-                                    </div>
                                 </div>
-                                <?php
+                            </div>
+                            <?php
 								}
 							} else {
 								//echo "0 results";
@@ -205,280 +203,247 @@ include 'connect.php';
 
 
 
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 sm-padding">
-                    <form action="book_op.php" method="post" id="volunteer-form"
-                        class="form-horizontal appointment-form">
-                        <div class="section-heading">
-                            <span>Appointment</span>
-                            <h3>Book an Appointment</h3>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <select class="form-control" name="select_dp">
-                                    <option>Select Department</option>
-                                    <option value="Doctor">Doctor</option>
-                                    <option value="Hospital">Hospital</option>
-                                    <option value="Query">Query</option>
-                                    <option value="Franchise Partner">Franchise Partner</option>
-                                    <option value="Appointment Book">Appointment Book</option>
-                                    <option value="Arogya gramin">Arogya Gramin</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="text" id="volunteer-form-name" name="name" class="form-control"
-                                    placeholder="Your Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-12">
-                                <input type="text" id="volunteer-form-phone" name="phone" class="form-control"
-                                    placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="email" id="volunteer-email" name="email" class="form-control"
-                                    placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
-                            </div>
-                        </div>
-                        <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit
-                            <span></span></button>
-                        <div id="volunteer-form-messages" class="alert" role="alert"></div>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!--Add popup-->
-
-
-    <!--/Making comment of Product code-->
-    <!--/grids-->
-    <!-- /new_arrivals -->
-
-    <!--<div class="new_arrivals_agile_w3ls_info"> 
-		<div class="container">
-		    <h3 class="wthree_text_info">Our Products</span></h3>		
-				<div id="horizontalTab">
-				<ul class="resp-tabs-list" style="background:none">
-								<li style="background:none;width:100%">Products</li>
-							
-						</ul>
-					<div class="resp-tabs-container">
-					<!--/tab_one-->
-
-    <!--<div class="tab1">
-						<?php
-						include 'connect.php';
-						$result = mysqli_query($conn, "SELECT * FROM `add_product` Limit 8");
-						while ($row = mysqli_fetch_assoc($result)) {
-							echo "<form method='post' action='product2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "&price=" . $row['price'] . "&discount=" . $row['discount'] . "&img=" . $row['photo'] . "'><input type='hidden' name='id' value='" . $row['id'] . "'><div class='col-md-3 product-men'><div class='men-pro-item simpleCart_shelfItem'><div class='men-thumb-item'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-front' style='height:270px;'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-back' style='height:270px;'><div class='men-cart-pro'><div class='inner-men-cart-pro'><a href='buy.php?id=" . $row['id'] . "' class='link-product-add-cart'>Buy Now</a></div></div></div><div class='item-info-product '><h4><a href='buy.php?id=" . $row['id'] . "'>" . $row['prodcut_name'] . "</a></h4><div class='info-product-price'><span class='item_price'<i style='color: #00aa59' class='fa fa-inr'></i>&nbsp;&nbsp;" . $row['after_discount'] . "/-</span><del><i style='color: #00aa59' class='fa fa-inr'></i> " . $row['price'] . "/-</del><br>off &nbsp;" . $row['discount'] . " % <br><p><b>Quantity:<b><input type='number' name='quantity' class='form-control' required></p></div><div class='snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2'><a href='prodcut2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "'><input type='submit' value='Add to cart' class='button'></a></div></div></div></div></form>";
-						}
-						mysqli_close($conn);
-						?>
-							
-							<div class="clearfix"></div>
-						</div>
-						<!--//tab_one-->
-    <!--/tab_two-->
-
-</div>
-</div>
-
-
-
-<div class="container">
-    <div class="row" style="margin-top:50px">
-        <center>
-            <h3><u><b>Our Services</b></u></h3>
-        </center>
-        <br>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='hospital.php'">
-            <div style="box-shadow:0px 10px 10px 0px;width:96%">
-                <div style="width:98%;margin-top:20px;margin-bottom:20px;">
-                    <center>
-                        <h4><b>Hospital</b></h4>
-                        <br>
-                        <span>
-                            We are tieing up with hospitals to make it easy to take an appointment booking with directly
-                            through our health centres.
-                        </span>
-                        <hr>
-                    </center>
-                </div>
+            <div class="col-lg-5 sm-padding">
+                <form action="book_op.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
+                    <div class="section-heading">
+                        <span>Appointment</span>
+                        <h3>Book an Appointment</h3>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <select class="form-control" name="select_dp">
+                                <option>Select Department</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Query">Query</option>
+                                <option value="Franchise Partner">Franchise Partner</option>
+                                <option value="Appointment Book">Appointment Book</option>
+                                <option value="Arogya gramin">Arogya Gramin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="text" id="volunteer-form-name" name="name" class="form-control"
+                                placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-12">
+                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control"
+                                placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="email" id="volunteer-email" name="email" class="form-control"
+                                placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
+                        </div>
+                    </div>
+                    <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit
+                        <span></span></button>
+                    <div id="volunteer-form-messages" class="alert" role="alert"></div>
+                </form>
             </div>
         </div>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='lab.php'">
-            <div style="box-shadow:0px 10px 10px 0px;width:96%">
-                <div style="width:98%;margin-top:20px;margin-bottom:20px;">
-                    <center>
-                        <h4><b>Lab</b></h4>
-                        <br>
-                        <span>
-                            We connect all types of labs with the organization and provide tests at discount rates to
-                            the people..
-                        </span>
-                        <hr>
-                    </center>
+    </div>
+</section>
+
+<section class="service-section bd-bottom bg-grey padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">What we do?</span>
+            <h2>Our Services</h2>
+            <p>We Believe That We Can Save More Lifes With You!</p>
+        </div><!-- /.section-heading -->
+        <div class="service-wrap row services-carousel">
+            <div class="col-lg-3 col-md-6 sm-padding item">
+                <div class="service-box item-1 text-center">
+                    <span></span>
+                    <div class="service-content">
+                        <i class="fa-thin fa-hospital"></i>
+                        <h3>Hospital</h3>
+                        <p>We are tieing up with hospitals to make it easy to take an appointment booking with directly
+                            through our health centres.</p>
+                        <a href="hospital.php" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon">
+                        <i class="fa-thin fa-hospital"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='medical.php'">
-            <div style="box-shadow:0px 10px 10px 0px;width:96%">
-                <div style="width:98%;margin-top:20px;margin-bottom:20px;">
-                    <center>
-                        <h4><b>Medical Store</b></h4>
-                        <br>
-                        <span>
-                            We are tieing up with Medical Store provide all type of medicine at maximum discount rate.
-                        </span>
-                        <hr>
-                    </center>
+            <div class="col-lg-3 col-md-6 sm-padding item">
+                <div class="service-box item-2 text-center">
+                    <span></span>
+                    <div class="service-content icon-2">
+                        <i class="fa-thin fa-flask-vial"></i>
+                        <h3>Lab</h3>
+                        <p>We connect all types of labs with the organization and provide tests at discount rates to the
+                            people.</p>
+                        <a href="lab.php" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-2">
+                        <i class="fa-thin fa-flask-vial"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer"
-            onclick="window.location.href='apply_healthcard2.php'">
-            <div style="box-shadow:0px 10px 10px 0px;width:96%">
-                <div style="width:98%;margin-top:20px;margin-bottom:20px;">
-                    <center>
-                        <h4><b>Health Card</b></h4>
-                        <br>
-                        <span>
-                            Through Arogya Gramin Health Card, you can avail all the affordable health services by
-                            connecting with the organization.
-                        </span>
-                        <hr>
-                    </center>
+            <div class="col-lg-3 col-md-6 sm-padding item">
+                <div class="service-box item-3 text-center">
+                    <span></span>
+                    <div class="service-content icon-3">
+                        <i class="fa-light fa-shop"></i>
+                        <h3>Medical Store</h3>
+                        <p>We are tieing up with Medical Store provide all type of medicine at maximum discount rate.
+                        </p>
+                        <a href="medical.php" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-3">
+                        <i class="fa-light fa-shop"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href=''">
-            <div style="box-shadow:0px 10px 10px 0px;width:96%">
-                <div style="width:98%;margin-top:20px;margin-bottom:20px;">
-                    <center>
-                        <h4><b>Yoga Kendra</b></h4>
-                        <br>
-                        <span>
-                            To build a healthy society we are also establishing yoga Kendra with the help of BPO's of
-                            the related location.
-                        </span>
-                        <hr>
-                    </center>
+            <div class="col-lg-3 col-md-6 sm-padding item">
+                <div class="service-box item-4 text-center">
+                    <span></span>
+                    <div class="service-content icon-4">
+                        <i class="fa-thin fa-address-card"></i>
+                        <h3>Health Card</h3>
+                        <p>Through Arogya Gramin Health Card, you can avail all the affordable health services by
+                            connecting with the organization.</p>
+                        <a href="apply_healthcard2.php" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-4">
+                        <i class="fa-thin fa-address-card"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 sm-padding item">
+                <div class="service-box item-2 text-center">
+                    <span></span>
+                    <div class="service-content icon-2">
+                        <i class="fa-light fa-building-circle-arrow-right"></i>
+                        <h3>Yoga Kendra</h3>
+                        <p>To build a healthy society we are also establishing yoga Kendra with the help of BPO's of the
+                            related location.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-2">
+                        <i class="fa-light fa-building-circle-arrow-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+</section>
 
-<div class="container-fluid">
-    <div class="row" style="margin-top:50px">
-        <center>
-            <h3><u><b>Our Founder</b></u></h3>
-        </center>
-        <br>
-
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/a1.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Vikash Kumar</b></h4>
-                <span>(Founder & CEO) 7 years of work experience and knowledge of 10 projects which are currently
-                    successfully running.</span>
-                <hr>
-            </center>
-        </div>
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/a2.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Avnish Kumar</b></h4>
-                <span>(Co-Founder) More than 7 years of experience</span>
-                <hr>
-            </center>
-        </div>
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/a4.jpg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Vikram Kumar</b></h4>
-                <span>(Project Co-Ordinator)</span>
-                <hr>
-            </center>
-        </div>
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/a3.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Amit Kumar</b></h4>
-                <span>(State Head(Sales))</span>
-                <hr>
-            </center>
-        </div>
-
-        <!--
-			<div class="col-sm-3" style="margin-top:20px;">
-			<center>
-			<img src="assets/images/team/z3.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;"><hr>
-			<h4><b>Rajeev Kumar</b></h4>
-			<span>State Partner (Uttar Pradesh)</span><hr>
-			</center>
-		</div>
-		<div class="col-sm-3" style="margin-top:20px;">
-			<center>
-			<img src="assets/images/team/z4.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;"><hr>
-			<h4><b>Samir Khan</b></h4>
-			<span>State Partner (Madhya Pradesh Pradesh)</span><hr>
-			</center>
-		</div>-->
-    </div>
-</div>
+<section class="team-section bd-bottom padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Founders</span>
+            <h2>Our Founders</h2>
+        </div><!-- /.section-heading -->
+        <div class="team-wrap row">
+            <div class="col-lg-3 col-md-2 sm-padding">
+                <div class="team-item">
+                    <div class="team-thumb">
+                        <img src="assets/images/team/a1.jpeg" alt="img" style="height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4>Vikas Kumar</h4>
+                        <span>(Founder & CEO) 7 years of work experience and knowledge of 10 projects which are
+                            currently
+                            successfully running.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2 sm-padding">
+                <div class="team-item">
+                    <div class="team-thumb">
+                        <img src="assets/images/team/a2.jpeg" alt="img" style="height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4>Avinash Kumar</h4>
+                        <span>(Co-Founder) More than 7 years of experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2 sm-padding">
+                <div class="team-item">
+                    <div class="team-thumb">
+                        <img src="assets/images/team/a4.jpg" alt="img" style="height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4>Vikram Kumar</h4>
+                        <span>(Project Co-Ordinator)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2 sm-padding">
+                <div class="team-item">
+                    <div class="team-thumb">
+                        <img src="assets/images/team/a3.jpeg" alt="img" style="height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4>Amit Kumar</h4>
+                        <span>(State Head(Sales))</span>
+                    </div>
+                </div>
+            </div>
 
 
-<!--New State Partner-->
-
-<div class="container-fluid">
-    <div class="row" style="margin-top:50px">
-        <center>
-            <h3><u><b>Our Partners</b></u></h3>
-        </center>
-        <br>
-
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/z3.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Rajeev Kumar</b></h4>
-                <span>State Partner (Uttar Pradesh)</span>
-                <hr>
-            </center>
-        </div>
-        <div class="col-sm-3" style="margin-top:20px;">
-            <center>
-                <img src="assets/images/team/z4.jpeg" alt="" style="width:90%;border:5px solid grey;height:280px;">
-                <hr>
-                <h4><b>Samir Khan</b></h4>
-                <span>State Partner (Madhya Pradesh)</span>
-                <hr>
-            </center>
         </div>
     </div>
-</div>
+</section>
+<!-- ./ team-secction -->
+<section class="event-section bd-bottom padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Partners</span>
+            <h2>Our Partners</h2>
+        </div><!-- /.section-heading -->
+        <div class="slider partner-carousel nav-style">
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/images/team/z3.jpeg" alt="event" style="height:250px;width:350px;">
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Rajeev Kumar</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-map-marker-alt"></i>State Partner (Uttar Pradesh)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/images/team/z4.jpeg" alt="event" style="height:250px;width:350px;">
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Samir Khan</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            State Partner (Madhya Pradesh)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ event-section -->
+
 <div class="sponsor-section">
     <div class="container">
         <div class="slider sponsor-carousel nav-style">
@@ -540,6 +505,7 @@ include 'connect.php';
         </div>
     </div>
 </div>-->
+<br/>
 <section class="subscribe-section bd-bottom">
     <div class="container">
         <div class="row">
