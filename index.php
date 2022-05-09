@@ -173,7 +173,8 @@ include 'connect.php';
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
                             ?>
-                                    <div class="card boxshadow item mt-3 p-2">
+                                    <div class="card item mt-3 p-2" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #F7FAFE;">
                                         <div class="card-body">
                                             <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
                                             <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>

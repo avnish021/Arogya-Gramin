@@ -41,10 +41,6 @@
     margin-left: auto;
   }
 
-  .boxshadow {
-    box-shadow: rgba(73, 73, 119, 0.25) 0px 2px 5px -1px;
-    background-color: #F7FAFE;
-  }
 
   .chat_for_bussiness {
     font-family: sans-serif;
