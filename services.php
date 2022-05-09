@@ -91,7 +91,9 @@
 			</div>
 		</div>
 	</div>
-</section><!-- ./ service-section -->
+</section>
+
+<!-- ./ service-section -->
 <section class="about-section-4 padding bg-grey">
 	<div class="container">
 		<div class="about-wrap row d-flex align-items-center">

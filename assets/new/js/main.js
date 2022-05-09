@@ -309,6 +309,51 @@
 
         });
 
+        /* ======= Services ======= */
+        $('.services-carousel').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            speed: 700,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: false,
+            nextArrow: false,
+            dots: false,
+            pauseOnFocus: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
         /* ======= Events ======= */
         $('.event-carousel').slick({
             dots: true,
@@ -320,6 +365,50 @@
             nextArrow: '<i class="ti-arrow-right right"></i>',
             infinite: true,
             dots: true,
+            pauseOnFocus: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+        /* ======= Partners ======= */
+        $('.partner-carousel').slick({
+            dots: false,
+            infinite: false,
+            speed: 800,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            prevArrow: false,
+            nextArrow: false,
+            infinite: true,
             pauseOnFocus: false,
             pauseOnHover: true,
             responsive: [
