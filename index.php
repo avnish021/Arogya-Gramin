@@ -263,7 +263,7 @@ include 'connect.php';
                         <h2>Over 2.5 Billion People <br>Lack Safe Drinking <br>Clean Water!</h2>
                         <p>Charitable giving as a religious act or duty is referred to as alms. The name stems from the most obvious expression of the virtue of charity, giving the recipients of it the means they need to survive.</p>
                     </div><!-- /.section-heading -->
-                    <a href="cause-single.html" class="default-btn">Make a donation <span></span></a>
+                    <a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation <span></span></a>
                 </div>
             </div>
         </div>

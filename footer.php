@@ -27,9 +27,9 @@ $conn->close();
 					<form>
 						<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ILoQSsX3a0xc4O" async> </script>
 					</form>
-					<div class="chat_for_bussiness mt-2">
+					<!-- <div class="chat_for_bussiness mt-2">
 						<a href="https://wa.me/message/QVWBOLAHFLZIA1">Chat us For Business Partnership</a>
-					</div>
+					</div> -->
 					<ul class="widget-social mt-4">
 						<li class="facebook"><a href="https://www.facebook.com/arogyagraminhealthcarefoundation"><i class="fab fa-facebook-f"></i></a></li>
 						<li class="youtube"><a href="https://www.youtube.com/channel/UCWuHT2-20eeI39or16hqiDg"><i class="fab fa-youtube"></i></a></li>
@@ -98,7 +98,6 @@ $conn->close();
 
 <footer class="footer-section text-center">
 	<div class="container">
-		<p>Arogya Gramin Healthcare Foundation Registered under Govt. of Indian Act. 2013 ISO Certified 9001:2015</p>
 		<p>Copyright © 2021 Arogya Gramin. All Rights Reserved.</p>
 	</div>
 </footer><!-- /.footer-section -->

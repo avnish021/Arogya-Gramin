@@ -174,7 +174,7 @@ session_start();
 							<li><a href="https://www.linkedin.com/company/arogyagramin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 							<li><a href="https://twitter.com/GraminCare" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="https://www.instagram.com/arogyagraminhealthcare/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="https://g.page/r/Cai6mR-r-KAoEBA" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+							<!-- <li><a href="https://g.page/r/Cai6mR-r-KAoEBA" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -182,25 +182,20 @@ session_start();
 		</div><!-- /.top-bar -->
 		<div class="primary-header-one primary-header">
 			<div class="containerone">
-				<div class="primary-header-inner pt-3">
+				<div class="primary-header-inner">
 					<div class="header-logo">
 						<a href="index.php" class="d-flex">
-							<img src="images/logo1.png" alt="Logo" style="width:130px;height:70px;" />
-							<!-- <span id="arogyaone">AROGYA GRAMIN</span> -->
-							<!-- <span id="arogyatwo">HEALTHCARE FOUNDATION</span> -->
-							<!-- <h3>HEALTHCARE FOUNDATION</h3>							 -->
+							<img src="images/logo1.png" alt="Logo" style="width:110px;height:50px;" />
 							<div>
 								<h5 id="arogyaone">AROGYA&nbsp;GRAMIN</h5>
-								<h5 id="arogyatwo">HEALTHCARE&nbsp;FOUNDATION</h5>
-								<h5 id="arogyathree">Arogya Gramin Arogya Bharat Ek Mission</h5>
+								<!-- <h5 id="arogyatwo">HEALTHCARE&nbsp;FOUNDATION</h5>
+								<h5 id="arogyathree">Arogya Gramin Arogya Bharat Ek Mission</h5> -->
 							</div>
 						</a>
 					</div><!-- /.header-logo -->
 					<div class="header-menu-wrap">
 						<ul class="dl-menu">
-							<li><a href="index.php">Home</a>
-
-							</li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="javascript:void(0)">Tie-Up</a>
 								<ul>
 									<li><a href="hospital.php">Hospital</a></li>

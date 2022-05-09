@@ -2,10 +2,6 @@
 include 'header.php';
 include 'connect.php';
 ?>
-<div class="map-wrapper">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7624.526634832133!2d85.14959971674429!3d25.595029799273796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed593206350de7%3A0x28a0f8ab1f99baa8!2sArogya%20Gramin%20Healthcare%20Foundation!5e0!3m2!1sen!2sin!4v1625478930939!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div><!-- /#google-map -->
-
 <section class="contact-section bg-grey padding">
   <div class="container">
     <div class="row d-flex align-items-center">
@@ -72,6 +68,10 @@ include 'connect.php';
     </div>
   </div>
 </section>
+
+<div class="map-wrapper">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7624.526634832133!2d85.14959971674429!3d25.595029799273796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed593206350de7%3A0x28a0f8ab1f99baa8!2sArogya%20Gramin%20Healthcare%20Foundation!5e0!3m2!1sen!2sin!4v1625478930939!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div><!-- /#google-map -->
 
 <?php
 
