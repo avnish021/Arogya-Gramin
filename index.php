@@ -114,17 +114,6 @@ include 'connect.php';
     </div><!-- slider-section -->
 </div>
 
-<div class="agile_last_double_sectionw3ls">
-    <div class="w-100 text-white" id="borderbox">
-        <marquee width="100%" direction="left" class="mt-3">
-            Organization strictly opposed any type of fraudulent activity please do any work after verification. किसी भी
-            प्रकार की धोखाधड़ी गतिविधि का संगठन कड़ा विरोध करता है कृपया सत्यापन के बाद हीं कोई कार्य करें। के बाद ही
-            कोई कार्य करें।
-        </marquee>
-        <hr>
-    </div>
-</div>
-
 <section class="about-section-4 bd-bottom padding">
     <div class="container">
         <div class="about-wrap row d-flex align-items-center">
@@ -178,28 +167,27 @@ include 'connect.php';
                         </div>
                         <div class="form-group row notificationslider">
                             <?php
-							$sql = "SELECT * FROM notification LIMIT 3";
-							$result = $conn->query($sql);
+                            $sql = "SELECT * FROM notification LIMIT 3";
+                            $result = $conn->query($sql);
 
-							if ($result->num_rows > 0) {
-								while ($row = $result->fetch_assoc()) {
-							?>
-                            <div class="card boxshadow item mt-3 p-2">
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
-                                    <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
-                                    <a href="<?php echo $row['link']; ?>" type="button"
-                                        class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <p class="card-text"></p>
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                            ?>
+                                    <div class="card boxshadow item mt-3 p-2">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
+                                            <a href="<?php echo $row['link']; ?>" type="button" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <p class="card-text"></p>
 
-                                </div>
-                            </div>
+                                        </div>
+                                    </div>
                             <?php
-								}
-							} else {
-								//echo "0 results";
-							}
-							?>
+                                }
+                            } else {
+                                //echo "0 results";
+                            }
+                            ?>
 
 
 
@@ -229,21 +217,17 @@ include 'connect.php';
                     </div>
                     <div class="form-group row mt-2">
                         <div class="col-sm-12">
-                            <input type="text" id="volunteer-form-name" name="name" class="form-control"
-                                placeholder="Your Name" required>
+                            <input type="text" id="volunteer-form-name" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                     </div>
                     <div class="form-group row mt-2">
                         <div class="col-12">
-                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control"
-                                placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10"
-                                required>
+                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control" placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10" required>
                         </div>
                     </div>
                     <div class="form-group row mt-2">
                         <div class="col-sm-12">
-                            <input type="email" id="volunteer-email" name="email" class="form-control"
-                                placeholder="Your Email" required>
+                            <input type="email" id="volunteer-email" name="email" class="form-control" placeholder="Your Email" required>
                         </div>
                     </div>
                     <div class="form-group row mt-2">
@@ -259,6 +243,31 @@ include 'connect.php';
         </div>
     </div>
 </section>
+
+<section class="video-section bd-bottom">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6 custom">
+                <div class="video-btn text-center">
+                    <div class="play-btn">
+                        <a href="https://www.youtube.com/watch?v=RQu7jpcNUWI" class="img-popup" data-autoplay="true" data-vbtype="video"><i class="fas fa-play"></i></a>
+                        <div class="ripple"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <div class="video-wrap">
+                    <div class="section-heading mb-40">
+                        <span class="sub-heading">Watch Video</span>
+                        <h2>Over 2.5 Billion People <br>Lack Safe Drinking <br>Clean Water!</h2>
+                        <p>Charitable giving as a religious act or duty is referred to as alms. The name stems from the most obvious expression of the virtue of charity, giving the recipients of it the means they need to survive.</p>
+                    </div><!-- /.section-heading -->
+                    <a href="cause-single.html" class="default-btn">Make a donation <span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ video-secion -->
 
 <section class="service-section bd-bottom bg-grey padding">
     <div class="container">
@@ -347,6 +356,121 @@ include 'connect.php';
     </div>
 </section>
 
+<section class="cta-section bd-bottom">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 sm-padding">
+                <div class="cta-content">
+                    <div class="section-heading text-left">
+                        <span class="sub-heading">Join With Us</span>
+                        <h2>We Have Funded 120,00+ <br>Charity Projects Around The <br>World.</h2>
+                        <p>Charitable giving as a religious act or duty is referred to as alms. The name stems from the most obvious expression of the virtue of charity, giving the recipients of it the means they need to survive.</p>
+                    </div><!-- /.section-heading -->
+                </div>
+            </div>
+            <div class="col-md-6 sm-padding">
+                <form action="https://html.dynamiclayers.net/te/charitian/volunteer.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
+                    <div class="section-heading">
+                        <span>Join Us Now</span>
+                        <h3>Become A Volunteer</h3>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" id="volunteer-form-name" name="volunteer-name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" id="volunteer-email" name="volunteer-email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" id="volunteer-phone" name="volunteer-phone" class="form-control" placeholder="Phone No" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="volunteer-address" name="volunteer-address" class="form-control" placeholder="Your address" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <textarea id="volunteer-message" name="volunteer-message" cols="30" rows="5" class="form-control message" placeholder="Message" required=""></textarea>
+                        </div>
+                    </div>
+                    <button id="volunteer-submit" class="default-btn" type="submit">Become A Volunteer <span></span></button>
+                    <div id="volunteer-form-messages" class="alert" role="alert"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ cta-section -->
+
+<section class="service-section bd-bottom bg-grey padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">What we do?</span>
+            <h2>We Believe That We Can Save <br>More Lifes With You!</h2>
+            <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+        </div><!-- /.section-heading -->
+        <div class="service-wrap row">
+            <div class="col-lg-3 col-md-6 sm-padding">
+                <div class="service-box item-1 text-center">
+                    <span></span>
+                    <div class="service-content">
+                        <i class="cht cht-charity-1"></i>
+                        <h3>Clean Water For Poor Children in Asia</h3>
+                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <a href="service.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon">
+                        <i class="cht cht-charity-1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 sm-padding">
+                <div class="service-box item-2 text-center">
+                    <span></span>
+                    <div class="service-content icon-2">
+                        <i class="cht cht-donation-13"></i>
+                        <h3>Help Us For Build a New Church</h3>
+                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <a href="service.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-2">
+                        <i class="cht cht-donation-13"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 sm-padding">
+                <div class="service-box item-3 text-center">
+                    <span></span>
+                    <div class="service-content icon-3">
+                        <i class="cht cht-charity-6"></i>
+                        <h3>Build School For Children in Africa</h3>
+                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <a href="service.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-3">
+                        <i class="cht cht-charity-6"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 sm-padding">
+                <div class="service-box item-4 text-center">
+                    <span></span>
+                    <div class="service-content icon-4">
+                        <i class="cht cht-charity-12"></i>
+                        <h3>Medical Facilities For People in Ghana</h3>
+                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <a href="service.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="service-icon icon-4">
+                        <i class="cht cht-charity-12"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ service-section -->
+
 <section class="team-section bd-bottom padding">
     <div class="container">
         <div class="section-heading mb-40 text-center">
@@ -405,7 +529,169 @@ include 'connect.php';
         </div>
     </div>
 </section>
-<!-- ./ team-secction -->
+
+<section class="testimonials-section bd-bottom bg-grey padding">
+        <div class="container">
+            <div class="section-heading mb-40 text-center">
+                <span class="sub-heading">Clients Testimonial</span>
+                <h2>What Donors Say?</h2>
+                <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+            </div><!-- /.section-heading -->
+            <div class="slider testimonials-carousel nav-style carousel-dots">
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-1.png" alt="thumb">
+                        <h3>Kyle Frederick<span>Envato.Inc</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-2.png" alt="thumb">
+                        <h3>Jérémie Ambroise<span>Charitian.Ceo</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-3.png" alt="thumb">
+                        <h3>Ana Luiza Oliveira<span>Themeforest.Ceo</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-4.png" alt="thumb">
+                        <h3>Marcos Fernando<span>Facebook.Org</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="event-section bd-bottom padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Upcoming Events</span>
+            <h2>Charitian Upcoming Events</h2>
+            <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+        </div><!-- /.section-heading -->
+        <div class="slider event-carousel nav-style carousel-dots">
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-1.jpg" alt="event">
+                    <div class="date bg-red">
+                        <h3>28<span>Jan</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Fight For Right Cause</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>10:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-2.jpg" alt="event">
+                    <div class="date bg-yellow">
+                        <h3>28<span>sep</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Education For Children</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>09:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-3.jpg" alt="event">
+                    <div class="date bg-blue">
+                        <h3>28<span>Feb</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Help For Education</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>11:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-4.jpg" alt="event">
+                    <div class="date bg-purple">
+                        <h3>28<span>Jun</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Water For Children</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>12:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-5.jpg" alt="event">
+                    <div class="date bg-green">
+                        <h3>28<span>Aug</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Protect The Eco System</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>01:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-6.jpg" alt="event">
+                    <div class="date bg-pink">
+                        <h3>28<span>Mar</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Help For Rohingya People</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>08:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ event-section -->
+<!-- ./ team-section -->
 <section class="event-section bd-bottom padding">
     <div class="container">
         <div class="section-heading mb-40 text-center">
@@ -505,7 +791,7 @@ include 'connect.php';
         </div>
     </div>
 </div>-->
-<br/>
+<br />
 <section class="subscribe-section bd-bottom">
     <div class="container">
         <div class="row">
@@ -523,9 +809,8 @@ include 'connect.php';
                         <div class="col-md-6">
                             <div class="subscribe-form-wrap">
                                 <form action="#" class="subscribe-form" method="post">
-                                    <input type="email" name="email" class="form-input"
-                                        placeholder="Enter Your Email Address..." required="">
-                                    <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y")?>">
+                                    <input type="email" name="email" class="form-input" placeholder="Enter Your Email Address..." required="">
+                                    <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y") ?>">
                                     <input type="hidden" name="sub">
                                     <button type="submit" class="submit-btn" value="Subscribe">Subscription</button>
                                     <div class="clearfix"></div>

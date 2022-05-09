@@ -136,7 +136,7 @@ session_start();
 					<div class="top-left">
 						<ul>
 							<li>
-								<div id="google_translate_element"></div>
+								<!-- <div id="google_translate_element"></div> -->
 								<script>
 									function googleTranslateElementInit() {
 										new google.translate.TranslateElement({
@@ -149,9 +149,7 @@ session_start();
 								<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 							</li>
 							<li>Toll Free :<a href="tel:18008906600">1800 890 6600</a></li>
-							<li>Healthcard :<a href="tel:18008898286">1800 889 8286</a></li>
-							<li>Email: <a href="mailto:support@arogyagramin.com"> support@arogyagramin.com</a></li>
-							<li>12A & 80G</li>
+							<!-- <li>Email: <a href="mailto:support@arogyagramin.com"> support@arogyagramin.com</a></li> -->
 							<li>
 								<?php
 								if (isset($_SESSION['email'])) {

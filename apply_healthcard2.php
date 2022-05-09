@@ -1,103 +1,56 @@
 <?php include 'header.php';
-
 ob_start();
-
 include 'connect.php';
 
-
-
 //Global declaration
-
 $date = date('Y-m-d');
-
 $time = date('H:i:s');
-
 $author = "self";
 
-
-
 if (isset($_POST["personalApply"])) {
-
   $id = time();
-
   $name = ucwords($_POST["name"]);
-
   $email = $_POST["email"];
-
   $gender = ucwords($_POST["gender"]);
-
   $dob = $_POST["dob"];
-
   $aadhar = $_POST["aadhar"];
-
   $mobile = $_POST["mobile"];
-
   $address = ucwords($_POST["address"]);
-
   $block = ucwords($_POST["block"]);
-
   $district = ucwords($_POST["district"]);
-
   $state = ucwords($_POST["state"]);
-
   $pin = $_POST["pin"];
-
   //$pass = date("Y").strtoupper($name, 4);
-
   $password = "password";
-
   $type = "personal";
 
+  $filename = $_FILES["imageFile"]["name"];
+  $tempname = $_FILES["imageFile"]["tmp_name"];
+  $folder = "assets/images/post" . $filename;
 
-
-      $filename = $_FILES["imageFile"]["name"]; 
-
-      $tempname = $_FILES["imageFile"]["tmp_name"];
-
-      $folder = "assets/images/post" . $filename;
-
-      move_uploaded_file($tempname, $folder);
-
-
-
-
+  move_uploaded_file($tempname, $folder);
 
   $query = "INSERT INTO `personalhealthcard` (`id`, `date`, `time`, `author`, `email`, `name`, `gender`, `dob`, `aadhar`, `mobile`, `address`, `block`, `district`, `state`, `pin`, `password`, `card_status`, `image`, `order_id`, `order_amount`, `order_status`, `order_time`)
 
                          VALUES ('$id', '$date', '$time', '$author', '$email', '$name', '$gender', '$dob', '$aadhar', '$mobile', '$address', '$block', '$district', '$state', '$pin', '$password', 'applied', '$filename', NULL, NULL, 'Unpaid', NULL);";
 
   $rs = mysqli_query($conn, "$query") or die(mysqli_error($conn));
-
   if (!$rs) {
-
     echo "<script>alert('Invalid Registration')</script>";
-
   } else {
-
     $_SESSION['enroll_id'] = $id;
-
     $_SESSION['type'] = $type;
-
     $_SESSION['mobile'] = $mobile;
-
     $_SESSION['email'] = $email;
-
     echo "<script>window.location.href='payment-redirect.php';</script>";
-
     exit;
-
     //header('Location: payment-redirect.php');
-
   }
-
 }
 
 if (isset($_POST["familyApply"])) {
-
   $id = time();
-
   $name = ucwords($_POST["name"]);
-
   $email = $_POST["email"];
 
   $gender = ucwords($_POST["gender"]);
@@ -122,13 +75,13 @@ if (isset($_POST["familyApply"])) {
 
 
 
-      $filename = $_FILES["imageFile"]["name"]; 
+  $filename = $_FILES["imageFile"]["name"];
 
-      $tempname = $_FILES["imageFile"]["tmp_name"];
+  $tempname = $_FILES["imageFile"]["tmp_name"];
 
-      $folder = "assets/images/post" . $filename;
+  $folder = "assets/images/post" . $filename;
 
-      move_uploaded_file($tempname, $folder);
+  move_uploaded_file($tempname, $folder);
 
 
 
@@ -141,7 +94,6 @@ if (isset($_POST["familyApply"])) {
     $first_member_gender = ucwords($_POST["MemberGender0"]);
 
     $first_member_relation = ucwords($_POST["MemberRelation0"]);
-
   } else {
 
     $first_member_name = NULL;
@@ -151,7 +103,6 @@ if (isset($_POST["familyApply"])) {
     $first_member_gender = NULL;
 
     $first_member_relation = NULL;
-
   }
 
   if (!empty($_POST["MemberName1"])) {
@@ -163,7 +114,6 @@ if (isset($_POST["familyApply"])) {
     $second_member_gender = ucwords($_POST["MemberGender1"]);
 
     $second_member_relation = ucwords($_POST["MemberRelation1"]);
-
   } else {
 
     $second_member_name = NULL;
@@ -173,7 +123,6 @@ if (isset($_POST["familyApply"])) {
     $second_member_gender = NULL;
 
     $second_member_relation = NULL;
-
   }
 
   if (!empty($_POST["MemberName2"])) {
@@ -185,7 +134,6 @@ if (isset($_POST["familyApply"])) {
     $third_member_gender = ucwords($_POST["MemberGender2"]);
 
     $third_member_relation = ucwords($_POST["MemberRelation2"]);
-
   } else {
 
     $third_member_name = NULL;
@@ -195,7 +143,6 @@ if (isset($_POST["familyApply"])) {
     $third_member_gender = NULL;
 
     $third_member_relation = NULL;
-
   }
 
   if (!empty($_POST["MemberName3"])) {
@@ -207,7 +154,6 @@ if (isset($_POST["familyApply"])) {
     $fourth_member_gender = ucwords($_POST["MemberGender3"]);
 
     $fourth_member_relation = ucwords($_POST["MemberRelation3"]);
-
   } else {
 
     $fourth_member_name = NULL;
@@ -217,7 +163,6 @@ if (isset($_POST["familyApply"])) {
     $fourth_member_gender = NULL;
 
     $fourth_member_relation = NULL;
-
   }
 
   $query = "INSERT INTO `familyhealthcard` (`id`, `date`, `time`, `author`, `email`, `name`, `gender`, `dob`, `aadhar`, `mobile`, `address`, `block`, `district`, `state`, `pin`, `password`, `card_status`, `image`, `order_id`, `order_amount`, `order_status`, `order_time`, `first_member_name`, `first_member_age`, `first_member_gender`, `first_member_relation`, `second_member_name`, `second_member_age`, `second_member_gender`, `second_member_relation`, `third_member_name`, `third_member_age`, `third_member_gender`, `third_member_relation`, `fourth_member_name`, `fourth_member_age`, `fourth_member_gender`, `fourth_member_relation`) 
@@ -231,7 +176,6 @@ if (isset($_POST["familyApply"])) {
   if (!$rs) {
 
     echo "<script>alert('Invalid Registration')</script>";
-
   } else {
 
     $_SESSION['enroll_id'] = $id;
@@ -249,1326 +193,1133 @@ if (isset($_POST["familyApply"])) {
     //header('Location: payment-redirect.php');
 
   }
-
 }
 
 ?>
 
-<!DOCTYPE html>
+<style>
+  .tab-wrap {
 
-<html>
+    -webkit-transition: 0.3s box-shadow ease;
 
-	<style>
+    transition: 0.3s box-shadow ease;
 
-    .tab-wrap {
+    border-radius: 6px;
 
-      -webkit-transition: 0.3s box-shadow ease;
+    max-width: 100%;
 
-      transition: 0.3s box-shadow ease;
+    display: -webkit-box;
 
-      border-radius: 6px;
+    display: -ms-flexbox;
 
-      max-width: 100%;
+    display: flex;
 
-      display: -webkit-box;
+    -ms-flex-wrap: wrap;
 
-      display: -ms-flexbox;
+    flex-wrap: wrap;
 
-      display: flex;
+    position: relative;
 
-      -ms-flex-wrap: wrap;
+    list-style: none;
 
-      flex-wrap: wrap;
+    background-color: #fff;
 
-      position: relative;
+    margin: 40px 0;
 
-      list-style: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-      background-color: #fff;
+  }
 
-      margin: 40px 0;
 
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-    }
+  /*.tab-wrap:hover {*/
 
+  /*  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 
+  /*}*/
 
-    /*.tab-wrap:hover {*/
 
-    /*  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 
-    /*}*/
+  .tab {
 
+    display: none;
 
+  }
 
-    .tab {
 
-      display: none;
 
-    }
+  .tab:checked:nth-of-type(1)~.tab__content:nth-of-type(1) {
 
+    opacity: 1;
 
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-    .tab:checked:nth-of-type(1)~.tab__content:nth-of-type(1) {
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-      opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
 
-      -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 
-      transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    position: relative;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
+    top: 0;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    z-index: 100;
 
-      position: relative;
+    -webkit-transform: translateY(0px);
 
-      top: 0;
+    transform: translateY(0px);
 
-      z-index: 100;
+    text-shadow: 0 0 0;
 
-      -webkit-transform: translateY(0px);
+  }
 
-      transform: translateY(0px);
 
-      text-shadow: 0 0 0;
 
-    }
+  .tab:checked:nth-of-type(2)~.tab__content:nth-of-type(2) {
 
+    opacity: 1;
 
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-    .tab:checked:nth-of-type(2)~.tab__content:nth-of-type(2) {
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-      opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
 
-      -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 
-      transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    position: relative;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
+    top: 0;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    z-index: 100;
 
-      position: relative;
+    -webkit-transform: translateY(0px);
 
-      top: 0;
+    transform: translateY(0px);
 
-      z-index: 100;
+    text-shadow: 0 0 0;
 
-      -webkit-transform: translateY(0px);
+  }
 
-      transform: translateY(0px);
 
-      text-shadow: 0 0 0;
 
-    }
+  .tab:checked:nth-of-type(3)~.tab__content:nth-of-type(3) {
 
+    opacity: 1;
 
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-    .tab:checked:nth-of-type(3)~.tab__content:nth-of-type(3) {
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-      opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
 
-      -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 
-      transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    position: relative;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
+    top: 0;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    z-index: 100;
 
-      position: relative;
+    -webkit-transform: translateY(0px);
 
-      top: 0;
+    transform: translateY(0px);
 
-      z-index: 100;
+    text-shadow: 0 0 0;
 
-      -webkit-transform: translateY(0px);
+  }
 
-      transform: translateY(0px);
 
-      text-shadow: 0 0 0;
 
-    }
+  .tab:checked:nth-of-type(4)~.tab__content:nth-of-type(4) {
 
+    opacity: 1;
 
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-    .tab:checked:nth-of-type(4)~.tab__content:nth-of-type(4) {
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-      opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
 
-      -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 
-      transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    position: relative;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
+    top: 0;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    z-index: 100;
 
-      position: relative;
+    -webkit-transform: translateY(0px);
 
-      top: 0;
+    transform: translateY(0px);
 
-      z-index: 100;
+    text-shadow: 0 0 0;
 
-      -webkit-transform: translateY(0px);
+  }
 
-      transform: translateY(0px);
 
-      text-shadow: 0 0 0;
 
-    }
+  .tab:checked:nth-of-type(5)~.tab__content:nth-of-type(5) {
 
+    opacity: 1;
 
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-    .tab:checked:nth-of-type(5)~.tab__content:nth-of-type(5) {
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 
-      opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
 
-      -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 
-      transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    position: relative;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
+    top: 0;
 
-      transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    z-index: 100;
 
-      position: relative;
+    -webkit-transform: translateY(0px);
 
-      top: 0;
+    transform: translateY(0px);
 
-      z-index: 100;
+    text-shadow: 0 0 0;
 
-      -webkit-transform: translateY(0px);
+  }
 
-      transform: translateY(0px);
 
-      text-shadow: 0 0 0;
 
-    }
+  .tab:first-of-type:not(:last-of-type)+label {
 
+    border-top-right-radius: 0;
 
+    border-bottom-right-radius: 0;
 
-    .tab:first-of-type:not(:last-of-type)+label {
+  }
 
-      border-top-right-radius: 0;
 
-      border-bottom-right-radius: 0;
 
-    }
+  .tab:not(:first-of-type):not(:last-of-type)+label {
 
+    border-radius: 0;
 
+  }
 
-    .tab:not(:first-of-type):not(:last-of-type)+label {
 
-      border-radius: 0;
 
-    }
+  .tab:last-of-type:not(:first-of-type)+label {
 
+    border-top-left-radius: 0;
 
+    border-bottom-left-radius: 0;
 
-    .tab:last-of-type:not(:first-of-type)+label {
+  }
 
-      border-top-left-radius: 0;
 
-      border-bottom-left-radius: 0;
 
-    }
+  .tab:checked+label {
 
+    background-color: #fff;
 
+    box-shadow: 0 -1px 0 #fff inset;
 
-    .tab:checked+label {
+    cursor: default;
 
-      background-color: #fff;
+  }
 
-      box-shadow: 0 -1px 0 #fff inset;
 
-      cursor: default;
 
-    }
+  .tab:checked+label:hover {
 
+    box-shadow: 0 -1px 0 #fff inset;
 
+    background-color: #fff;
 
-    .tab:checked+label:hover {
+  }
 
-      box-shadow: 0 -1px 0 #fff inset;
 
-      background-color: #fff;
 
-    }
+  .tab+label {
 
+    box-shadow: 0 -1px 0 #eee inset;
 
+    border-radius: 6px 6px 0 0;
 
-    .tab+label {
+    cursor: pointer;
 
-      box-shadow: 0 -1px 0 #eee inset;
+    display: block;
 
-      border-radius: 6px 6px 0 0;
+    text-decoration: none;
 
-      cursor: pointer;
+    color: #333;
 
-      display: block;
+    -webkit-box-flex: 3;
 
-      text-decoration: none;
+    -ms-flex-positive: 3;
 
-      color: #333;
+    flex-grow: 3;
 
-      -webkit-box-flex: 3;
+    text-align: center;
 
-      -ms-flex-positive: 3;
+    background-color: #f2f2f2;
 
-      flex-grow: 3;
+    -webkit-user-select: none;
 
-      text-align: center;
+    -moz-user-select: none;
 
-      background-color: #f2f2f2;
+    -ms-user-select: none;
 
-      -webkit-user-select: none;
+    user-select: none;
 
-      -moz-user-select: none;
+    text-align: center;
 
-      -ms-user-select: none;
+    -webkit-transition: 0.3s background-color ease, 0.3s box-shadow ease;
 
-      user-select: none;
+    transition: 0.3s background-color ease, 0.3s box-shadow ease;
 
-      text-align: center;
+    height: 50px;
 
-      -webkit-transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    box-sizing: border-box;
 
-      transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    padding: 15px;
 
-      height: 50px;
+  }
 
-      box-sizing: border-box;
 
-      padding: 15px;
 
-    }
+  .tab+label:hover {
 
+    background-color: #696969;
 
+    box-shadow: 0 1px 0 #f4f4f4 inset;
 
-    .tab+label:hover {
+  }
 
-      background-color: #696969;
 
-      box-shadow: 0 1px 0 #f4f4f4 inset;
 
-    }
+  .tab__content {
 
+    padding: 10px 25px;
 
+    background-color: transparent;
 
-    .tab__content {
+    position: absolute;
 
-      padding: 10px 25px;
+    width: 100%;
 
-      background-color: transparent;
+    z-index: -1;
 
-      position: absolute;
+    opacity: 0;
 
-      width: 100%;
+    left: 0;
 
-      z-index: -1;
+    -webkit-transform: translateY(-3px);
 
-      opacity: 0;
+    transform: translateY(-3px);
 
-      left: 0;
+    border-radius: 6px;
 
-      -webkit-transform: translateY(-3px);
+  }
+</style>
 
-      transform: translateY(-3px);
+<section class="page-header padding">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="page-content text-center">
+			<h2>Apply Health Card</h2>
+      <p>Welcome! Apply your Arogya Gramin Card to avail all affordable healthcare services.</p>
+			<div class="page-item">
+				<a href="/"><i class="ti-home"></i>Home </a>
+				<p>Apply Health Card</p>
+			</div>
+		</div>
+	</div>
+</section><!-- /.page-header -->
+<section class="contact-section bg-grey padding">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col d-flex justify-content-center text-center">
+        <a href="Tie-up Application" target=”_blank” class="default-btn mr-2" style="margin-top:7px;">Tie-up Registration</a>
+        <a target=”_blank” href="Affiliate Registration Form" class="default-btn-info ml-2" style="margin-top:7px;">Affilate Registration</a>
 
-      border-radius: 6px;
 
-    }
+        <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav tab-pillsbar">
+    <li class="nav-item flex-sm-fill tab-pillsbar-one">
+      <a id="home-tab" data-toggle="tab" href="#single" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Single Healthcard</a>
+    </li>
+    <li class="nav-item flex-sm-fill tab-pillsbar-two">
+      <a id="profile-tab" data-toggle="tab" href="#family" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Family Healthcard</a>
+    </li>
+  </ul>
 
 
 
-    /* boring stuff */
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
 
-    body {
+        <label for="tab1" class="tabBox" data-tab="1">Single Healthcard</label>
 
-      font-family: 'Helvetica', sans-serif;
+        <input type="radio" id="tab2" name="tabGroup1" class="tab">
 
-      background-color: #e7e7e7;
+        <label for="tab2" class="tabBox" data-tab="2">Family Healthcard</label>
 
-      color: #777;
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-12 sm-padding">
+        <div class="contact-form tab-content" id="myTabContent">
+          <div id="single" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-1 py-4 show active">
+            <form id="personal" enctype="multipart/form-data" name="personal" action="" method="post" >
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Name">Name (नाम)<span class="required">*</span></label>
+                  <input type="text" name="name" max="50" class="form-control" placeholder="Enter Your Full Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Email">Email (ईमेल)<span class="required">*</span></label>
+                  <input type="email" name="email" max="50" class="form-control" placeholder="Enter Your Email" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
+                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
+                  <select name="gender" class="form-control" required>
+                    <option value="" selected disabled>--Select Your Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
+                  <input type="date" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
+                </div>
+                <div class="col-md-6">
+                  <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
+                  <input name="aadhar" type="number" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
+                  <input name="address" type="text" class="form-control" placeholder="Enter Full Address" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Block">Block (प्रखंड)<span class="required">*</span>
+                  </label>
+                  <input name="block" type="text" class="form-control" placeholder="Enter Block Name" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="District">District (जिला)<span class="required">*</span> </label>
+                  <input name="district" type="text" class="form-control" placeholder="Enter District Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="State">State (राज्य)<span class="required">*</span> </label>
+                  <select name="state" class="form-control" required>
+                    <option value="" selected disabled>--Select State--</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
+                  <input name="pin" type="number" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
+                  <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)">
+                  <span class="required" id="spnmsg"></span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <button type="submit" name="personalApply" value="personalApply" class="default-btn">Apply</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="family" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-1 py-4">
+            <form id="family" enctype="multipart/form-data" name="family" action="" method="post">
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Name">Name (नाम)<span class="required">*</span></label>
+                  <input type="text" name="name" max="50" class="form-control" placeholder="Enter Your Full Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Email">Email (ईमेल)<span class="required">*</span></label>
+                  <input type="email" name="email" max="50" class="form-control" placeholder="Enter Your email" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
+                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
+                  <select name="gender" class="form-control" required>
+                    <option value="" selected disabled>--Select Your Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
+                  <input type="date" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
+                </div>
+                <div class="col-md-6">
+                  <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
+                  <input name="aadhar" type="number" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
+                  <input name="address" type="text" class="form-control" placeholder="Enter Full Address" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Block">Block (प्रखंड)<span class="required">*</span></label>
+                  <input name="block" type="text" class="form-control" placeholder="Enter Block Name" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="District">District (जिला)<span class="required">*</span> </label>
+                  <input name="district" type="text" class="form-control" placeholder="Enter District Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="State">State (राज्य)<span class="required">*</span> </label>
+                  <select name="state" class="form-control" required>
+                    <option value="" selected disabled>--Select State--</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
+                  <input name="pin" type="number" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
+                  <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder="Your answer">
+                  <span class="required" id="spnmsg"></span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <h3 style="margin-bottom:22px;">Members information</h3>
+                  <div id="familyDetails" class="mt-4" style="display:none;">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <button type="button" id="AddRow" class="btn btn-warning">Add members</button>
+                </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-6">
+                    <input type="submit" class="btn btn-primary mr-4 " name="familyApply" value="Apply">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      font-weight: 300;
 
-    }
+<section style="margin: right 6px; background-color:#FFFFFF;">
 
 
 
-    .container {
+  <div class="rt-container">
 
-      margin: 0 auto;
+    <div class="col-rt-12">
 
-      display: block;
+      <div class="demo-section">
 
-      max-width: 800px;
+        <center>
 
-    }
 
 
+          <b>
+            <p class="tabBox">Welcome! Apply your Arogya Gramin Card to avail all affordable healthcare services.</p>
+          </b>
 
-    .container>*:not(.tab-wrap) {
 
-      padding: 0 80px;
 
-    }
+        </center>
 
 
 
-    h1,
+      </div>
 
-    h2 {
+      <div class="tab-wrap">
 
-      margin: 0;
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
 
-      color: #444;
+        <label for="tab1" class="tabBox" data-tab="1">Single Healthcard</label>
 
-      text-align: center;
+        <input type="radio" id="tab2" name="tabGroup1" class="tab">
 
-      font-weight: 400;
+        <label for="tab2" class="tabBox" data-tab="2">Family Healthcard</label>
 
-    }
 
 
+        <div class="tab__content">
 
-    h2.heading {
+          <center>Application for Single Health Card</center>
 
-      font-size: 2em;
+          <form id="personal" enctype="multipart/form-data" name="personal" action="" method="post" style="margin-top: 22px;">
 
-      margin-bottom: 8px;
 
-    }
 
+            <div class="form-row">
 
+              <div class="form-group col-md-6">
 
 
 
-    h2 {
+                <label for="Name">Name (नाम)<span class="required">*</span></label>
 
-      font-size: 1em;
+                <input type="text" name="name" max="50" id="name" class="form-control" placeholder="Enter Your Full Name" required>
 
-      margin-bottom: 0;
+              </div>
 
-    }
+              <div class="form-group col-md-6">
 
+                <label for="Email">Email (ईमेल)<span class="required">*</span></label>
 
+                <input type="email" name="email" max="50" id="email" class="form-control" placeholder="Enter Your Email" required>
 
-    h3 {
+              </div>
 
-      font-weight: 400;
+              <div class="form-group col-md-6">
 
-    }
+                <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
 
+                <input type="mobile" name="mobile" min="6000000000" max="9999999999" id="mobile" class="form-control" placeholder="Enter Your Mobile" required>
 
+              </div>
 
-    p {
+              <div class="form-group col-md-6">
 
-      line-height: 1.6;
+                <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
 
-      margin-bottom: 20px;
+                <select name="gender" id="gender" class="form-control" required>
 
-    }
+                  <option value="">Select Your Gender</option>
 
+                  <option value="Male">Male</option>
 
+                  <option value="Female">Female</option>
 
-    /* Demo.CSS */
+                  <option value="Other">Other</option>
 
-    @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+                </select>
 
+              </div>
 
+            </div>
 
-    html {
+            <div class="form-row">
 
-      box-sizing: border-box;
+              <div class="form-group col-md-6">
 
-    }
+                <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
 
+                <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
 
+              </div>
 
-    *,
+              <div class="form-group col-md-6">
 
-    *:before,
+                <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
 
-    *:after {
+                <input name="aadhar" type="number" id="aadharno" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
 
-      box-sizing: inherit;
+              </div>
 
-    }
+            </div>
 
-    label{
+            <div class="form-row">
 
-        font-weight:100;
+              <div class="form-group col-md-6">
 
-    }
+                <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
 
+                <input name="address" type="text" id="address" class="form-control" placeholder="Enter Full Address" required>
 
+              </div>
 
-    article,
 
-    header,
 
-    section,
+              <div class="form-group col-md-6">
 
-    aside,
+                <label for="Block">Block (प्रखंड)<span class="required">*</span>
 
-    details,
+                </label>
 
-    figcaption,
+                <input name="block" type="text" id="block" class="form-control" placeholder="Enter Block Name" required>
 
-    figure,
+              </div>
 
-    footer,
+            </div>
 
-    header,
 
-    hgroup,
 
-    main,
+            <div class="form-row">
 
-    nav,
+              <div class="form-group col-md-6">
 
-    section,
+                <label for="District">District (जिला)<span class="required">*</span> </label>
 
-    summary {
+                <input name="district" type="text" id="district" class="form-control" placeholder="Enter District Name" required>
 
-      display: block;
+              </div>
 
-    }
 
-    header-bot{
 
-     background: #FFFFFF!important;
+              <div class="form-group col-md-6">
 
-    }
+                <label for="State">State (राज्य)<span class="required">*</span> </label>
 
-    body {
+                <select name="state" id="state" class="form-control" required>
 
-      background: #FFFFFF none repeat scroll 0 0;
+                  <option value="">Select State</option>
 
-      color: #222;
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
 
-      font-family: "Raleway", sans-serif;
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
 
-      font-size: 100%;
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
 
-      line-height: 24px;
+                  <option value="Assam">Assam</option>
 
-      margin: 0;
+                  <option value="Bihar">Bihar</option>
 
-      padding: 0;
+                  <option value="Chandigarh">Chandigarh</option>
 
-    }
+                  <option value="Chhattisgarh">Chhattisgarh</option>
 
+                  <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
 
+                  <option value="Daman and Diu">Daman and Diu</option>
 
-    a {
+                  <option value="Delhi">Delhi</option>
 
-      font-family: "Raleway", sans-serif;
+                  <option value="Lakshadweep">Lakshadweep</option>
 
-      text-decoration: none;
+                  <option value="Puducherry">Puducherry</option>
 
-      outline: none;
+                  <option value="Goa">Goa</option>
 
-    }
+                  <option value="Gujarat">Gujarat</option>
 
+                  <option value="Haryana">Haryana</option>
 
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
 
-    a:hover,
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
 
-    a:focus {
+                  <option value="Jharkhand">Jharkhand</option>
 
-      color: #373e18;
+                  <option value="Karnataka">Karnataka</option>
 
-    }
+                  <option value="Kerala">Kerala</option>
 
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
 
+                  <option value="Maharashtra">Maharashtra</option>
 
-    section {
+                  <option value="Manipur">Manipur</option>
 
-      float: left;
+                  <option value="Meghalaya">Meghalaya</option>
 
-      width: 100%;
+                  <option value="Mizoram">Mizoram</option>
 
-      margin-top: 3em;
+                  <option value="Nagaland">Nagaland</option>
 
-      margin-bottom: 2em;
+                  <option value="Odisha">Odisha</option>
 
-    }
+                  <option value="Punjab">Punjab</option>
 
+                  <option value="Rajasthan">Rajasthan</option>
 
+                  <option value="Sikkim">Sikkim</option>
 
-    h2 {
+                  <option value="Tamil Nadu">Tamil Nadu</option>
 
-      color: #1a0e0e;
+                  <option value="Telangana">Telangana</option>
 
-      font-size: 26px;
+                  <option value="Tripura">Tripura</option>
 
-      font-weight: 700;
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
 
-      margin: 0;
+                  <option value="Uttarakhand">Uttarakhand</option>
 
-      line-height: normal;
+                  <option value="West Bengal">West Bengal</option>
 
-      text-transform: uppercase;
+                </select>
 
-    }
+              </div>
 
+            </div>
 
+            <div class="form-row">
 
-    h2 span {
+              <div class="form-group col-md-6">
 
-      display: block;
+                <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
 
-      padding: 0;
+                <input name="pin" type="number" id="pincode" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" equired>
 
-      font-size: 18px;
+              </div>
 
-      opacity: 0.7;
+              <div class="form-group col-md-6">
 
-      margin-top: 5px;
+                <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
 
-      text-transform: uppercase;
+                <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder="Your answer">
 
-    }
+                <span class="required" id="spnmsg"></span>
 
+              </div>
 
+            </div>
 
-    #float-right {
+            <div class="form-row">
 
-      float: right;
+              <div class="form-group col-md-6">
 
-    }
+                <button type="submit" name="personalApply" value="personalApply" class="btn btn-primary">Apply</button>
 
+              </div>
 
+            </div>
 
-    /* ******************************************************
-
-	Header
-
-*********************************************************/
-
-
-
-    .ScriptTop {
-
-      background: #fff none repeat scroll 0 0;
-
-      float: left;
-
-      font-size: 0.69em;
-
-      font-weight: 600;
-
-      line-height: 2.2;
-
-      padding: 12px 0;
-
-      text-transform: uppercase;
-
-      width: 100%;
-
-    }
-
-
-
-    /* To Navigation Style 1*/
-
-    .ScriptTop ul {
-
-      margin: 24px 0;
-
-      padding: 0;
-
-      text-align: left;
-
-    }
-
-
-
-    .ScriptTop li {
-
-      list-style: none;
-
-      display: inline-block;
-
-    }
-
-
-
-    .ScriptTop li a {
-
-      background: #6a4aed none repeat scroll 0 0;
-
-      color: #fff;
-
-      display: inline-block;
-
-      font-size: 14px;
-
-      font-weight: 600;
-
-      padding: 5px 18px;
-
-      text-decoration: none;
-
-      text-transform: capitalize;
-
-    }
-
-
-
-    .ScriptTop li a:hover {
-
-      background: #000;
-
-      color: #fff;
-
-    }
-
-
-
-
-
-    /* Header*/
-
-    .ScriptHeader {
-
-      float: left;
-
-      width: 100%;
-
-      padding-top: 3em;
-
-    }
-
-
-
-    .rt-heading {
-
-      border-bottom: solid 1px #8b73ef;
-
-      padding-bottom: 10px;
-
-      margin: 0 auto;
-
-    }
-
-
-
-    .ScriptHeader h1 {
-
-      color: #6a4aed;
-
-      font-size: 28px;
-
-      font-weight: 700;
-
-      margin: 0;
-
-      line-height: normal;
-
-    }
-
-
-
-    .ScriptHeader h2 {
-
-      color: #8b73ef;
-
-      font-size: 18px;
-
-      font-weight: 400;
-
-      margin: 5px 0 0;
-
-      line-height: normal;
-
-
-
-    }
-
-
-
-    .ScriptHeader h1 span {
-
-      display: block;
-
-      padding: 0;
-
-      font-size: 22px;
-
-      opacity: 0.7;
-
-      margin-top: 5px;
-
-      text-transform: uppercase;
-
-    }
-
-
-
-    .ScriptHeader span {
-
-      display: block;
-
-      padding: 0;
-
-      font-size: 22px;
-
-      opacity: 0.7;
-
-      margin-top: 5px;
-
-    }
-
-
-
-    /* ******************************************************
-
-	Responsive Grids
-
-*********************************************************/
-
-    .rt-container {
-
-      margin: 0 auto;
-
-      padding-left: 12px;
-
-      padding-right: 12px;
-
-    }
-
-
-
-    .rt-row:before,
-
-    .rt-row:after {
-
-      display: table;
-
-      line-height: 0;
-
-      content: "";
-
-    }
-
-
-
-    .rt-row:after {
-
-      clear: both;
-
-    }
-
-
-
-    [class^="col-rt-"] {
-
-      box-sizing: border-box;
-
-      -webkit-box-sizing: border-box;
-
-      -moz-box-sizing: border-box;
-
-      -o-box-sizing: border-box;
-
-      -ms-box-sizing: border-box;
-
-      padding: 0 15px;
-
-      min-height: 1px;
-
-      position: relative;
-
-    }
-
-
-
-
-
-    @media (min-width: 768px) {
-
-      .rt-container {
-
-        width: 750px;
-
-      }
-
-
-
-      [class^="col-rt-"] {
-
-        float: left;
-
-        width: 49.9999999999%;
-
-      }
-
-
-
-      .col-rt-6,
-
-      .col-rt-12 {
-
-        width: 100%;
-
-      }
-
-
-
-    }
-
-
-
-    @media (min-width: 1200px) {
-
-      .rt-container {
-
-        width: 1170px;
-
-      }
-
-
-
-      .col-rt-1 {
-
-        width: 16.6%;
-
-      }
-
-
-
-      .col-rt-2 {
-
-        width: 30.33%;
-
-      }
-
-
-
-      .col-rt-3 {
-
-        width: 50%;
-
-      }
-
-
-
-      .col-rt-4 {
-
-        width: 67.664%;
-
-      }
-
-
-
-      .col-rt-5 {
-
-        width: 83.33%;
-
-      }
-
-
-
-
-
-    }
-
-
-
-    @media only screen and (min-width:240px) and (max-width: 768px) {
-
-
-
-      .ScriptTop h1,
-
-      .ScriptTop ul {
-
-        text-align: center;
-
-      }
-
-
-
-      .ScriptTop h1 {
-
-        margin-top: 0;
-
-        margin-bottom: 15px;
-
-      }
-
-
-
-      .ScriptTop ul {
-
-        margin-top: 12px;
-
-      }
-
-
-
-      .ScriptHeader h1,
-
-      .ScriptHeader h2,
-
-      .scriptnav ul {
-
-        text-align: center;
-
-      }
-
-
-
-      .scriptnav ul {
-
-        margin-top: 12px;
-
-      }
-
-
-
-      #float-right {
-
-        float: none;
-
-      }
-
-
-
-    }
-
-  </style>
-
-
-
-  <section style="margin: right 6px; background-color:#FFFFFF;">
-
-     
-
-    <div class="rt-container">
-
-      <div class="col-rt-12">
-
-        <div class="demo-section">
-
-            <center>
-
-                
-
-                <b><p class="tabBox">Welcome! Apply your Arogya Gramin Card to avail all affordable healthcare services.</p></b>
-
-                
-
-            </center>
-
-            
+          </form>
 
         </div>
 
-        <div class="tab-wrap">
-
-          <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-
-          <label for="tab1" class="tabBox" data-tab="1">Single Healthcard</label>
-
-          <input type="radio" id="tab2" name="tabGroup1" class="tab">
-
-          <label for="tab2" class="tabBox" data-tab="2">Family Healthcard</label>
-
-          
-
-          <div class="tab__content">
-
-              <center>Application for Single Health Card</center>
-
-            <form id="personal" enctype="multipart/form-data" name="personal" action="" method="post" style="margin-top: 22px;">
-
-                
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                    
-
-                  <label for="Name">Name (नाम)<span class="required">*</span></label>
-
-                  <input type="text" name="name" max="50" id="name" class="form-control" placeholder="Enter Your Full Name" required>
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="Email">Email (ईमेल)<span class="required">*</span></label>
-
-                  <input type="email" name="email" max="50" id="email" class="form-control" placeholder="Enter Your Email" required>
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
-
-                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" id="mobile" class="form-control" placeholder="Enter Your Mobile" required>
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
-
-                  <select name="gender" id="gender" class="form-control" required>
-
-                    <option value="">Select Your Gender</option>
-
-                    <option value="Male">Male</option>
-
-                    <option value="Female">Female</option>
-
-                    <option value="Other">Other</option>
-
-                  </select>
-
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
-
-                  <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
-
-                  <input name="aadhar" type="number" id="aadharno" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
-
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
-
-                  <input name="address" type="text" id="address" class="form-control" placeholder="Enter Full Address" required>
-
-                </div>
-
-
-
-                <div class="form-group col-md-6">
-
-                  <label for="Block">Block (प्रखंड)<span class="required">*</span>
-
-                  </label>
-
-                  <input name="block" type="text" id="block" class="form-control" placeholder="Enter Block Name" required>
-
-                </div>
-
-              </div>
-
-
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="District">District (जिला)<span class="required">*</span> </label>
-
-                  <input name="district" type="text" id="district" class="form-control" placeholder="Enter District Name" required>
-
-                </div>
-
-
-
-                <div class="form-group col-md-6">
-
-                  <label for="State">State (राज्य)<span class="required">*</span> </label>
-
-                  <select name="state" id="state" class="form-control" required>
-
-                    <option value="">Select State</option>
-
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-
-                    <option value="Assam">Assam</option>
-
-                    <option value="Bihar">Bihar</option>
-
-                    <option value="Chandigarh">Chandigarh</option>
-
-                    <option value="Chhattisgarh">Chhattisgarh</option>
-
-                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-
-                    <option value="Daman and Diu">Daman and Diu</option>
-
-                    <option value="Delhi">Delhi</option>
-
-                    <option value="Lakshadweep">Lakshadweep</option>
-
-                    <option value="Puducherry">Puducherry</option>
-
-                    <option value="Goa">Goa</option>
-
-                    <option value="Gujarat">Gujarat</option>
-
-                    <option value="Haryana">Haryana</option>
-
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-
-                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-
-                    <option value="Jharkhand">Jharkhand</option>
-
-                    <option value="Karnataka">Karnataka</option>
-
-                    <option value="Kerala">Kerala</option>
-
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-
-                    <option value="Maharashtra">Maharashtra</option>
-
-                    <option value="Manipur">Manipur</option>
-
-                    <option value="Meghalaya">Meghalaya</option>
-
-                    <option value="Mizoram">Mizoram</option>
-
-                    <option value="Nagaland">Nagaland</option>
-
-                    <option value="Odisha">Odisha</option>
-
-                    <option value="Punjab">Punjab</option>
-
-                    <option value="Rajasthan">Rajasthan</option>
-
-                    <option value="Sikkim">Sikkim</option>
-
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-
-                    <option value="Telangana">Telangana</option>
-
-                    <option value="Tripura">Tripura</option>
-
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-
-                    <option value="Uttarakhand">Uttarakhand</option>
-
-                    <option value="West Bengal">West Bengal</option>
-
-                  </select>
-
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
-
-                  <input name="pin" type="number" id="pincode" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" equired>
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-
-                  <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder="Your answer">
-
-                  <span class="required" id="spnmsg"></span>
-
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <button type="submit" name="personalApply" value="personalApply" class="btn btn-primary">Apply</button>
-
-                </div>
-
-              </div>
-
-            </form>
-
-          </div>
-
-          <div class="tab__content">
+        <div class="tab__content">
 
           <center>Application for Family Health Card</center>
 
-            <form id="family" enctype="multipart/form-data" name="family" action="" method="post" style="margin-top: 22px;">
+          <form id="family" enctype="multipart/form-data" name="family" action="" method="post" style="margin-top: 22px;">
 
-              <div class="form-row">
+            <div class="form-row">
 
-                <div class="form-group col-md-6">
+              <div class="form-group col-md-6">
 
-                  <label for="Name">Name (नाम)<span class="required">*</span></label>
+                <label for="Name">Name (नाम)<span class="required">*</span></label>
 
-                  <input type="text" name="name" max="50" id="name" class="form-control" placeholder="Enter Your Full Name" required>
+                <input type="text" name="name" max="50" id="name" class="form-control" placeholder="Enter Your Full Name" required>
 
-                </div>
+              </div>
 
-                <div class="form-group col-md-6">
+              <div class="form-group col-md-6">
 
-                  <label for="Email">Email (ईमेल)<span class="required">*</span></label>
+                <label for="Email">Email (ईमेल)<span class="required">*</span></label>
 
-                  <input type="email" name="email" max="50" id="email" class="form-control" placeholder="Enter Your email" required>
+                <input type="email" name="email" max="50" id="email" class="form-control" placeholder="Enter Your email" required>
 
-                </div>
+              </div>
 
-                <div class="form-group col-md-6">
+              <div class="form-group col-md-6">
 
-                  <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
+                <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
 
-                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" id="mobile" class="form-control" placeholder="Enter Your Mobile" required>
+                <input type="mobile" name="mobile" min="6000000000" max="9999999999" id="mobile" class="form-control" placeholder="Enter Your Mobile" required>
 
-                </div>
+              </div>
 
-                <div class="form-group col-md-6">
+              <div class="form-group col-md-6">
 
-                  <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
+                <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
 
-                  <select name="gender" id="gender" class="form-control" required>
+                <select name="gender" id="gender" class="form-control" required>
 
-                    <option value="">Select Your Gender</option>
+                  <option value="">Select Your Gender</option>
 
-                    <option value="Male">Male</option>
+                  <option value="Male">Male</option>
 
-                    <option value="Female">Female</option>
+                  <option value="Female">Female</option>
 
-                    <option value="Other">Other</option>
+                  <option value="Other">Other</option>
 
-                  </select>
+                </select>
 
-                </div>
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+
+                <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
+
+                <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
+
+
+
+              </div>
+
+              <div class="form-group col-md-6">
+
+                <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
+
+                <input name="aadhar" type="number" id="aadharno" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+
+                <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
+
+                <input name="address" type="text" id="address" class="form-control" placeholder="Enter Full Address" required>
+
+              </div>
+
+
+
+              <div class="form-group col-md-6">
+
+                <label for="Block">Block (प्रखंड)<span class="required">*</span></label>
+
+                <input name="block" type="text" id="block" class="form-control" placeholder="Enter Block Name" required>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+
+                <label for="District">District (जिला)<span class="required">*</span> </label>
+
+                <input name="district" type="text" id="district" class="form-control" placeholder="Enter District Name" required>
+
+              </div>
+
+
+
+              <div class="form-group col-md-6">
+
+                <label for="State">State (राज्य)<span class="required">*</span> </label>
+
+                <select name="state" id="state" class="form-control" required>
+
+                  <option value="">Select State</option>
+
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+
+                  <option value="Assam">Assam</option>
+
+                  <option value="Bihar">Bihar</option>
+
+                  <option value="Chandigarh">Chandigarh</option>
+
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+
+                  <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+
+                  <option value="Daman and Diu">Daman and Diu</option>
+
+                  <option value="Delhi">Delhi</option>
+
+                  <option value="Lakshadweep">Lakshadweep</option>
+
+                  <option value="Puducherry">Puducherry</option>
+
+                  <option value="Goa">Goa</option>
+
+                  <option value="Gujarat">Gujarat</option>
+
+                  <option value="Haryana">Haryana</option>
+
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+
+                  <option value="Jharkhand">Jharkhand</option>
+
+                  <option value="Karnataka">Karnataka</option>
+
+                  <option value="Kerala">Kerala</option>
+
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+
+                  <option value="Maharashtra">Maharashtra</option>
+
+                  <option value="Manipur">Manipur</option>
+
+                  <option value="Meghalaya">Meghalaya</option>
+
+                  <option value="Mizoram">Mizoram</option>
+
+                  <option value="Nagaland">Nagaland</option>
+
+                  <option value="Odisha">Odisha</option>
+
+                  <option value="Punjab">Punjab</option>
+
+                  <option value="Rajasthan">Rajasthan</option>
+
+                  <option value="Sikkim">Sikkim</option>
+
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+
+                  <option value="Telangana">Telangana</option>
+
+                  <option value="Tripura">Tripura</option>
+
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+
+                  <option value="Uttarakhand">Uttarakhand</option>
+
+                  <option value="West Bengal">West Bengal</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+
+                <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
+
+                <input name="pin" type="number" id="pincode" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" required>
+
+              </div>
+
+              <div class="form-group col-md-6">
+
+                <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
+
+                <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder="Your answer">
+
+                <span class="required" id="spnmsg"></span>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-12">
+
+              <h3 style="margin-bottom:22px;">Members information</h3>
+
+            </div>
+
+            <div id="familyDetails" class="mt-4" style="display:none;">
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+
+                <button type="button" id="AddRow" class="btn btn-warning">Add members</button>
 
               </div>
 
@@ -1576,226 +1327,41 @@ if (isset($_POST["familyApply"])) {
 
                 <div class="form-group col-md-6">
 
-                  <label for="Mobile">Date Of Birth (जन्म तिथि)<span class="required">*</span></label>
-
-                  <input type="date" id="in_dob" placeholder="Date Of Birth" class="form-control" name="dob" required="true">
+                  <input type="submit" class="btn btn-primary mr-4 " name="familyApply" value="Apply">
 
 
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="aadharno">Aadhaar Number (आधार संख्या)<span class="required">*</span> </label>
-
-                  <input name="aadhar" type="number" id="aadharno" min="100000000000" max="999999999999" class="form-control" placeholder="Enter Correct Aadhaar No." required>
 
                 </div>
 
               </div>
 
-              <div class="form-row">
+            </div>
 
-                <div class="form-group col-md-6">
-
-                  <label for="Address">Full Address (पूरा पता)<span class="required">*</span></label>
-
-                  <input name="address" type="text" id="address" class="form-control" placeholder="Enter Full Address" required>
-
-                </div>
-
-
-
-                <div class="form-group col-md-6">
-
-                  <label for="Block">Block (प्रखंड)<span class="required">*</span></label>
-
-                  <input name="block" type="text" id="block" class="form-control" placeholder="Enter Block Name" required>
-
-                </div>
-
-              </div>
-
-
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="District">District (जिला)<span class="required">*</span> </label>
-
-                  <input name="district" type="text" id="district" class="form-control" placeholder="Enter District Name" required>
-
-                </div>
-
-
-
-                <div class="form-group col-md-6">
-
-                  <label for="State">State (राज्य)<span class="required">*</span> </label>
-
-                  <select name="state" id="state" class="form-control" required>
-
-                    <option value="">Select State</option>
-
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-
-                    <option value="Assam">Assam</option>
-
-                    <option value="Bihar">Bihar</option>
-
-                    <option value="Chandigarh">Chandigarh</option>
-
-                    <option value="Chhattisgarh">Chhattisgarh</option>
-
-                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-
-                    <option value="Daman and Diu">Daman and Diu</option>
-
-                    <option value="Delhi">Delhi</option>
-
-                    <option value="Lakshadweep">Lakshadweep</option>
-
-                    <option value="Puducherry">Puducherry</option>
-
-                    <option value="Goa">Goa</option>
-
-                    <option value="Gujarat">Gujarat</option>
-
-                    <option value="Haryana">Haryana</option>
-
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-
-                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-
-                    <option value="Jharkhand">Jharkhand</option>
-
-                    <option value="Karnataka">Karnataka</option>
-
-                    <option value="Kerala">Kerala</option>
-
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-
-                    <option value="Maharashtra">Maharashtra</option>
-
-                    <option value="Manipur">Manipur</option>
-
-                    <option value="Meghalaya">Meghalaya</option>
-
-                    <option value="Mizoram">Mizoram</option>
-
-                    <option value="Nagaland">Nagaland</option>
-
-                    <option value="Odisha">Odisha</option>
-
-                    <option value="Punjab">Punjab</option>
-
-                    <option value="Rajasthan">Rajasthan</option>
-
-                    <option value="Sikkim">Sikkim</option>
-
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-
-                    <option value="Telangana">Telangana</option>
-
-                    <option value="Tripura">Tripura</option>
-
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-
-                    <option value="Uttarakhand">Uttarakhand</option>
-
-                    <option value="West Bengal">West Bengal</option>
-
-                  </select>
-
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <label for="PinCode">PIN Code (पिन कोड) <span class="required">*</span> </label>
-
-                  <input name="pin" type="number" id="pincode" class="form-control" placeholder="Enter Pin Code" min="100000" max="999999" required>
-
-                </div>
-
-                <div class="form-group col-md-6">
-
-                  <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-
-                  <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder="Your answer">
-
-                  <span class="required" id="spnmsg"></span>
-
-                </div>
-
-              </div>
-
-              <div class="col-lg-12">
-
-                <h3 style="margin-bottom:22px;">Members information</h3>
-
-              </div>
-
-              <div id="familyDetails" class="mt-4" style="display:none;">
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-
-                  <button type="button" id="AddRow" class="btn btn-warning">Add members</button>
-
-                </div>
-
-                <div class="form-row">
-
-                  <div class="form-group col-md-6">
-
-                    <input type="submit" class="btn btn-primary mr-4 " name="familyApply" value="Apply">
-
-
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </form>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="demo-section">
-
-          <!--<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>-->
+          </form>
 
         </div>
 
       </div>
 
+
+
+      <div class="demo-section">
+
+        <!--<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>-->
+
+      </div>
+
     </div>
 
-  </section>
+  </div>
 
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+</section>
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-
   var content = document.getElementById("familyDetails");
 
   var rows = 0;
@@ -1869,7 +1435,7 @@ if (isset($_POST["familyApply"])) {
 </div>
 <br>
           </div>`;
-$('#familyDetails').append(html);
+      $('#familyDetails').append(html);
       rows++;
 
     }
@@ -1881,9 +1447,9 @@ $('#familyDetails').append(html);
   document.getElementById("AddRow").style.display = "block";
 
   // remove row
-  $(document).on('click', '#removeRow', function () {
-      $(this).closest('#inputFormRow').remove();
-      rows--;
+  $(document).on('click', '#removeRow', function() {
+    $(this).closest('#inputFormRow').remove();
+    rows--;
   });
 </script>
 
@@ -1891,21 +1457,21 @@ $('#familyDetails').append(html);
 
 <center>To know more about Arogya Gramin Health Card click button below</center>
 
- 
-
-          
-
-             <center>
 
 
 
-					<a href="https://www.arogyagramin.in/2022/03/blog-post.html" target="_blank" class="btn btn-danger" style="margin-top:7px;">Read More Hindi</a>
 
-					<a href="tel:18008898286" class="btn btn-success" style="margin-top:7px;">Click to Call</a>
+<center>
 
-					</center>
 
-          
+
+  <a href="https://www.arogyagramin.in/2022/03/blog-post.html" target="_blank" class="btn btn-danger" style="margin-top:7px;">Read More Hindi</a>
+
+  <a href="tel:18008898286" class="btn btn-success" style="margin-top:7px;">Click to Call</a>
+
+</center>
+
+
 
 
 
@@ -1913,7 +1479,7 @@ $('#familyDetails').append(html);
 
 
 
-      
+
 
 
 
