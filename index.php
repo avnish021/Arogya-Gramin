@@ -114,163 +114,144 @@ include 'connect.php';
     </div><!-- slider-section -->
 </div>
 
-<div class="agile_last_double_sectionw3ls">
-    <div class="w-100 text-white" id="borderbox">
-        <marquee width="100%" direction="left" class="mt-3">
-            Organization strictly opposed any type of fraudulent activity please do any work after verification. किसी भी
-            प्रकार की धोखाधड़ी गतिविधि का संगठन कड़ा विरोध करता है कृपया सत्यापन के बाद हीं कोई कार्य करें। के बाद ही
-            कोई कार्य करें।
-        </marquee>
-        <!-- <h4>
-			<br>
-		</h4> -->
-        <hr>
-    </div>
-
-    <section class="about-section-4 bd-bottom padding">
-        <div class="container">
-            <div class="about-wrap row d-flex align-items-center">
-                <div class="col-md-6 sm-padding">
-                    <div class="section-heading text-left mb-20">
-                        <span class="sub-heading">About</span>
-                        <h2>Arogya Gramin Healthcare Foundation</h2>
-                        <p class="text-justify">Arogya Gramin Healthcare Foundation is ISO 9001: 2015 certified and
-                            registered under the Government of Indian Act 2013. This organization is working within the
-                            Government of India to make healthcare facilities reach more and more people at a lower
-                            cost. Our organization is fully operational in rural and urban areas and we are trying to
-                            establish our branch in different areas of the country.</p>
-                        <ul class="about-list mb-20">
-                            <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in
-                                everything we do.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>We care about the community.</li>
-                            <li><i class="fas fa-thumbs-up"></i>We care about the environment.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>Our people are our strength.
-                            </li>
-                            <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
-                            <li><i class="fas fa-thumbs-up"></i>Building a healthy society and ensuring their access to
-                                health sectors.</li>
-                        </ul>
-                    </div><!-- /.section-heading -->
-                    <a href="about_us.php" class="default-btn">Learn More<span></span></a>
-                </div>
-                <div class="col-md-6 sm-padding">
-                    <div class="about-img">
-                        <img src="assets/new/img/about-bg-1.png" alt="">
-                    </div>
+<section class="about-section-4 bd-bottom padding">
+    <div class="container">
+        <div class="about-wrap row d-flex align-items-center">
+            <div class="col-md-6 sm-padding">
+                <div class="section-heading text-left mb-20">
+                    <span class="sub-heading">About</span>
+                    <h2>Arogya Gramin Healthcare Foundation</h2>
+                    <p class="text-justify">Arogya Gramin Healthcare Foundation is ISO 9001: 2015 certified and
+                        registered under the Government of Indian Act 2013. This organization is working within the
+                        Government of India to make healthcare facilities reach more and more people at a lower
+                        cost. Our organization is fully operational in rural and urban areas and we are trying to
+                        establish our branch in different areas of the country.</p>
+                    <ul class="about-list mb-20">
+                        <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in
+                            everything we do.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the community.</li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the environment.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>Our people are our strength.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
+                        <li><i class="fas fa-thumbs-up"></i>Building a healthy society and ensuring their access to
+                            health sectors.</li>
+                    </ul>
+                </div><!-- /.section-heading -->
+                <a href="about_us.php" class="default-btn">Learn More<span></span></a>
+            </div>
+            <div class="col-md-6 sm-padding">
+                <div class="about-img">
+                    <img src="assets/new/img/about-bg-1.png" alt="">
                 </div>
             </div>
         </div>
-    </section><!-- ./ about-section -->
+    </div>
+</section><!-- ./ about-section -->
 
-    <section class="feature-section padding">
-        <div class="container">
-            <div class="feature-wrap row d-flex align-items-center">
-                <div class="col-lg-7 sm-padding">
-                    <div class="row">
-                        <form action="" id="volunteer-form" class="form-horizontal appointment-form2" style="width:77%">
-                            <div class="section-heading mb-4">
-                                <span>Notification</span>
-                            </div>
-                            <div class="section-heading d-flex justify-content-between align-items-center">
-                                <h3 class="font-weight-bold" id="notification-font">Latest News</h3>
+<section class="feature-section padding">
+    <div class="container">
+        <div class="feature-wrap row d-flex align-items-center">
+            <div class="col-lg-7 sm-padding">
+                <div class="row">
+                    <form action="" id="volunteer-form" class="form-horizontal appointment-form2" style="width:77%">
+                        <div class="section-heading mb-4">
+                            <span>Notification</span>
+                        </div>
+                        <div class="section-heading d-flex justify-content-between align-items-center">
+                            <h3 class="font-weight-bold" id="notification-font">Latest News</h3>
 
-                                <a href="allnotification.php" type="button" class="btn btn-outline-danger">More</a>
-                            </div>
-                            <div class="form-group row notificationslider">
-                                <?php
-							$sql = "SELECT * FROM notification LIMIT 3";
-							$result = $conn->query($sql);
+                            <a href="allnotification.php" type="button" class="btn btn-outline-danger">More</a>
+                        </div>
+                        <div class="form-group row notificationslider">
+                            <?php
+                            $sql = "SELECT * FROM notification LIMIT 3";
+                            $result = $conn->query($sql);
 
-							if ($result->num_rows > 0) {
-								while ($row = $result->fetch_assoc()) {
-							?>
-                                <div class="card boxshadow item mt-3 p-2">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
-                                        <a href="<?php echo $row['link']; ?>" type="button"
-                                            class="btn btn-sm btn-outline-danger">Open</a>
-                                        <p class="card-text"></p>
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                            ?>
+                                    <div class="card boxshadow item mt-3 p-2">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
+                                            <a href="<?php echo $row['link']; ?>" type="button" class="btn btn-sm btn-outline-danger">Open</a>
+                                            <p class="card-text"></p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <?php
-								}
-							} else {
-								//echo "0 results";
-							}
-							?>
+                            <?php
+                                }
+                            } else {
+                                //echo "0 results";
+                            }
+                            ?>
 
 
 
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 sm-padding">
-                    <form action="book_op.php" method="post" id="volunteer-form"
-                        class="form-horizontal appointment-form">
-                        <div class="section-heading">
-                            <span>Appointment</span>
-                            <h3>Book an Appointment</h3>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <select class="form-control" name="select_dp">
-                                    <option>Select Department</option>
-                                    <option value="Doctor">Doctor</option>
-                                    <option value="Hospital">Hospital</option>
-                                    <option value="Query">Query</option>
-                                    <option value="Franchise Partner">Franchise Partner</option>
-                                    <option value="Appointment Book">Appointment Book</option>
-                                    <option value="Arogya gramin">Arogya Gramin</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="text" id="volunteer-form-name" name="name" class="form-control"
-                                    placeholder="Your Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-12">
-                                <input type="text" id="volunteer-form-phone" name="phone" class="form-control"
-                                    placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="email" id="volunteer-email" name="email" class="form-control"
-                                    placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-2">
-                            <div class="col-sm-12">
-                                <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
-                            </div>
-                        </div>
-                        <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit
-                            <span></span></button>
-                        <div id="volunteer-form-messages" class="alert" role="alert"></div>
                     </form>
                 </div>
             </div>
+
+            <div class="col-lg-5 sm-padding">
+                <form action="book_op.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
+                    <div class="section-heading">
+                        <span>Appointment</span>
+                        <h3>Book an Appointment</h3>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <select class="form-control" name="select_dp">
+                                <option>Select Department</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Query">Query</option>
+                                <option value="Franchise Partner">Franchise Partner</option>
+                                <option value="Appointment Book">Appointment Book</option>
+                                <option value="Arogya gramin">Arogya Gramin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="text" id="volunteer-form-name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-12">
+                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control" placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="email" id="volunteer-email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
+                        </div>
+                    </div>
+                    <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit
+                        <span></span></button>
+                    <div id="volunteer-form-messages" class="alert" role="alert"></div>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--Add popup-->
+<!--Add popup-->
 
 
-    <!--/Making comment of Product code-->
-    <!--/grids-->
-    <!-- /new_arrivals -->
+<!--/Making comment of Product code-->
+<!--/grids-->
+<!-- /new_arrivals -->
 
-    <!--<div class="new_arrivals_agile_w3ls_info"> 
+<!--<div class="new_arrivals_agile_w3ls_info"> 
 		<div class="container">
 		    <h3 class="wthree_text_info">Our Products</span></h3>		
 				<div id="horizontalTab">
@@ -281,20 +262,20 @@ include 'connect.php';
 					<div class="resp-tabs-container">
 					<!--/tab_one-->
 
-    <!--<div class="tab1">
+<!--<div class="tab1">
 						<?php
-						include 'connect.php';
-						$result = mysqli_query($conn, "SELECT * FROM `add_product` Limit 8");
-						while ($row = mysqli_fetch_assoc($result)) {
-							echo "<form method='post' action='product2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "&price=" . $row['price'] . "&discount=" . $row['discount'] . "&img=" . $row['photo'] . "'><input type='hidden' name='id' value='" . $row['id'] . "'><div class='col-md-3 product-men'><div class='men-pro-item simpleCart_shelfItem'><div class='men-thumb-item'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-front' style='height:270px;'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-back' style='height:270px;'><div class='men-cart-pro'><div class='inner-men-cart-pro'><a href='buy.php?id=" . $row['id'] . "' class='link-product-add-cart'>Buy Now</a></div></div></div><div class='item-info-product '><h4><a href='buy.php?id=" . $row['id'] . "'>" . $row['prodcut_name'] . "</a></h4><div class='info-product-price'><span class='item_price'<i style='color: #00aa59' class='fa fa-inr'></i>&nbsp;&nbsp;" . $row['after_discount'] . "/-</span><del><i style='color: #00aa59' class='fa fa-inr'></i> " . $row['price'] . "/-</del><br>off &nbsp;" . $row['discount'] . " % <br><p><b>Quantity:<b><input type='number' name='quantity' class='form-control' required></p></div><div class='snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2'><a href='prodcut2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "'><input type='submit' value='Add to cart' class='button'></a></div></div></div></div></form>";
-						}
-						mysqli_close($conn);
-						?>
+                        include 'connect.php';
+                        $result = mysqli_query($conn, "SELECT * FROM `add_product` Limit 8");
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<form method='post' action='product2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "&price=" . $row['price'] . "&discount=" . $row['discount'] . "&img=" . $row['photo'] . "'><input type='hidden' name='id' value='" . $row['id'] . "'><div class='col-md-3 product-men'><div class='men-pro-item simpleCart_shelfItem'><div class='men-thumb-item'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-front' style='height:270px;'><img src='assets/images/product/" . $row['photo'] . "' alt='' class='pro-image-back' style='height:270px;'><div class='men-cart-pro'><div class='inner-men-cart-pro'><a href='buy.php?id=" . $row['id'] . "' class='link-product-add-cart'>Buy Now</a></div></div></div><div class='item-info-product '><h4><a href='buy.php?id=" . $row['id'] . "'>" . $row['prodcut_name'] . "</a></h4><div class='info-product-price'><span class='item_price'<i style='color: #00aa59' class='fa fa-inr'></i>&nbsp;&nbsp;" . $row['after_discount'] . "/-</span><del><i style='color: #00aa59' class='fa fa-inr'></i> " . $row['price'] . "/-</del><br>off &nbsp;" . $row['discount'] . " % <br><p><b>Quantity:<b><input type='number' name='quantity' class='form-control' required></p></div><div class='snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2'><a href='prodcut2.php?id=" . $row['id'] . "&name=" . $row['prodcut_name'] . "&description=" . $row['description'] . "'><input type='submit' value='Add to cart' class='button'></a></div></div></div></div></form>";
+                        }
+                        mysqli_close($conn);
+                        ?>
 							
 							<div class="clearfix"></div>
 						</div>
 						<!--//tab_one-->
-    <!--/tab_two-->
+<!--/tab_two-->
 
 </div>
 </div>
@@ -351,8 +332,7 @@ include 'connect.php';
                 </div>
             </div>
         </div>
-        <div class="col-sm-4" style="margin-top:20px;cursor:pointer"
-            onclick="window.location.href='apply_healthcard2.php'">
+        <div class="col-sm-4" style="margin-top:20px;cursor:pointer" onclick="window.location.href='apply_healthcard2.php'">
             <div style="box-shadow:0px 10px 10px 0px;width:96%">
                 <div style="width:98%;margin-top:20px;margin-bottom:20px;">
                     <center>
@@ -557,9 +537,8 @@ include 'connect.php';
                         <div class="col-md-6">
                             <div class="subscribe-form-wrap">
                                 <form action="#" class="subscribe-form" method="post">
-                                    <input type="email" name="email" class="form-input"
-                                        placeholder="Enter Your Email Address..." required="">
-                                    <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y")?>">
+                                    <input type="email" name="email" class="form-input" placeholder="Enter Your Email Address..." required="">
+                                    <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y") ?>">
                                     <input type="hidden" name="sub">
                                     <button type="submit" class="submit-btn" value="Subscribe">Subscription</button>
                                     <div class="clearfix"></div>
