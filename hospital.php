@@ -26,7 +26,7 @@ include 'connect.php';
             <div class="col-lg-4 col-md-6 padding-15">
                 <div class="event-item">
                     <div class="event-thumb">
-                        <img src="assets/new/img/hospital.png" alt="event" class="p-5">
+                        <img src="assets/new/img/hospital.png" alt="event" class="" style="padding:60px">
                         <div class="date bg-red">
                             <h3><?php echo $row['percent']." OFF";?></h3>
                         </div>

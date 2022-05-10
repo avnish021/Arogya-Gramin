@@ -209,7 +209,7 @@ session_start();
 									<li><a href="dpo.php">Dpo</a></li>
 									<li><a href="bpo.php">Bpo</a></li>
 									<li><a href="arogyamitra.php">Arogya Mitra</a></li>
-									<li><a href="arogyamin.php">Arogya Center</a></li>
+									<li><a href="arogyagramin.php">Arogya Center</a></li>
 								</ul>
 							</li>
 

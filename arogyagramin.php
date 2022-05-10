@@ -1,46 +1,61 @@
-<?php include 'header.php'?>
-<div class="container-fulid">
-<div class="page-head_agile_info_w3l">
-		<div class="container">
-			<h3>Arogya Gramin</h3>
-			<!--/w3_short-->
-				 <div class="services-breadcrumb">
-						<div class="agile_inner_breadcrumb">
+<?php 
+include 'header.php';
+include 'connect.php';
+?>
+<section class="page-header padding">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-content text-center">
+            <h2>Arogya Gramin</h2>
+            <div class="page-item">
+                <a href="/"><i class="ti-home"></i>Home </a>
+                <p>Arogya Gramin</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-section padding">
+    <div class="container">
+        <div class="blog-wrap row">
 
-						   <ul class="w3_short">
-								<li><a href="index.html">Home</a><i style="color:black">|</i></li>
-								<li style='color:black'>Arogya Gramin</li>
-							</ul>
-						 </div>
-				</div>
-	   <!--//w3_short-->
-	</div>
-</div>
-<div class="container">
-	<div class="row" style="margin-top:50px">
-		<center><h3><u><b>Arogya Gramin</b></u></h3></center>
-		<br>
-		<?php
+            <?php
             include 'connect.php';
             
-            $sql = "SELECT * FROM dpo_bpo where post='Arogya Gramin'";
+			$sql = "SELECT * FROM dpo_bpo where post='Arogya Gramin'";
             $result = $conn->query($sql);
             
             if ($result->num_rows > 0) {
                 // output data of each row
-                while($row = $result->fetch_assoc()) {
-                    echo "<div class='col-sm-4' style='margin-top:20px;'><div style='box-shadow:0px 10px 10px 0px;width:96%;border-radius:6px;height:300px'><div style='width:98%;margin-top:20px;margin-bottom:20px;margin-left:7px;'><h4><br><b>".$row['name']."</b></h4><br><span ><i class='fa fa-map'></i>&nbsp;&nbsp;".$row['office_address']."</span><br><hr><a href='read_more.php?id=".$row['id']."' class='btn btn-success'>Read More</a><hr></div></div></div>";
+                while($row = $result->fetch_assoc()) { ?>
+            <div class="col-lg-4 col-md-6 sm-padding">
+                <div class="blog-item">
+                    <div class="blog-thumb">
+                        <img src="assets/new/img/manager.png" alt="post">
+                        <span class="category"><a href="#">Arogya Gramin</a></span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="read_more.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
+                        </h3>
+                        <ul class="event-list">
+                            <?php
+							if($row['office_address']){ ?>
+                            <li><i class="fas fa-map-marker-alt"></i><?php echo $row['office_address'];?></li>
+                            <?php } ?>
+                        </ul>
+                        <a href="read_more.php?id=<?php echo $row['id']; ?>" class='read-more'>Read More</a>
+                    </div>
+                </div>
+            </div>
+            <?php 
                 }
             } else {
                 echo "0 results";
             }
             
-            $conn->close();
         ?>
-		
-		
-		</div>	<br></br>
-	</div>
-</div>
+		</div>
+    </div>
+</section>
 <?php include 'footer.php'?>
   
