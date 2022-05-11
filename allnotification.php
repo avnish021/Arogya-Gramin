@@ -1,37 +1,77 @@
-<?php include 'header.php'?>
+<?php 
+include 'header.php';
+include 'connect.php';
+?>
+<section class="page-header padding">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-content text-center">
+            <h2>All Notifications</h2>
+            <div class="page-item">
+                <a href="/"><i class="ti-home"></i>Home </a>
+                <p>All Notifications</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--header end-->
 
-<div class="container" style="margin-top:50px;">
-  <div class="row">
-      <div class="col-sm-12" style="word-wrap: break-word;">
-        
-			<center><h2 class="hs_heading">All Notifications</h2></center><hr>
-	
-         
-              
-              <?php
-include 'connect.php';
+
+
+
+
+<section class="working-process bd-bottom padding">
+    <div class="container">
+        <!-- <div class="work-wrap row"> -->
+
+        <?php
 
 $sql = "SELECT * FROM notification";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<ul><li><a href='".$row['link']."'><i class='fa fa-calendar'></i> ".$row['rdt']."</a></li></ul><hr><a href='".$row['link']."'><h4>".$row['heading']."</h4></a><p><b>".$row['parpas']."</b><br>".$row['description']."</p><br>".$row['link']."<hr>";
+    $i = 1;
+    $j = 0;
+    while($row = $result->fetch_assoc()) { 
+    if ($j % 3 == 0) {
+        echo '<div class = "work-wrap row pt-5 pb-5">';
     }
+
+    ?>
+        <div class="col-md-4 sm-padding bd-right">
+            <div class="work-content">
+                <h2><?php echo $i; ?></h2>
+                <div class="section-heading">
+                    <h3><?php echo $row['heading']; ?></h3>
+                    <p><?php echo $row['description']; ?></p>
+                    <a href="<?php echo $row['link'];?>" type="button" class="btn btn-sm btn-outline-danger mt-3">Open
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <br /><br />
+                    <ul class="single-post-meta">
+                        <li class="float-right"><i class="fas fa-calendar"></i>
+                            <a href="#"><?php echo $row['rdt']; ?></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <?php
+            if ($j % 3 == 2) {
+                echo '</div>';
+                echo '<hr>';
+            }
+             $i++;
+             $j++;
+             }
 } else {
     echo "0 results";
 }
 
-$conn->close();
+
 ?>
-            
-        
-       
-         
-       
-      </div>
-  </div>
-</div>
+
+    </div>
+</section><!-- ./ working-process -->
+
 <?php include 'footer.php'?>
