@@ -22,6 +22,12 @@ include 'connect.php';
                                 के लिए</div>
                         </div>
                     </div>
+                    <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
                     <!-- <div class="dl-caption big">
 						<div class="inner-layer">
 							<div data-animation="fade-in-bottom" data-delay="1s"></div>
@@ -60,6 +66,12 @@ include 'connect.php';
                                 लिए</div>
                         </div>
                     </div>
+                    <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -81,6 +93,12 @@ include 'connect.php';
                             <div class="inner-layer">
                                 <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन
                                     के लिए</div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -105,6 +123,12 @@ include 'connect.php';
                             <div class="inner-layer">
                                 <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन
                                     के लिए</div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
                     </div>

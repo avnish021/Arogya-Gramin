@@ -33,7 +33,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href=hospital_lab_medical_read.php?id=<?php echo $row['id']; ?>">
+                        <a href="hospital_lab_medical_read.php?id=<?php echo $row['id']; ?>">
                             <h3><?php echo $row['mstore'];?></h3>
                         </a>
                         <ul class="event-list">
