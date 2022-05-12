@@ -24,7 +24,7 @@ include 'connect.php';
                     </div>
                     <div class="dl-btn-group">
                             <div class="inner-layer">
-                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                <a href="apply_healthcard2" class="default-btn" style="margin-top:95px;" data-animation="fade-in-bottom"
                                     data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
