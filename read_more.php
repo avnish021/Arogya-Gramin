@@ -26,7 +26,7 @@ include 'connect.php';
 		while($row = $result->fetch_assoc()) {
 			?>
         <div class="col-6 mx-auto" id="cardbox">
-            <div class="card p-5">
+            <div class="card p-5" style="border: none;">
                 <div class="card-body">
                     <h3 class="card-title font-weight-bold"><?php echo $row['post'];?></h3>
                     <p class="card-text"><?php echo$row['name'];?></p>
