@@ -4,7 +4,7 @@
   <div class="container">
     <div class="page-content text-center">
       <h2>Join Our Team</h2>
-      <div class="page-item">
+      <div class="page-item bannercenter">
         <a href="/"><i class="ti-home"></i>Home </a>
         <p>Career</p>
       </div>

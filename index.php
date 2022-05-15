@@ -178,7 +178,7 @@ include 'connect.php';
 <section class="feature-section padding">
     <div class="container">
         <div class="feature-wrap row d-flex align-items-center">
-            <div class="col-lg-7 sm-padding">
+            <div class="col-lg-7 col-md-7 col-sm-7">
                 <div class="row">
                     <form action="" id="volunteer-form" class="form-horizontal appointment-form2" style="width:88%">
                         <div class="section-heading mb-4">
@@ -198,7 +198,7 @@ include 'connect.php';
                                 while ($row = $result->fetch_assoc()) {
                             ?>
                                     <div class="card item mt-3 p-2" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-color: #F7FAFE;">
+                                            background-color: #F7FAFE;">
                                         <div class="card-body">
                                             <h5 class="card-title font-weight-bold"><?php echo $row['heading']; ?></h5>
                                             <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['parpas']; ?></h6>
@@ -498,14 +498,14 @@ include 'connect.php';
 
 <section class="team-section bd-bottom padding">
     <div class="container">
-        <div class="section-heading mb-40 text-center">
+        <div class="section-heading mb-40 text-center"> 
             <span class="sub-heading">Founders</span>
             <h2>Our Founders</h2>
         </div><!-- /.section-heading -->
         <div class="team-wrap row">
             <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
-                    <div class="team-thumb">
+                    <div class="team-thumb founder">
                         <img src="assets/images/team/a1.jpeg" alt="img" style="height:250px">
                     </div>
                     <div class="team-content text-center">
@@ -518,7 +518,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
-                    <div class="team-thumb">
+                    <div class="team-thumb founder">
                         <img src="assets/images/team/a2.jpeg" alt="img" style="height:250px">
                     </div>
                     <div class="team-content text-center">
@@ -529,7 +529,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
-                    <div class="team-thumb">
+                    <div class="team-thumb founder">
                         <img src="assets/images/team/a4.jpg" alt="img" style="height:250px">
                     </div>
                     <div class="team-content text-center">
@@ -540,7 +540,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
-                    <div class="team-thumb">
+                    <div class="team-thumb founder">
                         <img src="assets/images/team/a3.jpeg" alt="img" style="height:250px">
                     </div>
                     <div class="team-content text-center">
@@ -603,7 +603,15 @@ include 'connect.php';
         </div>
     </section>
 
-<section class="event-section bd-bottom padding">
+
+
+
+
+
+
+
+
+    <section class="event-section bd-bottom padding">
     <div class="container">
         <div class="section-heading mb-40 text-center">
             <span class="sub-heading">Upcoming Events</span>
@@ -837,7 +845,7 @@ include 'connect.php';
                                     <input type="email" name="email" class="form-input" placeholder="Enter Your Email Address..." required="">
                                     <input type="hidden" name="rdt" value="<?php echo date("l j \ F Y") ?>">
                                     <input type="hidden" name="sub">
-                                    <button type="submit" class="submit-btn" value="Subscribe">Subscription</button>
+                                    <button type="submit" class="submit-btn subscription" value="Subscribe">Subscription</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>

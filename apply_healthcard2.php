@@ -527,7 +527,7 @@ if (isset($_POST["familyApply"])) {
 		<div class="page-content text-center">
 			<h2>Apply Health Card</h2>
       <p>Welcome! Apply your Arogya Gramin Card to avail all affordable healthcare services.</p>
-			<div class="page-item">
+			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>
 				<p>Apply Health Card</p>
 			</div>

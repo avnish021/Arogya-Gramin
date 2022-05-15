@@ -5,7 +5,7 @@
 		<div class="page-content text-center">
 			<h2>Services</h2>
 			<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
-			<div class="page-item">
+			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>
 				<p>Services</p>
 			</div>

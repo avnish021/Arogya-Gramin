@@ -7,14 +7,41 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Tie-Up Details</h2>
-            <div class="page-item">
+            <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Tie-Up Details</p>
             </div>
         </div>
     </div>
 </section>
-<div class="container">
+<section class="about-doctor-area section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="doctor-image">
+                    <img src="assets/new/img/profile4.jpg" alt="single-doctor" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="doctor-info">
+                    <div class="info-top">
+                        <h2>Gnik Conrel</h2>
+                        <div class="info-meta d-flex align-items-center justify-content-between">
+                            <span class="catagory">Gynycologist</span>
+                            <span class="fee">Fee: $50</span>
+                        </div>
+                    </div>
+                    <div class="info-bottom">
+                        <h3>About The Doctor</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors.</p>
+                        <a href="../signin.html" class="primary-btn">Make Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="container">
     <div class="row align-items-center vh-100">
         <?php
 	$id = $_GET['id'];
@@ -45,7 +72,90 @@ include 'connect.php';
                 echo "No result";
                 }
                 ?>
+                
+</div> -->
+<section class="testimonials-section bd-bottom bg-grey padding">
+        <div class="container">
+            <div class="section-heading mb-40 text-center">
+                <span class="sub-heading">Clients Testimonial</span>
+                <h2>What Other People are Saying</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div><!-- /.section-heading -->
+            <div class="slider testimonials-carousel nav-style carousel-dots">
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-1.png" alt="thumb">
+                        <h3>Kyle Frederick<span>Envato.Inc</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-2.png" alt="thumb">
+                        <h3>Jérémie Ambroise<span>Charitian.Ceo</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-3.png" alt="thumb">
+                        <h3>Ana Luiza Oliveira<span>Themeforest.Ceo</span></h3>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-content">
+                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                    </div>
+                    <div class="testi-info">
+                        <img src="assets/new/img/testi-4.png" alt="thumb">
+                        <h3>Marcos Fernando<span>Facebook.Org</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+<div class="sponsor-section">
+	<div class="container">
+		<div class="slider sponsor-carousel nav-style">
+			<div class="sponsor-item">
+				<img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/6.png" alt="sponsor" width="100" height="70">
+			</div>
+			<div class="sponsor-item">
+				<img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
+			</div>
+		</div>
+	</div>
 </div>
-
-
 <?php include 'footer.php'?>

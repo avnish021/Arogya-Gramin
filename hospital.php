@@ -7,7 +7,7 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Hospitals</h2>
-            <div class="page-item">
+            <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Hospitals</p>
             </div>

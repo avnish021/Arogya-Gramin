@@ -141,3 +141,69 @@
 #cardbox{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+
+@media only screen and (max-width: 300px) {
+.appointment-form2{
+margin-left: 1.5rem;
+  }
+  .founder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-wrap{
+    padding: 15px 20px;
+    height: 270px;
+  }
+  .subscribe-wrap .child {
+    visibility: hidden;
+  }
+  .subscription{
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+  }
+  .subscribe-form .form-input{
+    padding-right: 0px;
+  }
+  .page-item.bannercenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+@media only screen and (min-width: 300px) and (max-width:500px) {
+  .appointment-form2{
+  margin-left: 2rem;
+    }
+    .founder{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .subscribe-wrap{
+      padding: 15px 20px;
+      height: 270px;
+    }
+    .subscribe-wrap .child {
+      visibility: hidden;
+    }
+    .subscription{
+      margin-top: 4.5rem;
+      margin-right: 5rem;
+    }
+    .subscribe-form .form-input{
+      padding-right: 0px;
+    }
+    .page-item.bannercenter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+  }
