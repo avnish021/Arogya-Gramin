@@ -288,6 +288,9 @@ button{
 }
 
 /* ======= Default Button ======= */
+button:hover, button:focus {
+    outline: none;
+    }
 .btn-group{}
 .btn-group a{
     margin: 5px;
@@ -368,6 +371,60 @@ button{
 }
 .default-btn-info:hover{
     color: #fff;
+}
+.default-btn-outline-info{
+    display: inline-block;
+    background: transparent;
+    border: #0099CC 1px solid;
+    color: #0099CC;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 35px;
+    letter-spacing: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+    z-index: 1;
+}
+.default-btn-outline-info:hover{
+    color: #fff;
+    background: #0099CC;
+}
+.default-btn-outline{
+    display: inline-block;
+    background: transparent;
+    border: #fa575d 1px solid;
+    color: #fa575d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 35px;
+    letter-spacing: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+    z-index: 1;
+}
+.default-btn-outline:hover{
+    color: #fff;
+    background: #fa575d;
 }
 .default-btn-info span {
     background: #20212b none repeat scroll 0 0;

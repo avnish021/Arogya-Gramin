@@ -55,15 +55,15 @@ session_start();
     <link rel="stylesheet" href="assets/new/css/slick.min.css">
     <link rel="stylesheet" href="assets/new/css/slider.css">
     <link rel="stylesheet" href="assets/new/css/venobox/venobox.css">
-    <link rel="stylesheet" href="assets/new/css/venobox/venobox.css">
     <link rel="stylesheet" href="assets/new/css/main.css">
+    <link rel="stylesheet" href="assets/new/css/custom.css">
 
-    <link rel="stylesheet" href="assets/front/css/custom.css">
+    <!-- <link rel="stylesheet" href="assets/front/css/custom.css">
     <link rel="stylesheet" href="assets/front/user/css/plugins.css">
 <link rel="stylesheet" href="assets/front/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/front/user/css/style.css">
 <link rel="stylesheet" href="assets/front/user/css/responsive.css">
-<link rel="stylesheet" href="assets/front/user/css/custom.css">
+<link rel="stylesheet" href="assets/front/user/css/custom.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
 
     <script src="assets/new/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
