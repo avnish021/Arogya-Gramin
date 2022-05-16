@@ -207,3 +207,40 @@ margin-left: 1.5rem;
     
     
   }
+
+
+  .about-doctor-area .doctor-info .info-top .catagory {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #666666;
+}
+.about-doctor-area .doctor-info .info-top h2 {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333333;
+}
+.about-doctor-area .doctor-info .info-bottom h3 {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.5);
+}
+.about-doctor-area .doctor-info .info-top .fee {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #245BD0;
+  background: #F7F7F7;
+}

@@ -243,6 +243,8 @@ session_start();
                                     <li><a href="https://www.arogyagramin.in/">Blog</a></li>
                                     <li><a href="career.php">Career</a>
                                     <li><a href="event.php">Event</a>
+                                    <li><a href="cause.php">Cause</a>
+                                    <li><a href="gallery.php">Gallery</a>
 
                                 </ul>
                             </li>

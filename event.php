@@ -31,7 +31,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event-details.html">
+                        <a href="event_details.php">
                             <h3>Fight For Right Cause</h3>
                         </a>
                         <ul class="event-list">
@@ -50,7 +50,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event-details.html">
+                        <a href="event_details.php">
                             <h3>Education For Children</h3>
                         </a>
                         <ul class="event-list">
@@ -88,7 +88,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event-details.html">
+                        <a href="event_details.php">
                             <h3>Water For Children</h3>
                         </a>
                         <ul class="event-list">
@@ -107,7 +107,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event-details.html">
+                        <a href="event_details.php">
                             <h3>Protect The Eco System</h3>
                         </a>
                         <ul class="event-list">
@@ -126,7 +126,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event-details.html">
+                        <a href="event_details.php">
                             <h3>Help For Rohingya People</h3>
                         </a>
                         <ul class="event-list">
