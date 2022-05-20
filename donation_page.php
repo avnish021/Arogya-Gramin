@@ -4,7 +4,7 @@
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="page-content text-center">
-		<h2>Donate</h2>
+		<h2>Donate Us</h2>
 		<p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
 			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>

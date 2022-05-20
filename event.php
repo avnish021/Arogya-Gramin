@@ -30,12 +30,12 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event_details.php">
-                            <h3>Fight For Right Cause</h3>
+                        <a href="#">
+                            <h3>Free Health Camp</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>10:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                         </ul>
                     </div>
                 </div>
@@ -49,12 +49,12 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event_details.php">
-                            <h3>Education For Children</h3>
+                        <a href="#">
+                            <h3>Door To Door Camping</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>09:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                         </ul>
                     </div>
                 </div>
@@ -69,11 +69,11 @@ include 'connect.php';
                     </div>
                     <div class="event-content text-center">
                         <a href="#">
-                            <h3>Help For Education</h3>
+                            <h3>Membership Program</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>11:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>India</li>
                         </ul>
                     </div>
                 </div>
@@ -87,12 +87,12 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event_details.php">
-                            <h3>Water For Children</h3>
+                        <a href="#">
+                            <h3>Awareness Program</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>12:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>India</li>
                         </ul>
                     </div>
                 </div>
@@ -106,12 +106,12 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event_details.php">
-                            <h3>Protect The Eco System</h3>
+                        <a href="#">
+                            <h3>Association Program</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>01:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                         </ul>
                     </div>
                 </div>
@@ -125,12 +125,12 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="event_details.php">
-                            <h3>Help For Rohingya People</h3>
+                        <a href="#">
+                            <h3>Skill Development Program</h3>
                         </a>
                         <ul class="event-list">
                             <li><i class="fas fa-clock"></i>08:00 AM</li>
-                            <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                            <li><i class="fas fa-map-marker-alt"></i>India</li>
                         </ul>
                     </div>
                 </div>

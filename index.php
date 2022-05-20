@@ -685,7 +685,7 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Fight For Right Cause</h3>
+                        <h3>Free Health Camp</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>10:00 AM</li>
@@ -702,7 +702,7 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Awareness Program</h3>
+                        <h3>Door To Door Camping</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>09:00 AM</li>
@@ -719,7 +719,7 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Healthcare Support</h3>
+                        <h3>Membership Program</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>11:00 AM</li>
@@ -736,7 +736,7 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Health Camp in Rural Area</h3>
+                        <h3>Awareness Program</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>12:00 AM</li>
@@ -744,7 +744,7 @@ include 'connect.php';
                     </ul>
                 </div>
             </div>
-            <div class="event-item">
+           <!-- <div class="event-item">
                 <div class="event-thumb">
                     <img src="assets/new/img/event-5.jpg" alt="event">
                     <div class="date bg-green">
@@ -760,24 +760,7 @@ include 'connect.php';
                         <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                     </ul>
                 </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-6.jpg" alt="event">
-                    <div class="date bg-pink">
-                        <h3>28<span>Mar</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Help For Echonomically Weaker People</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>08:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>India</li>
-                    </ul>
-                </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section><!-- ./ event-section -->
