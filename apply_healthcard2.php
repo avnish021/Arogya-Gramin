@@ -10,14 +10,19 @@ $author = "self";
 if (isset($_POST["personalApply"])) {
   $id = time();
   $name = ucwords($_POST["name"]);
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
   $email = $_POST["email"];
+    $email = filter_var($email, FILTER_SANITIZE_STRING);
   $gender = ucwords($_POST["gender"]);
   $dob = $_POST["dob"];
   $aadhar = $_POST["aadhar"];
   $mobile = $_POST["mobile"];
   $address = ucwords($_POST["address"]);
+     $address = filter_var($address, FILTER_SANITIZE_STRING);
   $block = ucwords($_POST["block"]);
+     $block = filter_var($block, FILTER_SANITIZE_STRING);
   $district = ucwords($_POST["district"]);
+    $district = filter_var($district, FILTER_SANITIZE_STRING);
   $state = ucwords($_POST["state"]);
   $pin = $_POST["pin"];
   //$pass = date("Y").strtoupper($name, 4);
@@ -25,6 +30,7 @@ if (isset($_POST["personalApply"])) {
   $type = "personal";
 
   $filename = $_FILES["imageFile"]["name"];
+  
   $tempname = $_FILES["imageFile"]["tmp_name"];
   $folder = "assets/images/post" . $filename;
 
@@ -51,14 +57,18 @@ if (isset($_POST["personalApply"])) {
 if (isset($_POST["familyApply"])) {
   $id = time();
   $name = ucwords($_POST["name"]);
+     $name = filter_var($name, FILTER_SANITIZE_STRING);
   $email = $_POST["email"];
   $gender = ucwords($_POST["gender"]);
   $dob = $_POST["dob"];
   $aadhar = $_POST["aadhar"];
   $mobile = $_POST["mobile"];
   $address = ucwords($_POST["address"]);
+   $address = filter_var($address, FILTER_SANITIZE_STRING);
   $block = ucwords($_POST["block"]);
+    $block = filter_var($block, FILTER_SANITIZE_STRING);
   $district = ucwords($_POST["district"]);
+    $district = filter_var($district, FILTER_SANITIZE_STRING);
   $state = ucwords($_POST["state"]);
   $pin = $_POST["pin"];
   $type = "family";
@@ -70,9 +80,11 @@ if (isset($_POST["familyApply"])) {
 
   if (!empty($_POST["MemberName0"])) {
     $first_member_name = ucwords($_POST["MemberName0"]);
+    $first_member_name = filter_var($first_member_name, FILTER_SANITIZE_STRING);
     $first_member_age = $_POST["MemberAge0"];
     $first_member_gender = ucwords($_POST["MemberGender0"]);
     $first_member_relation = ucwords($_POST["MemberRelation0"]);
+    $first_member_relation = filter_var($first_member_relation, FILTER_SANITIZE_STRING);
   } else {
     $first_member_name = NULL;
     $first_member_age = NULL;
@@ -82,9 +94,11 @@ if (isset($_POST["familyApply"])) {
 
   if (!empty($_POST["MemberName1"])) {
     $second_member_name = ucwords($_POST["MemberName1"]);
+    $second_member_name = filter_var($second_member_name, FILTER_SANITIZE_STRING);
     $second_member_age = $_POST["MemberAge1"];
     $second_member_gender = ucwords($_POST["MemberGender1"]);
     $second_member_relation = ucwords($_POST["MemberRelation1"]);
+    $second_member_relation = filter_var($second_member_relation, FILTER_SANITIZE_STRING);
   } else {
     $second_member_name = NULL;
     $second_member_age = NULL;
@@ -94,9 +108,11 @@ if (isset($_POST["familyApply"])) {
 
   if (!empty($_POST["MemberName2"])) {
     $third_member_name = ucwords($_POST["MemberName2"]);
+    $third_member_name = filter_var($third_member_name, FILTER_SANITIZE_STRING);
     $third_member_age = $_POST["MemberAge2"];
     $third_member_gender = ucwords($_POST["MemberGender2"]);
     $third_member_relation = ucwords($_POST["MemberRelation2"]);
+    $third_member_relation = filter_var($third_member_relation, FILTER_SANITIZE_STRING);
   } else {
     $third_member_name = NULL;
     $third_member_age = NULL;
@@ -106,9 +122,11 @@ if (isset($_POST["familyApply"])) {
 
   if (!empty($_POST["MemberName3"])) {
     $fourth_member_name = ucwords($_POST["MemberName3"]);
+    $forth_member_name = filter_var($forth_member_name, FILTER_SANITIZE_STRING);
     $fourth_member_age = $_POST["MemberAge3"];
     $fourth_member_gender = ucwords($_POST["MemberGender3"]);
     $fourth_member_relation = ucwords($_POST["MemberRelation3"]);
+    $foruth_member_relation = filter_var($fourth_member_relation, FILTER_SANITIZE_STRING);
   } else {
     $fourth_member_name = NULL;
     $fourth_member_age = NULL;
@@ -135,12 +153,15 @@ if (isset($_POST["familyApply"])) {
   }
 }
 ?>
+
+
+
 <section class="page-header padding">
   <div class="overlay"></div>
   <div class="container">
     <div class="page-content text-center">
       <h2>Apply Health Card</h2>
-      <p>Welcome! Apply your Arogya Gramin Card to avail all affordable healthcare services.</p>
+      <p>Grat to look you here! Apply your Arogya Gramin Card now to avail all affordable healthcare services. <br> Your card will be delivered throughout the Email you are providing.</p>
       <div class="page-item bannercenter">
         <a href="/"><i class="ti-home"></i>Home </a>
         <p>Apply Health Card</p>
@@ -175,7 +196,7 @@ if (isset($_POST["familyApply"])) {
               <div class="form-group row">
                 <div class="col-md-6">
                   <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
-                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
+                  <input type="number" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
                 </div>
                 <div class="col-md-6">
                   <label for="Gender">Gender (लिंग)<span class="required">*</span></label>
@@ -290,7 +311,7 @@ if (isset($_POST["familyApply"])) {
               <div class="form-group row">
                 <div class="col-md-6">
                   <label for="Mobile">Mobile (मोबाइल)<span class="required">*</span></label>
-                  <input type="mobile" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
+                  <input type="number" name="mobile" min="6000000000" max="9999999999" class="form-control" placeholder="Enter Your Mobile" required>
                 </div>
                 <div class="col-md-6">
                   <label for="Gender">Gender (लिंग)<span class="required">*</span></label>

@@ -7,6 +7,8 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Management Team</h2>
+            <p>Highly skilled professionals who possess expertise in diverse Business and Technology areas make up the Business Technologies team. <br> To provide world class service, we employ the best technicians, adhere to proven methodology, <br> Provide superior client service and become a true business partner in every project.
+</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Management Team</p>

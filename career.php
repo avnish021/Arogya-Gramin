@@ -4,6 +4,7 @@
   <div class="container">
     <div class="page-content text-center">
       <h2>Join Our Team</h2>
+      <p>Do the best you can in every task, no matter how unimportant it may seem at the time.<br> No one learns more about a problem than the person at the bottom<br> Don't suffer, start building your career join our team.</p>
       <div class="page-item bannercenter">
         <a href="/"><i class="ti-home"></i>Home </a>
         <p>Career</p>
@@ -37,10 +38,10 @@
             </div>
             <div class="form-group row">
               <div class="col-sm-6">
-                <input type="text" id="contact-phone" name="phone" class="form-control" placeholder="Phone Number" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+                <input type="number" id="contact-phone" name="phone" class="form-control" placeholder="Phone Number" onKeyPress="if(this.value.length==10) return false;" min="10" required>
               </div>
               <div class="col-sm-6">
-                <input type="text" id="contact-firstname" name="alt_mobile" class="form-control" onKeyPress="if(this.value.length==10) return false;" min="10" placeholder="Alternate Phone Number" required>
+                <input type="number" id="contact-firstname" name="alt_mobile" class="form-control" onKeyPress="if(this.value.length==10) return false;" min="10" placeholder="Alternate Phone Number" required>
               </div>
             </div>
             <div class="form-group row">
@@ -97,6 +98,9 @@
         </div>
       </div>
     </div>
+    
   </div>
 </section>
+
+
 <?php include 'footer.php' ?>

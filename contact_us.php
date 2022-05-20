@@ -2,6 +2,21 @@
 include 'header.php';
 include 'connect.php';
 ?>
+
+<section class="page-header padding">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="page-content text-center">
+      <h2>Contact Us</h2>
+      <p>Grat! We pleased to get in thouch with you. Our expert support team will answer all your questions. <br> Request to fill the form mention below or call on the number provided.</p>
+      <div class="page-item bannercenter">
+        <a href="/"><i class="ti-home"></i>Home </a>
+        <p>CONTACT US</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="contact-section bg-grey padding">
   <div class="container">
     <div class="row d-flex align-items-center">
@@ -23,7 +38,7 @@ include 'connect.php';
             </div>
             <div class="form-group row">
               <div class="col-sm-6">
-                <input type="text" id="contact-phone" name="phone" class="form-control" placeholder="Phone Number" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+                <input type="number" id="contact-phone" name="phone" class="form-control" placeholder="Phone Number" onKeyPress="if(this.value.length==10) return false;" min="10" required>
               </div>
               <div class="col-sm-6">
                 <input type="text" id="contact-firstname" name="subject" class="form-control" placeholder="Subject" required>
@@ -69,6 +84,9 @@ include 'connect.php';
   </div>
 </section>
 
+
+
+
 <div class="map-wrapper">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7624.526634832133!2d85.14959971674429!3d25.595029799273796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed593206350de7%3A0x28a0f8ab1f99baa8!2sArogya%20Gramin%20Healthcare%20Foundation!5e0!3m2!1sen!2sin!4v1625478930939!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div><!-- /#google-map -->
@@ -77,10 +95,13 @@ include 'connect.php';
 
 if (isset($_POST['save'])) {
   $name = $_POST['name'];
+  $name = filter_var($name, FILTER_SANITIZE_STRING);
   $phone = $_POST['phone'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
+  $subject = filter_var($subject, FILTER_SANITIZE_STRING);
   $message = $_POST['message'];
+  $message = filter_var($message, FILTER_SANITIZE_STRING);
   $email_1 = $_POST['email_1'];
   $rdt = $_POST['rdt'];
   try {

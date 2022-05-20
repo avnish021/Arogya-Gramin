@@ -8,12 +8,11 @@ include 'connect.php';
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Upcoming Events</h2>
-            <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most
-                obvious expression of the virtue of charity.</p>
+            <h2>Our Best Events</h2>
+            <p>The work being done in public interest that we do or are doing, it becomes a beautiful memorable event.<br> Which we love to do again and again..</p>
             <div class="page-item bannercenter">
                 <a href="index.html"><i class="ti-home"></i>Home </a>
-                <p>Upcoming Events</p>
+                <p>Our Best Events</p>
             </div>
         </div>
     </div>
@@ -144,11 +143,10 @@ include 'connect.php';
         <div class="cta-wrap text-center">
             <div class="section-heading mb-40 text-center">
                 <span class="sub-heading">How We Help</span>
-                <h2>We Help Nonprofits Become <br>More Effective!</h2>
-                <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most
-                    obvious expression of the virtue of charity.</p>
+                <h2>Help Us To Become More Effective!</h2>
+                <p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
             </div><!-- /.section-heading -->
-            <a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
+            <a href="donation_page.php" class="default-btn">Make a donation<span></span></a>
         </div>
     </div>
 </section><!-- ./ cta-section-3 -->

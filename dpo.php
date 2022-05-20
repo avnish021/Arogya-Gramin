@@ -7,10 +7,11 @@ include 'connect.php';
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Dpo</h2>
+            <h2>DPO (District Project Officer)</h2>
+            <p>Our DPO is the top key chain of our healthcare network, <br>which manages and performs all organizational tasks at their assigned district. </p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
-                <p>Dpo</p>
+                <p>DPO</p>
             </div>
         </div>
     </div>

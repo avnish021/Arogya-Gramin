@@ -6,10 +6,11 @@ include 'connect.php';
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Arogya Gramin</h2>
+            <h2>Arogya Gramin Center</h2>
+            <p>Arogay Gramin Center is a type of our branches established at block level on each district of the nation <br>From where our volunteer and BPO's perform all the task related to organisation and facilitate the community. </p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
-                <p>Arogya Gramin</p>
+                <p>Arogya Gramin Center</p>
             </div>
         </div>
     </div>

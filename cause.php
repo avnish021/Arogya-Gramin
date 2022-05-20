@@ -6,12 +6,12 @@ include 'connect.php';
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Fundraising For People</h2>
-            <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most
-                obvious expression of the virtue of charity.</p>
+            <h2>Cause</h2>
+            <p>Lack of healthcare institution, Infrastructure, Education, Awareness is the deeper cause of <br>why you have to support our initiative to facilitate the people.</p>
+                
             <div class="page-item">
                 <a href="#"><i class="ti-home"></i>Home </a>
-                <p>Fundraising For People</p>
+                <p>Cause</p>
             </div>
         </div>
     </div>

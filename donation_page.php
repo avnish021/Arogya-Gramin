@@ -4,11 +4,11 @@
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="page-content text-center">
-			<h2>Donate to support community</h2>
-			<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+		<h2>Donate</h2>
+		<p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
 			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>
-				<p>About</p>
+				<p>Donate</p>
 			</div>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 					<h2></h2>
 					<div class="section-heading">
 						<h3>Tax Exemption</h3>
-						<p class="text-justify p-3"> Being a tax-exempt entity, donors can avail of tax benefits for all donations made to Arogya Gramin Healthcare Foundation under Section 80G of Income Tax Act.</p>
+						<p class="text-justify p-3"> Being a tax-exempt entity, donors can avail of tax benefits for all donations made to Arogya Gramin Healthcare Foundation under Section 80G of Income Tax Act. We are available all the time if they need finance and CA support for the donation they made.</p>
 					</div>
 				</div>
 			</div>

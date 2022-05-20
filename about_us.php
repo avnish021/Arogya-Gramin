@@ -4,11 +4,11 @@
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="page-content text-center">
-			<h2>Largest Global Community.</h2>
-			<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+			<h2>About Us</h2>
+			<p>Let us lead you into a deeper experience, making a moment a permanent communicative memory.<br> Let us help you build your society. .</p>
 			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>
-				<p>About</p>
+				<p>About us</p>
 			</div>
 		</div>
 	</div>
@@ -22,6 +22,7 @@
 					<span class="sub-heading">About</span>
 					<h2>Arogya Gramin Healthcare Foundation</h2>
 					<p class="text-justify">Arogya Gramin Healthcare Foundation is ISO 9001: 2015 certified and registered under the Government of Indian Act 2013. This organization is working within the Government of India to make healthcare facilities reach more and more people at a lower cost. Our organization is fully operational in rural and urban areas and we are trying to establish our branch in different areas of the country.</p>
+				
 				</div><!-- /.section-heading -->
 			</div>
 			<div class="col-md-6 sm-padding">
@@ -183,10 +184,10 @@
 		<div class="cta-wrap text-center">
 			<div class="section-heading mb-40 text-center">
 				<span class="sub-heading">How We Help</span>
-				<h2>We Help Nonprofits Become <br>More Effective!</h2>
-				<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+				<h2>Help Us To Become More Effective!</h2>
+				<p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
 			</div><!-- /.section-heading -->
-			<a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
+			<a href="donation_page.php" class="default-btn">Make a donation<span></span></a>
 		</div>
 	</div>
 </section><!-- ./ cta-section-3 -->

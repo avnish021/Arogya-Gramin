@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="page-content text-center">
 			<h2>Services</h2>
-			<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+			<p>Service, in short, is not what you do, but who you are. It's a way of living that you need to bring to everything you do<br> if you're to bring it to your customer interactions</p>
 			<div class="page-item bannercenter">
 				<a href="/"><i class="ti-home"></i>Home </a>
 				<p>Services</p>
@@ -130,7 +130,7 @@
 				<h2>Help Us To Become More Effective!</h2>
 				<p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
 			</div><!-- /.section-heading -->
-			<a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
+			<a href="donation_page.php" class="default-btn">Make a donation<span></span></a>
 		</div>
 	</div>
 </section><!-- ./ cta-section-3 -->

@@ -8,6 +8,7 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Arogya Mitra</h2>
+            <p>Our Arogya Mitra is the best key chain of our healthcare network, <br>which performs all organizational tasks at their assigned panchayat under BPO's. </p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Arogya Mitra</p>

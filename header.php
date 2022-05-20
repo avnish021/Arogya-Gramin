@@ -221,8 +221,8 @@ session_start();
                             <li><a href="javascript:void(0)">Department</a>
                                 <ul>
                                     <li><a href="management.php">Management Team</a></li>
-                                    <li><a href="dpo.php">Dpo</a></li>
-                                    <li><a href="bpo.php">Bpo</a></li>
+                                    <li><a href="dpo.php">DPO</a></li>
+                                    <li><a href="bpo.php">BPO</a></li>
                                     <li><a href="arogyamitra.php">Arogya Mitra</a></li>
                                     <li><a href="arogyagramin.php">Arogya Center</a></li>
                                 </ul>
@@ -235,7 +235,13 @@ session_start();
                             </li>
 
                             <li><a href="apply_healthcard2">Apply</a></li>
-                            <li><a href="about_us.php">About</a></li>
+
+                            <li><a href="javascript:void(0)">About</a>
+                            <ul>
+                                <li><a href="about_us.php">About</a></li>
+                                <li><a href="gallery.php">Gallery</a>
+                            </ul>
+
                             <li><a href="contact_us.php">Contact Us</a></li>
 
                             <li><a href="javascript:void(0)">More</a>
@@ -244,8 +250,8 @@ session_start();
                                     <li><a href="career.php">Career</a>
                                     <li><a href="event.php">Event</a>
                                     <li><a href="cause.php">Cause</a>
-                                    <li><a href="gallery.php">Gallery</a>
-                                    <li><a href="donation_page.php">Donation</a>
+                                  
+                                    <li><a href="donation_page.php">Donate</a>
 
                                 </ul>
                             </li>
