@@ -227,9 +227,12 @@ session_start();
                                     <li><a href="arogyagramin.php">Arogya Center</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href="services.php">Services</a>
-
+                                <li><a href="javascript:void(0)">Services</a>
+                                    <ul>
+                                        <li><a href="services.php">Services</a></li>
+                                        <li><a href="event.php">Event</a>
+                                        <li><a href="cause.php">Cause</a>
+                                    </ul>
                             </li>
 
                             </li>
@@ -248,8 +251,7 @@ session_start();
                                 <ul>
                                     <li><a href="https://www.arogyagramin.in/">Blog</a></li>
                                     <li><a href="career.php">Career</a>
-                                    <li><a href="event.php">Event</a>
-                                    <li><a href="cause.php">Cause</a>
+                                    
                                   
                                     <li><a href="donation_page.php">Donate</a>
 

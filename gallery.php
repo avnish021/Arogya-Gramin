@@ -9,11 +9,11 @@ include 'connect.php';
         <div class="overlay"></div>
         <div class="container">
             <div class="page-content text-center">
-                <h2>Outstanding Activities!</h2>
-                <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+                <h2>Gallery</h2>
+                <p>Our work activity is in the gallery. You can see most of our outstanding activities in our gallery section. <br>This shows the work we have done for the public welfare.</p>
                 <div class="page-item">
                     <a href="#"><i class="ti-home"></i>Home </a>
-                    <p>Outstanding Activities</p>
+                    <p>Gallery</p>
                 </div>
             </div>
         </div>

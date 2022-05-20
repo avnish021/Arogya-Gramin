@@ -500,7 +500,7 @@ include 'connect.php';
                         <i class="cht cht-charity-1"></i>
                         <h3>Awareness Program For Women</h3>
                         <p>An initiative to make women aware of the health misconceptions running in rural areas..</p>
-                        <a href="service.html" class="read-more">Read More</a>
+                        <a href="services.php" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon">
                         <i class="cht cht-charity-1"></i>
@@ -514,7 +514,7 @@ include 'connect.php';
                         <i class="cht cht-donation-13"></i>
                         <h3>Help Us For Build a Skilled Society</h3>
                         <p>Only an efficient and educated society takes the country to a remarkable achievement..</p>
-                        <a href="service.html" class="read-more">Read More</a>
+                        <a href="services.php" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="cht cht-donation-13"></i>
@@ -528,7 +528,7 @@ include 'connect.php';
                         <i class="cht cht-charity-6"></i>
                         <h3>Building Healthcare Connectivity</h3>
                         <p>We ensure the access of people to the nearest health institutions and make them available at affordable rates..</p>
-                        <a href="service.html" class="read-more">Read More</a>
+                        <a href="services.php" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-3">
                         <i class="cht cht-charity-6"></i>
@@ -542,7 +542,7 @@ include 'connect.php';
                         <i class="cht cht-charity-12"></i>
                         <h3>Medical Facilities Network</h3>
                         <p>A network of healthcare institutions makes people easy to access all types of healthcare services everywhere.</p>
-                        <a href="service.html" class="read-more">Read More</a>
+                        <a href="services.php" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-4">
                         <i class="cht cht-charity-12"></i>
