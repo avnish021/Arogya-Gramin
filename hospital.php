@@ -6,7 +6,8 @@ include 'connect.php';
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Hospitals</h2>
+            <h2>Hospitals / Clinics</h2>
+            <p>Every month we tie up with several hospitals at the block level <br> To make it easier for the public to access the institutions and get all the services at 10 to 40% discount rates near them.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Hospitals</p>

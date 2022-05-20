@@ -39,7 +39,7 @@ session_start();
             src="https://www.facebook.com/tr?id=631993320792590&ev=PageView&noscript=1" /></noscript>
 
     <!-- End Facebook Pixel Code -->
-    <title>Arogyagramin | Home</title>
+    <title>Arogya Gramin | Home</title>
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -168,7 +168,7 @@ session_start();
                                 <?php
 								} else {
 								?>
-                                <a href="" data-toggle="modal" data-target="#myModal">login</a>
+                                <a href="" data-toggle="modal" data-target="#myModal">LOGIN</a>
                                 <?php
 
 								}
@@ -204,16 +204,16 @@ session_start();
                             <div>
                                 <h5 id="arogyaone">AROGYA&nbsp;GRAMIN</h5>
                                 <!-- <h5 id="arogyatwo">HEALTHCARE&nbsp;FOUNDATION</h5>
-								<h5 id="arogyathree">Arogya Gramin Arogya Bharat Ek Mission</h5> -->
+								<h5 id="arogyathree">Arogya Gramin Arogya Bharat</h5> -->
                             </div>
                         </a>
                     </div><!-- /.header-logo -->
                     <div class="header-menu-wrap">
                         <ul class="dl-menu">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="javascript:void(0)">Tie-Up</a>
+                            <li><a href="javascript:void(0)">Associates</a>
                                 <ul>
-                                    <li><a href="hospital.php">Hospital</a></li>
+                                    <li><a href="hospital.php">Hospital / Clinics</a></li>
                                     <li><a href="medical.php">Medical Store</a></li>
                                     <li><a href="lab.php">Patho Lab</a></li>
                                 </ul>
@@ -245,13 +245,14 @@ session_start();
                                     <li><a href="event.php">Event</a>
                                     <li><a href="cause.php">Cause</a>
                                     <li><a href="gallery.php">Gallery</a>
+                                    <li><a href="donation_page.php">Donation</a>
 
                                 </ul>
                             </li>
                         </ul>
                     </div><!-- /.header-menu-wrap -->
                     <div class="header-right">
-                        <a class="header-btn" href="https://rzp.io/l/vifXuc31">Donate Now<span></span></a>
+                        <a class="header-btn" href="donation_page.php">Donate Now<span></span></a>
                         <!-- Burger menu -->
                         <div class="mobile-menu-icon">
                             <div class="burger-menu">

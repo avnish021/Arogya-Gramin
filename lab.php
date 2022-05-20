@@ -7,6 +7,7 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Pathlo Lab</h2>
+            <p>Every month we tie up with several labs at the block level <br> To make it easier for the public to access the lab and get all the tests at 10 to 40% discount rates near them.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Pathlo Lab</p>

@@ -6,7 +6,7 @@ include 'connect.php';
 <div id="main-slider" class="dl-slider">
     <!--Slide-1-->
     <div class="single-slide">
-        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/banner1.jpg);"></div>
+        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/doctor-g6fff6107b_1920.jpg);"></div>
         <div class="overlay"></div>
         <div class="slider-content-wrap d-flex align-items-center text-left">
             <div class="container">
@@ -18,13 +18,17 @@ include 'connect.php';
 					</div> -->
                     <div class="dl-caption big">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="1.5s">आपके और आपके अपनों के <br>आरोग्य जीवन
-                                के लिए</div>
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">Affordable Healthcare Support </div>
+                        </div>
+                    </div>
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-bottom" data-delay="2s">An assured discount of 10 to 40% on the entire billing of your treatment expenses at your nearest, district and state hospitals, clinics, <br> labs and medical stores affiliated with the organization.</div>
                         </div>
                     </div>
                     <div class="dl-btn-group">
                             <div class="inner-layer">
-                                <a href="apply_healthcard2" class="default-btn" style="margin-top:95px;" data-animation="fade-in-bottom"
+                                <a href="apply_healthcard2" class="default-btn" style="margin-top:30px;" data-animation="fade-in-bottom"
                                     data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
@@ -50,20 +54,19 @@ include 'connect.php';
     </div>
     <!--Slide-2-->
     <div class="single-slide">
-        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/helth.jpg);"></div>
+        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/NonProfit3.jpg);"></div>
         <div class="overlay"></div>
         <div class="slider-content-wrap d-flex align-items-center text-left">
             <div class="container">
                 <div class="slider-content">
                     <div class="dl-caption big">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="1.5s">आरोग्य कार्ड</div>
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">CVOID - 19 Awareness Program</div>
                         </div>
                     </div>
                     <div class="dl-caption small">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन के
-                                लिए</div>
+                            <div data-animation="fade-in-bottom" data-delay="2s">Taking the fight to COVID-19 is all about sharing the right information about what we can all do to help halt the spread of infection.</div>
                         </div>
                     </div>
                     <div class="dl-btn-group">
@@ -77,7 +80,35 @@ include 'connect.php';
         </div>
     </div>
     <!--Slide-3-->
+
     <div class="single-slide">
+        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/indian-woman-g396a9246c_1920.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="slider-content-wrap d-flex align-items-center text-left">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="dl-caption big">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">Rural Healthcare Development </div>
+                        </div>
+                    </div>
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-bottom" data-delay="2s">A opportunity to surve our best for the health of rural community. Making easy access to all healthcare institution </div>
+                        </div>
+                    </div>
+                    <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- <div class="single-slide">
         <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/sw2.jpeg);"></div>
         <div class="overlay"></div>
         <div class="slider-content-wrap d-flex align-items-center text-left">
@@ -85,14 +116,12 @@ include 'connect.php';
                 <div class="slider-content">
                     <div class="dl-caption big">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="1.5s">आरोग्य ग्रामीण हेल्थकेयर फाउंडेशन
-                                </dv>
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">Rural Healthcare Development </dv>
                             </div>
                         </div>
                         <div class="dl-caption small">
                             <div class="inner-layer">
-                                <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन
-                                    के लिए</div>
+                                <div data-animation="fade-in-bottom" data-delay="2s">A opportunity to surve our best for the healt of rural community.</div>
                             </div>
                         </div>
                         <div class="dl-btn-group">
@@ -105,9 +134,37 @@ include 'connect.php';
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!--Slide-4-->
+
     <div class="single-slide">
+        <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/school-gcaaed0add_1920.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="slider-content-wrap d-flex align-items-center text-left">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="dl-caption big">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">Arogya Gramin Training Center </div>
+                        </div>
+                    </div>
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-bottom" data-delay="2s">Establishing a right place to provide all types of skill development program of organisation along with the help of <br> National Skill Development Corporation (NSDC) </div>
+                        </div>
+                    </div>
+                    <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- <div class="single-slide">
         <div class="bg-img kenburns-top-right" style="background-image: url(images/slider/sw1.jpg);"></div>
         <div class="overlay"></div>
         <div class="slider-content-wrap d-flex align-items-center text-left">
@@ -115,14 +172,14 @@ include 'connect.php';
                 <div class="slider-content">
                     <div class="dl-caption big">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="1.5s">आरोग्य कार्ड
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">Arogya Gramin Center Opening
                                 </dv>
                             </div>
+                            
                         </div>
                         <div class="dl-caption small">
                             <div class="inner-layer">
-                                <div data-animation="fade-in-bottom" data-delay="2s">आपके और आपके अपनों के आरोग्य जीवन
-                                    के लिए</div>
+                                <div data-animation="fade-in-bottom" data-delay="2s">Establishing A Right Place To Provide All Types of Affordable Healthcare Supprt and Services. </div>
                             </div>
                         </div>
                         <div class="dl-btn-group">
@@ -134,7 +191,7 @@ include 'connect.php';
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div><!-- slider-section -->
 </div>
 
@@ -168,7 +225,7 @@ include 'connect.php';
             </div>
             <div class="col-md-6 sm-padding">
                 <div class="about-img">
-                    <img src="assets/new/img/about-bg-1.png" alt="">
+                    <img src="assets/new/img/Banner_5.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -275,7 +332,7 @@ include 'connect.php';
             <div class="col-md-6 custom">
                 <div class="video-btn text-center">
                     <div class="play-btn">
-                        <a href="https://www.youtube.com/watch?v=RQu7jpcNUWI" class="img-popup" data-autoplay="true" data-vbtype="video"><i class="fas fa-play"></i></a>
+                        <a href="https://www.youtube.com/watch?v=R8_lK5t-j3I&t=54s" class="img-popup" data-autoplay="true" data-vbtype="video"><i class="fas fa-play"></i></a>
                         <div class="ripple"></div>
                     </div>
                 </div>
@@ -284,10 +341,10 @@ include 'connect.php';
                 <div class="video-wrap">
                     <div class="section-heading mb-40">
                         <span class="sub-heading">Watch Video</span>
-                        <h2>Over 2.5 Billion People <br>Lack Safe Drinking <br>Clean Water!</h2>
-                        <p>Charitable giving as a religious act or duty is referred to as alms. The name stems from the most obvious expression of the virtue of charity, giving the recipients of it the means they need to survive.</p>
+                        <h2>Billion's Of People Faces <br>Lack Of Healthy Lifestyle <br>Health Alert!</h2>
+                        <p>Join our platform to help and support the community in building a healthier society. Our platform gives you a great opportunity to saawan your career along with social service</p>
                     </div><!-- /.section-heading -->
-                    <a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation <span></span></a>
+                    <a href="donation_page.php" class="default-btn">Make a donation <span></span></a>
                 </div>
             </div>
         </div>
@@ -299,7 +356,7 @@ include 'connect.php';
         <div class="section-heading mb-40 text-center">
             <span class="sub-heading">What we do?</span>
             <h2>Our Services</h2>
-            <p>We Believe That We Can Save More Lifes With You!</p>
+            <p>We believe that our trusted service will help us to build a healthy society along with the connectivity with healthcare institutions of people. !</p>
         </div><!-- /.section-heading -->
         <div class="service-wrap row services-carousel">
             <div class="col-lg-3 col-md-6 sm-padding item">
@@ -367,8 +424,8 @@ include 'connect.php';
                     <span></span>
                     <div class="service-content icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Yoga Kendra</h3>
-                        <p>To build a healthy society we are also establishing yoga Kendra with the help of BPO's of the
+                        <h3>Training Center</h3>
+                        <p>To build a healthy and educated society we are also establishing training center with the help of BPO's of the
                             related location.</p>
                         <a href="#" class="read-more">Read More</a>
                     </div>
@@ -388,8 +445,8 @@ include 'connect.php';
                 <div class="cta-content">
                     <div class="section-heading text-left">
                         <span class="sub-heading">Join With Us</span>
-                        <h2>We Have Funded 120,00+ <br>Charity Projects Around The <br>World.</h2>
-                        <p>Charitable giving as a religious act or duty is referred to as alms. The name stems from the most obvious expression of the virtue of charity, giving the recipients of it the means they need to survive.</p>
+                        <h2>We Have Provide 700,00+ <br>People Healthcare Support Around The Nation<br></h2>
+                        <p>Free Health Camps, Door to Door Camping, Arogya Gramin Kendras, Associates and Volunteers are the key to our work so that we can access this data.</p>
                     </div><!-- /.section-heading -->
                 </div>
             </div>
@@ -432,7 +489,7 @@ include 'connect.php';
     <div class="container">
         <div class="section-heading mb-40 text-center">
             <span class="sub-heading">What we do?</span>
-            <h2>We Believe That We Can Save <br>More Lifes With You!</h2>
+            <h2>We Believe That We Can Build  <br>Healthy Society With You!</h2>
             <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
         </div><!-- /.section-heading -->
         <div class="service-wrap row">
@@ -441,8 +498,8 @@ include 'connect.php';
                     <span></span>
                     <div class="service-content">
                         <i class="cht cht-charity-1"></i>
-                        <h3>Clean Water For Poor Children in Asia</h3>
-                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <h3>Awareness Program For Women</h3>
+                        <p>An initiative to make women aware of the health misconceptions running in rural areas..</p>
                         <a href="service.html" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon">
@@ -455,8 +512,8 @@ include 'connect.php';
                     <span></span>
                     <div class="service-content icon-2">
                         <i class="cht cht-donation-13"></i>
-                        <h3>Help Us For Build a New Church</h3>
-                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <h3>Help Us For Build a Skilled Society</h3>
+                        <p>Only an efficient and educated society takes the country to a remarkable achievement..</p>
                         <a href="service.html" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
@@ -469,8 +526,8 @@ include 'connect.php';
                     <span></span>
                     <div class="service-content icon-3">
                         <i class="cht cht-charity-6"></i>
-                        <h3>Build School For Children in Africa</h3>
-                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <h3>Building Healthcare Connectivity</h3>
+                        <p>We ensure the access of people to the nearest health institutions and make them available at affordable rates..</p>
                         <a href="service.html" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-3">
@@ -483,8 +540,8 @@ include 'connect.php';
                     <span></span>
                     <div class="service-content icon-4">
                         <i class="cht cht-charity-12"></i>
-                        <h3>Medical Facilities For People in Ghana</h3>
-                        <p>Volunteers do not have necessarily time they just have the heart.</p>
+                        <h3>Medical Facilities Network</h3>
+                        <p>A network of healthcare institutions makes people easy to access all types of healthcare services everywhere.</p>
                         <a href="service.html" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-4">
@@ -559,8 +616,8 @@ include 'connect.php';
         <div class="container">
             <div class="section-heading mb-40 text-center">
                 <span class="sub-heading">Clients Testimonial</span>
-                <h2>What Donors Say?</h2>
-                <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+                <h2>Honesty is the best policy! What Donors Say?</h2>
+                <p>That’s why we’re dedicated to showing you where your money goes and how it’s used.  <br>As a result, we've consistently received high ratings from external organisations.</p>
             </div><!-- /.section-heading -->
             <div class="slider testimonials-carousel nav-style carousel-dots">
                 <div class="testi-item">
@@ -568,35 +625,35 @@ include 'connect.php';
                         <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
                     </div>
                     <div class="testi-info">
-                        <img src="assets/new/img/testi-1.png" alt="thumb">
-                        <h3>Kyle Frederick<span>Envato.Inc</span></h3>
+                        <img src="assets/new/img/Akhilesh_Kumar_Pathak.jpeg" alt="thumb">
+                        <h3>Akhilesh Kumar Pathak<span>DPO Supaul</span></h3>
                     </div>
                 </div>
                 <div class="testi-item">
                     <div class="testi-content">
-                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                        <p>"It gives me immense pleasure to donate to help you get the best of health through Arogya Gramin Healthcare. We appreciate this effort of Arogya Gramin"</p>
                     </div>
                     <div class="testi-info">
-                        <img src="assets/new/img/testi-2.png" alt="thumb">
-                        <h3>Jérémie Ambroise<span>Charitian.Ceo</span></h3>
+                        <img src="assets/new/img/Vishal_Vikram_Rana.jpeg" alt="thumb">
+                        <h3>Vishal Vikram Rana<span>Advocate Patna High Court</span></h3>
                     </div>
                 </div>
                 <div class="testi-item">
                     <div class="testi-content">
-                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                        <p>"We are confident that our small contribution together with Arogya Gramin will play an important role in providing you the best healthcare."</p>
                     </div>
                     <div class="testi-info">
-                        <img src="assets/new/img/testi-3.png" alt="thumb">
-                        <h3>Ana Luiza Oliveira<span>Themeforest.Ceo</span></h3>
+                        <img src="assets/new/img/Major_Sanjay_Malhotra.PNG" alt="thumb">
+                        <h3>Major Sanjay Malhotra<span>Major India Force</span></h3>
                     </div>
                 </div>
                 <div class="testi-item">
                     <div class="testi-content">
-                        <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm. As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others."</p>
+                        <p>"If you are capable and you can help others, then consider yourself lucky that God has included you in the givers."</p>
                     </div>
                     <div class="testi-info">
-                        <img src="assets/new/img/testi-4.png" alt="thumb">
-                        <h3>Marcos Fernando<span>Facebook.Org</span></h3>
+                        <img src="assets/new/img/ajit.jpeg" alt="thumb">
+                        <h3>Ajit Kumar<span>Facebook.Org</span></h3>
                     </div>
                 </div>
             </div>
@@ -614,9 +671,9 @@ include 'connect.php';
     <section class="event-section bd-bottom padding">
     <div class="container">
         <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Upcoming Events</span>
-            <h2>Charitian Upcoming Events</h2>
-            <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+            <span class="sub-heading">Our Events</span>
+            <h2>Our Best Events</h2>
+            <p>Events which proved to be a great campaign for the work done by us <br>To maintain the healthy lifestyle of the people.</p>
         </div><!-- /.section-heading -->
         <div class="slider event-carousel nav-style carousel-dots">
             <div class="event-item">
@@ -632,7 +689,7 @@ include 'connect.php';
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>10:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                     </ul>
                 </div>
             </div>
@@ -645,11 +702,11 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Education For Children</h3>
+                        <h3>Awareness Program</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>09:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                     </ul>
                 </div>
             </div>
@@ -662,11 +719,11 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Help For Education</h3>
+                        <h3>Healthcare Support</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>11:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>India</li>
                     </ul>
                 </div>
             </div>
@@ -679,11 +736,11 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Water For Children</h3>
+                        <h3>Health Camp in Rural Area</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>12:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>India</li>
                     </ul>
                 </div>
             </div>
@@ -696,11 +753,11 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Protect The Eco System</h3>
+                        <h3>Protect the Environment</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>01:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
                     </ul>
                 </div>
             </div>
@@ -713,11 +770,11 @@ include 'connect.php';
                 </div>
                 <div class="event-content text-center">
                     <a href="event-details.html">
-                        <h3>Help For Rohingya People</h3>
+                        <h3>Help For Echonomically Weaker People</h3>
                     </a>
                     <ul class="event-list">
                         <li><i class="fas fa-clock"></i>08:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>New Work</li>
+                        <li><i class="fas fa-map-marker-alt"></i>India</li>
                     </ul>
                 </div>
             </div>
@@ -787,6 +844,12 @@ include 'connect.php';
             <div class="sponsor-item">
                 <img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
             </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/Aura_Logo_NoBg-1.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/KCIC_logo-complete.png" alt="sponsor" width="100" height="70">
+            </div>
         </div>
     </div>
 </div>
@@ -831,12 +894,13 @@ include 'connect.php';
             <div class="col-lg-10 offset-lg-1">
                 <div class="subscribe-wrap">
                     <div class="sub-bg"></div>
-                    <div class="child"></div>
+                   <!-- <div class="child"></div>-->
+                    <div class=""></div>
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="section-heading">
-                                <h2>Newsletter Subscription</h2>
-                                <p>Subscribe our foundation.</p>
+                                <h2>Stay In Touch! Subscribe Now</h2>
+                                <p>Sign up to our newsletter to receive updates about our work, events and opportunities to support us.</p>
                             </div>
                         </div>
                         <div class="col-md-6">

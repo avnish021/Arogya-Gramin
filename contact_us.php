@@ -50,7 +50,7 @@ include 'connect.php';
           <div class="contact-item mb-40">
             <h3>Get In Touch.</h3>
             <ul class="contact-details">
-              <li><i class="fas fa-map-marker-alt"></i> Sumitra Shree 5A, Khemnichack Bypass, Kankarbagh, Patna, Bihar, 800020</li>
+              <li><i class="fas fa-map-marker-alt"></i> Sumitra Shree 5A, Hanuman Nagar, Kankarbagh, Patna, Bihar, 800020</li>
               <li><i class="fas fa-envelope"></i>support@arogyagramin.com</li>
               <li><i class="fas fa-phone"></i>Toll Free General Enquiry: (1800) 8906 600</li>
               <li><i class="fas fa-phone"></i>Healthcard/ Medical: (1800) 8898 286</li>

@@ -9,15 +9,16 @@ $result = $conn->query($sql);
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Tie-Up Details</h2>
+            <h2>Associate's Detailed View</h2>
+            <p>All our associates voluntarily provide discounts as per the information given below. Keep in mind that all of them are our allies and work voluntarily for the benefit of the society and after identifying all our health card holders, they provide discounts to them. Please don't put any pressure on them. Contact the organization in case of any inconvenience.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
-                <p>Tie-Up Details</p>
+                <p>Associate's Detailed View</p>
             </div>
         </div>
     </div>
 </section>
-<section class="about-doctor-area section">
+<br><br><br><br><br><section class="about-doctor-area section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -56,16 +57,23 @@ $result = $conn->query($sql);
                         </div>
                     </div>
                     <div class="info-bottom">
-                        <h3>Business</h3>
-                        <p><?php echo $row['b']." ".$row['b1']." ".$row['b2']." ".$row['b3']." ".$row['b4']." ".$row['b5']." ".$row['b6']." ".$row['b7']." ".$row['b8']." ".$row['b9']." ".$row['b10']." ".$row['b11'] ?>
+                        <h3>Sepcialization</h3>
+                        <p><?php echo $row['b'].", ".$row['b1']." ".$row['b2']." ".$row['b3']." ".$row['b4']." ".$row['b5']." ".$row['b6']." ".$row['b7']." ".$row['b8']." ".$row['b9']." ".$row['b10']." ".$row['b11'] ?>
                         </p>
 
                     </div>
                     <div class="info-bottom">
-                        <h3>Offer</h3>
+                        <h3>Services</h3>
                         <p> <?php echo $row['dsd']." ".$row['dsd1']." ".$row['dsd2']." ".$row['dsd3']." ".$row['dsd4']." ".$row['dsd5']." ".$row['dsd6']." ".$row['dsd7']." ".$row['dsd8']." ".$row['dsd9']." ".$row['dsd10']." ".$row['dsd11']." ".$row['dsd12']." ".$row['dsd13']." ".$row['dsd14']." ".$row['dsd15']." ".$row['dsd16']." ".$row['dsd17']." ".$row['dsd18']." ".$row['dsd19']." ".$row['dsd20']." ".$row['dsd21']." ".$row['dsd22']." ".$row['dsd23']." ".$row['dsd24']." ".$row['dsd25']." ".$row['dsd26'];
                         ?>
                         </p>
+                    </div>
+                    <div class="info-bottom">
+                        
+                        <p>  <a href="book_op" class="default-btn">Book Appoitment<span></span></a>
+                        
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -75,83 +83,31 @@ $result = $conn->query($sql);
                 echo "No result";
                 }
                 ?>
-
+  
         </div>
+    
     </div>
 </section>
+
+
 <!-- <div class="container">
    
         
 
             </div> -->
-<section class="testimonials-section bd-bottom bg-grey padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Clients Testimonial</span>
-            <h2>What Other People are Saying</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a
-                page when
-                looking at its layout.</p>
-        </div><!-- /.section-heading -->
-        <div class="slider testimonials-carousel nav-style carousel-dots">
-            <div class="testi-item">
-                <div class="testi-content">
-                    <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm.
-                        As you grow
-                        older, you will discover that you have two hands: one for helping yourself, the
-                        other for
-                        helping others."</p>
-                </div>
-                <div class="testi-info">
-                    <img src="assets/new/img/testi-1.png" alt="thumb">
-                    <h3>Kyle Frederick<span>Envato.Inc</span></h3>
-                </div>
-            </div>
-            <div class="testi-item">
-                <div class="testi-content">
-                    <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm.
-                        As you grow
-                        older, you will discover that you have two hands: one for helping yourself, the
-                        other for
-                        helping others."</p>
-                </div>
-                <div class="testi-info">
-                    <img src="assets/new/img/testi-2.png" alt="thumb">
-                    <h3>Jérémie Ambroise<span>Charitian.Ceo</span></h3>
-                </div>
-            </div>
-            <div class="testi-item">
-                <div class="testi-content">
-                    <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm.
-                        As you grow
-                        older, you will discover that you have two hands: one for helping yourself, the
-                        other for
-                        helping others."</p>
-                </div>
-                <div class="testi-info">
-                    <img src="assets/new/img/testi-3.png" alt="thumb">
-                    <h3>Ana Luiza Oliveira<span>Themeforest.Ceo</span></h3>
-                </div>
-            </div>
-            <div class="testi-item">
-                <div class="testi-content">
-                    <p>"Remember, if you ever need a helping hand, you’ll find one at the end of your arm.
-                        As you grow
-                        older, you will discover that you have two hands: one for helping yourself, the
-                        other for
-                        helping others."</p>
-                </div>
-                <div class="testi-info">
-                    <img src="assets/new/img/testi-4.png" alt="thumb">
-                    <h3>Marcos Fernando<span>Facebook.Org</span></h3>
-                </div>
-            </div>
-        </div>
-    </div>
+            </section><!-- ./ benifits-section-4 -->
+<section class="cta-section-3 bd-bottom padding">
+	<div class="container">
+		<div class="cta-wrap text-center">
+			<div class="section-heading mb-40 text-center">
+				<span class="sub-heading">How You Can Help</span>
+				<h2>Help Us To Become More Effective!</h2>
+				<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+			</div><!-- /.section-heading -->
+			<a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
+		</div>
+	</div>
 </section>
-
-
-
 
 
 
@@ -186,4 +142,6 @@ $result = $conn->query($sql);
         </div>
     </div>
 </div>
+
+
 <?php include 'footer.php'?>

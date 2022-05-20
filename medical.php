@@ -8,6 +8,7 @@ include 'connect.php';
     <div class="container">
         <div class="page-content text-center">
             <h2>Medical Store</h2>
+            <p>Every month we tie up with several medical stores at the block level <br> To make it easier for the public to access the medical stores and get all the medicine at a 10 to 20% discount rate near them.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Medical Store</p>

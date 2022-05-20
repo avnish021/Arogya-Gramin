@@ -81,8 +81,8 @@
 					<span></span>
 					<div class="service-content icon-2">
 						<i class="fa-light fa-building-circle-arrow-right"></i>
-						<h3>Yoga Kendra</h3>
-						<p>To build a healthy society we are also establishing yoga Kendra with the help of BPO's of the related location.</p>
+						<h3>Training Center</h3>
+						<p>To build a healthy and educated society we are also establishing training center with the help of BPO's of the related location.</p>
 						<a href="#" class="read-more">Read More</a>
 					</div>
 					<div class="service-icon icon-2">
@@ -126,9 +126,9 @@
 	<div class="container">
 		<div class="cta-wrap text-center">
 			<div class="section-heading mb-40 text-center">
-				<span class="sub-heading">How We Help</span>
-				<h2>We Help Nonprofits Become <br>More Effective!</h2>
-				<p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>
+				<span class="sub-heading">How You Can Help</span>
+				<h2>Help Us To Become More Effective!</h2>
+				<p>We are working hard to give our best in the community. We expect a small contribution from you. <br>We hope that you will cooperate with us in the public interest.</p>
 			</div><!-- /.section-heading -->
 			<a href="https://rzp.io/l/vifXuc31" class="default-btn">Make a donation<span></span></a>
 		</div>

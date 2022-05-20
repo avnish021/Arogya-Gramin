@@ -21,7 +21,7 @@ $conn->close();
 			<div class="col-lg-3 col-md-6 sm-padding sm-padding">
 				<div class="widget-box">
 					<img src="images/logo1.png" style="width:150px;height:90px;" alt="">
-					<p>Arogya Gramin Healthcare Arogya Gramin Arogya Bharat Ek Mission.</p>
+					<p>Arogya Gramin Healthcare Foundation</p>
 					<p>CIN No:-U85300BR2020NPL046121</p>
 					<!--Razorpay button-->
 					<form>
@@ -47,11 +47,11 @@ $conn->close();
 					</div>
 					<ul class="widget-item">
 						<li><a href="apply_healthcard2.php">Health Card</a></li>
-						<li><a href="#">Sanitary Napkin Ayurvedic Medicine</a></li>
+						<!--<li><a href="#">Sanitary Napkin Ayurvedic Medicine</a></li>-->
 						<li><a href="#">BP & Blood Sugar Check-up</a></li>
 						<li><a href="book_op.php">Appointment Booking</a></li>
 						<li><a href="#">Health Camp</a></li>
-						<li><a href="#">Relief Fund</a></li>
+						<!--<li><a href="#">Relief Fund</a></li>-->
 					</ul>
 				</div>
 			</div>
@@ -66,7 +66,7 @@ $conn->close();
 						<li><a href="contact_us.php">Contact Us</a></li>
 						<li><a href="privacy_policy.php">Privacy Policy</a></li>
 						<li><a href="return_policy.php">Return Policy</a></li>
-						<li><a href="shipping_policy.php">Shipping Policy</a></li>
+						<!--<li><a href="shipping_policy.php">Shipping Policy</a></li>-->
 						<li><a href="term_condition.php">Term & Condition</a></li>
 					</ul>
 				</div>
@@ -79,7 +79,7 @@ $conn->close();
 					<ul class="widget-contact">
 						<li>
 							<i class="fas fa-map-marker-alt"></i>
-							<span>Sumitra Shree 5A, Khemnichack Bypass, Kankarbagh, Patna, Bihar, 800020</span>
+							<span>Sumitra Shree 5A, Hanuman Nagar, Kankarbagh, Patna, Bihar, 800020</span>
 						</li>
 						<li>
 							<i class="fas fa-envelope"></i>
@@ -87,7 +87,7 @@ $conn->close();
 						</li>
 						<li>
 							<i class="fas fa-phone"></i>
-							<span>(+91) 933 446 7080</span>
+							<span>(1800) 8898 286</span>
 						</li>
 					</ul>
 				</div>
