@@ -29,7 +29,7 @@ include 'connect.php';
                 <li data-filter=".sanitation">Sanitation</li>
             </ul>
             <div class="row gallary-items">
-                <div class="col-lg-4 col-md-6 padding-15 single-item education medicine">
+                <div class="col-lg-3 col-md-6 padding-15 single-item education medicine">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-1-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">
@@ -37,7 +37,7 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 padding-15 single-item food medicine">
+                <div class="col-lg-3 col-md-6 padding-15 single-item food medicine">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-2-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">
@@ -45,7 +45,7 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 padding-15 single-item medicine food">
+                <div class="col-lg-3 col-md-6 padding-15 single-item medicine food">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-3-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">
@@ -53,7 +53,7 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 padding-15 single-item sanitation education">
+                <div class="col-lg-3 col-md-6 padding-15 single-item sanitation education">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-4-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">
@@ -61,7 +61,7 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 padding-15 single-item education food">
+                <div class="col-lg-3 col-md-6 padding-15 single-item education food">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-5-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">
@@ -69,7 +69,7 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 padding-15 single-item food sanitation">
+                <div class="col-lg-3 col-md-6 padding-15 single-item food sanitation">
                     <div class="gallary-item">
                         <img src="assets/new/img/gallery-6-450x420.jpg" alt="gallary">
                         <div class="gallary-hover">

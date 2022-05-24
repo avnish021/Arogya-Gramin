@@ -227,12 +227,12 @@ session_start();
                                     <li><a href="arogyagramin.php">Arogya Center</a></li>
                                 </ul>
                             </li>
-                                <li><a href="javascript:void(0)">Services</a>
-                                    <ul>
-                                        <li><a href="services.php">Services</a></li>
-                                        <li><a href="event.php">Event</a>
-                                        <li><a href="cause.php">Cause</a>
-                                    </ul>
+                            <li><a href="javascript:void(0)">Services</a>
+                                <ul>
+                                    <li><a href="services.php">Services</a></li>
+                                    <li><a href="event.php">Event</a>
+                                    <li><a href="cause.php">Cause</a>
+                                </ul>
                             </li>
 
                             </li>
@@ -240,10 +240,10 @@ session_start();
                             <li><a href="apply_healthcard2">Apply</a></li>
 
                             <li><a href="javascript:void(0)">About</a>
-                            <ul>
-                                <li><a href="about_us.php">About</a></li>
-                                <li><a href="gallery.php">Gallery</a>
-                            </ul>
+                                <ul>
+                                    <li><a href="about_us.php">About</a></li>
+                                    <li><a href="gallery.php">Gallery</a>
+                                </ul>
 
                             <li><a href="contact_us.php">Contact Us</a></li>
 
@@ -251,8 +251,8 @@ session_start();
                                 <ul>
                                     <li><a href="https://www.arogyagramin.in/">Blog</a></li>
                                     <li><a href="career.php">Career</a>
-                                    
-                                  
+
+
                                     <li><a href="donation_page.php">Donate</a>
 
                                 </ul>
@@ -300,42 +300,41 @@ session_start();
                 <div class="modal-body modal-body-sub_agile"
                     style="border-top:2px solid white; border-bottom:2px solid white;">
 
-                    <div class="col-md-12 modal_body_left modal_body_left1">
-                        <center><img src="./assets/images/logo1.png" class="mt-4" style="width:150px;height:87px;"
-                                alt="">
+                    <div class="col-md-12  modal_body_left modal_body_left1">
+                        <center>
+                            <img src="./assets/images/logo1.png" class="mt-4" style="width:150px;height:87px;" alt="">
                         </center>
                         <h3 class="agileinfo_sign mt-5 text-center">Sign In <span>Now</span></h3>
 
                         <center>
+                                <div class="loginbuton">
+                                    <button class='button-6 first-button' style="margin-top:7px;">
+                                        <a target=”_blank” href="admin/login.php">
+                                            <p>
+                                                <img src="./assets/images/admin.png" class="admin-image" />
+                                            </p>
+                                            Admin Login
+                                        </a></button> &nbsp;&nbsp;
 
-                            <button class='button-6 first-button' style="margin-top:7px;">
-                                <a target=”_blank” href="admin/login.php">
-                                    <p>
-                                        <img src="./assets/images/admin.png" class="admin-image" />
-                                    </p>
-                                    Admin Login
-                                </a></button> &nbsp;&nbsp;
-
-                            <button class='button-6 two-button' style="margin-top:7px; margin-left:2rem"><a
-                                    target=”_blank” href="volunteer/login.php">
-                                    <p>
-                                        <img src="./assets/images/team.png" class="admin-image" />
-                                    </p>
-                                    Partner Login
-                                </a></button> &nbsp;&nbsp;
+                                    <button class='button-6 two-button' style="margin-top:7px; margin-left:2rem"><a
+                                            target=”_blank” href="volunteer/login.php">
+                                            <p>
+                                                <img src="./assets/images/team.png" class="admin-image" />
+                                            </p>
+                                            Partner Login
+                                        </a></button> &nbsp;&nbsp;
+                                </div>
 
                             <!-- <button class='btn btn-info' style="margin-top:7px;"><a href="login.php" style="color:white">User Login</a></button> &nbsp;&nbsp;-->
 
                         </center>
 
                     </div>
-
-
-
                     <div class="clearfix"></div>
-
                 </div>
-
+                <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, provident?
+    </p>
             </div>
 
 

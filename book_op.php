@@ -1,6 +1,6 @@
-<?php
+<?php 
+include 'header.php';
 include 'connect.php';
- 
 if(isset($_POST['save']))
 {	 
     $select_dp = $_POST['select_dp'];
@@ -20,67 +20,85 @@ if(isset($_POST['save']))
 	 mysqli_close($conn);
 }
 ?>
- 
-<?php include 'header.php'?>
-<div class="container-fulid">
-    <div class="page-head_agile_info_w3l">
-    		<div class="container">
-    			<h3>Book an Appointment</h3>
-    			<!--/w3_short-->
-    				 <div class="services-breadcrumb">
-    						<div class="agile_inner_breadcrumb">
-    
-    						   <ul class="w3_short">
-    								<li><a href="index.html">Home</a><i style="color:black">|</i></li>
-    								<li style='color:black'>Book an Appointment</li>
-    							</ul>
-    						 </div>
-    				</div>
-    	   <!--//w3_short-->
-    	</div>
+<section class="page-header padding">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-content text-center">
+            <h2>Appointment Booking</h2>
+            <div class="page-item bannercenter">
+                <a href="/"><i class="ti-home"></i>Home </a>
+                <p>Appointment Booking</p>
+            </div>
+        </div>
     </div>
-     <div class="container">
-	     <div class="row">
-			 <div class="col-sm-6">
-				<br><br> <h3><b><u>Our Goal</u></b></h3>
-				 <ul><br/>
-                    <li>Our customers and their safety are paramount in everything we do.</li><hr/>
-                     <li>We care about the community.</li><hr/>
-                     <li>We care about the environment.</li><hr/>
-                     <li>Our people are our strength.</li><hr/>
-                     <li>We work ethically and professionally.</li><hr/>
+</section>
+<section class="about-section-4 bd-bottom padding">
+    <div class="container">
+        <div class="about-wrap row d-flex align-items-center">
+            <div class="col-md-6 sm-padding">
+                <div class="section-heading text-left mb-20">
+                    <span class="sub-heading">Our Goals</span>
+                    <h2>Our Goals</h2>
+                    <ul class="about-list mb-20">
+                        <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in everything we do.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the community.</li>
+                        <li><i class="fas fa-thumbs-up"></i>We care about the environment.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>Our people are our strength.
+                        </li>
+                        <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
                     </ul>
-			 </div>
-			 <div class="col-sm-6" >
-			<br><br> <h3><b><u>Book an Appointment</u></b></h3><br>
-					<div class="row" style="background-image:url(images/ap02.jpg);background-size:100% 100%;">
-						
-						<div class="col-sm-8" style="background:rgba(192,192,192,0.6);">
-						
-					<form action="book_op.php" method="post" style="margin-top:20px;margin-bottom:20px;width:90%;">
-					<select class="form-control" id="" name="select_dp">
-                    <option>Select Department</option>
-                    <option value="Doctor">Doctor</option>
-					<option value="Hospital">Hospital</option>
-					<option value="Query">Query</option>
-					<option value="Franchise Partner">Franchise Partner</option>
-					<option value="Appointment Book">Appointment Book</option>
-                    <option value="Arogya gramin">Arogya Gramin</option>
-                  </select><br>
-				  <input type="text" class="form-control" id="slider_fname" name="name" placeholder="full Name  ( required )" required><br>
-				  <input type="text" id="slider_phone" name="phone" class="form-control"  placeholder="Phone (required)"  onKeyPress="if(this.value.length==10) return false;" min="10" required><br>
-				  <input type="email" id="slider_email" name="email" class="form-control"  placeholder="Email"><br>
-				  <input type="date" id="slider_date" name="rdt" class="form-control"><br>
-				  <input type="submit" name="save" id="slider_book_apo" class="btn btn-info" value="Submit">
-					</form>
-				
-						</div>
-						<div class="col-sm-4"></div>
-					</div>
-			 </div>
-		 </div>
-	   </div>
-	   </div>			
-</div>
+                </div><!-- /.section-heading -->
+                <a href="about_us.php" class="default-btn">Learn More<span></span></a>
+            </div>
+			<div class="col-lg-6 col-md-6  sm-padding">
+                <form action="book_op.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
+                    <div class="section-heading">
+                        <span>Appointment</span>
+                        <h3>Book an Appointment</h3>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <select class="form-control" name="select_dp">
+                                <option>Select Department</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Query">Query</option>
+                                <option value="Franchise Partner">Franchise Partner</option>
+                                <option value="Appointment Book">Appointment Book</option>
+                                <option value="Arogya gramin">Arogya Gramin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="text" id="volunteer-form-name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-12">
+                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control" placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="email" id="volunteer-email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-sm-12">
+                            <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
+                        </div>
+                    </div>
+                    <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit
+                        <span></span></button>
+                    <div id="volunteer-form-messages" class="alert" role="alert"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ about-section -->
+
+
 <?php include 'footer.php'?>
-  

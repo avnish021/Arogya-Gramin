@@ -168,16 +168,28 @@ if (isset($_POST["familyApply"])) {
         </div>
     </div>
 </section><!-- /.page-header -->
-<section class="contact-section bg-grey padding">
+<div class="row">
+    <div class="col-md-5">
+    <section class="contact-section padding">
+        <div class="container">
+        <div class="mb-5 text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, vel in accusantium eaque, recusandae praesentium eos commodi repellendus optio dignissimos eveniet laborum a perspiciatis minima perferendis ipsa, velit sit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, vel in accusantium eaque, recusandae praesentium eos commodi repellendus optio dignissimos eveniet laborum a perspiciatis minima perferendis ipsa, velit sit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, vel in accusantium eaque, recusandae praesentium eos commodi repellendus optio dignissimos eveniet laborum a perspiciatis minima perferendis ipsa, velit sit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, vel in accusantium eaque, recusandae praesentium eos commodi repellendus optio dignissimos eveniet laborum a perspiciatis minima perferendis ipsa, velit sit!
+</div>
+</div>
+</section>
+
+    </div>
+    <div class="col-md-7">
+        <section class="contact-section bg-grey padding">
     <div class="container">
-        <div class="row mb-5">
+        <div class="mb-5">
             <div class="col d-flex justify-content-center text-center">
                 <Button class="default-btn-info mr-2" id="single-button">Single Healthcard</Button>
                 <Button class="default-btn-outline ml-2" id="family-button">Family Healthcard</Button>
             </div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-lg-12 sm-padding">
+            <div class="col-md-12 sm-padding">
                 <div class="contact-form">
                     <div id="single" class="px-1 py-2">
                         <h3 class="text-center mb-5">Application for Single Health Card</h3>
@@ -446,6 +458,7 @@ if (isset($_POST["familyApply"])) {
                     </form>
                 </div>
             </div>
+
         </div>
         <div class="row mt-5">
             <div class="col-12 d-flex justify-content-center">
@@ -458,7 +471,9 @@ if (isset($_POST["familyApply"])) {
             </div>
         </div>
     </div>
-</section>
+</section></div>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>

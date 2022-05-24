@@ -172,6 +172,42 @@ margin-left: 1.5rem;
     justify-content: center;
     align-items: center;
   }
+  .loginbuton{
+    display: flex;
+  
+  }
+  .button-6 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(-1.125rem - 1px) calc(0.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+a, a:hover, img, .form-control, .form-control:hover, button {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
   
 }
 
@@ -203,6 +239,10 @@ margin-left: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .loginbuton{
+      display: flex;
+    
     }
     
     
