@@ -1,15 +1,13 @@
-<?php 
+<?php
 include 'header.php';
 include 'connect.php';
 ?>
-
 <section class="page-header padding">
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
             <h2>Cause</h2>
             <p>Lack of healthcare institution, Infrastructure, Education, Awareness is the deeper cause of <br>why you have to support our initiative to facilitate the people.</p>
-                
             <div class="page-item">
                 <a href="#"><i class="ti-home"></i>Home </a>
                 <p>Cause</p>
@@ -33,8 +31,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms"
-                                role="progressbar" style="width: 89%;">
+                            <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 20%;">
                                 <span>20%</span>
                             </div>
                         </div>
@@ -44,7 +41,7 @@ include 'connect.php';
                         <a href="#">
                             <h3>Free Health Camp</h3>
                         </a>
-                        <p>We are in need of huge amount every month to organize free health camps in many rural areas simultaneously. We want you to cooperate with us so that we can further expand our facilities and make our reach to all areas  </p>
+                        <p>We are in need of huge amount every month to organize free health camps in many rural areas simultaneously. We want you to cooperate with us so that we can further expand our facilities and make our reach to all areas </p>
                         <ul class="donate-list">
                             <li><i class="ti-bar-chart"></i>GOAL: Rs.2,00,000</li>
                             <!--<li><i class="ti-thumb-up"></i>RAISED: Rs.18.000</li>-->
@@ -60,8 +57,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bar-2 wow slideInLeft" data-wow-delay="0ms"
-                                data-wow-duration="2000ms" role="progressbar" style="width: 80%;">
+                            <div class="progress-bar bar-2 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 80%;">
                                 <span>80%</span>
                             </div>
                         </div>
@@ -87,8 +83,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bar-3 wow slideInLeft" data-wow-delay="0ms"
-                                data-wow-duration="2000ms" role="progressbar" style="width: 58%;">
+                            <div class="progress-bar bar-3 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 58%;">
                                 <span>58%</span>
                             </div>
                         </div>
@@ -101,7 +96,7 @@ include 'connect.php';
                         <p>We use our volunteering to provide people with door-to-door health care support. It's Giving people easy access to their health solutions. So that people to get health support and it's help us to build healthy society.</p>
                         <ul class="donate-list">
                             <li><i class="ti-bar-chart"></i>GOAL: Rs.2,00,000</li>
-                           <!-- <li><i class="ti-thumb-up"></i>RAISED: 320,960</li>-->
+                            <!-- <li><i class="ti-thumb-up"></i>RAISED: 320,960</li>-->
                         </ul>
                     </div>
                 </div>
@@ -114,8 +109,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bar-4 wow slideInLeft" data-wow-delay="0ms"
-                                data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                            <div class="progress-bar bar-4 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
                                 <span>90%</span>
                             </div>
                         </div>
@@ -128,7 +122,7 @@ include 'connect.php';
                         <p>Most people need some stuff that can help them in the case of any emergency. We need to fulfill their needs as per proper instruction and monitoring process with the help of Doctor's.</p>
                         <ul class="donate-list">
                             <li><i class="ti-bar-chart"></i>GOAL: Rs.1,50,000</li>
-                           <!-- <li><i class="ti-thumb-up"></i>RAISED: $320,960</li>-->
+                            <!-- <li><i class="ti-thumb-up"></i>RAISED: $320,960</li>-->
                         </ul>
                     </div>
                 </div>
@@ -141,8 +135,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bar-5 wow slideInLeft" data-wow-delay="0ms"
-                                data-wow-duration="2000ms" role="progressbar" style="width: 68%;">
+                            <div class="progress-bar bar-5 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 68%;">
                                 <span>68%</span>
                             </div>
                         </div>
@@ -155,7 +148,7 @@ include 'connect.php';
                         <p>For public interest our volunteer work harder at ground level. Most of them comes form weaker section. It's our responsibility to provide finance support for their livlihood</p>
                         <ul class="donate-list">
                             <li><i class="ti-bar-chart"></i>GOAL: Rs.2,50,000</li>
-                           <!-- <li><i class="ti-thumb-up"></i>RAISED: $320,960</li>-->
+                            <!-- <li><i class="ti-thumb-up"></i>RAISED: $320,960</li>-->
                         </ul>
                     </div>
                 </div>
@@ -168,8 +161,7 @@ include 'connect.php';
                             <a href="donation_page.php">Donate Now</a>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bar-6 wow slideInLeft" data-wow-delay="0ms"
-                                data-wow-duration="2000ms" role="progressbar" style="width: 59%;">
+                            <div class="progress-bar bar-6 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 59%;">
                                 <span>59%</span>
                             </div>
                         </div>
@@ -179,7 +171,7 @@ include 'connect.php';
                         <a href="#">
                             <h3>Skill Development & Awareness</h3>
                         </a>
-                        <p>Our team is aware people of health misconceptions and organizes a variety of programs including skill development with the help of local ASHA workers and others.  A minimum incentive for their work needs to provide to them. </p>
+                        <p>Our team is aware people of health misconceptions and organizes a variety of programs including skill development with the help of local ASHA workers and others. A minimum incentive for their work needs to provide to them. </p>
                         <ul class="donate-list">
                             <li><i class="ti-bar-chart"></i>GOAL: Rs.2,50,000</li>
                             <!--<li><i class="ti-thumb-up"></i>RAISED: $320,960</li>-->
@@ -190,4 +182,4 @@ include 'connect.php';
         </div>
     </div>
 </section><!-- ./ donate-section -->
-<?php include 'footer.php'?>
+<?php include 'footer.php' ?>
