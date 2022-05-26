@@ -208,6 +208,9 @@ a, a:hover, img, .form-control, .form-control:hover, button {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+.whatwecando{
+  margin-top: 22rem;
+}
   
 }
 
@@ -243,6 +246,9 @@ a, a:hover, img, .form-control, .form-control:hover, button {
     .loginbuton{
       display: flex;
     
+    }
+    .whatwecando{
+      margin-top: 25rem;
     }
     
     
@@ -283,4 +289,14 @@ a, a:hover, img, .form-control, .form-control:hover, button {
   text-transform: capitalize;
   color: #245BD0;
   background: #F7F7F7;
+}
+@media only screen and (min-width: 500px) and (max-width:767px) {
+  .whatwecando{
+    margin-top: 10rem;
+  }
+}
+@media only screen and (min-width: 497px) and (max-width:576px) {
+  .whatwecando{
+    margin-top: 18rem;
+  }
 }

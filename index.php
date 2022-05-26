@@ -487,7 +487,7 @@ include 'connect.php';
 
 <section class="service-section bd-bottom bg-grey padding">
     <div class="container">
-        <div class="section-heading mb-40 text-center">
+        <div class="section-heading mb-40 text-center whatwecando">
             <span class="sub-heading">What we do?</span>
             <h2>We Believe That We Can Build  <br>Healthy Society With You!</h2>
             <p>Charitable giving as a religious act or duty is referred to as alms. The name <br>stems from the most obvious expression of the virtue of charity.</p>

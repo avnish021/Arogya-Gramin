@@ -95,19 +95,16 @@ session_start();
     <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 
 	<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
-
-	<style>
-		#dis {
-
-			display: none;
-		}
-
-		@media screen and (min-width: 768px) {
-			#dis {
-				display: block;
-			}
-		}
-	</style> -->
+    -->
+    <style>
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    </style>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -307,23 +304,23 @@ session_start();
                         <h3 class="agileinfo_sign mt-5 text-center">Sign In <span>Now</span></h3>
 
                         <center>
-                                <div class="loginbuton">
-                                    <button class='button-6 first-button' style="margin-top:7px;">
-                                        <a target=”_blank” href="admin/login.php">
-                                            <p>
-                                                <img src="./assets/images/admin.png" class="admin-image" />
-                                            </p>
-                                            Admin Login
-                                        </a></button> &nbsp;&nbsp;
+                            <div class="loginbuton">
+                                <button class='button-6 first-button' style="margin-top:7px;">
+                                    <a target=”_blank” href="admin/login.php">
+                                        <p>
+                                            <img src="./assets/images/admin.png" class="admin-image" />
+                                        </p>
+                                        Admin Login
+                                    </a></button> &nbsp;&nbsp;
 
-                                    <button class='button-6 two-button' style="margin-top:7px; margin-left:2rem"><a
-                                            target=”_blank” href="volunteer/login.php">
-                                            <p>
-                                                <img src="./assets/images/team.png" class="admin-image" />
-                                            </p>
-                                            Partner Login
-                                        </a></button> &nbsp;&nbsp;
-                                </div>
+                                <button class='button-6 two-button' style="margin-top:7px; margin-left:2rem"><a
+                                        target=”_blank” href="volunteer/login.php">
+                                        <p>
+                                            <img src="./assets/images/team.png" class="admin-image" />
+                                        </p>
+                                        Partner Login
+                                    </a></button> &nbsp;&nbsp;
+                            </div>
 
                             <!-- <button class='btn btn-info' style="margin-top:7px;"><a href="login.php" style="color:white">User Login</a></button> &nbsp;&nbsp;-->
 
@@ -332,9 +329,6 @@ session_start();
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, provident?
-    </p>
             </div>
 
 

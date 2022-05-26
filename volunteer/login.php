@@ -105,7 +105,7 @@ body
 <body>
 
 <h2>Partner Login</h2>
-<form name="frmUser" method="post" action="" >
+<form name="frmUser" style="width:350px; margin:auto;" method="post" action="" >
         <div class="message"></div>
   <div class="imgcontainer">
     <img src="http://arogyagramin.com/assets/images/logo1.png" alt="Avatar" class="avatar">
