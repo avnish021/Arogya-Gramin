@@ -61,7 +61,7 @@ include 'connect.php';
                 <div class="slider-content">
                     <div class="dl-caption big">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="1.5s">CVOID - 19 Awareness Program</div>
+                            <div data-animation="fade-in-bottom" data-delay="1.5s">COVID - 19 Awareness Program</div>
                         </div>
                     </div>
                     <div class="dl-caption small">
@@ -94,7 +94,7 @@ include 'connect.php';
                     </div>
                     <div class="dl-caption small">
                         <div class="inner-layer">
-                            <div data-animation="fade-in-bottom" data-delay="2s">A opportunity to surve our best for the health of rural community. Making easy access to all healthcare institution </div>
+                            <div data-animation="fade-in-bottom" data-delay="2s">An opportunity to surve our best for the health of rural community. Making easy access to all healthcare institution </div>
                         </div>
                     </div>
                     <div class="dl-btn-group">

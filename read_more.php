@@ -9,7 +9,8 @@ $result = $conn->query($sql);
     <div class="overlay"></div>
     <div class="container">
         <div class="page-content text-center">
-            <h2>Department Details</h2>
+            <h2>Particular's</h2>
+            <p>Let us lead you into a deeper experience, making a moment a permanent communicative memory.<br> Look at our highly skilled team and centers.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Department Details</p>
