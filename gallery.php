@@ -23,15 +23,15 @@ include 'connect.php';
     <div class="container">
         <ul class="gallery-filter text-center mb-30">
             <li class="active" data-filter="*">All</li>
-            <li data-filter=".education">Education</li>
-            <li data-filter=".food">Food</li>
-            <li data-filter=".medicine">Medicine</li>
-            <li data-filter=".sanitation">Sanitation</li>
+            <li data-filter=".education">Health Camp</li>
+            <li data-filter=".food">Door To Door Pampign</li>
+            <li data-filter=".medicine">Kendra Opening</li>
+            <li data-filter=".sanitation">Press Release</li>
         </ul>
         <div class="row gallary-items">
             <div class="col-lg-3 col-md-6 padding-15 single-item education medicine">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-1-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Img_1.jpeg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-1.jpg"><i
                                 class="ti-plus"></i></a>
@@ -40,7 +40,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-6 padding-15 single-item food medicine">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-2-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Picture1.jpg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-2.jpg"><i
                                 class="ti-plus"></i></a>
@@ -49,7 +49,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-6 padding-15 single-item medicine food">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-3-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Picture2.jpg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-3.jpg"><i
                                 class="ti-plus"></i></a>
@@ -58,7 +58,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-6 padding-15 single-item sanitation education">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-4-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Picture3.jpg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-4.jpg"><i
                                 class="ti-plus"></i></a>
@@ -67,7 +67,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-6 padding-15 single-item education food">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-5-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Picture4.jpg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-5.jpg"><i
                                 class="ti-plus"></i></a>
@@ -76,7 +76,7 @@ include 'connect.php';
             </div>
             <div class="col-lg-3 col-md-6 padding-15 single-item food sanitation">
                 <div class="gallary-item">
-                    <img src="assets/new/img/gallery-6-450x420.jpg" alt="gallary">
+                    <img src="assets/new/img/Picture5.jpg" alt="gallary">
                     <div class="gallary-hover">
                         <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-6.jpg"><i
                                 class="ti-plus"></i></a>
