@@ -687,7 +687,7 @@ include 'connect.php';
 				<div class="counter-item">
 					<div class="counter-content">
 						<i class="cht cht-charity-5 color-yellow"></i>
-						<h3><span class="odometer" data-count="4">425</span></h3>
+						<h3><span class="odometer" data-count="425">00</span></h3>
 						<h4>Arogya Kendra</h4>
 					</div>
 				</div>
