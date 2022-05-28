@@ -67,14 +67,15 @@ include 'connect.php';
             <ul class="contact-details">
               <li><i class="fas fa-map-marker-alt"></i> Sumitra Shree 5A, Hanuman Nagar, Kankarbagh, Patna, Bihar, 800020</li>
               <li><i class="fas fa-envelope"></i>support@arogyagramin.com</li>
-              <li><i class="fas fa-phone"></i>Toll Free General Enquiry: (1800) 8906 600</li>
-              <li><i class="fas fa-phone"></i>Healthcard/ Medical: (1800) 8898 286</li>
+              <li><i class="fas fa-phone"></i>General Enquiry: 1800 8906 600</li>
+              <li><i class="fas fa-phone"></i>Healthcard/ Medical: 1800 8898 286</li>
             </ul>
           </div>
           <div class="contact-item">
-            <h3>Department Email ID For Support</h3>
+            <h3>Department Email ID For Business Support</h3>
             <ul class="contact-info">
-              <li><i class="far fa-dot-circle"></i>Healthcard/IT Support: arogyagraminit@gmail.com</li>
+            <li><i class="far fa-dot-circle"></i>Business: info@arogyagramin.com</li>
+              <li><i class="far fa-dot-circle"></i>IT Support: arogyagraminit@gmail.com</li>
               <li>(Note: Please do any work only after checking our offical number)</li>
             </ul>
           </div>

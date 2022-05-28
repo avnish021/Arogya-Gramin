@@ -182,26 +182,37 @@ if (isset($_POST["familyApply"])) {
       </div>
       
     </section>-->
+   <!-- <head>
+      
+        <style>
+          .container{
+            padding: 10px 50px 30px 10px;
+            margin: 30px
+          }
+          </style>
 
+
+
+</head>-->
+
+<body>
 <!--Section Content Healthcard -->
-<section class="about-section-4 padding bg-grey">
-	<div class="container">
-		<div class="about-wrap row d-flex align-items-center">
-			<div class="col-md-7 sm-padding">
-				<div class="section-heading mb-20">
-					<span class="sub-heading">Health Card Benifit</span>
-					<h2>Why Choose Arogya Gramin Health Card?</h2>
-					<p class="text-justify">Arogya Gramin Card is a means to get you membership of Arogya Gramin, which gives you the benefit of all the health facilities provided to you by Arogya Gramin.</p>
-				</div><!-- /.section-heading -->
-				<ul class="about-list mb-20">
-					<li><i class="fas fa-thumbs-up"></i>10 to 40% Discount on all treatment</li>
-					<li><i class="fas fa-thumbs-up"></i>Free Health Camp Support</li>
-					<li><i class="fas fa-thumbs-up"></i>Online Doctor Consult</li>
-					<li><i class="fas fa-thumbs-up"></i>Ambulance Service</li>
-					<li><i class="fas fa-thumbs-up"></i>Awareness Program</li>
-					<li><i class="fas fa-thumbs-up"></i>Door to Door Service</li>					
-				</ul>
-				<h4>To know more about Arogya Gramin Health Card Click button below</h4>
+
+        
+   <section class="contact-section padding">
+      <div class="container">
+        <div class="mb-5 text-justify">
+      
+        <h3> Why Choose Arogya Gramin Health Card?</h3>
+        <p class="text-justify">Arogya Gramin Card is a means to get you membership of Arogya Gramin, which gives you the benefit of all the health facilities provided to you by the organisation.</p>
+        <li><i class=""></i>10 to 40% Discount on all treatment</li>
+        <li><i class=""></i>Free Health Camp Support</li>
+        <li><i class=""></i>Ambulance Service</li>
+        <li><i class=""></i>Awareness Program</li>
+        <li><i class=""></i>Online Doctor Consult</li>
+        <li><i class=""></i>Door to Door Service</li>
+        
+        <br><h4>To know more about Arogya Gramin Health Card Click button below</h4>
         <div class="info-bottom">
                         
                         <p>  <a href="https://www.arogyagramin.in/2022/03/blog-post.html" target="_blank" class="default-btn">Read More<span></span></a>
@@ -209,36 +220,24 @@ if (isset($_POST["familyApply"])) {
                         </p>
 
                     </div>
-				<!--<a href="https://rzp.io/l/vifXuc31" class="default-btn">DONATE NOW <span></span></a>-->
-				
-			</div>
 
-            
-           
-
-			<div class="col-md-5 sm-padding">
-      <!--<div class="about-thumb">
-					<img src="images/slider/Healthcard_sdjafh.png" alt="arogya gramin">
-				</div>-->
-				
-			</div>
-		</div>
-	</div>
-</section>
-
-   <section class="contact-section padding">
-      <div class="container">
-        <div class="mb-5 text-justify">
-        <h2>Welcome Apply Your Health Card</h2>
-       
+        <h3>Welcome! Apply Your Health Card Now</h3>
         <li><i class=""></i> Email dilivery in 7 working day's.</li>
         <li><i class=""></i> Arogya Gramin Single Card - Rs. 99/- (For 1 individual membership)</li>
         <li><i class=""></i> Arogya Gramin Family Card - Rs. 149/- (Add Upto 4 family Member)</li>
       </div>
       </div>
-      
-    </section>
 
+      
+
+      <div class="col-md-51 sm-padding">
+      <div class="about-thumb">
+					<img src="images/slider/New_healthcard.jpg" alt="arogya gramin">
+				</div>
+				
+			</div>
+    </section>
+        </body>
 
   </div>
   <div class="col-md-7">

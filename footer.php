@@ -87,7 +87,7 @@ $conn->close();
 						</li>
 						<li>
 							<i class="fas fa-phone"></i>
-							<span>(1800) 8898 286</span>
+							<span>1800 8898 286</span>
 						</li>
 					</ul>
 				</div>
