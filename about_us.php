@@ -66,7 +66,7 @@
 				<div class="counter-item">
 					<div class="counter-content">
 						<i class="cht cht-blood-donation-1 color-red"></i>
-						<h3><span class="odometer" data-count="2,359">00</span></h3>
+						<h3><span class="odometer" data-count="1,56,275">00</span></h3>
 						<h4>Benefited People</h4>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 				<div class="counter-item">
 					<div class="counter-content">
 						<i class="cht cht-donation-14 color-green"></i>
-						<h3><span class="odometer" data-count="1,175">00</span></h3>
+						<h3><span class="odometer" data-count="2,527">00</span></h3>
 						<h4>Medical Support</h4>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 				<div class="counter-item">
 					<div class="counter-content">
 						<i class="cht cht-donor color-blue"></i>
-						<h3><span class="odometer" data-count="1,519">00</span></h3>
+						<h3><span class="odometer" data-count="1,215">00</span></h3>
 						<h4>Total Volunteer</h4>
 					</div>
 				</div>
@@ -93,8 +93,8 @@
 				<div class="counter-item">
 					<div class="counter-content">
 						<i class="cht cht-charity-5 color-yellow"></i>
-						<h3><span class="odometer" data-count="2854">00</span></h3>
-						<h4>Partner's</h4>
+						<h3><span class="odometer" data-count="425">00</span></h3>
+						<h4>Arogya Kendra</h4>
 					</div>
 				</div>
 			</div>

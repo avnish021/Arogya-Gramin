@@ -33,7 +33,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Img_1.jpeg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-1.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Img_1.jpeg"><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Picture1.jpg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-2.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Picture1.jpg"><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Picture2.jpg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-3.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Picture2.jpg"><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Picture3.jpg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-4.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Picture3.jpg"><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Picture4.jpg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-5.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Picture4.jpg><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ include 'connect.php';
                 <div class="gallary-item">
                     <img src="assets/new/img/Picture5.jpg" alt="gallary">
                     <div class="gallary-hover">
-                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/gallery-6.jpg"><i
+                        <a class="img-popup vbox-item" data-gall="gallery01" href="assets/new/img/Picture5.jpg"><i
                                 class="ti-plus"></i></a>
                     </div>
                 </div>

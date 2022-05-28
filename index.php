@@ -195,6 +195,9 @@ include 'connect.php';
     </div><!-- slider-section -->
 </div>
 
+
+
+
 <section class="about-section-4 bd-bottom padding">
     <div class="container">
         <div class="about-wrap row d-flex align-items-center">
@@ -438,6 +441,103 @@ include 'connect.php';
     </div>
 </section>
 
+<section class="event-section bd-bottom padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Our Events</span>
+            <h2>Our Best Events</h2>
+            <p>Events which proved to be a great campaign for the work done by us <br>To maintain the healthy lifestyle of the people.</p>
+        </div><!-- /.section-heading -->
+        <div class="slider event-carousel nav-style carousel-dots">
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-1.jpg" alt="event">
+                    <div class="date bg-red">
+                        <h3>28<span>Jan</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Free Health Camp</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>10:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-2.jpg" alt="event">
+                    <div class="date bg-yellow">
+                        <h3>28<span>sep</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Door To Door Camping</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>09:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-3.jpg" alt="event">
+                    <div class="date bg-blue">
+                        <h3>28<span>Feb</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Membership Program</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>11:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-4.jpg" alt="event">
+                    <div class="date bg-purple">
+                        <h3>28<span>Jun</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Awareness Program</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>12:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>India</li>
+                    </ul>
+                </div>
+            </div>
+           <!-- <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/new/img/event-5.jpg" alt="event">
+                    <div class="date bg-green">
+                        <h3>28<span>Aug</span></h3>
+                    </div>
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Protect the Environment</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-clock"></i>01:00 AM</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
+                    </ul>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</section><!-- ./ event-section -->
+
 <section class="cta-section bd-bottom">
     <div class="container">
         <div class="row align-items-center">
@@ -553,6 +653,49 @@ include 'connect.php';
     </div>
 </section><!-- ./ service-section -->
 
+<section class="counter-section padding">
+	<div class="container">
+		<div class="counter-wrap row">
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-blood-donation-1 color-red"></i>
+						<h3><span class="odometer" data-count="1,56,275">00</span></h3>
+						<h4>Benefited People</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-donation-14 color-green"></i>
+						<h3><span class="odometer" data-count="2,527">00</span></h3>
+						<h4>Medical Support</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-donor color-blue"></i>
+						<h3><span class="odometer" data-count="1,215">00</span></h3>
+						<h4>Total Volunteer</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-charity-5 color-yellow"></i>
+						<h3><span class="odometer" data-count="4">425</span></h3>
+						<h4>Arogya Kendra</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="team-section bd-bottom padding">
     <div class="container">
         <div class="section-heading mb-40 text-center"> 
@@ -612,6 +755,46 @@ include 'connect.php';
     </div>
 </section>
 
+<!-- ./ team-section -->
+<section class="event-section bd-bottom padding">
+    <div class="container">
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Partners</span>
+            <h2>Our State Partners</h2>
+        </div><!-- /.section-heading -->
+        <div class="slider partner-carousel nav-style">
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/images/team/z3.jpeg" alt="event" style="height:250px;width:350px;">
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Rajeev Kumar</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-map-marker-alt"></i>State Partner (Uttar Pradesh)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-thumb">
+                    <img src="assets/images/team/z4.jpeg" alt="event" style="height:250px;width:350px;">
+                </div>
+                <div class="event-content text-center">
+                    <a href="event-details.html">
+                        <h3>Samir Khan</h3>
+                    </a>
+                    <ul class="event-list">
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            State Partner (Madhya Pradesh)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ./ event-section -->
+
+
 <section class="testimonials-section bd-bottom bg-grey padding">
         <div class="container">
             <div class="section-heading mb-40 text-center">
@@ -668,140 +851,7 @@ include 'connect.php';
 
 
 
-    <section class="event-section bd-bottom padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Our Events</span>
-            <h2>Our Best Events</h2>
-            <p>Events which proved to be a great campaign for the work done by us <br>To maintain the healthy lifestyle of the people.</p>
-        </div><!-- /.section-heading -->
-        <div class="slider event-carousel nav-style carousel-dots">
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-1.jpg" alt="event">
-                    <div class="date bg-red">
-                        <h3>28<span>Jan</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Free Health Camp</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>10:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-2.jpg" alt="event">
-                    <div class="date bg-yellow">
-                        <h3>28<span>sep</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Door To Door Camping</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>09:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-3.jpg" alt="event">
-                    <div class="date bg-blue">
-                        <h3>28<span>Feb</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Membership Program</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>11:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>India</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-4.jpg" alt="event">
-                    <div class="date bg-purple">
-                        <h3>28<span>Jun</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Awareness Program</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>12:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>India</li>
-                    </ul>
-                </div>
-            </div>
-           <!-- <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/new/img/event-5.jpg" alt="event">
-                    <div class="date bg-green">
-                        <h3>28<span>Aug</span></h3>
-                    </div>
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Protect the Environment</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-clock"></i>01:00 AM</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Bihar, India</li>
-                    </ul>
-                </div>
-            </div>-->
-        </div>
-    </div>
-</section><!-- ./ event-section -->
-<!-- ./ team-section -->
-<section class="event-section bd-bottom padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Partners</span>
-            <h2>Our Partners</h2>
-        </div><!-- /.section-heading -->
-        <div class="slider partner-carousel nav-style">
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/images/team/z3.jpeg" alt="event" style="height:250px;width:350px;">
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Rajeev Kumar</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-map-marker-alt"></i>State Partner (Uttar Pradesh)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/images/team/z4.jpeg" alt="event" style="height:250px;width:350px;">
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Samir Khan</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-map-marker-alt"></i>
-                            State Partner (Madhya Pradesh)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><!-- ./ event-section -->
+   
 
 <div class="sponsor-section">
     <div class="container">
