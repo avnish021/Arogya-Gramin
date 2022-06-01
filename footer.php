@@ -48,9 +48,9 @@ $conn->close();
 					<ul class="widget-item">
 						<li><a href="apply_healthcard2.php">Health Card</a></li>
 						<!--<li><a href="#">Sanitary Napkin Ayurvedic Medicine</a></li>-->
-						<li><a href="#">BP & Blood Sugar Check-up</a></li>
+						<!--<li><a href="#">BP & Blood Sugar Check-up</a></li>-->
 						<li><a href="book_op.php">Appointment Booking</a></li>
-						<li><a href="#">Health Camp</a></li>
+						<li><a href="healthcamp_one_page.php">Health Camp</a></li>
 						<!--<li><a href="#">Relief Fund</a></li>-->
 					</ul>
 				</div>
@@ -61,11 +61,11 @@ $conn->close();
 						<h3>OUR INFORMATION</h3>
 					</div>
 					<ul class="widget-item">
-						<li><a href="/">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li><a href="about_us.php">About Us</a></li>
 						<li><a href="contact_us.php">Contact Us</a></li>
 						<li><a href="privacy_policy.php">Privacy Policy</a></li>
-						<li><a href="return_policy.php">Return Policy</a></li>
+						<li><a href="return_policy.php">Return/Refund Policy</a></li>
 						<!--<li><a href="shipping_policy.php">Shipping Policy</a></li>-->
 						<li><a href="term_condition.php">Term & Condition</a></li>
 					</ul>
@@ -83,11 +83,11 @@ $conn->close();
 						</li>
 						<li>
 							<i class="fas fa-envelope"></i>
-							<span>support@arogyagramin.com</span>
+							<span> <a href="Mailto:support@arogyagramin.com" style="color:#D3D3D3;">support@arogyagramin.com</a></span>
 						</li>
 						<li>
 							<i class="fas fa-phone"></i>
-							<span>1800 8898 286</span>
+							<span><a href="tel:18008898286" style="color:#D3D3D3;">1800 8898 286</a></span>
 						</li>
 					</ul>
 				</div>

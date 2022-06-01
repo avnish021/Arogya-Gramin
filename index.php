@@ -347,7 +347,7 @@ include 'connect.php';
                         <h2>Billion's Of People Faces <br>Lack Of Healthy Lifestyle <br>Health Alert!</h2>
                         <p>Join our platform to help and support the community in building a healthier society. Our platform gives you a great opportunity to saawan your career along with social service</p>
                     </div><!-- /.section-heading -->
-                    <a href="donation_page.php" class="default-btn">Make a donation <span></span></a>
+                    <a href="career.php" class="default-btn">Join Our Team <span></span></a>
                 </div>
             </div>
         </div>
@@ -457,7 +457,7 @@ include 'connect.php';
                     </div>
                 </div>
                 <div class="event-content text-center">
-                    <a href="event-details.html">
+                    <a href="healthcamp_one_page.php">
                         <h3>Free Health Camp</h3>
                     </a>
                     <ul class="event-list">
@@ -538,7 +538,7 @@ include 'connect.php';
     </div>
 </section><!-- ./ event-section -->
 
-<section class="cta-section bd-bottom">
+<!--<section class="cta-section bd-bottom">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 sm-padding">
@@ -547,8 +547,8 @@ include 'connect.php';
                         <span class="sub-heading">Join With Us</span>
                         <h2>We Have Provide 700,00+ <br>People Healthcare Support Around The Nation<br></h2>
                         <p>Free Health Camps, Door to Door Camping, Arogya Gramin Kendras, Associates and Volunteers are the key to our work so that we can access this data.</p>
-                    </div><!-- /.section-heading -->
-                </div>
+                    </div>--><!-- /.section-heading -->
+            <!--    </div>
             </div>
             <div class="col-md-6 sm-padding">
                 <form action="https://html.dynamiclayers.net/te/charitian/volunteer.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
@@ -583,7 +583,51 @@ include 'connect.php';
             </div>
         </div>
     </div>
-</section><!-- ./ cta-section -->
+</section>--><!-- ./ cta-section -->
+
+<section class="counter-section padding">
+	<div class="container">
+		<div class="counter-wrap row">
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-blood-donation-1 color-red"></i>
+						<h3><span class="odometer" data-count="1,56,275">00</span></h3>
+						<h4>Benefited People</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-donation-14 color-green"></i>
+						<h3><span class="odometer" data-count="2,527">00</span></h3>
+						<h4>Medical Support</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-donor color-blue"></i>
+						<h3><span class="odometer" data-count="1,215">00</span></h3>
+						<h4>Total Volunteer</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+				<div class="counter-item">
+					<div class="counter-content">
+						<i class="cht cht-charity-5 color-yellow"></i>
+						<h3><span class="odometer" data-count="425">00</span></h3>
+						<h4>Arogya Kendra</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <section class="service-section bd-bottom bg-grey padding">
     <div class="container">
@@ -653,48 +697,6 @@ include 'connect.php';
     </div>
 </section><!-- ./ service-section -->
 
-<section class="counter-section padding">
-	<div class="container">
-		<div class="counter-wrap row">
-			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
-				<div class="counter-item">
-					<div class="counter-content">
-						<i class="cht cht-blood-donation-1 color-red"></i>
-						<h3><span class="odometer" data-count="1,56,275">00</span></h3>
-						<h4>Benefited People</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
-				<div class="counter-item">
-					<div class="counter-content">
-						<i class="cht cht-donation-14 color-green"></i>
-						<h3><span class="odometer" data-count="2,527">00</span></h3>
-						<h4>Medical Support</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
-				<div class="counter-item">
-					<div class="counter-content">
-						<i class="cht cht-donor color-blue"></i>
-						<h3><span class="odometer" data-count="1,215">00</span></h3>
-						<h4>Total Volunteer</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
-				<div class="counter-item">
-					<div class="counter-content">
-						<i class="cht cht-charity-5 color-yellow"></i>
-						<h3><span class="odometer" data-count="425">00</span></h3>
-						<h4>Arogya Kendra</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="team-section bd-bottom padding">
     <div class="container">

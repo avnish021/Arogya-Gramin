@@ -1,4 +1,19 @@
 <?php include 'header.php'?>
+
+<section class="page-header padding">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-content text-center">
+            <h2>Refund / Return Policy</h2>
+            <p></p>
+            <div class="page-item bannercenter">
+                <a href="#"><i class="ti-home"></i>Home </a>
+                <p>Gallery</p>
+            </div>
+        </div>
+    </div>
+</section>
+
     <div class="container">
         <div class="row">
        <h4><b> RETURN POLICY </b></h4>

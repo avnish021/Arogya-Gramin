@@ -218,10 +218,10 @@ session_start();
                             <li><a href="javascript:void(0)">Department</a>
                                 <ul>
                                     <li><a href="management.php">Management Team</a></li>
-                                    <li><a href="dpo.php">DPO</a></li>
-                                    <li><a href="bpo.php">BPO</a></li>
+                                    <li><a href="dpo.php">D.P.O</a></li>
+                                    <li><a href="bpo.php">B.P.O</a></li>
                                     <li><a href="arogyamitra.php">Arogya Mitra</a></li>
-                                    <li><a href="arogyagramin.php">Arogya Center</a></li>
+                                    <li><a href="arogyagramin.php">Arogya Gramin Kendra</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0)">Services</a>

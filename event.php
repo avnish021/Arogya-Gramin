@@ -30,7 +30,7 @@ include 'connect.php';
                         </div>
                     </div>
                     <div class="event-content text-center">
-                        <a href="#">
+                        <a href="healthcamp_one_page.php">
                             <h3>Free Health Camp</h3>
                         </a>
                         <ul class="event-list">

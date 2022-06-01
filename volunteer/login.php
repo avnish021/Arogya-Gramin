@@ -98,13 +98,17 @@ body
  
 }
 }
+h2{
 
+text-align:center;
+
+}
 
 </style>
 </head>
 <body>
 
-<h2>Partner Login</h2>
+<br><br><h2>Partner Login</h2>
 <form name="frmUser" style="width:350px; margin:auto;" method="post" action="" >
         <div class="message"></div>
   <div class="imgcontainer">
@@ -134,10 +138,10 @@ body
 
 </body>
 
-   <center>
+ <!--  <center>
  <p>Arogya Gramin Healthcare Foundation Registered under Govt. of Indian Act. 2013 ISO Certified 9001:2015</p>
     Copyright © 2021 Arogya Gramin. All Rights Reserved.
-			</center>
+			</center>-->
 </html>
 
 

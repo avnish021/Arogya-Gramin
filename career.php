@@ -6,7 +6,7 @@
       <h2>Join Our Team</h2>
       <p>Do the best you can in every task, no matter how unimportant it may seem at the time.<br> No one learns more about a problem than the person at the bottom<br> Don't suffer, start building your career join our team.</p>
       <div class="page-item bannercenter">
-        <a href="/"><i class="ti-home"></i>Home </a>
+        <a href="index.php"><i class="ti-home"></i>Home </a>
         <p>Career</p>
       </div>
     </div>

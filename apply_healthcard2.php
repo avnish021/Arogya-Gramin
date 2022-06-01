@@ -195,12 +195,14 @@ if (isset($_POST["familyApply"])) {
                         which gives you the benefit of all the health facilities provided to you by the
                         organisation.</p>
                     <ul class="about-list">
-                        <li><i class="fas fa-thumbs-up"></i>10 to 40% Discount on all treatment</li>
+                        <li><i class="fas fa-thumbs-up"></i>Hospital - 20 to 40% Discount</li>
+                        <li><i class="fas fa-thumbs-up"></i>Lab - 20 to 40% Discount</li>
+                        <li><i class="fas fa-thumbs-up"></i>Clinic - 20 to 40% Discount</li>
+                        <li><i class="fas fa-thumbs-up"></i>Medical Store - 10 to 20% Discount</li>
                         <li><i class="fas fa-thumbs-up"></i>Free Health Camp Support</li>
                         <li><i class="fas fa-thumbs-up"></i>Ambulance Service</li>
-                        <li><i class="fas fa-thumbs-up"></i>Awareness Program</li>
                         <li><i class="fas fa-thumbs-up"></i>Online Doctor Consult</li>
-                        <li><i class="fas fa-thumbs-up"></i>Door to Door Service</li>
+                        <li><i class="fas fa-thumbs-up"></i>Appoitment Booking</li>
                     </ul>
 
                     <br>
@@ -209,12 +211,18 @@ if (isset($_POST["familyApply"])) {
                         <p> <a href="https://www.arogyagramin.in/2022/03/blog-post.html" target="_blank"
                                 class="default-btn">Read More<span></span></a>
                         </p>
+
+
                     </div>
 
-                    <h3>Welcome! Apply Your Health Card Now</h3>
-                    <li><i class=""></i> Email dilivery in 7 working day's.</li>
-                    <li><i class=""></i> Arogya Gramin Single Card - Rs. 99/- (For 1 individual membership)</li>
-                    <li><i class=""></i> Arogya Gramin Family Card - Rs. 149/- (Add Upto 4 family Member)</li>
+                    <h3 class="font-weight-bold">About Health Card</h3>
+                    <ul class="about-list">
+                        <li><i class="fas fa-thumbs-up"></i> Email dilivery in 7 working day's.</li>
+                        <li><i class="fas fa-thumbs-up"></i> Arogya Gramin Single Card - Rs. 99/- (For 1 individual
+                            membership)</li>
+                        <li><i class="fas fa-thumbs-up"></i> Arogya Gramin Family Card - Rs. 149/- (Add Upto 4 family
+                            Member)</li>
+                    </ul>
                 </div>
             </div>
 
@@ -363,8 +371,8 @@ if (isset($_POST["familyApply"])) {
                                         </div>
                                         <div class="col-md-6">
                                             <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-                                            <input type="file" name="imageFile" id="imageFile" class="form-control"
-                                                onchange="readURL(this)">
+                                            <input type="file" name="imageFile" accept="image/*" required/
+                                                id="imageFile" class="form-control" onchange="readURL(this)">
                                             <span class="required" id="spnmsg"></span>
                                         </div>
                                     </div>
@@ -495,8 +503,9 @@ if (isset($_POST["familyApply"])) {
                                         </div>
                                         <div class="col-md-6">
                                             <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-                                            <input type="file" name="imageFile" id="imageFile" class="form-control"
-                                                onchange="readURL(this)" placeholder="Your answer">
+                                            <input type="file" name="imageFile" accept="image/*" required/
+                                                id="imageFile" class="form-control" onchange="readURL(this)"
+                                                placeholder="Your answer">
                                             <span class="required" id="spnmsg"></span>
                                         </div>
                                     </div>

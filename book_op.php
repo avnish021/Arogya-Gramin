@@ -5,7 +5,9 @@ if(isset($_POST['save']))
 {	 
     $select_dp = $_POST['select_dp'];
     $name = $_POST['name'];
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
     $phone = $_POST['phone'];
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
     $email = $_POST['email'];
     $rdt = $_POST['rdt'];
 	 $sql = "INSERT INTO `book_appointment` (select_dp, name, phone, email, rdt, time, status, color)
@@ -25,6 +27,7 @@ if(isset($_POST['save']))
     <div class="container">
         <div class="page-content text-center">
             <h2>Appointment Booking</h2>
+            <p>Being on time for appointments and meetings is a phase of self-discipline and evidence of self-respect.<br> Punctuality is a courteous complement the intelligent person pays to his associates.</p>
             <div class="page-item bannercenter">
                 <a href="/"><i class="ti-home"></i>Home </a>
                 <p>Appointment Booking</p>
@@ -37,8 +40,8 @@ if(isset($_POST['save']))
         <div class="about-wrap row d-flex align-items-center">
             <div class="col-md-6 sm-padding">
                 <div class="section-heading text-left mb-20">
-                    <span class="sub-heading">Our Goals</span>
-                    <h2>Our Goals</h2>
+                    <span class="sub-heading">Our Thinking</span>
+                    <h2>Frame of Mind</h2>
                     <ul class="about-list mb-20">
                         <li><i class="fas fa-thumbs-up"></i>Our customers and their safety are paramount in everything we do.
                         </li>
@@ -50,7 +53,7 @@ if(isset($_POST['save']))
                         <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
                     </ul>
                 </div><!-- /.section-heading -->
-                <a href="about_us.php" class="default-btn">Learn More<span></span></a>
+                <a href="service.php" class="default-btn">Learn More<span></span></a>
             </div>
 			<div class="col-lg-6 col-md-6  sm-padding">
                 <form action="book_op.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">
@@ -62,12 +65,12 @@ if(isset($_POST['save']))
                         <div class="col-sm-12">
                             <select class="form-control" name="select_dp">
                                 <option>Select Department</option>
-                                <option value="Doctor">Doctor</option>
-                                <option value="Hospital">Hospital</option>
-                                <option value="Query">Query</option>
-                                <option value="Franchise Partner">Franchise Partner</option>
-                                <option value="Appointment Book">Appointment Book</option>
-                                <option value="Arogya gramin">Arogya Gramin</option>
+                                <option value="Doctor">Doctor Appoitment</option>
+                                <option value="Hospital">Hospital Appoitment</option>
+                                <option value="Query">Question or Query</option>
+                                <option value="Franchise Partner">For Franchise</option>
+                                
+                                
                             </select>
                         </div>
                     </div>
@@ -78,7 +81,7 @@ if(isset($_POST['save']))
                     </div>
                     <div class="form-group row mt-2">
                         <div class="col-12">
-                            <input type="text" id="volunteer-form-phone" name="phone" class="form-control" placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10" required>
+                            <input type="number" id="volunteer-form-phone" name="phone" class="form-control" placeholder="Phone No" onKeyPress="if(this.value.length==10) return false;" min="10" required>
                         </div>
                     </div>
                     <div class="form-group row mt-2">
@@ -88,7 +91,7 @@ if(isset($_POST['save']))
                     </div>
                     <div class="form-group row mt-2">
                         <div class="col-sm-12">
-                            <input type="date" id="volunteer-phone" name="rdt" class="form-control" required>
+                            <input type="date" id="volunteer-phone" name="rdt" class="form-control" required> 
                         </div>
                     </div>
                     <button id="volunteer-submit" class="default-btn" name="save" type="submit">Submit

@@ -270,7 +270,7 @@ if (isset($_POST["familyApply"])) {
             </div>
             <div class="form-group col-md-6">
               <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-              <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder=" Your answer">
+              <input type="file" name="imageFile" accept="image/*" required/ id="imageFile" class="form-control" onchange="readURL(this)" placeholder=" Your answer">
               <span class="required" id="spnmsg"></span>
             </div>
           </div>
@@ -389,7 +389,7 @@ if (isset($_POST["familyApply"])) {
             </div>
             <div class="form-group col-md-6">
               <label for="Photo">Photo (तस्वीर) <span class="required">*</span> </label>
-              <input type="file" name="imageFile" id="imageFile" class="form-control" onchange="readURL(this)" placeholder=" Your answer">
+              <input type="file" name="imageFile" accept="image/*" required/ id="imageFile" class="form-control" onchange="readURL(this)" placeholder=" Your answer">
               <span class="required" id="spnmsg"></span>
             </div>
           </div>
