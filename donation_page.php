@@ -51,10 +51,6 @@
 				</div><!-- /.section-heading -->
 				<ul class="about-list mb-20">
 					<li><i class="fas fa-thumbs-up"></i>Name - Arogya Gramin Healthcare Foundation</li>
-					<li><i class="fas fa-thumbs-up"></i>Bank Name - IDFC First Bank</li>
-					<li><i class="fas fa-thumbs-up"></i>Branch Address - Kankarbagh, Patna, Bihar</li>
-					<li><i class="fas fa-thumbs-up"></i>Bank Account Number - 10067206455</li>
-					<li><i class="fas fa-thumbs-up"></i>Bank IFSC Code - IDFB0060282</li>
 					<li><i class="fas fa-thumbs-up"></i>UPI ID - arogay.06@cmsidfc</li>					
 				</ul>
 				<h4>You can donate online by clicking on the button given below</h4>
@@ -94,31 +90,37 @@
 
 
 <div class="sponsor-section">
-	<div class="container">
-		<div class="slider sponsor-carousel nav-style">
-			<div class="sponsor-item">
-				<img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/6.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="slider sponsor-carousel nav-style">
+            <div class="sponsor-item">
+                <img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/NSDC_LOGO.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/Aura_Logo_NoBg-1.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/KCIC_logo-complete.png" alt="sponsor" width="100" height="70">
+            </div>
+        </div>
+    </div>
 </div>
 <!-- ./ sponsor-section -->
 

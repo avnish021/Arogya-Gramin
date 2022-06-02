@@ -874,7 +874,7 @@ include 'connect.php';
                 <img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
             </div>
             <div class="sponsor-item">
-                <img src="assets/images/partner/6.png" alt="sponsor" width="100" height="70">
+                <img src="assets/images/partner/NSDC_LOGO.jpg" alt="sponsor" width="100" height="70">
             </div>
             <div class="sponsor-item">
                 <img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">

@@ -53,7 +53,7 @@ if(isset($_POST['save']))
                         <li><i class="fas fa-thumbs-up"></i>We work ethically and professionally.</li>
                     </ul>
                 </div><!-- /.section-heading -->
-                <a href="service.php" class="default-btn">Learn More<span></span></a>
+                <a href="services.php" class="default-btn">Learn More<span></span></a>
             </div>
 			<div class="col-lg-6 col-md-6  sm-padding">
                 <form action="book_op.php" method="post" id="volunteer-form" class="form-horizontal appointment-form">

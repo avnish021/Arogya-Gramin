@@ -552,6 +552,41 @@ if (isset($_POST["familyApply"])) {
     </div>
 </section>
 
+<div class="sponsor-section">
+    <div class="container">
+        <div class="slider sponsor-carousel nav-style">
+            <div class="sponsor-item">
+                <img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/NSDC_LOGO.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/Aura_Logo_NoBg-1.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/KCIC_logo-complete.png" alt="sponsor" width="100" height="70">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!--<div class="row mt-5 mb-3">
   <div class="col-12 d-flex justify-content-center">
     <h4>We are commited to provide affrodable healthcare support to the People at their nearest Hospital, Medical Store, Lab, Clinic etc. 

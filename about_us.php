@@ -193,31 +193,37 @@
 </section><!-- ./ cta-section-3 -->
 
 <div class="sponsor-section">
-	<div class="container">
-		<div class="slider sponsor-carousel nav-style">
-			<div class="sponsor-item">
-				<img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/6.png" alt="sponsor" width="100" height="70">
-			</div>
-			<div class="sponsor-item">
-				<img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="slider sponsor-carousel nav-style">
+            <div class="sponsor-item">
+                <img src="assets/images/partner/1.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/2.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/3.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/4.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/5.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/NSDC_LOGO.jpg" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/7.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/Aura_Logo_NoBg-1.png" alt="sponsor" width="100" height="70">
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/partner/KCIC_logo-complete.png" alt="sponsor" width="100" height="70">
+            </div>
+        </div>
+    </div>
 </div>
 <!-- ./ sponsor-section -->
 
