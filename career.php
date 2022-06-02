@@ -74,6 +74,7 @@
                   <option value="Arogya Mitra">Arogya Mitra</option>
                   <option value="Hospital Tie-up">Hospital Tie-up</option>
                   <option value="Medical Store Tie-up">Medical Store Tie-up</option>
+                  <option value="Training Program">Skill Development Training Program</option>
                 </select>
               </div>
               <div class="col-sm-6">

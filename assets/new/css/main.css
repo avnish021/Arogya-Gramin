@@ -746,7 +746,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     -webkit-font-smoothing: antialiased;
 }
 .header-menu-wrap li li:hover > a{
-    color: #fa575d;
+    color: #f03030;
     background-color: #f9f9f9;
 }
 .header-menu-wrap li ul li ul{
@@ -949,13 +949,14 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 
 /* Top Bar */
 .top-bar{
-    background-color: #20212b;
+    background-color: #f44449;
 }
 .top-bar-inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
+    font-weight: 600;
 }
 .top-bar .top-left li {
     font-size: 14px;
@@ -963,13 +964,13 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     display: inline-block;
     padding-right: 20px;
     padding-left: 20px;
-    border-right: 1px solid #444;
+    border-right: 1px solid #fa575d;
     margin: 0;
     padding-top: 7px;
     padding-bottom: 7px;
 }
 .top-bar .top-left li:first-child{
-    border-left: 1px solid #444;
+    border-left: 1px solid #fa575d;
 }
 .top-bar .top-left li a{
     color: #fff;
@@ -977,8 +978,8 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .top-bar .top-social {
     padding: 7px 20px;
-    border-right: 1px solid #444;
-    border-left: 1px solid #444;
+    border-right: 1px solid #fa575d;
+    border-left: 1px solid #fa575d;
 }
 .top-bar .top-social li{
     display: inline-block;

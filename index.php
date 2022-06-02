@@ -71,8 +71,8 @@ include 'connect.php';
                     </div>
                     <div class="dl-btn-group">
                             <div class="inner-layer">
-                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
-                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                                <a href="covid.php" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Read More<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
                 </div>
@@ -99,8 +99,8 @@ include 'connect.php';
                     </div>
                     <div class="dl-btn-group">
                             <div class="inner-layer">
-                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
-                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                                <a href="rural.php" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Read More<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
                 </div>
@@ -155,8 +155,8 @@ include 'connect.php';
                     </div>
                     <div class="dl-btn-group">
                             <div class="inner-layer">
-                                <a href="apply_healthcard2" class="default-btn" data-animation="fade-in-bottom"
-                                    data-delay="2.5s">Apply Health Card<span></span><i class="arrow_right"></i></a>
+                                <a href="training.php" class="default-btn" data-animation="fade-in-bottom"
+                                    data-delay="2.5s">Read More<span></span><i class="arrow_right"></i></a>
                             </div>
                         </div>
                 </div>
@@ -697,104 +697,79 @@ include 'connect.php';
     </div>
 </section><!-- ./ service-section -->
 
+<!--New Design-->
 
-<section class="team-section bd-bottom padding">
+<section class="event-section bd-bottom padding">
     <div class="container">
-        <div class="section-heading mb-40 text-center"> 
-            <span class="sub-heading">Founders</span>
-            <h2>Our Founders</h2>
+        <div class="section-heading mb-40 text-center">
+            <span class="sub-heading">Teams</span>
+            <h2>Our Teams</h2>
+            <p>Highly skilled professionals who possess expertise in diverse Business and Technology areas make up the Business Technologies team.</p>
         </div><!-- /.section-heading -->
-        <div class="team-wrap row">
-            <div class="col-lg-3 col-md-2 sm-padding">
-                <div class="team-item">
+        <div class="slider event-carousel nav-style carousel-dots">
+            
+            <div class="team-item">
                     <div class="team-thumb founder">
-                        <img src="assets/images/team/a1.jpeg" alt="img" style="height:250px">
+                        <img src="assets/images/team/a1.jpeg" alt="img" style="width:250px; height:250px">
                     </div>
                     <div class="team-content text-center">
-                        <h4>Vikas Kumar</h4>
-                        <span>(Founder & CEO) 7 years of work experience and knowledge of 10 projects which are
-                            currently
-                            successfully running.</span>
+                        <h4 style="width:250px;">Vikas Kumar</h4>
+                        <span style="width:250px;">(Founder & CEO) 7 years of work experience</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
                     <div class="team-thumb founder">
-                        <img src="assets/images/team/a2.jpeg" alt="img" style="height:250px">
+                        <img src="assets/images/team/a2.jpeg" alt="img" style="width:250px; height:250px">
                     </div>
                     <div class="team-content text-center">
-                        <h4>Avinash Kumar</h4>
-                        <span>(Co-Founder) More than 7 years of experience</span>
+                        <h4 style="width:250px;">Avnish Kumar</h4>
+                        <span style="width:250px;">(Co-Founder) More than 7 years of experience</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
                     <div class="team-thumb founder">
-                        <img src="assets/images/team/a4.jpg" alt="img" style="height:250px">
+                        <img src="assets/images/team/a4.jpg" alt="img" style="width:250px; height:250px">
                     </div>
                     <div class="team-content text-center">
-                        <h4>Vikram Kumar</h4>
-                        <span>(Project Co-Ordinator)</span>
+                        <h4 style="width:250px;">Vikram Kumar</h4>
+                        <span style="width:250px;">(Project Co-Ordinator)</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-2 sm-padding">
                 <div class="team-item">
                     <div class="team-thumb founder">
-                        <img src="assets/images/team/a3.jpeg" alt="img" style="height:250px">
+                        <img src="assets/images/team/a3.jpeg" alt="img" style="width:250px; height:250px">
                     </div>
                     <div class="team-content text-center">
-                        <h4>Amit Kumar</h4>
-                        <span>(State Head(Sales))</span>
+                        <h4 style="width:250px;">Amit Kumar</h4>
+                        <span style="width:250px;">State Head (Sales)</span>
                     </div>
                 </div>
-            </div>
-
-
+                <div class="team-item">
+                    <div class="team-thumb founder">
+                        <img src="assets/images/team/z3.jpeg" alt="img" style="width:250px; height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4 style="width:250px;">Rajeev Kumar Kumar</h4>
+                        <span style="width:250px;">State Partner (Uttar Pradesh)</span>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-thumb founder">
+                        <img src="assets/images/team/z4.jpeg" alt="img" style="width:250px; height:250px">
+                    </div>
+                    <div class="team-content text-center">
+                        <h4 style="width:250px;">Samir Khan</h4>
+                        <span style="width:250px;">State Partner (Madhya Pradesh)</span>
+                    </div>
+                </div>
+           
+            
+            
         </div>
     </div>
 </section>
 
-<!-- ./ team-section -->
-<section class="event-section bd-bottom padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Partners</span>
-            <h2>Our State Partners</h2>
-        </div><!-- /.section-heading -->
-        <div class="slider partner-carousel nav-style">
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/images/team/z3.jpeg" alt="event" style="height:250px;width:350px;">
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Rajeev Kumar</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-map-marker-alt"></i>State Partner (Uttar Pradesh)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-thumb">
-                    <img src="assets/images/team/z4.jpeg" alt="event" style="height:250px;width:350px;">
-                </div>
-                <div class="event-content text-center">
-                    <a href="event-details.html">
-                        <h3>Samir Khan</h3>
-                    </a>
-                    <ul class="event-list">
-                        <li><i class="fas fa-map-marker-alt"></i>
-                            State Partner (Madhya Pradesh)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><!-- ./ event-section -->
+<!--New Design End-->
 
 
 <section class="testimonials-section bd-bottom bg-grey padding">
