@@ -74,7 +74,7 @@
             </div>
             <div class="col-md-5 sm-padding">
                 <div class="about-thumb">
-                    <img src="images/slider/health_camp_detaisl.jpeg" alt="arogya gramin">
+                    <img src="images/slider/doctor-g7f943eb22_1280.png" alt="arogya gramin">
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
                         <h3>Madhubani</h3>
                         <p>We had organized health camps at different places of Madhubani district with the help of BPO
                             and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon">
                         <i class="fa-thin fa-hospital"></i>
@@ -128,7 +128,7 @@
                         <h3>Chapra</h3>
                         <p>We had organized health camps at different places of Chapra district with the help of BPO and
                             associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon">
                         <i class="fa-thin fa-hospital"></i>
@@ -144,7 +144,7 @@
                         <h3>Supaul</h3>
                         <p>We had organized health camps at different places of Supaul district with the help of BPO and
                             associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon">
                         <i class="fa-thin fa-hospital"></i>
@@ -161,7 +161,7 @@
                         <h3>Patna</h3>
                         <p>We had organized health camps at different places of Patna district with the help of BPO and
                             associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>
@@ -178,7 +178,7 @@
                         <h3>Darbhanga</h3>
                         <p>We had organized health camps at different places of Darbhanga district with the help of BPO
                             and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>
@@ -193,7 +193,7 @@
                         <h3>Saharsa</h3>
                         <p>We had organized health camps at different places of Saharsa district with the help of BPO
                             and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>
@@ -208,7 +208,7 @@
                         <h3>Sitamarhi</h3>
                         <p>We had organized health camps at different places of Sitamarhi district with the help of BPO
                             and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>

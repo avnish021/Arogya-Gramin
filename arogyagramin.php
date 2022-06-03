@@ -9,7 +9,7 @@ include 'connect.php';
             <h2>Arogya Gramin Center</h2>
             <p>Arogay Gramin Center is a type of our branches established at block level on each district of the nation <br>From where our volunteer and BPO's perform all the task related to organisation and facilitate the community. </p>
             <div class="page-item bannercenter">
-                <a href="/"><i class="ti-home"></i>Home </a>
+                <a href="index.php"><i class="ti-home"></i>Home </a>
                 <p>Arogya Gramin Center</p>
             </div>
         </div>
@@ -31,12 +31,12 @@ include 'connect.php';
             <div class="col-lg-4 col-md-6 sm-padding">
                 <div class="blog-item">
                     <div class="blog-thumb">
-                        <img src="assets/new/img/manager.png" alt="post">
+                        <img src="assets/new/img/hospital.png" alt="post">
                         <span class="category"><a href="#">Arogya Gramin</a></span>
                     </div>
                     <div class="blog-content">
                         <h3>
-                            <a href="read_more.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
+                            <a href="center_view.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
                         </h3>
                         <ul class="event-list">
                             <?php
@@ -44,7 +44,7 @@ include 'connect.php';
                             <li><i class="fas fa-map-marker-alt"></i><?php echo $row['office_address'];?></li>
                             <?php } ?>
                         </ul>
-                        <a href="read_more.php?id=<?php echo $row['id']; ?>" class='read-more'>Read More</a>
+                        <a href="center_view.php?id=<?php echo $row['id']; ?>" class='read-more'>Read More</a>
                     </div>
                 </div>
             </div>

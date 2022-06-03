@@ -430,7 +430,7 @@ include 'connect.php';
                         <h3>Training Center</h3>
                         <p>To build a healthy and educated society we are also establishing training center with the help of BPO's of the
                             related location.</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="training.php" class="read-more">Read More</a>
                     </div>
                     <div class="service-icon icon-2">
                         <i class="fa-light fa-building-circle-arrow-right"></i>
@@ -474,7 +474,7 @@ include 'connect.php';
                     </div>
                 </div>
                 <div class="event-content text-center">
-                    <a href="event-details.html">
+                    <a href="event.php">
                         <h3>Door To Door Camping</h3>
                     </a>
                     <ul class="event-list">
@@ -491,7 +491,7 @@ include 'connect.php';
                     </div>
                 </div>
                 <div class="event-content text-center">
-                    <a href="event-details.html">
+                    <a href="event.php">
                         <h3>Membership Program</h3>
                     </a>
                     <ul class="event-list">
@@ -508,7 +508,7 @@ include 'connect.php';
                     </div>
                 </div>
                 <div class="event-content text-center">
-                    <a href="event-details.html">
+                    <a href="event.php">
                         <h3>Awareness Program</h3>
                     </a>
                     <ul class="event-list">

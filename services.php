@@ -6,7 +6,7 @@
 			<h2>Services</h2>
 			<p>Service, in short, is not what you do, but who you are. It's a way of living that you need to bring to everything you do<br> if you're to bring it to your customer interactions</p>
 			<div class="page-item bannercenter">
-				<a href="/"><i class="ti-home"></i>Home </a>
+				<a href="index.php"><i class="ti-home"></i>Home </a>
 				<p>Services</p>
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 						<i class="fa-light fa-building-circle-arrow-right"></i>
 						<h3>Training Center</h3>
 						<p>To build a healthy and educated society we are also establishing training center with the help of BPO's of the related location.</p>
-						<a href="#" class="read-more">Read More</a>
+						<a href="training.php" class="read-more">Read More</a>
 					</div>
 					<div class="service-icon icon-2">
 						<i class="fa-light fa-building-circle-arrow-right"></i>

@@ -24,7 +24,7 @@ $result = $conn->query($sql);
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="doctor-image">
-                    <img src="assets/new/img/manager.png" alt="" />
+                    <img src="assets/new/img/hospital.png" alt="" />
                 </div>
             </div>
             <?php

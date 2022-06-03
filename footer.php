@@ -54,7 +54,7 @@ $conn->close();
 						<!--<li><a href="#">BP & Blood Sugar Check-up</a></li>-->
 						<li><a href="book_op.php">Appointment Booking</a></li>
 						<li><a href="healthcamp_one_page.php">Health Camp</a></li>
-						<!--<li><a href="#">Relief Fund</a></li>-->
+						<li><a href="training.php">Training</a></li>
 					</ul>
 				</div>
 			</div>

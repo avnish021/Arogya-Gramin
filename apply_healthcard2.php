@@ -229,9 +229,9 @@ if (isset($_POST["familyApply"])) {
 
 
             <div class="col-md-51 sm-padding">
-                <div class="about-thumb">
+                <!--<div class="about-thumb">
                     <img src="images/slider/New_healthcard.jpg" alt="arogya gramin">
-                </div>
+                </div>-->
 
             </div>
         </section>

@@ -10,7 +10,7 @@
                 same time, to maintain our trust among people, we keep all our terms public.</p>
             <div class="page-item bannercenter">
                 <a href="index.php"><i class="ti-home"></i>Home </a>
-                <p>Terms & Condition/p>
+                <p>Terms & Condition</p>
             </div>
         </div>
     </div>
