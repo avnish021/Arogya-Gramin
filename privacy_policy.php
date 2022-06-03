@@ -1,6 +1,24 @@
 <?php include 'header.php'?>
+<section class="page-header padding">
+    <div class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="page-content text-center">
+            <h2>Privacy Policy</h2>
+            <p>We are committed to protecting the privacy of each individual and follow the strict policy of our privacy. 
+            <br>We are committed to the privacy of the organization and the people </p>
+            <div class="page-item bannercenter">
+                <a href="#"><i class="ti-home"></i>Home </a>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="working-process bd-bottom padding">
+    <div class="container">
+        <div class="work-wrap row">
+            <div class="col-md-12 sm-padding">
+                <div class="work-content bd-right">
        <h4><b> PRIVACY POLICY </b></h4>
 
 ________________________________________
@@ -44,4 +62,5 @@ If you have any questions concerning our return policy, please contact us at: <b
 <br>
         </div>
     </div>
+</section>
 <?php include 'footer.php'?>

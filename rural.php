@@ -4,10 +4,10 @@
     <div class="container">
         <div class="page-content text-center">
             <h2>Rural Development Program</h2>
-            <p>We organize multiple health camps at different locations in Bihar<br> You can see the details about the
-                organized health camp here</p>
+            <p> Rural Development is the process of improving the quality of life and economic well-being of people <br>
+                living in rural areas, often relatively isolated and sparsely populated areas. </p>
             <div class="page-item bannercenter">
-                <a href="/"><i class="ti-home"></i>Home </a>
+                <a href="index.php"><i class="ti-home"></i>Home </a>
                 <p>Rural Development Program</p>
             </div>
         </div>
@@ -22,27 +22,17 @@
                 <div class="work-content bd-right">
                     <h2></h2>
                     <div class="section-heading">
-                        <h3>About Health Camp</h3>
-                        <p class="text-justify p-3"> A health camp was organized at the Block level in each district, in
-                            association with the nearest healthcare institution. As many as thousands of people from
-                            every village benefited from the health camp.
+                        <h3>About Program</h3>
+                        <p class="text-justify p-3"> The term rural is relating to, or characteristic of the countryside
+                            rather than the town. Rural
+                            Development is the process of improving the quality of life and economic well-being of
+                            people living in
+                            rural areas, often relatively isolated and sparsely populated areas. Here, we are giving the
+                            list of
+                            Rural Development Programmes running by the organization that works perfectly to build a
+                            healthy
+                            society.</p>
 
-                            The maximum of village is located approximately 15 kilometers southwest of the city.
-                            Villages have been selected by the organization to conduct the health camp as there were no
-                            basic health facilities within the 15 km radius.
-
-                            The objective of conducting the health camp is to create awareness of general health among
-                            the people, provide general health care services and counseling them on basic healthcare and
-                            hygiene. The main objective is to make people aware of the health issues through health camp
-                            so that everyone could easily understand the concept.
-
-                            People are diagnosed with various common but seriously neglected problems such as diarrhea,
-                            cholera, acute flu and cataract in the eyes. There are also a few cases, where problems
-                            related to urethral discharge, the kidneys and cancer detected; these cases are further
-                            referred to the referral hospital, where they will be properly taken care of.
-
-                            The health camp is a huge success with overwhelming response from the local people.</p>
-                      
                     </div>
                 </div>
             </div><br>
@@ -57,168 +47,33 @@
         <div class="about-wrap row d-flex align-items-center">
             <div class="col-md-7 sm-padding">
                 <div class="section-heading mb-20">
-                    <span class="sub-heading">Benefits</span>
-                    <h2>Benefits Providing During Health Camp</h2>
-                    <p class="text-justify">We have associate the best Medical and Doctor team. With the help of them,
-                        we diliver free and quality health consult support in the camp.</p>
+                    <span class="sub-heading">running</span>
+                    <h2>Running program</h2>
+                    <p class="text-justify">The scheme and program run by the organization are aimed to connect the
+                        people to the nearest healthcare institution to easily get affordable healthcare services with
+                        other goals to build a healthy society. </p>
                 </div><!-- /.section-heading -->
                 <ul class="about-list mb-20">
-                    <li><i class="fas fa-thumbs-up"></i>BP & Blood Sugar Checkup.</li>
-                    <li><i class="fas fa-thumbs-up"></i>Free Doctor Consultant.</li>
-                    <li><i class="fas fa-thumbs-up"></i>Arogya Gramin Membership.</li>
-                    <li><i class="fas fa-thumbs-up"></i>Appointment booking.</li>
-                    <li><i class="fas fa-thumbs-up"></i>Awareness.</li>
-                    <li><i class="fas fa-thumbs-up"></i>Product & Medicine</li>
+                    <li><i class="fas fa-thumbs-up"></i>Healthcare Awareness Program</li>
+                    <li><i class="fas fa-thumbs-up"></i>Woment Empowement Program</li>
+                    <li><i class="fas fa-thumbs-up"></i>Free Health Camp</li>
+                    <li><i class="fas fa-thumbs-up"></i>Affiliation Program</li>
+                    <li><i class="fas fa-thumbs-up"></i>Door to Door campaigns</li>
+                    <li><i class="fas fa-thumbs-up"></i>Membership Program</li>
+
                 </ul>
-                <a href="apply_healthcard2" class="default-btn">Apply for Health Card <span></span></a>
+                <a href="apply_healthcard2" class="default-btn">Healthcard Membership <span></span></a>
             </div>
             <div class="col-md-5 sm-padding">
                 <div class="about-thumb">
-                    <img src="images/slider/health_camp_detaisl.jpeg" alt="arogya gramin">
+                    <img src="images/slider/medical-g9b283f155_1280.png" alt="arogya gramin">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="service-section bd-bottom bg-grey padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Event Organised</span>
-            <h2>Health Camp</h2>
-            <p>Our health camp is an important way to provide health support to the people.<br> You can check our
-                valuable health camp which is organized by us.</p>
-        </div><!-- /.section-heading -->
-        <div class="service-wrap row">
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Gaya</h3>
-                        <p>We had organized health camps at different places of Gaya district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Madhubani</h3>
-                        <p>We had organized health camps at different places of Madhubani district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Chapra</h3>
-                        <p>We had organized health camps at different places of Chapra district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Supaul</h3>
-                        <p>We had organized health camps at different places of Supaul district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Patna</h3>
-                        <p>We had organized health camps at different places of Patna district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Darbhanga</h3>
-                        <p>We had organized health camps at different places of Darbhanga district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Saharsa</h3>
-                        <p>We had organized health camps at different places of Saharsa district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Sitamarhi</h3>
-                        <p>We had organized health camps at different places of Sitamarhi district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 

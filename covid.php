@@ -23,8 +23,12 @@
                     <h2></h2>
                     <div class="section-heading">
                         <h3>About Program</h3>
-                        <p class="text-justify p-3"> The campaigns have helped dispel misinformation while promoting health recommendations and medical guidelines set by the Ministry of Public Health. People are encouraged to wash hands frequently, use antiseptics to clean household items, wear masks in public places, avoid meeting people with colds and coughs, observe physical distance, avoid crowded places, and stay home as much as possible.</p>
-                      
+                        <p class="text-justify p-3"> The campaigns have helped dispel misinformation while promoting
+                            health recommendations and medical guidelines set by the Ministry of Public Health. People
+                            are encouraged to wash hands frequently, use antiseptics to clean household items, wear
+                            masks in public places, avoid meeting people with colds and coughs, observe physical
+                            distance, avoid crowded places, and stay home as much as possible.</p>
+
                     </div>
                 </div>
             </div><br>
@@ -41,7 +45,11 @@
                 <div class="section-heading mb-20">
                     <span class="sub-heading">Befits</span>
                     <h2>Benefits of program</h2>
-                    <p class="text-justify">The campaigns have helped dispel misinformation while promoting health recommendations and medical guidelines set by the Ministry of Public Health. People are encouraged to wash hands frequently, use antiseptics to clean household items, wear masks in public places, avoid meeting people with colds and coughs, observe physical distance, avoid crowded places, and stay home as much as possible.</p>
+                    <p class="text-justify">The campaigns have helped dispel misinformation while promoting health
+                        recommendations and medical guidelines set by the Ministry of Public Health. People are
+                        encouraged to wash hands frequently, use antiseptics to clean household items, wear masks in
+                        public places, avoid meeting people with colds and coughs, observe physical distance, avoid
+                        crowded places, and stay home as much as possible.</p>
                 </div><!-- /.section-heading -->
                 <ul class="about-list mb-20">
                     <li><i class="fas fa-thumbs-up"></i>They understand how much dengerous is Virus</li>
@@ -49,9 +57,9 @@
                     <li><i class="fas fa-thumbs-up"></i>They know about prevention</li>
                     <li><i class="fas fa-thumbs-up"></i>Self concous about the virus</li>
                     <li><i class="fas fa-thumbs-up"></i>Awareness encourage them to take covid Vactine</li>
-                   
+
                 </ul>
-                <a href="apply_healthcard2" class="default-btn">Apply for Health Card <span></span></a>
+                <a href="https://www.mygov.in/covid-19" target = "_blank" class="default-btn">Visit Govt. Portal <span></span></a>
             </div>
             <div class="col-md-5 sm-padding">
                 <div class="about-thumb">
@@ -62,144 +70,7 @@
     </div>
 </section>
 
-<section class="service-section bd-bottom bg-grey padding">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span class="sub-heading">Location Of</span>
-            <h2>Covid-19 program running</h2>
-            <p>Our health camp is an important way to provide health support to the people.<br> You can check our
-                valuable health camp which is organized by us.</p>
-        </div><!-- /.section-heading -->
-        <div class="service-wrap row">
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Gaya</h3>
-                        <p>We had organized health camps at different places of Gaya district with the help of BPO and
-                            associates.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Madhubani</h3>
-                        <p>We had organized health camps at different places of Madhubani district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Chapra</h3>
-                        <p>We had organized health camps at different places of Chapra district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 sm-padding">
-                <div class="service-box item-1 text-center">
-                    <span></span>
-                    <div class="service-content">
-                        <i class="fa-thin fa-hospital"></i>
-                        <h3>Supaul</h3>
-                        <p>We had organized health camps at different places of Supaul district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fa-thin fa-hospital"></i>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Patna</h3>
-                        <p>We had organized health camps at different places of Patna district with the help of BPO and
-                            associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Darbhanga</h3>
-                        <p>We had organized health camps at different places of Darbhanga district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Saharsa</h3>
-                        <p>We had organized health camps at different places of Saharsa district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 sm-padding mt-3">
-                <div class="service-box item-2 text-center">
-                    <span></span>
-                    <div class="service-content icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                        <h3>Sitamarhi</h3>
-                        <p>We had organized health camps at different places of Sitamarhi district with the help of BPO
-                            and associates.</p>
-                        <a href="healthcamp_details.php" class="read-more">Read More</a>
-                    </div>
-                    <div class="service-icon icon-2">
-                        <i class="fa-light fa-building-circle-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 
