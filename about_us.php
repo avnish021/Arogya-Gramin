@@ -7,7 +7,7 @@
 			<h2>About Us</h2>
 			<p>Let us lead you into a deeper experience, making a moment a permanent communicative memory.<br> Let us help you build your society.</p>
 			<div class="page-item bannercenter">
-				<a href="/"><i class="ti-home"></i>Home </a>
+				<a href="intex.php"><i class="ti-home"></i>Home </a>
 				<p>About us</p>
 			</div>
 		</div>
