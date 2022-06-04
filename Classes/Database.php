@@ -161,8 +161,11 @@ class Database
             }
             $query = $this->mysqli->query($sql);
             if ($query) {
-
-                $this->result = $query->fetch_all(MYSQLI_ASSOC);
+                while ($row = $query->fetch_assoc()) {
+                    $results_array[] = $row;
+                  }
+                  $this->result = $results_array;
+                  //$this->result = $query->fetch_all(MYSQLI_ASSOC);
                 return true;
                 $numrows = $query->num_rows;
             } else {
